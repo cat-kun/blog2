@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/*reset*/
+*{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input,button,select{margin:0;padding:0;}
+body{font:12px/1.5 '幼圆','\5fae\8f6f\96c5\9ed1',tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;font-weight: normal;}
+img{border:none;vertical-align: middle;}
+li{list-style:none;}
+input,select,textarea,button,label{vertical-align:middle;outline:none;-webkit-tap-highlight-color:rgba(255,0,0,0);-webkit-appearance: none;}
+textarea{resize:none;}
+a{text-decoration:none;outline:none;-webkit-tap-highlight-color:rgba(255,0,0,0);}
+.fl{float:left;}
+.fr{float:right;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{-webkit-appearance: none;}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;}
+input,label{border: none;}
+/*clearfix*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{*zoom:1;}
+
+/*公用头部*/
+.xz-header{width: 100%;height: 50px;line-height: 50px;border-bottom: 1px solid #b3b3b3;background-color: #f8f8f8;position: fixed;top: 0;left: 0;z-index: 2;overflow: hidden;}
+
+.xz-header .title{text-align: center;font: normal 18px/50px '幼圆';}
+.xz-header .back,
+.xz-header .edit-txt{position: absolute;top: 0;}
+.xz-header .back{width: 40px;height: 50px;color: #252525;left: 10px;top: 50%;margin-top: -25px;line-height: 50px;}
+.xz-header .edit-txt{width: 20%;position: absolute;top: 0;right: 20px;font-size: 16px;color: #000;text-align: right;}
+.xz-header .back{font-family:"iconfont" !important;font-size: 26px;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.2px;-moz-osx-font-smoothing: grayscale;}
+.xz-header .edit-all{font-size: 16px;position: absolute;top: 0;right: 5%;color: #000;text-align: center;}
+.xz-header .del-icon{width: 5%;text-align: right;position: absolute;top: 0;color: #909090;right: 5%;font-size: 22px;}
+.xz-wrap header .menu-icon{color: #fc4a87;position: absolute;top: 0;right: 20px;font-size: 30px;}
+.xz-wrap .down-icon,.del-icon{font-family:"iconfont" !important;font-size:2.6rem;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.2px;-moz-osx-font-smoothing: grayscale;}
+.xz-header .edit-all,.xz-header .complete-all{font-size: 16px;position: absolute;top: 0;right: 4%;color: #000;text-align: center;}
+.see-icon{font-family:"iconfont" !important;font-size:.26rem;font-style:normal;-webkit-font-smoothing: antialiased;-webkit-text-stroke-width: 0.2px;-moz-osx-font-smoothing: grayscale;}
+/*icon*/
+@font-face {
+	font-family: 'iconfont';
+    src: url('//at.alicdn.com/t/font_1436344951_2195067.eot'); /* IE9*/
+    src: url('//at.alicdn.com/t/font_1436344951_2195067.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('//at.alicdn.com/t/font_1436344951_2195067.woff') format('woff'), /* chrome、firefox */
+    url('//at.alicdn.com/t/font_1436344951_2195067.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('//at.alicdn.com/t/font_1436344951_2195067.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+/*公用头部结束*/
+@media screen and (min-width: 640px){
+	.xz-wrap{max-width: 640px;margin-left: auto;margin-right: auto;}
+	#wrapper{max-width: 640px;left: 50%;margin-left: -270px;right: auto;}
+}

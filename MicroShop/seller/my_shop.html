@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>我的店铺</title>
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no,email=no">
+<!-- 删除苹果默认的工具栏和菜单栏 -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+<meta name="HandheldFriendly" content="true">
+<!-- 微软的老式浏览器 -->
+<meta name="MobileOptimized" content="320">
+<!-- uc强制竖屏 -->
+<meta name="screen-orientation" content="portrait">
+<!-- QQ强制竖屏 -->
+<meta name="x5-orientation" content="portrait">
+<!-- UC强制全屏
+<meta name="full-screen" content="yes"> -->
+<!-- QQ强制全屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- UC应用模式
+<meta name="browsermode" content="application"> -->
+<!-- QQ应用模式 -->
+<meta name="x5-page-mode" content="app">
+<!-- windows phone 点击无高光 -->
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="robots" content="all">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/my_shop.css">
+<script src="js/common2.js"></script>
+</head>
+<body>
+<div class="xz-wrap">
+	<!--我的店铺内容开始-->
+	<section id="main" class="page pageShow">
+		<header class="xz-header">
+			<a href="javascript:;" class="back back-go">&#xe602;</a>
+			<h3 class="title">我的店铺</h3>
+		</header>
+		<!--<form action="#" method="post">-->
+			<div class="main">
+				<div class="title clearfix">
+					<p class="user"><i class="17"></i>XXX用户</p>
+					<a href="#" class="preview">预览店铺&nbsp;&gt;</a>
+				</div>
+				<!--店铺装修，分享店铺-->
+				<div class="shop clearfix">
+					<a href="javascript:"><i class="shop_icon">&#xe600;</i><br>店铺装修</a>
+					<a href="javascript:" class="share"><i class="shop_icon">&#xe601;</i><br>分享店铺</a>
+				</div>
+				<!--简介-->
+				<div class="infoBox">
+					<div class="com-title">简介</div>
+					<div id="info" class="info"><a href="javascript:" class="infoCont"><span>未设置</span><i class="right_icon">&gt;</i></a></div>
+				</div>
+				<!--个人信息-->
+				<div class="infoBox">
+					<div class="com-title">个人信息</div>
+					<div id="account" class="info"><a href="javascript:">账&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;户：<input type="text" name="" class="account" placeholder="未设置"></a></div>
+					<div id="contact" class="info"><a href="javascript:">联系方式：<span>未设置</span><i class="right_icon">&gt;</i></a></div>
+					<div id="weChat" class="info"><a href="javascript:">微信账号：<span>未设置</span><i class="right_icon">&gt;</i></a></div>
+				</div>
+				<!--认证信息-->
+				<div class="infoBox">
+					<div class="com-title">认证信息</div>
+					<div class="info tengpay">
+						<a href="javascript:"><i class="tenpay-icon"></i><span class="info_span">财付通</span>
+							<div class="tag"><em></em><strong>未开通</strong></div>
+							<i class="right_icon">&gt;</i>
+						</a>
+					</div>
+					<div class="info real-name">
+						<a href="javascript:"><i class="real_name-icon"></i><span class="info_span">实名认证</span>
+							<div class="tag"><em></em><strong>未认证</strong></div>
+							<i class="right_icon">&gt;</i>
+						</a>
+					</div>
+					<div class="info integrityCont">
+						<a href="javascript:"><i class="integrity-icon"></i><span class="info_span">诚信保障计划</span>
+							<div class="tag"><em></em><strong>未开通</strong></div>
+							<i class="right_icon">&gt;</i>
+						</a>
+					</div>
+				</div>
+			</div>
+		<!--</form>-->
+	</section>
+	<!--我的店铺内容结束-->
+	<!--分享店铺开始-->
+	<section class="page">
+		<div class="shareBox">
+			<!--遮罩-->
+			<div class="mask"></div>
+			<!--弹出层-->
+			<div class="layer">
+				<h3 class="title">分享获得更多客流</h3>
+				<div class="share">
+					<a href="javascript:"><i class="shop_icon weChat-icon">&#xe604;</i><br>微信好友</a>
+					<a href="javascript:"><i class="shop_icon weChat-icon">&#xe607;</i><br>微信朋友圈</a>
+					<a href="javascript:"><i class="shop_icon weChat-icon">&#xe605;</i><br>Qzone</a>
+					<a href="javascript:"><i class="shop_icon weChat-icon">&#xe606;</i><br>QQ好友</a>
+					<a href="javascript:"><i class="shop_icon weChat-icon">&#xe610;</i><br>新浪微博</a>
+				</div>
+				<a href="#" class="cancel-btn">取消</a>
+			</div>
+		</div>
+	</section>
+	<!--分享店铺结束-->
+	<!--店铺简介开始-->
+	<section class="page shopBox">
+		<header class="xz-header">
+			<a href="javascript:;" class="back">&#xe602;</a>
+			<h3 class="title">店铺简介</h3>
+		</header>
+		<!--<form action="" method="post">-->
+			<div class="shop-profile">
+				<div class="title">店铺简介</div>
+				<div class="textBox inp">
+					<textarea name="" id="" cols="30" rows="10"></textarea>
+				</div>
+				<!--<input type="submit" name="" value="确认">-->
+				<a href="javascript:" class="confirm">确认</a>
+			</div>
+		<!--</form>-->
+	</section>
+	<!--店铺简介结束-->
+	<!--联系方式开始-->
+	<section class="page contactBox">
+		<header class="xz-header">
+			<a href="javascript:;" class="back">&#xe602;</a>
+			<h3 class="title">手机号</h3>
+		</header>
+		<!--<form action="" method="post">-->
+			<div class="shop-profile">
+				<div class="title">手机号</div>
+				<div class="textBox">
+					<input type="tel" class="telInp inp" maxlength="11" placeholder="请输入您的手机号">
+				</div>
+				<p class="tip-tel">手机号格式不正确</p>
+				<p class="tip">请填写准确的手机号码，以防遗漏重要消息通知。</p>
+				<a href="javascript:" class="confirm">确认</a>
+			</div>		
+		<!--</form>-->
+	</section>
+	<!--联系方式结束-->
+	<!--微信号开始-->
+	<section class="page wechatBox">
+		<header class="xz-header">
+			<a href="javascript:;" class="back">&#xe602;</a>
+			<h3 class="title">微信号</h3>
+		</header>
+		<!--<form action="" method="post">-->
+			<div class="shop-profile">
+				<div class="title">微信号</div>
+				<div class="textBox">
+					<input type="text" class="telInp inp" maxlength="11" placeholder="请输入您的微信号">
+				</div>
+				<p class="tip">请填写正确的微信号，方便用户使用微信联系。</p>
+				<a href="javascript:" class="confirm">确认</a>
+			</div>
+		<!--</form>-->
+	</section>
+	<!--微信号结束-->
+	<!--财付通开始-->
+	<section class="page tengpayBox">
+		<header class="xz-header">
+			<a href="javascript:;" class="back">&#xe602;</a>
+			<h3 class="title">财付通</h3>
+		</header>
+		<!--<form action="" method="post">-->
+			<div class="shop-profile">
+				<div class="title">财付通</div>
+				<div class="textBox">
+					<div class="text">
+						<span>财付通账号：</span><input type="tel" class="telInp inp s-inp" maxlength="11" placeholder="请输入财付通账号（QQ号）">
+					</div>
+					<p class="tip-text">格式有误</p>
+				</div>
+				<div class="textBox">
+					<div class="text">
+						<span>身份证号：</span><input type="tel" class="telInp inp s-inp" maxlength="18" placeholder="请输入绑定的身份证号">
+					</div>
+					<p class="tip-text">格式有误</p>
+				</div>
+				<input type="submit" name="" class="confirm" value="确认">
+				<!--<a href="javascript:" class="confirm">确认</a>-->
+			</div>
+		<!--</form>-->
+	</section>
+	<!--财付通结束-->
+	<!--诚信保证计划开始-->
+	<section class="page integrityBox">
+		<header class="xz-header">
+			<a href="javascript:;" class="back">&#xe602;</a>
+			<h3 class="title">诚信保证计划</h3>
+		</header>
+		<div class="integrity">
+			<div class="tip">您未加入诚信保证计划</div>
+			<div class="title">关于诚信保证计划</div>
+			<div class="text">
+				<p>“诚信保证计划”为大家在XX网购物提供全面保证。申请加入“诚信保证计划”的店铺，并缴纳诚信保证金，XX网为这些店铺提供诚信担保。</p>
+			</div>
+			<div class="title">加入诚信保证计划方法</div>
+			<ul class="method">
+				<li>1.在PC端登录XX网。</li>
+				<li>2.进入个人中心 >> 微店诚保页面。</li>
+				<li>3.选择“诚信保证计划”,申请开通并交纳保证金。</li>
+			</ul>
+		</div>
+	</section>
+	<!--诚信保证计划结束-->
+	<!--实名认证 弹出窗口开始-->
+	<section class="page">
+		<div class="certi-layer">
+			<div class="mask"></div>
+			<div class="layer">
+				<h3 class="title">您需要先开通财付通才能进行实名认证哦.</h3>
+				<div class="btn">
+					<a href="javascript:">不了</a>
+					<a href="javascript:">去开通</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--实名认证 弹出窗口结束-->
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/my_shop.js"></script>
+<script src="http://qzonestyle.gtimg.cn/qzone/app/qzlike/qzopensl.js#jsdate=20111201" charset="utf-8"></script>
+</body>
+</html>
