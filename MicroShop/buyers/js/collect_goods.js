@@ -37,19 +37,19 @@
 		}
 	});
 
-	var nowCheckLen = $('.goods .checkbox:checked').length,				// 获取所有宝贝选中的复选框个数
-		goodsLen	= $('.goods li').length;
 	// 判断是否全选
 	function allFn(){
+		var nowCheckLen = $('.goods .checkbox:checked').length,				// 获取所有宝贝选中的复选框个数
+		goodsLen	= $('.goods li').length;
 		nowCheckLen == goodsLen ? $('#checkAll').prop('checked',true) : $('#checkAll').prop('checked',false);
 	}
 
 	$oCheck.on('click',function (){
-		console.log(nowCheckLen);
+		//console.log(nowCheckLen);
 		allFn();
 	});
 	$('.goods .checkbox').on('click',function (){
-		console.log(nowCheckLen);
+		//console.log(nowCheckLen);
 		allFn();
 	});
 	// 底部全选
