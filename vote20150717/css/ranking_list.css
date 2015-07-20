@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/*活动说明*/
+.page{background-color: #68b3f3;overflow: hidden;}
+.main_title{height: 65px;background: url(../images/ranking_list_title.png) center top no-repeat;background-size: contain;margin: 20px 0;}
+.nav{/*overflow: hidden;*/margin-bottom: 10px;}
+.nav a{color: #fff;font-size: .8rem;font-family: 'hylxtt';text-align: center;width: 33%;float: left;height: 34px;}
+.nav .current{color: #ffcb64;text-shadow: 2px 2px 0px #fff,-1px -2px 0px #fff;/*-webkit-text-stroke: 1px #fff;text-stroke: 1px #fff;*/}
+.mainList{background-color: #fff;margin-bottom: 20px;}
+/*默认只显示第一个ul*/
+.mainList ul{display: none;}
+.mainList li{border-bottom: 1px solid #68b3f3;}
+.mainList .default{font-size: 0;font: 16px/54px '\5FAE\8F6F\96C5\9ED1';}
+.mainList .default span,.mainList .default strong,.mainList .detail span,.mainList .detail em,.mainList .detail p{float: left;}
+.mainList .default>.num{width: 50px;text-align: center;color: #505050;}
+.mainList .default>.title{color: #000;text-indent: 12px;}
+.mainList .default>.votes,.mainList .detail>.votes{float: right;font-style: normal;margin-right: 10px;color: #505050;font-size: 16px;}
+.mainList .detail>.votes{margin-top: 14px;}
+.mainList .detail{padding: 10px 0;}
+.mainList .detail{display: none;}
+.mainList .detail>.num{background: url(../images/icon.png) no-repeat;background-size: 260px 135px;margin: 30px 20px 0 10px;}
+.mainList .detail>.one{width: 31px;height: 27px;background-position: 0 -53px;}
+.mainList .detail>.two{width: 24px;height: 32px;background-position: -34px -53px;}
+.mainList .detail>.three{width: 24px;height: 29px;background-position: -62px -53px;}
+.mainList .detail>.title{width: 41%;margin-top: 7px;}
+.mainList .detail>.title strong{font-size: 16px;display: block;}
+.mainList .detail>.title span{width: 100%;font-size: 14px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;display: block;color: #505050;}
+.mainList .detail .face{width: 43px;height: 50px;margin-top: 14px;margin-right: 22px;}
+.mainList .detail>.votes{width: 50px;}
+
+
+
+
+
+
+
+
+
+
+
+
+

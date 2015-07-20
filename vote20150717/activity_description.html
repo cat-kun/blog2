@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>活动说明</title>
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no,email=no" />
+<meta name="renderer" content="webkit">
+<meta name="author" content="银狐">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/activity_description.css">
+<script>
+window.onload = window.onresize = function (){
+	var _html = document.getElementsByTagName('html')[0];
+	var view_width = _html.getBoundingClientRect().width;
+	view_width > 640 ? _html.style.fontSize = 640 / 16 + 'px' : _html.style.fontSize = view_width / 16 + 'px';
+};
+</script>
+</head>
+<body>
+<div class="page">
+	<header id="header">
+		<p class="back"><i class="iconfont">&#xe600;</i>返回</p>
+	</header>
+	<section class="main">
+		<h3 class="title">活动说明</h3>
+		<dl>
+			<dt>一、活动时间</dt>
+			<dd>7月20日上午9:00至7月24日21:00</dd>
+		</dl>
+		<dl>
+			<dt>二、活动说明</dt>
+			<dd>由国家新闻出版广电总局发展研究中心主办的“2015中国动漫品牌授权产业高峰论坛”将于2015年8月12日与深圳国际品牌授权及衍生品展览会同期举办。</dd>
+			<dd>本届论坛将发布2015中国动漫授权业“十大中国品牌”、“十大海外品牌”、“十大新锐品牌”榜单，旨在表彰2014至2015年在国内授权业运营出色的海内外动漫品牌。</dd>
+			<dd>本次网络投票是该榜单评选活动的重要组成部分，本着公开公正的原则面向广大网友进行投票。</dd>
+		</dl>
+		<dl>
+			<dt>三、活动规则</dt>
+			<dd>1.	关注“深圳授权展”公众号（微信号：SZ0086L），点击自定义菜单“投票”或者回复关键词“投票”后，进入投票页面进行投票；</dd>
+			<dd>2.每个微信号（ID）每天可投票10票；</dd>
+			<dd>3.	本次投票活动后台将实施24小时票数监测，如有发现任何恶意刷票等作弊行为，首次将予以警告并将作弊票数清零，再次作弊将直接取消网络投票参评资格；</dd>
+			<dd>4.	本次活动不限国家区域。</dd>
+		</dl>
+		<a href="javascript:" class="button">我要投票</a>
+	</section>
+	<footer id="footer">
+		<p>主办方拥有本次活动最终解释权</p>
+	</footer>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
