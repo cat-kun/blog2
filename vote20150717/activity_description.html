@@ -14,11 +14,14 @@
 <link rel="stylesheet" href="css/common.css">
 <link rel="stylesheet" href="css/activity_description.css">
 <script>
-window.onload = window.onresize = function (){
-	var _html = document.getElementsByTagName('html')[0];
-	var view_width = _html.getBoundingClientRect().width;
+var _html,view_width;
+fontSize();
+window.onresize = fontSize;
+function fontSize (){
+	_html = document.getElementsByTagName('html')[0];
+	view_width = _html.getBoundingClientRect().width;
 	view_width > 640 ? _html.style.fontSize = 640 / 16 + 'px' : _html.style.fontSize = view_width / 16 + 'px';
-};
+}
 </script>
 </head>
 <body>
@@ -45,7 +48,7 @@ window.onload = window.onresize = function (){
 			<dd>3.	本次投票活动后台将实施24小时票数监测，如有发现任何恶意刷票等作弊行为，首次将予以警告并将作弊票数清零，再次作弊将直接取消网络投票参评资格；</dd>
 			<dd>4.	本次活动不限国家区域。</dd>
 		</dl>
-		<a href="javascript:" class="button">我要投票</a>
+		<a href="votes.html" class="button">我要投票</a>
 	</section>
 	<footer id="footer">
 		<p>主办方拥有本次活动最终解释权</p>
