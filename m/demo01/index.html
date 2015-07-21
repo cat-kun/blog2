@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>滑动例子</title>
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<meta name="author" content="银狐">
+<meta name="robots" content="all">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<style>
+@charset "gb2312";
+.page{height: 100%;position: absolute;top: 0;left: 0;bottom: 0;right: 0;transform: translateY(0);overflow: hidden;}
+.one{width: 100%;height: 100%;background-color: #f5f5f5;color: #000;}
+</style>
+</head>
+<body>
+<div id="page" class="page">
+	<section class="one">第一屏，手指上下滑动</section>
+	<section class="one">第二屏，手指上下滑动</section>
+	<section class="one">第三屏，手指上下滑动</section>
+	<section class="one">第四屏，手指上下滑动</section>
+</div>
+<script>
+(function (){
+	var oPage = document.getElementById('page');
+	var iScroll = 0;
+	var iStartY = 0; // 初始位置
+	var iStartScroll = 0;
+
+	// 阻止默认事件，防止在某些手机上拖拽无效
+	document.addEventListener('touchmove',function (e){
+		e.preventDefault();
+	},false);
+
+	oPage.addEventListener('touchstart',function (e){
+		iStartY = e.changedTouches[0].pageY;
+		iStartScroll = iScroll;
+	},false);
+
+	oPage.addEventListener('touchmove',function (e){
+		var iDisY = e.changedTouches[0].pageY - iStartY;
+		iScroll = iStartScroll + iDisY;
+	});
+
+	oPage.addEventListener('touchend',function (e){
+		var iDisY = e.changedTouches[0].pageY - iStartY;
+		iScroll = iStartScroll + iDisY;
+		iNow = -iScroll/window.screen.height;
+		iNow = iNow%1<0.35?Math.floor(iNow):Math.ceil(iNow);
+		if(iNow<0){
+			iNow = 0;
+		}
+
+		iScroll = -iNow*window.screen.height;
+		console.log(iNow);
+
+		oPage.style.webkitTransition = oPage.style.transition = '0.5s';
+		toRun();
+	},false);
+
+	timer = setInterval(toRun,3000);
+
+	function toRun(){
+		oPage.style.webkitTransform = oPage.style.transform = 'translateY('+ iScroll +'px)';
+	}
+
+})();
+</script>
+</body>
+</html>

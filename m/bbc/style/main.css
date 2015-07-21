@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/*reset*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input,a{margin:0;padding:0;box-sizing: border-box;}
+body{font:12px/1.5 tahoma,arial,"\5b8b\4f53";}
+em{font-style: normal;}
+img{border:none;vertical-align:middle;width: 100%;}
+li{list-style:none;}
+input,select,textarea{vertical-align:middle;outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;outline:none;}
+.fl{float:left;}
+.fr{float:right;}
+
+/*清浮动*/
+.clearfix:after{content:'';height:0;display:block;clear:both;}
+.clearfix{*zoom:1;}/*ie6,7*/
+
+.wrap{background-color: #f5f5f5;}
+.title{height: 65px;line-height: 65px;background-color: #eee;font-size: 28px;color: #ea0234;font-family: '宋体';position: relative;}
+.title h3{text-align: center;}
+.title a{font-size: 16px;color: #353535;position: absolute;top: 0;}
+.title .download,.title .tool{right: 4%;}
+.banner{border-top: 1px solid #d4c4c7;padding-bottom: 6px;background-color: #f5f5f5;border-bottom: 1px solid #e5e5e5;}
+/*今日推荐*/
+.today-commend{background-color: #fff;}
+.commend-title span{font-size: 16px;}
+.commend-cont{height: 55px;border: 3px solid #e52e4a;border-radius: 5px;background: url(../images/today_commend_bg.jpg) center top repeat-x;overflow: hidden;color: #fff;}
+.commend-cont ul{width: 85%;height: 100%;}
+.commend-cont li{width: 14%;float: left;text-align: center;padding: 10px 0;}
+.commend-cont li:nth-child(even){background-color: rgba(244,240,195,.5);}
+.commend-cont li span{width: 30px;height: 30px;line-height: 30px;display: block;text-align: center;border-radius: 50%;margin: 0 auto;}
+.commend-cont .red{background-color: #f93050;}
+.commend-cont .blue{background-color: #1680d4;}
+.betting-btn{width: 15%;line-height: 50px;text-align: center;background-color: #ed2c4b;padding-left: 3px;}
+.betting-btn a{color: #fff;height: 49px;background-color: #e22e47;border: 1px solid #b31126;display: block;}
+
+.index-main{margin-bottom: 74px;}
+.index-main,.today-commend{padding: 10px 9px 14px 9px;}
+/*用户*/
+.user{height: 60px;line-height: 60px;font-size: 16px;}
+.user .name{width: 50%;float: left;padding-left: 11px;}
+.user .price{width: 22%;color: #e62f4d;float: left;text-align: center;}
+.user em{width: 1px;height: 38px;margin: 10px 12px 0 15px;background-color: #e5e5e5;float: left;}
+.user .sign-out{width: 11%;float: left;color: #2e2e2e;text-align: center;}
+/*竞彩足球*/
+.football{padding: 10px 0 6px 9px;}
+.img-icon{width: 80px;height: 80px;float: left;}
+.football a{width: 100%;height: 100%;display: block;}
+.football .text{float: left;margin: 10px 0 0 10px;}
+.football .text h3{font-size: 22px;color: #000;}
+.football .text em{color: #fff;font-size: 14px;font-style: normal;margin-left: 5px;padding: 0 4px;font-weight: normal;vertical-align: middle;}
+.football .text span{font-size: 16px;color: #a9a9a9;}
+.football .quick{background-color: #00bae2;}
+.football .select{background-color: #ef2c4e;}
+/*充值，提现*/
+.recharge{margin-right: -2%;overflow: hidden;}
+.recharge a{width: 48%;height: 60px;line-height: 60px;text-align: center;font-size: 24px;color: #fc2a45;float: left;margin-right: 2%;}
+/*版权*/
+.copyright{height: 60px;padding: 7px 0 9px 0;text-align: center;color: #afafaf;font-size: 16px;}
+.user,.football,.recharge a{background-color: #fff;border: 1px solid #e6e6e6;border-radius: 6px;margin-bottom: 6px;}
+.footer{width: 100%;height: 74px;background-color: #24292d;position: fixed;bottom: 0;left: 0;font-size: 20px;}
+.footer a{width: 33%;height: 74px;font-size: 18px;text-align: center;color: #fff;float: left;}
+.footer a:nth-child(1){background-color: #1b2023;}
+.footer i{width: 38px;height: 36px;color: #8d8d8d;display: inline-block;}
+.footer .home-icon{color: #eb4f67;}
+/*双色球页面*/
+.title .back{left: 16px;font-size: 40px;color: #3a3a3a;}
+.title .tool{background: url(../images/tool_icon.jpg) left center no-repeat;;color: #373737;padding-left: 23px;}
+.title h3{color: #cf042f;font-size: 26px;}
+.ssq-time{height: 40px;line-height: 40px;padding-left: 16px;background-color: #fff;color: #2d2d2d;font-size: 16px;border-top: 1px solid #e1e1e1;box-shadow: 0 2px 10px #bcbdbf;}
+.ssq-time span{color: #f03d53;}
+.ssq-main{padding-left: 16px;background-color: #f5f5f5;}
+.ssq-betting-button{width: 200px;margin: 26px 0 25px 0;border: 1px solid #f5434f;}
+.ssq-betting-button a{width: 99px;height: 33px;line-height: 33px;text-align: center;background-color: #fc3f51;color: #323232;font-size: 16px;float: left;}
+.ssq-betting-button .betting-button01{background-color: #f5f5f5;}
+.ssq-betting-button .betting-button02{color: #fff;}
+.ssq-tip{padding-bottom: 9px;font-size: 24px;}
+.ssq-tip span{padding-right: 5%;font-size: 1em;font-weight: bold;color: #787878;}
+.ssq-tip em{color: #b1b1b1;font-size: 0.5em;}
+.ssq-tip b{color: #fe3f51;}
+/*选球*/
+.ballText{width: 20.20833%;padding-top: 72px;color: #797979;font-size: 1.3em;float: left;}
+.ballNum{width: 79.79166%;float: left;}
+.ballNum .ballCont{width: 45px;height: 45px;line-height: 45px;text-align: center;font-size: 20px;margin-right: 10px;margin-bottom: 40px;float: left;}
+.ballNum .ballCont a{width: 100%;height: 100%;background: url(../images/ball02_icon.png) center center no-repeat;color: #707070;display: inline-block;}
+.ballNum .ballCont a.active{background-image: url(../images/ball01_icon.png);color: #fff;}
+.ballNum .ballCont p{font-size: 16px;}
+
+
+
+
+
+
+
+/*公用样式*/
+.border-bottom{border-bottom: 1px solid #dadada;}
+/*icon*/
+.commend-icon{font-size: 0;line-height: 0;}
+@font-face {
+	font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#uxiconfont') format('svg'); /* iOS 4.1- */
+}
+.home-icon,.lottery-icon,.account-icon{
+    font-family:"iconfont" !important;
+    font-size:32px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (min-width: 1025px){
+	.wrap{max-width: 320px;margin-left: auto;margin-right: auto;}
+}

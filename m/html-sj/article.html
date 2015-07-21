@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>标题</title>
+<meta name="description" content="页面描述">
+<meta name="keywords" content="页面关键词">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="apple-touch-icon" href="/touch-icon-iphone.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/touch-icon-ipad.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/touch-icon-iphone-retina.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/touch-icon-ipad-retina.png" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link type="text/css" rel="stylesheet" href="style/common.css" />
+<script src="style/config.js"></script>
+</head>
+
+<body>
+<div id="web_loading">正在加载...</div>
+
+<section class="page-car">
+	<header id="header" class="d-box">
+		<a href="javascript:history.go(-1);">
+			<img src="images/bt1.png" width="23"/>
+			返回
+		</a>
+		<a href="">
+			<img src="images/bt2.png" width="23"/>
+			首页
+		</a>
+	</header>
+	
+	<article class="car-p10">
+		<hgroup class="location d-box">
+			<h2 class="tip">车系选择</h2>
+		</hgroup>
+		
+		<article>
+			<div class="article">
+				1、成功投保中国人保车险后，将会获赠奖品：
+一等奖：价值万元的【舒适进入】或【智能掌控】
+二等奖：价值2000 元的产品奖，安装本活动产品时可以抵用、可以转赠，有效期30 天；
+
+2、随奖品附带安装店一览表，你可以选择4S店或特约服务中心安装产品；
+
+3、产品保修2年，附带中国人保质量责任险，10年维护；
+
+4、获得一等奖产品，到店安装时需要支付安装费，各店不同，自由选择；也可以在师傅的指导下自己动手DIY安装，或自己委托他人按图施工；
+
+5、奖品于投保次日以短信方式发送，产品由深圳7日内寄达；
+
+6、务必填写准确地址电话，方便产品准确寄达，产品寄达费用约30元，到货支付；
+
+7、奖品/奖券允许转赠他人；
+
+8、活动最终解释权归主办方所有，如有疑问可致电咨询；
+			</div>
+		</article>
+	</article>
+	
+	<footer id="footer">
+		<span class="bt" onclick="webOrder();">马上投保</span>
+	</footer>
+</section>
+
+<div class="js-show-hide">
+<div id="js-show-zoom" class="d-box">
+
+	<div class="order order-con">
+		<hgroup class="location d-box">
+			<h2></h2>
+			<h6 onclick="boxshow('.js-show-hide');"><img src="images/colseh.png" width="25"/></h6>
+		</hgroup>
+		
+		<span class="rbt" onclick="boxshow('.order-form',1);">网上投保</span>
+		
+		<div class="con">
+			<p>长按二维码扫我关注</p>
+			<span class="ewm">
+				<img src="images/ewm.jpg"/>
+			</span>
+			<p><b>某某保险公司</b>公众号</p>
+			<address>
+				<b>投保电话</b>8888-8888-8888
+			</address>
+		</div>
+		
+	</div>
+
+	<div class="order order-form">
+		<hgroup class="location d-box">
+			<h2 class="tip">填写信息</h2>
+			<h6 onclick="boxshow('.js-show-hide');"><img src="images/colseh.png" width="25"/></h6>
+		</hgroup>
+		
+		<form>
+			<ul class="form-list">
+				<li>
+					<label>*姓名</label>
+					<input type="text" name="" required="required"/>
+				</li>
+				<li>
+					<label>*手机号</label>
+					<input type="number" name="" required="required"/>
+				</li>
+				<li>
+					<label>车牌号</label>
+					<input type="text" name=""/>
+				</li>
+				<li>
+					<label>车架号</label>
+					<input type="text" name=""/>
+				</li>
+				<li>
+					<label>*收货地址</label>
+					<input type="text" placeholder="用于奖品寄送" name="" required="required"/>
+				</li>
+				<li>
+					<span style="text-align:right;display:block;">*为必填选项</span>
+				</li>
+			</ul>
+			<button class="submit" type="submit">确认提交</button>
+		</form>
+	</div>
+</div>
+</div>
+
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script>
+function boxshow(obj,type){
+	$(obj).toggle(200);
+	if(type){
+		$(obj).prev('.order').hide();
+	}
+}
+
+function webOrder(){
+	$('.order-form').hide();
+	$('.order-con').show(200);
+	boxshow('.js-show-hide');
+}
+
+</script>
+</body>
+</html>

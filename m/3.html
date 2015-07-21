@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>滑屏</title>
+<meta name="renderer" content="webkit">
+<meta name="author" content="银狐">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<script>
+document.getElementsByTagName('html')[0].style.fontSize = window.screen.width/10 + 'px';
+</script>
+<style>
+body,p{margin: 0;padding: 0;}
+body{font-size: .4rem;background-color: #f2f2f2;}
+a{-webkit-tap-highlight-color: rgba(255,255,255,0);}
+#wrap{width: 100%;overflow: hidden;}
+#picList{width: 40rem;overflow: hidden;}
+#picList a{float: left;}
+#picList img{width: 10rem;}
+#btns{height: .2rem;padding: .15rem;text-align: center;}
+#btns span{width: .2rem;height: .2rem;display: inline-block;margin: 0 .1rem;vertical-align: middle;border-radius: .2rem;background-color: #ccc;}
+#btns .current{background-color: #f10;}
+</style>
+</head>
+<body>
+<section id="wrap">
+	<nav id="picList">
+		<a data-href="http://www.baidu.com" ontouchmove="this.s=1" ontouchend="this.s||window.open(this.dataset.href),this.s=0"><img src="http://gw.alicdn.com/tps/i1/TB1vkFbHXXXXXaCXXXXdIns_XXX-1125-352.jpg_q50.jpg" alt=""></a>
+		<a data-href="http://www.sina.com.cn" ontouchmove="this.s=1" ontouchend="this.s||window.open(this.dataset.href),this.s=0"><img src="http://i.mmcdn.cn/simba/img/TB1fTQUGXXXXXbKXXXXSutbFXXX.jpg_q50.jpg" alt=""></a>
+		<a data-href="http://www.weibo.com" ontouchmove="this.s=1" ontouchend="this.s||window.open(this.dataset.href),this.s=0"><img src="http://gw.alicdn.com/tps/i3/TB1KuFcHXXXXXcoXpXXTIPs_XXX-1125-352.png" alt=""></a>
+		<a data-href="http://www.taobao.com" ontouchmove="this.s=1" ontouchend="this.s||window.open(this.dataset.href),this.s=0"><img src="http://gw.alicdn.com/tps/i3/TB1_3rnGVXXXXa6aXXXdIns_XXX-1125-352.jpg_q50.jpg" alt=""></a>
+	</nav>
+</section>
+<p id="btns">
+	<span class="current"></span>
+	<span></span>
+	<span></span>
+	<span></span>
+</p>
+<script>
+(function (){
+	var oPicList = document.getElementById('picList');
+	var aBtns = document.getElementById('btns');
+	var iScroll = 0;
+	var iNow = 0;
+	var iStartX = 0; //初始位置
+	var iStartScroll = 0;
+	var timer = null;
+
+	// 阻止默认事件，防止在某些手机上拖拽无效
+	document.addEventListener('touchmove',function (e){
+		e.preventDefault();
+	},false);
+
+	oPicList.addEventListener('touchstart',function (e){
+		iStartX = e.changedTouches[0].pageX;
+		iStartScroll = iScroll;
+	},false);
+
+	oPicList.addEventListener('touchmove',function (e){
+		var iDisX = e.changedTouches[0].pageX-iStartX; //当前位置-初始位置
+		iScroll = iStartScroll+iDisX;
+	},false);
+
+	oPicList.addEventListener('touchend',function (e){
+		var iDisX = e.changedTouches[0].pageX-iStartX;
+		iScroll = iStartScroll+iDisX;
+		iNow = -iScroll/window.screen.width;
+		iNow = iNow%1<0.35?Math.floor(iNow):Math.ceil(iNow);
+		if(iNow<0){
+			iNow = 0;
+		}
+
+		if(iNow>aBtns.length){
+			iNow = aBtns.length;
+		}
+		iScroll = -iNow*window.screen.width;
+		console.log(iNow);
+
+		//按钮
+		for(var i=0;i<aBtns.length;i++){
+			if(i != iNow){
+				aBtns[i].className = '';
+			}else{
+				aBtns[i].className = 'current';
+			}
+		}
+		oPicList.style.webkitTransition = oPicList.style.transition = '0.5s';
+		toRun();
+	},false);
+
+	timer = setInterval(toRun,3000);
+
+	function toRun(){
+		oPicList.style.webkitTransform = oPicList.style.transform = 'translateX('+ iScroll +'px)';
+	}
+})();
+</script>
+</body>
+</html>

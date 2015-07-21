@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+<meta charset="utf-8" />
+		<title>订单</title>
+<meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+<link rel="stylesheet" href="css/order.css" />
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+ <script type="text/javascript" src="js/jquery-1.5.1.js" ></script>
+         <script type="text/javascript" src="js/payfor.js"></script>
+        <script type="text/javascript" src="js/jquery.fxTab.js"></script>
+
+<script type="text/javascript">
+function showDiv(){
+    event.stopPropagation();
+    document.getElementById('popDiv').style.display='block';
+    $("body").css('overflow', 'hidden');
+    $('.mask').show();
+}
+$('#popDiv').click(function (e){
+    var ev = e || window.event;
+    if(window.event){
+        e.cancelBubble = true;
+    }else{
+        e.stopPropagation();
+    }
+});
+document.onclick = function (event){
+    event.stopPropagation();
+    $('#popDiv,.mask').hide();
+}
+</script>
+
+   
+</head>
+
+<body>
+
+<div id="popDiv" class="tcdiv" style="display:none;">
+<!--<div style="width: 100%;" id="taDiv" style="display:none;">-->
+                        <center>
+                            <table style="border-collapse: collapse; border-color: #fff;  border:0;margin-top:135px;" cellspacing=0 cellpadding=0 width="100%">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <table cellspacing=0 cellpadding=8 width="100%" align=center summary="" style="border-top: 1px solid #fff;border-left: 1px solid #fff;border-right: 1px solid #fff;border-bottom: none;">
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td width="33.1%"  style="border-top: none;border-left: none;border-right: 1px solid #fff;border-bottom: none;color: #fff; background: #1473B7;">日期</td>
+                                                        <td  width="33.1%" style="border-top: none;border-left: none;border-right: 1px solid #fff;border-bottom: none; color: #fff;background: #1473B7;">价格</td>
+                                                        <td  width="33.1%" style="border: none; color: #fff;background: #1473B7;">已售</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div style="OVERFLOW: auto; WIDTH: 100%; HEIGHT: 150px">
+                                                <table style="BORDER-COLLAPSE: collapse"  cellspacing=0 cellpadding=6 width="100%" style="border: 1px solid #fff;">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td width="33.1%" class="tabsy">2014-12-24</td>
+                                                            <td width="33.1%" class="tabsy">230.00</td>
+                                                            <td width="33.1%" class="tabsy">4521</td>
+                                                        </tr>
+                                                           <tr>
+                                                            <td width="33.1%" class="tabsy">2014-12-24</td>
+                                                            <td width="33.1%" class="tabsy">230.00</td>
+                                                            <td width="33.1%" class="tabsy">4521</td>
+                                                        </tr>
+                                                         <tr>
+                                                            <td width="33.1%" class="tabsy">2014-12-24</td>
+                                                            <td width="33.1%" class="tabsy">230.00</td>
+                                                            <td width="33.1%" class="tabsy">4521</td>
+                                                        </tr>
+                                                            <tr>
+                                                            <td width="33.1%" class="tabsy">2014-12-24</td>
+                                                            <td width="33.1%" class="tabsy">230.00</td>
+                                                            <td width="33.1%" class="tabsy">4521</td>
+                                                        </tr>
+                                                           <tr>
+                                                            <td width="33.1%" class="tabsy">2014-12-24</td>
+                                                            <td width="33.1%" class="tabsy">230.00</td>
+                                                            <td width="33.1%" class="tabsy">4521</td>
+                                                        </tr>
+                                                            <tr>
+                                                            <td width="33.1%" class="tabsy">2014-12-24</td>
+                                                            <td width="33.1%" class="tabsy">230.00</td>
+                                                            <td width="33.1%" class="tabsy">4521</td>
+                                                        </tr>
+                                                          <tr>
+                                                            <td width="33.1%" class="tabsy">2014-12-24</td>
+                                                            <td width="33.1%" class="tabsy">230.00</td>
+                                                            <td width="33.1%" class="tabsy">4521</td>
+                                                        </tr>
+                                                           <tr>
+                                                            <td width="33.1%" class="tabsy">2014-12-24</td>
+                                                            <td width="33.1%" class="tabsy">230.00</td>
+                                                            <td width="33.1%" class="tabsy">4521</td>
+                                                        </tr>
+                                                           <tr>
+                                                            <td width="33.1%" class="tabsy">2014-12-24</td>
+                                                            <td width="33.1%" class="tabsy">230.00</td>
+                                                            <td width="33.1%" class="tabsy">4521</td>
+                                                        </tr>
+                                                           <tr>
+                                                            <td width="33.1%" class="tabsy">2014-12-24</td>
+                                                            <td width="33.1%" class="tabsy">230.00</td>
+                                                            <td width="33.1%" class="tabsy">4521</td>
+                                                        </tr>
+                                                           <tr>
+                                                            <td width="33.1%" class="tabsy">2014-12-24</td>
+                                                            <td width="33.1%" class="tabsy">230.00</td>
+                                                            <td width="33.1%" class="tabsy">4521</td>
+                                                        </tr>
+                                                            <tr>
+                                                            <td width="33.1%" class="tabsy">2014-12-24</td>
+                                                            <td width="33.1%" class="tabsy">230.00</td>
+                                                            <td width="33.1%" class="tabsy">4521</td>
+                                                        </tr>
+                                                            <tr>
+                                                            <td width="33.1%" class="tabsy">2014-12-24</td>
+                                                            <td width="33.1%" class="tabsy">230.00</td>
+                                                            <td width="33.1%" class="tabsy">4521</td>
+                                                        </tr>
+                                                          <tr>
+                                                            <td width="33.1%" class="tabsy">2014-12-24</td>
+                                                            <td width="33.1%" class="tabsy">230.00</td>
+                                                            <td width="33.1%" class="tabsy">4521</td>
+                                                        </tr>
+                                                            <tr>
+                                                            <td width="33.1%" class="tabsy">2014-12-24</td>
+                                                            <td width="33.1%" class="tabsy">230.00</td>
+                                                            <td width="33.1%" class="tabsy">4521</td>
+                                                        </tr>
+                                                           <tr>
+                                                            <td width="33.1%" class="tabsy">2014-12-24</td>
+                                                            <td width="33.1%" class="tabsy">230.00</td>
+                                                            <td width="33.1%" class="tabsy">4521</td>
+                                                        </tr>
+                                                             <tr>
+                                                            <td width="33.1%" class="tabsy">2014-12-24</td>
+                                                            <td width="33.1%" class="tabsy">230.00</td>
+                                                            <td width="33.1%" class="tabsy">4521</td>
+                                                        </tr>
+                                                             <tr>
+                                                            <td width="33.1%" class="tabsy">2014-12-24</td>
+                                                            <td width="33.1%" class="tabsy">230.00</td>
+                                                            <td width="33.1%" class="tabsy">4521</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </center>
+             <!--  </div>-->
+<!--<a href="javascript:closeDiv()" class="exit">关闭窗口</a>-->
+</div>
+	<div class="mask"></div>
+	<div id="containe">
+	<div id="content">
+		
+		<div id="containera">
+		<div class="inventory">
+			<div class="invenhea">
+		
+		
+<div class="jg">
+		<span>门票+往返索道票：￥230.00</span>		
+		</div>
+		
+		<div class="timea">
+			<div class="rx">
+			<div class="rq">
+				<span>出游日期</span>
+				
+				<span><input  class="datie" name="datie" readonly onclick="javascript:showDiv(event)" /> </span>
+			
+		</div>
+			</div>
+		</div>
+		
+		<div class="dasj">
+			<ul>
+				<li><span>数量：</span>
+					<div class="p_number"><div class="f_l add_chose">
+			<a class="reduce" onClick="setAmount.reduce('#qty_item_1')" >
+			-</a>
+			<input type="text" name="qty_item_1" value="1" id="qty_item_1" onKeyUp="setAmount.modify('#qty_item_1')" class="text" />
+			<a class="add" onClick="setAmount.add('#qty_item_1')" >
+			+</a>
+		</div></div></li>
+				<li><span>小计：</span><span class="sum">￥230.00</span></li>
+				<li><span>应付总价：</span><i class="hj">￥230.00</i><a href="#" ><i class="ok"  id="popModal_ex1">提交订单</i></a></li>
+				<li></li>
+			</ul>
+		</div>		
+		  
+			<div class="pl">
+				<div class="fxui-tab">
+  <div class="fxui-tab-hand"><span class="fxui-tab-tit">温馨提示</span> <span class="fxui-tab-tit">用户评论</span> </div>
+  <div class="fxui-tab-nav">
+  	<ul>
+         <li>1)门票索道当日一次有效，不能重复使用</li>
+        <li>2)请妥善 保管预定成功短信</li>
+        <li>3)如换票、检票、进场等场所客流繁忙时、请按次序排队入场</li>
+        <li>4)预定成功后，到现场采用手机号+随机码进行换票</li>
+        <li>5)景区内冰雪路滑、请注意安全、未成年人必须有成人监护并保持随时照顾</li>
+      </ul>
+  </div>
+  <div class="fxui-tab-nav">
+  	<div class="fxui-tab-nav">
+  	<ul>
+         <li>旅行者说：这景区好</li>
+        <li>背包客说：这里的风景不错</li>
+         <li>旅行者说：这景区好</li>
+        <li>背包客说：这里的风景不错</li>
+        	  <li>旅行者说：这景区好</li>
+        <li>背包客说：这里的风景不错</li>
+        	  <li>旅行者说：这景区好</li>
+        <li>背包客说：这里的风景不错</li>
+        <li>旅行者说：这景区好</li>
+        <li>背包客说：这里的风景不错</li>
+        <li>旅行者说：这景区好</li>
+        <li>背包客说：这里的风景不错</li>
+        <li>背包客说：这里的风景不错</li>
+        <li>旅行者说：这景区好</li>
+        <li>背包客说：这里的风景不错</li>
+        <li>旅行者说：这景区好</li>
+        <li>背包客说：这里的风景不错</li>
+        <li>背包客说：这里的风景不错</li>
+        <li>旅行者说：这景区好</li>
+        <li>背包客说：这里的风景不错</li>
+        <li>旅行者说：这景区好</li>
+        <li>背包客说：这里的风景不错</li>
+      </ul>
+  </div>
+  </div>
+   <div class="conus">
+  	<span class="address">成都市大邑县西岭雪山景区</span>
+  	<span class="tel">400-028-9695</span>
+  </div>
+</div>
+				</div>
+	</div>
+
+			</div>
+		</div>
+		</div>
+		</div>
+
+
+
+
+
+	 
+	<script type="text/javascript">
+$('.fxui-tab').fxuiTab({
+	tit: $('.fxui-tab').find('span'),
+	nav: $('.fxui-tab').find('.fxui-tab-nav'),
+	evt: 'mouseover',
+	eq : 0
+});
+</script>
+</body>
+</html>

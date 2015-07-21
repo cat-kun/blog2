@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>标题</title>
+<meta name="description" content="页面描述">
+<meta name="keywords" content="页面关键词">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="apple-touch-icon" href="/touch-icon-iphone.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/touch-icon-ipad.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/touch-icon-iphone-retina.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/touch-icon-ipad-retina.png" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link type="text/css" rel="stylesheet" href="style/common.css" />
+<script src="style/config.js"></script>
+</head>
+
+<body>
+<div id="web_loading">正在加载...</div>
+
+<section class="page-move">
+<img src="http://img01.cloud7.com.cn/3e98ba21592023d5429f31c3985a1e9a.jpg" width="100%" height="100%"/>
+<a href="javascript:;" onclick="play()" class="play-bt"><img src="images/play.png"/></a>
+<span class="play-move"></span>
+</section>
+
+<section class="page-move-play" id="js_move_play" style="display:none;">
+<div class="colse" onclick="play()"><img src="images/colse.png" width="25"/></div>
+<iframe height="200" width="100%" src="" frameborder=0 allowfullscreen class="iframes" id="js_iframes"></iframe>
+</section>
+
+<script>
+function play(){
+	var obj=document.getElementById('js_move_play');
+	var oiframe=document.getElementById('js_iframes');
+	if(obj.style.display=='none'){
+		obj.style.display='block';
+		oiframe.src='http://player.youku.com/embed/XMTI3NDc3MTYyMA==';
+	}else{
+		obj.style.display='none';
+		oiframe.src='';
+	}
+}
+</script>
+
+</body>
+</html>

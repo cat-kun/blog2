@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>滑屏</title>
+<meta name="renderer" content="webkit">
+<meta name="author" content="银狐">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
+<script>
+document.getElementsByTagName('html')[0].style.fontSize = window.screen.width/10 + 'px';
+</script>
+<style>
+body,p{margin: 0;padding: 0;}
+body{font-size: .4rem;background-color: #f2f2f2;}
+#wrap{width: 100%;overflow: hidden;}
+#picList{width: 40rem;overflow: hidden;}
+#picList a{float: left;}
+#picList img{width: 10rem;}
+#btns{height: .2rem;padding: .15rem;text-align: center;}
+#btns span{width: .3rem;height: .3rem;display: inline-block;margin: 0 .1rem;vertical-align: middle;border-radius: .2rem;background-color: #f60;}
+#btns .current{background-color: #f10;}
+</style>
+</head>
+<body>
+<section id="wrap">
+	<nav id="picList">
+		<a href="#1"><img src="http://gw.alicdn.com/tps/i1/TB1vkFbHXXXXXaCXXXXdIns_XXX-1125-352.jpg_q50.jpg" alt=""></a>
+		<a href="#2"><img src="http://i.mmcdn.cn/simba/img/TB1fTQUGXXXXXbKXXXXSutbFXXX.jpg_q50.jpg" alt=""></a>
+		<a href="#3"><img src="http://gw.alicdn.com/tps/i3/TB1KuFcHXXXXXcoXpXXTIPs_XXX-1125-352.png" alt=""></a>
+		<a href="#4"><img src="http://gw.alicdn.com/tps/i3/TB1_3rnGVXXXXa6aXXXdIns_XXX-1125-352.jpg_q50.jpg" alt=""></a>
+	</nav>
+</section>
+<p id="btns">
+	<span class="current"></span>
+	<span></span>
+	<span></span>
+	<span></span>
+</p>
+<script>
+(function (){
+	var oPicList = document.getElementById('picList');
+	oPicList.ontouchstart = function (e){
+		// alert('手指摁下');
+		alert('e.changedTouches[0].pageX：'+e.changedTouches[0].pageX);
+	};
+
+	/*oPicList.addEventListener('touchmove',function (e){
+		var iDisX = e.changedTouches[0].pageX-iStartX; //当前位置-初始位置
+		iScroll = iStartScroll+iDisX;
+	},false);*/
+})();
+</script>
+</body>
+</html>
