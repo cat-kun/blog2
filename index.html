@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>小狐狸</title>
+<title>小狐狸前端之窝</title>
 <meta name="renderer" content="webkit">
 <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
 <meta name="author" content="银狐">
@@ -34,12 +34,16 @@ a {blr:expression(this.onFocus=this.blur())} /* IE */
 @font-face{font-family:'iconfont';src:url('//at.alicdn.com/t/font_1437099057_5442235.eot');src:url('//at.alicdn.com/t/font_1437099057_5442235.eot?#iefix') format('embedded-opentype'),url('//at.alicdn.com/t/font_1437099057_5442235.woff') format('woff'),url('//at.alicdn.com/t/font_1437099057_5442235.ttf') format('truetype'),url('//at.alicdn.com/t/font_1437099057_5442235.svg#iconfont') format('svg')}
 .iconfont{font-family:"iconfont"!important;font-size:16px;font-style:normal;-moz-osx-font-smoothing:grayscale}
 /*头部开始*/
-#header{width: 100%;height: 64px;position: fixed;top: 0;left: 0;z-index: 2;box-shadow: 0 0 5px rgba(0,0,0,.2);background-color: #fff;}
+#header{height: 64px;box-shadow: 0 0 5px rgba(0,0,0,.2);background-color: #fff;}
 #header .title{font: 30px/64px 'Microsoft Yahei';color: #f60;margin-left: 10px;float: left;text-decoration: none;}
 .slogan{width: 80px;height: 21px;font: 14px/21px 'Microsoft Yahei';background-color: #ccc;padding: 0 5px;border-radius: 3px;color: #fff;transition: letter-spacing .3s;-webkit-transition: letter-spacing .3s;text-align: center;position: relative;display: inline-block;margin-left: 5px;vertical-align: middle;}
 .slogan:after{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #ccc url(http://c7sky.com/wp-content/themes/minty/img/home-icon.png) no-repeat 50%;content: "";opacity: 0;transition: opacity .3s;-webkit-transition: opacity .3s;}
 .title:hover .slogan{letter-spacing: -14px;}
 .title:hover .slogan:after{opacity: 1}
+@media (min-width: 768px){
+	.navbar{padding: 0 100px;}
+}
+
 /*头部导航*/
 /*.nav{float: left;margin-left: 300px;height: 64px;}*/
 /* .nav{width: 300px;margin: 0 auto;}
@@ -64,9 +68,27 @@ a {blr:expression(this.onFocus=this.blur())} /* IE */
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{background-color: #fff;}
 .navbar-default .navbar-toggle .icon-bar{background-color: #f60;}
 .navbar-default .navbar-nav>li>a{font-size: 14px;}
+/*个人作品*/
+.worksBox{background-color: #FDAB30;color: #fff;padding: 40px 50px;margin-top: 40px;}
+.worksBox .title{text-align: center;font: 30px/50px 'Microsoft Yahei';}
+.worksBox .worksTxt{border-bottom: 1px solid #fff;padding-bottom: 20px;}
+.worksBox .worksTxt p{text-align: center;font: 14px/24px 'Microsoft Yahei';}
+
+.worksBox .worksCont{/*width: 1170px;*/width: 98%;margin: 40px auto;}
+.worksBox .worksCont ul{margin-right: -45px;}
+.worksBox .worksCont li{float: left;margin-right: 45px;margin-bottom: 45px;position: relative;}
+.worksBox .worksCont li,.worksBox .worksCont .img{width: 360px;height: 360px;border-radius: 50%;overflow: hidden;}
+.worksBox .img{position: relative;}
+.worksBox .img:before{width: 100%;height: 100%;position: absolute;content: '';box-shadow: inset 0 0 0 16px rgba(255,255,255,.6),0 1px 2px rgba(0,0,0,.3);-webkit-transition:all 0.3s ease-in-out;transition: all .3s ease-in-out;border-radius: 50%;}
+.worksBox .info{width: 100%;height: 100%;position: absolute;top: 0;left: 0;background-color: rgba(0,0,0,.6);opacity: 0;text-align: center;-webkit-transition:all 0.35s ease-in-out;transition:all 0.35s ease-in-out;padding: 10px 15px;border-radius: 50%;box-sizing: border-box;text-align: center;}
+.worksBox .info h3{-webkit-transform: translateX(-100%);-ms-transform:translateX(-100%);transform: translateX(-100%);color: #fff;transition: all 0.2s ease-in-out;margin: 0 30px;padding: 65px 0 20px 0;}
+.worksBox .info p{padding: 10px 5px;margin: 0 30px;color: #fff;-webkit-transform: translateX(100%);-ms-transform:translateX(100%);transform: translateX(100%);color: #fff;transition: all 0.2s ease-in-out;}
+.worksCont a:hover h3,.worksCont a:hover p{-webkit-transform: ranslateX(0);-ms-transform: translateX(0);transform: translateX(0);}
+.worksCont a:hover .info{opacity: 1;}
 </style>
 </head>
 <body>
+<!-- 头部开始 -->
 <header id="header" class="clearfix">
 	<div class="navbar navbar-default" role="navigation">
 		<div class="navbar-header">
@@ -103,6 +125,87 @@ a {blr:expression(this.onFocus=this.blur())} /* IE */
 		<a href="javascript:">关于我</a>
 	</nav> -->
 </header>
+<!-- 头部结束 -->
+<!-- 个人作品开始 -->
+<div class="worksBox">
+	<h3 class="title">个人作品</h3>
+	<div class="worksTxt">
+		<p>从2013年一路走来，从工作、生活、朋友中积累了很多实用的作品</p>
+		<p>每增加一个案例，就可能会多一份知识的收获</p> 
+		<p>这里展示的是经典案例</p>
+		<p>当然，这不是全部。</p>
+	</div>
+	<div class="worksCont clearfix">
+		<ul>
+			<li>
+				<a href="javascript:">
+					<div class="img"><img src="http://www.aibusy.com/images/case/04.jpg" alt=""></div>
+					<div class="info">
+						<div class="info_back">
+							<h3>专题页</h3>
+							<p>个性化的专题页面，也是大家工作中经常遇到的，所以在案例中，是需要做至少一个专题页面或游戏网站页面的。</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:">
+					<div class="img"><img src="http://www.aibusy.com/images/case/04.jpg" alt=""></div>
+					<div class="info">
+						<div class="info_back">
+							<h3>专题页</h3>
+							<p>个性化的专题页面，也是大家工作中经常遇到的，所以在案例中，是需要做至少一个专题页面或游戏网站页面的。</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:">
+					<div class="img"><img src="http://www.aibusy.com/images/case/04.jpg" alt=""></div>
+					<div class="info">
+						<div class="info_back">
+							<h3>专题页</h3>
+							<p>个性化的专题页面，也是大家工作中经常遇到的，所以在案例中，是需要做至少一个专题页面或游戏网站页面的。</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:">
+					<div class="img"><img src="http://www.aibusy.com/images/case/04.jpg" alt=""></div>
+					<div class="info">
+						<div class="info_back">
+							<h3>专题页</h3>
+							<p>个性化的专题页面，也是大家工作中经常遇到的，所以在案例中，是需要做至少一个专题页面或游戏网站页面的。</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:">
+					<div class="img"><img src="http://www.aibusy.com/images/case/04.jpg" alt=""></div>
+					<div class="info">
+						<div class="info_back">
+							<h3>专题页</h3>
+							<p>个性化的专题页面，也是大家工作中经常遇到的，所以在案例中，是需要做至少一个专题页面或游戏网站页面的。</p>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="javascript:">
+					<div class="img"><img src="http://www.aibusy.com/images/case/04.jpg" alt=""></div>
+					<div class="info">
+						<div class="info_back">
+							<h3>专题页</h3>
+							<p>个性化的专题页面，也是大家工作中经常遇到的，所以在案例中，是需要做至少一个专题页面或游戏网站页面的。</p>
+						</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
