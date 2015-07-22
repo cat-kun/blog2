@@ -1,0 +1,1 @@
+<li><a href="[field:arcurl/]" onfocus="this.blur()"> [field:image/]<span class="bg"></span> <span class="mask"></span></a></li>

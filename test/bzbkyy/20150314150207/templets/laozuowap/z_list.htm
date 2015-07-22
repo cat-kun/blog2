@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=7">
+<meta name="author" content="wuyanshi">
+<!-- 页面在客户端不缓存;must-revalidate 是针对某些浏览器通过返回按钮回到上一个标签而不重新加载 -->
+<meta http-equiv="Cache-Control" content="must-revalidate,no-cache">
+<!-- 页面刷新 -->
+<meta http-equiv="refresh" content="321;">
+<!-- 在iPhone的浏览器中页面将以原始大小显示，并不允许用户手动缩放 -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+<meta name="format-detection" content="telephone=no">
+<!-- 默认手机最佳宽度 -->
+<meta name="MobileOptimized" content="321">
+<title>{dede:field.title/}</title>
+<link href="{dede:global.cfg_templets_skin/}/images/global.css" rel="stylesheet" type="text/css">
+<script src="{dede:global.cfg_templets_skin/}/images/hover.js" type="text/javascript"></script>
+<script language="javascript" src="{dede:global.cfg_templets_skin/}/images/m.js"></script>
+</head>
+<body>
+<div class="content">
+ {dede:include filename="z_head.htm"/}
+
+<div class="list_1">{dede:field name='position'/} &gt;  </div>
+<div class="list_2">
+<div class="bzwz0827">
+ {dede:include filename="z_tel.htm"/}
+  </div>
+  
+  <div class="zj_2_1">
+<ul>
+
+{dede:list pagesize='10'} 
+<li><a href="[field:arcurl/]">[field:title/]</a></li>
+  {/dede:list}  
+
+</ul>
+</div>
+  
+</div> 
+
+{dede:include filename="z_foot.htm"/}
+
+</div>
+<div class="clear"></div>
+
+<div style="height:33px;"></div>
+<div class="fixednavgd"> <img src="{dede:global.cfg_templets_skin/}/images/bottom.gif" border="0" usemap="#Maps">
+<map name="Maps" id="Maps">
+  <area shape="rect" coords="2,2,79,52" href="商务通链接地址" target="_blank">
+  <area shape="rect" coords="77,2,166,52" href="tel:1234567890">
+  <area shape="rect" coords="166,4,242,51" href="商务通链接地址" target="_blank">
+  <area shape="rect" coords="248,5,318,53" href="商务通链接地址" target="_blank">
+</map></div>
+
+</body></html>

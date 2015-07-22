@@ -1,0 +1,1 @@
+<div class="mt"><a href="[field:arcurl/]">[field:image/]</a></div>

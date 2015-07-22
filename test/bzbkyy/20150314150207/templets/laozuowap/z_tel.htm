@@ -1,0 +1,22 @@
+  <script language="JavaScript">
+function xxg()
+{
+  if (form1.cb_num.value=="")
+   { 
+	alert("您没有填联系电话");
+	document.form1.cb_num.focus();
+	return false;
+	 }	 
+return true;
+  }
+</script>
+     <FORM id="form1" name="form1"  action="商务通地址直接跳转到商务通" method=post onSubmit="return xxg();initAd();submitonce(this);">
+      医院提供免费咨询、挂号服务：<br>
+      <strong style=" font-size:12px; font-family:&#39;宋体&#39;; color:#333; font-weight:normal;">请输入您的电话号码，提前与医生一对一交流。</strong><br>
+      <strong style=" font-size:12px; font-family:&#39;宋体&#39;; color:#666; font-weight:normal;">手机号码：</strong>
+      <input type="hidden" name="S" value="tsCB">
+                   <input type="hidden" name="uid" id="uid" value="1234567890">
+                     <input type="hidden" name="surl" id="surl" value="www.laozuo.org">  
+      <input name="cb_num" id="cb_num">
+      <input type="submit" value="提交">
+    </form>

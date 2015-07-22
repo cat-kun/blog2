@@ -1,0 +1,73 @@
+html{overflow-y:scroll;background-image:url(about:blank);background-attachment:fixed}body{margin:0;padding:0;color:#000;font-size:12px;font-family:"Microsoft YaHei","Î¢ÈíÑÅºÚ",Tahoma,Geneva,sans-serif}h1,h2,h3,h4,h5,h6,h7{margin:0;padding:0;font-size:12px}a{color:#006cb3;text-decoration:none}a:hover{color:#006cb3;text-decoration:underline}em{font-style:normal}li{list-style:none}ul{list-style:none;margin:0;padding:0}dl{margin:0;padding:0}img{border:0}
+.wrap{width:390px;margin:0 auto}
+.clear{clear:both}
+#screen{width:378px;height:304px;margin:10px auto 0;background:#edf9f8}
+#screen .bd{
+	width:378px;
+	height:277px;
+	position:relative;
+	overflow:hidden;
+	float:left;
+
+	margin-bottom: 10px;
+}
+#screen .bd .mt{width:390px;height:232px;position:relative;}
+#screen .bd .mt img{width:390px;height:232px}
+
+#screen .bd .mt p{
+	height:44px;
+	line-height:12px;
+	bottom:0;
+	color:#aaa;
+	position:relative;
+	display: block;
+}
+
+#screen .bd .mt h2{
+	width:378px;
+	height:20px;
+	line-height:34px;
+	padding-left:40px;
+	_padding-left:0;
+	left:20px;
+	_left:18px;
+	bottom:0;
+	font-size:14px;
+	font-family:"Microsoft Yahei";
+	_background:0;
+	position:absolute;
+	z-index:3;
+	overflow:hidden;
+	background-image: url(../images/fouce.png);
+	background-repeat: no-repeat;
+	background-position: 0 bottom;
+}
+
+#screen .bd .mt h2 a{color:#0091e1;font-weight:normal}
+#screen .bd .mt .bg{width:720px;height:34px;left:0;bottom:0;background:#000;filter:alpha(opacity=60);opacity:.6;position:absolute;overflow:hidden;z-index:8}
+#screen .hd{
+	width:390px;
+	height:45px;
+	margin-top: 10px;
+
+}
+#screen .hd ul li{
+	width:75px;
+	height:52px;
+	position:relative;
+	overflow:hidden;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 10px;
+	margin-left: 0.5px;
+	float: left;
+}
+#screen .hd ul li a{width:69px;height:45px}
+#screen .hd ul li img{width:69px;height:45px;border:3px solid #690}
+#screen .hd ul li .bg{width:108px;height:24px;left:3px;top:63px;background:url("../images/bg.png") no-repeat;_background:0;_filter:progid:DXImageTransform.Microsoft.gradient(startColorStr="#00000000",endColorStr="#99000000",gradientType='1');position:absolute}
+#screen .hd ul li .txt{width:69px;height:24px;line-height:24px;color:#fff;position:absolute;left:4px;bottom:4px;text-align:left;padding-right:5px;overflow:hidden;cursor:pointer}
+#screen .hd ul li .mask{width:108px;height:85px;left:3px;bottom:3px;z-index:3;filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#66000000',endColorstr='#66000000');background:rgba(0,0,0,0.4);display:block;position:absolute}
+#screen .hd ul li a:hover .mask,#screen .hd ul .on .mask{display:none;position:relative}
+#screen .hd ul li a:hover img,#screen .hd ul .on img{border-color:#0091e1}
+#screen .hd ul li a:hover{color:#fff;text-decoration:none}
+#screen .hd ul li a:hover .bg{background:#0091e1;_filter:none}

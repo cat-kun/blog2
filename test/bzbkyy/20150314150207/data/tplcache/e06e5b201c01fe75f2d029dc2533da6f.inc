@@ -1,0 +1,1 @@
+<p><span>[field:stime/]</span>■ <a title="[field:title/]" href="[field:arcurl/]" target="_blank">[field:title/]</a></p>

@@ -1,0 +1,344 @@
+@charset "gb2312";
+
+
+
+
+@font-face{
+	font-family:"Î¢ÈíÑÅºÚ";
+	src: url("http://www.cdhuidu.com/public/2014/public/2014/family/%CE%A2%EF%BF%BD%EF%BF%BDvista%EF%BF%BD%C5%BA%EF%BF%BDBold.ttf") format('truetype');
+	}
+
+
+
+
+*{ margin:0px; padding:0px;}
+
+
+
+.bn1:hover,.bn1_hover{ background:url("http://www.cdhuidu.com/public/2014/images/bn1.png") top center no-repeat;}
+.bn2:hover,.bn2_hover{ background:url("http://www.cdhuidu.com/public/2014/images/bn2.png") top center no-repeat;}
+.bn3:hover,.bn3_hover{ background:url("http://www.cdhuidu.com/public/2014/images/bn3.png") top center no-repeat;}
+.bn4:hover,.bn4_hover{ background:url("http://www.cdhuidu.com/public/2014/images/bn4.png") top center no-repeat;}
+.bn5:hover,.bn5_hover{ background:url("http://www.cdhuidu.com/public/2014/images/bn5.png") top center no-repeat;}  
+#banner_ctr li.first-item { width:1px; cursor: default; margin:0px;}
+#banner_ctr li.last-item { width:1px; cursor: default; margin:0px;}
+#drag_ctr { position: absolute; top: 0; left: 0px; right:10px; width: 100px; height: 100px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; bottom: 170px; }
+#drag_arrow { position: absolute; top: 0; left:0px; right:10px; width: 100px; height: 90px;}
+
+
+
+#serv{width:1100px; margin:0 auto;}
+.s_tt h2{ font-size:38px; font-family:"Î¢ÈíÑÅºÚ"; color:#585858; overflow:hidden;}
+.s_tt p{ font-family:"Î¢ÈíÑÅºÚ"; font-size:17px; color:#585858; font-weight:bold;}
+.s_bd{width:1100px; margin:0 auto; margin-top:35px;}
+.s_bd_lt{width:239px; height:207px; float:left; border-right:1px solid #e3e3e3;}
+.s_bd_rg{width:135px; height:207px; float:left; margin-left:37px; text-align:center; overflow:hidden;}
+.s_bd_rg img:hover{ opacity:0.4;}
+.s_bd_rg h2{  margin-top:20px;}
+.s_bd_rg h2 a{font-size:20px; font-family:"Î¢ÈíÑÅºÚ"; color:#00b8b9; font-weight:bold;}
+.s_bd_rg h2 a:hover{ color:#000;}
+
+.s_bd_rg h2:hover font{ color:#000 !important;}
+
+.s_bd_rg p{ font-size:12px; font-family:"ËÎÌå"; color:#999a9a; margin-top:10px; line-height:1.3em;}
+
+.id_tj_more{width:135px; color:#bebebe; font-size:12px; font-family:"ËÎÌå"; margin-top:10px; display:block; background:url("http://www.cdhuidu.com/public/2014/images/wzxq.png") right center no-repeat;}
+.id_tj_more:hover{color:#00b8b9;}
+
+
+.id_pd{width:100%; height:860px; margin-top:40px;  background:#00b8b9 repeat-x;}
+.id_pr{width:1100px; height:860px; margin:0 auto;}
+.id_pr_tt{ padding-top:30px;}
+.id_pr_tt_lt{width:600px; float:left;}
+.id_pr_tt_lt h2{ font-size:38px; font-family:"Î¢ÈíÑÅºÚ"; color:#fff; overflow:hidden;}
+.id_pr_tt_lt p{ font-family:"Î¢ÈíÑÅºÚ"; font-size:17px; color:#fff; font-weight:bold;}
+.id_pr_tt_rg{width:300px; height:auto; float:right; padding-top:20px;}
+#tags li{ float:left; width:62px; height:64px; margin-left:10px; background:url("http://www.cdhuidu.com/public/2014/images/pr2.png") no-repeat; text-align:center;}
+#tags li a{ font-size:14px; color:#585858; text-decoration:none; font-family:"Î¢ÈíÑÅºÚ"; margin-top:10px; display:block; -webkit-text-size-adjust: none; font-weight:bold;}
+#tags li:hover{ background:url("http://www.cdhuidu.com/public/2014/images/pr1.png") no-repeat;}
+#tags li:hover a{ color:#00b8b9 !important;}
+#tags li:hover a strong{color:#00b8b9 !important;}
+
+.selectTag{background:url("http://www.cdhuidu.com/public/2014/images/pr1.png") no-repeat !important;}
+.selectTag a{ color:#00b8b9 !important;}
+.selectTag a strong{color:#00b8b9 !important;}
+.qhys{width:1100px; height:672px; margin:auto; overflow:hidden; margin-top:20px;}
+.qhys1{width:1100px; height:672px; margin:auto; overflow:hidden;}
+
+
+
+#news{width:1100px; margin:0 auto; margin-top:45px;}
+.news_tt{}
+.new_tt h2{ font-size:38px; font-family:"Î¢ÈíÑÅºÚ"; color:#585858; overflow:hidden;}
+.new_tt p{ font-size:17px; font-family:"Î¢ÈíÑÅºÚ"; color:#585858; font-weight:bold;}
+
+.new_bd1{ margin-top:30px;}
+.new_bd1_lt{width:100px; height:230px; float:left;}
+.new_bd1_ct{width:740px; float:left; margin-left:5px; height:auto;}
+.new_bd1_ct ul li{ width:175px; height:auto; float:left; margin-left:25px; text-align:left;}
+.new_bd1_ct ul li .new_bd1_ct_img{height:108px;}
+.new_bd1_ct ul li img{width:175px; height:108px; border:none;}
+.new_bd1_ct ul li h5 a{color:#000000;background:none;height:25px; line-height:25px; margin:5px 0px;  font-size:14px; width:175px;font-family:"ËÎÌå"; font-weight:100; }
+.new_bd1_ct ul li p{width:175px; height:auto; font-size:12px; color:#8c8c8c; line-height:18px; padding-bottom:10px; border-bottom:1px solid #d2d2d2;}
+.new_bd1_ct ul li span{ display:block; color:#8c8c8c; font-family:Arial; font-size:9px; margin-top:5px;}
+.new_bd1_ct ul li a{width:107px; height:14px;display:block; color:#8c8c8c; font-family:Arial; font-size:9px; margin-top:3px;}
+.new_bd1_ct ul li a:hover{color:#00b8b9; }
+.new_bd1_rg{width:236px; height:auto; float:right;}
+.new_bd1_rg ul li{ width:236px; height:auto; float:left;}
+.new_bd1_rg ul li a{width:221px; display:block; height:28px; line-height:28px; background:url("http://www.cdhuidu.com/public/2014/images/id_125.png") center left no-repeat;color:#8c8c8c;font-size:12px; font-family:"ËÎÌå";padding-left:15px; border-bottom:1px dotted #7d7d7d;}
+.new_bd1_rg ul li a:hover{ background:url("http://www.cdhuidu.com/public/2014/images/main06_96-120.png") no-repeat; color:#00b8b9;}
+
+.new_bd2{width:1100px; height:156px; margin:40px auto 0 auto; position:relative;}
+.new_bd2_lt{float:left; width:373px;}
+.new_bd2_lt h5{ float:left; margin-left:20px; width:218px; border-bottom:1px solid #dddddd;}
+.new_bd2_lt h5 p{ font-family:"Î¢ÈíÑÅºÚ"; font-size:18px; color:#585858;  float:left; font-weight:bold;}
+.new_bd2_lt h5 a{ float:right; display:block; width:29px; height:29px; background:url("http://www.cdhuidu.com/public/2014/images/id_115.png") no-repeat;}
+.new_bd2_lt h5 a:hover{background:url("http://www.cdhuidu.com/public/2014/images/moreb.png") no-repeat;}
+.new_bd2_lt ul{width:218px; float:left; margin-left:20px; margin-top:10px;}
+.new_bd2_lt ul li a{width:200px; display:block;line-height:23px; background:url("http://www.cdhuidu.com/public/2014/images/id_125.png") left 5px  no-repeat;color:#8c8c8c;font-size:12px; font-family:"ËÎÌå";padding-left:15px;}
+.new_bd2_lt ul li a:hover{ background:url("http://www.cdhuidu.com/public/2014/images/main06_96-120.png")left -3px no-repeat; color:#00b8b9;}
+
+.new_bd2_ct{ float:left;width:373px; margin-left:40px;}
+.new_bd2_ct h5{ float:left; margin-left:20px; width:218px; border-bottom:1px solid #dddddd;}
+.new_bd2_ct h5 p{ font-family:"Î¢ÈíÑÅºÚ"; font-size:18px; color:#585858; float:left; font-weight:bold;}
+.new_bd2_ct h5 a{ float:right; display:block; width:29px; height:29px; background:url("http://www.cdhuidu.com/public/2014/images/id_115.png") no-repeat;}
+.new_bd2_ct h5 a:hover{ background:url("http://www.cdhuidu.com/public/2014/images/moreb.png") no-repeat;}
+.new_bd2_ct ul{width:218px; float:left; margin-left:20px; margin-top:10px;}
+.new_bd2_ct ul li a{width:200px; display:block;line-height:23px; background:url("http://www.cdhuidu.com/public/2014/images/id_125.png") left 5px  no-repeat;color:#8c8c8c;font-size:12px; font-family:"ËÎÌå";padding-left:15px;}
+.new_bd2_ct ul li a:hover{ background:url("http://www.cdhuidu.com/public/2014/images/main06_96-120.png")left -3px no-repeat; color:#00b8b9;}
+
+
+
+.footer{width:100%; height:230px; background:#363636; margin:auto; margin-top:20px;}
+#footer{width:1100px; height:230px; margin:0 auto; position:relative;}
+.ft_lt{width:170px; height:150px; margin-top:45px; float:left; border-right:1px dotted #5c5c5c;}
+.ft_lt p{width:150px; height:25px; line-height:25px; margin:auto; font-size:12px; font-family:"ËÎÌå"; color:#7d7d7d; padding-left:10px; margin-top:8px;}
+.ft_ct{width:570px; float:left; height:auto; margin-left:30px;}
+.ft_ct p{ font-size:12px; font-family:"ËÎÌå"; color:#252525; width:570px; float:left; line-height:1.8em; margin-top:45px;}
+.ft_ct p a{font-size:12px; font-family:"ËÎÌå"; color:#646363; padding-left:5px; padding-right:5px;}
+.ft_ct p a:hover{ color:#00b8b9;}
+.ft_ct ul{ width:570px; float:left; margin-top:20px; font-size:12px; font-family:"ËÎÌå"; color:#646363;}
+.ft_ct ul li{width:570px; float:left; line-height:20px;}
+.ft_ct span{ margin-top:10px; float:left;}
+.rg{ float:right; margin-top:50px;}
+.rg img:hover{ opacity:1;}
+.gall_img_more:hover{ opacity:0.4;}
+.galleryImage{width:273px; height:166px; float:left; margin:1px;overflow:hidden}
+.galleryImage a img{width:273px; height:166px;}
+.galleryImage div{background:#00b8b9;filter:alpha(opacity=90);-moz-opacity:0.9;-khtml-opacity: 0.9;   opacity: 0.9;margin:0px 0px;width:273px; height:75px;}
+.galleryImage h3{width:273px; height:28px; line-height:28px;display: block;overflow: hidden;font-size: 14px;color: white; margin-left: 10px; padding:0px; padding-top:3px; float:left}
+.galleryImage h3 a{color:#fff}
+.galleryImage h3 a:hover{color:#F4F4F4}
+.galleryImage p{color: #fff;padding-left: 10px; margin-bottom:7px; float:left; margin-top:-5px;}
+.galleryImage p a{ padding:4px 5px; background:#007d7f; font-size:12px; line-height:24px;HEIGHT:24PX;display:24px; color:#fff; border-radius:3px;}
+.galleryImage p a:hover{ background:#fff; color:#00b8b9;}
+
+.new_bd2_rg{ position:absolute; right:0; width:262px; height:210px; background:url("http://www.cdhuidu.com/public/2014/images/main06_08.png") no-repeat; top:-175px;}
+.new_bd2_rg h5{width:226px; height:24px; line-height:20px; border-radius:2px; font-family:"Î¢ÈíÑÅºÚ"; font-size:14px; color:#ffffff; margin:auto; overflow:hidden; margin-top:18px; font-weight:100; padding-left:5px;}
+.new_bd2_rg h5 a{ float:right; display:block; width:19px; height:15px; margin-right:10px; margin-top:2px;}
+.new_bd2_rg ul{ width:226px; margin:auto; margin-top:10px;}
+.new_bd2_rg ul li{ float:left; color:#fff; font-size:14px; font-family:Arial, Helvetica, sans-serif; line-height:22px; margin-left:22px;}
+
+.f_new_bd2_rg{ position:absolute; right:0; width:233px; height:210px; background:url("http://www.cdhuidu.com/public/2014/images/main06_08ny.png") no-repeat; top:-175px;}
+.f_new_bd2_rg h5{width:200px; height:24px; line-height:24px; border-radius:2px; font-family:"Î¢ÈíÑÅºÚ"; font-size:14px; color:#ffffff; margin:auto; overflow:hidden; margin-top:18px; font-weight:100; padding-left:5px;}
+.f_new_bd2_rg h5 a{ float:right; display:block; width:19px; height:15px; margin-right:6px; margin-top:4px;}
+.f_new_bd2_rg ul{ width:220px; margin-top:13px;}
+.f_new_bd2_rg ul li{ float:left; color:#fff; font-size:14px; font-family:Arial, Helvetica, sans-serif; line-height:22px; margin-left:40px;}
+
+
+.new_sev_bd2_rg{ position:absolute; right:0; width:262px; height:191px; background:url("http://www.cdhuidu.com/public/2014/images/sub02_104.png") no-repeat; top:-175px;}
+.new_sev_bd2_rg h5{width:226px; height:24px; line-height:20px; border-radius:2px; font-family:"Î¢ÈíÑÅºÚ"; font-size:14px; color:#ffffff; margin:auto; overflow:hidden; margin-top:20px; font-weight:100; padding-left:5px;}
+.new_sev_bd2_rg h5 a{ float:right; display:block; width:19px; height:15px; margin-right:10px; margin-top:2px;}
+.new_sev_bd2_rg ul{ width:226px; margin-top:10px;}
+.new_sev_bd2_rg ul li{ float:left; color:#fff; font-size:13px; font-family:Arial, Helvetica, sans-serif; line-height:22px; padding-left:38px;}
+
+
+.id_qq{width:94px; height:22px;   margin:auto; margin-top:10px;}
+.id_qq a{width:94px; height:22px; line-height:22px; text-align:center; display:block; background:url("http://www.cdhuidu.com/public/2014/images/id_129.png") no-repeat; font-size:12px; font-family:Arial, Helvetica, sans-serif; color:#FFF;}
+.id_qq a:hover{ opacity:0.6;}
+
+
+
+
+.n_hd{width:100%; height:70px; margin:auto; background:url("http://www.cdhuidu.com/public/2014/images/bg.jpg");}
+#n_hd{width:1024px; height:70px; margin: 0 auto;}
+.s_nav{float:right; width:575px; height:70px; overflow:hidden;}
+.s_nav ul li{ width:95px; height: 70px; float:left; text-align:center;}
+.s_nav ul li a{color:#fff; font-size:15px; font-family:"Î¢ÈíÑÅºÚ"; width:90px; height:70px; padding-top:15px; display:block; font-weight:bold;}
+.s_nv_01:hover{background:url("http://www.cdhuidu.com/public/2014/images/sy.png"); font-size:0px !important;}
+.s_nv_01:hover font{ font-size:0px !important;}
+
+.s_nv_02:hover{background:url("http://www.cdhuidu.com/public/2014/images/nav_02.png"); font-size:0px !important;}
+.s_nv_02:hover font{ font-size:0px !important;}
+
+.s_nv_03{ background:url("http://www.cdhuidu.com/public/2014/images/nav_03.png"); font-size:0px !important;}
+.s_nv_03 font{ font-size:0px !important;}
+
+.s_nv_04:hover{background:url("http://www.cdhuidu.com/public/2014/images/nav_04.png"); font-size:0px !important;}
+.s_nv_04:hover font{ font-size:0px !important;}
+
+.s_nv_05:hover{background:url("http://www.cdhuidu.com/public/2014/images/nav_05.png"); font-size:0px !important;}
+.s_nv_05:hover font{ font-size:0px !important;}
+
+.s_nv_06:hover{background:url("http://www.cdhuidu.com/public/2014/images/nav_06.png"); font-size:0px !important;}
+.s_nv_06:hover font{ font-size:0px !important;}
+
+
+.s_01{width:1002px; height:auto; margin:0 auto; margin-top:50px;}
+
+
+.s_01 h2{ width:911px; height:78px; margin:0px;background:url("http://www.cdhuidu.com/public/2014/images/serve2.png") top left no-repeat; border-bottom:1px solid #dcdcdc; padding-left:90px; overflow:hidden;}
+.s_01_1{width:130px; height:100px; float:left; margin-top:40px;}
+.s_01_1 span{ float:left; display:block; width:47px; height:100px;}
+.s_01_1 h5{ width:80px; height:25px; line-height:25px; font-size:18px; color:#00b8b9; font-family:"Î¢ÈíÑÅºÚ"; float:right;}
+.s_01_1 h5 a{width:80px; height:25px; line-height:25px; font-size:18px; color:#00b8b9; font-family:"Î¢ÈíÑÅºÚ"; float:right; display:block; margin:auto !important;}
+
+.s_01_1 p{width:80px; height:auto; line-height:1.4em; font-size:12px; font-family:"ËÎÌå"; color:#999a9a; float:right; margin-top:5px;}
+.s_01_1 a{ float:right;  font-size:10px; color:#999a9a; font-family:Arial; display:block; margin-top:5px; margin-right:35px;}
+.s_01_1 a:hover{ color:#00b8b9;}
+
+.s_01_2{width:130px; height:100px; float:left; margin-top:40px; margin-left:44px;}
+.s_01_2 span{ float:left; display:block; width:47px; height:100px;}
+.s_01_2 h5{ width:80px; height:25px; line-height:25px; font-size:18px; color:#00b8b9; font-family:"Î¢ÈíÑÅºÚ"; float:right;}
+.s_01_2 h5 a{width:80px; height:25px; line-height:25px; font-size:18px; color:#00b8b9; font-family:"Î¢ÈíÑÅºÚ"; float:right; display:block; margin:auto !important;}
+.s_01_2 p{width:80px; height:auto; line-height:1.4em; font-size:12px; font-family:"ËÎÌå"; color:#999a9a; float:right; margin-top:5px;}
+.s_01_2 a{ float:right;  font-size:10px; color:#999a9a; font-family:Arial; display:block; margin-top:5px; margin-right:35px;}
+.s_01_2 a:hover{ color:#00b8b9;}
+
+
+.s_wgw{100%; height:405px; margin:auto; margin-top:30px; background:#00b8b9;}
+#s_wgw{width:1002px; height:405px; height:auto; margin:auto; padding-top:40px;}
+#s_wgw h5{width:911px; height:74px; background:url("http://www.cdhuidu.com/public/2014/images/sub02_24-27.png") left center no-repeat; padding-left:90px; overflow:hidden; border-bottom:1px solid #00a9a9; padding-bottom:6px;}
+
+.s_wx_01{width:137px; height:auto; float:left; overflow:hidden; text-align:center; margin-top:40px;}
+.s_wx_01 span{ display:block; margin-top:10px; width:137px; line-height:30px; font-family:"Î¢ÈíÑÅºÚ"; font-size:18px; font-weight:100; color:#fff;}
+.s_wx_01 span a{display:block; margin-top:10px; width:137px; line-height:30px; font-family:"Î¢ÈíÑÅºÚ"; font-size:18px; font-weight:100; color:#fff;}
+.s_wx_01 p{ margin-top:8px; font-family:"ËÎÌå"; color:#fff; font-size:12px; width:137px; line-height:17px;}
+.s_wx_01 a{ font-size:9px; font-family:Arial; color:#fff; display:block; margin-top:10px;}
+
+.s_wx_02{width:137px; height:auto; float:left; margin-left:36px; overflow:hidden; text-align:center; margin-top:40px;}
+.s_wx_02 span{ display:block; margin-top:10px; width:137px; line-height:30px; font-family:"Î¢ÈíÑÅºÚ"; font-size:18px; font-weight:100; color:#fff; font-weight:bold;}
+.s_wx_02 span a{display:block; margin-top:10px; width:137px; line-height:30px; font-family:"Î¢ÈíÑÅºÚ"; font-size:18px; font-weight:100; color:#fff; font-weight:bold;}
+.s_wx_02 p{ margin-top:8px; font-family:"ËÎÌå"; color:#fff; font-size:12px; width:137px; line-height:17px;}
+.s_wx_02 a{ font-size:9px; font-family:Arial; color:#fff; display:block; margin-top:10px;}
+
+
+.wsc{width:1002px; height:auto; margin:0 auto; margin-top:50px;}
+.wsc h2{width:911px; height:78px; background:url("http://www.cdhuidu.com/public/2014/images/serve4.png") top left no-repeat; border-bottom:1px solid #dcdcdc; padding-left:90px; overflow:hidden;}
+
+.wsc_1{width:111px; float:left; margin-top:40px; text-align:center; overflow:hidden;}
+.wsc_1 span{ display:block;margin-top:10px; width:111px; line-height:30px; font-family:"Î¢ÈíÑÅºÚ"; font-size:18px; font-weight:bold; color:#00b8b9;}
+.wsc_1 span a{display:block;margin-top:10px; width:111px; line-height:30px; font-family:"Î¢ÈíÑÅºÚ"; font-size:18px; font-weight:bold; color:#00b8b9;}
+.wsc_1 p{margin-top:8px; font-family:"ËÎÌå"; font-size:12px; width:111px; line-height:17px; text-align:left; color:#999a9a;}
+.wsc_1 a{font-size:9px; font-family:Arial; color:#999a9a; display:block; margin-top:10px;}
+.wsc_1 a:hover{ color:#00b8b9;}
+.wsc_2{width:111px; float:left; margin-top:40px; margin-left:37px; text-align:center; overflow:hidden;}
+.wsc_2 span{ display:block;margin-top:10px; width:111px; line-height:30px; font-family:"Î¢ÈíÑÅºÚ"; font-size:18px; font-weight:bold; color:#00b8b9;}
+.wsc_2 span a{display:block;margin-top:10px; width:111px; line-height:30px; font-family:"Î¢ÈíÑÅºÚ"; font-size:18px; font-weight:bold; color:#00b8b9;}
+.wsc_2 p{margin-top:8px; font-family:"ËÎÌå"; font-size:12px; width:111px; line-height:17px; text-align:left; color:#999a9a;}
+.wsc_2 a{font-size:9px; font-family:Arial; color:#999a9a; display:block; margin-top:10px;}
+.wsc_2 a:hover{ color:#00b8b9;}
+
+
+.wxx{width:100%; height:415px; margin:auto; margin-top:50px; background:#00b8b9;}
+#wxx{width:1002px; height:auto; margin:0 auto; padding-top:50px;}
+#wxx h5{width:911px; height:74px; background:url("http://www.cdhuidu.com/public/2014/images/sub2.png") left center no-repeat; padding-left:90px; overflow:hidden; border-bottom:1px solid #00a9a9; padding-bottom:6px;}
+
+.wxx_1{width:111px; float:left; margin-top:40px; text-align:center; overflow:hidden;}
+.wxx_1 span{ display:block;margin-top:10px; width:111px; line-height:30px; font-family:"Î¢ÈíÑÅºÚ"; font-size:18px; font-weight:bold; color:#fff;}
+.wxx_1 span a{display:block;margin-top:10px; width:111px; line-height:30px; font-family:"Î¢ÈíÑÅºÚ"; font-size:18px; font-weight:bold; color:#fff;}
+.wxx_1 p{margin-top:8px; font-family:"ËÎÌå"; font-size:12px; width:111px; line-height:17px; text-align:left; color:#fff;}
+.wxx_1 a{font-size:9px; font-family:Arial; color:#fff; display:block; margin-top:10px;}
+
+.wxx_2{width:111px; float:left; margin-top:40px; margin-left:37px; text-align:center; overflow:hidden;}
+.wxx_2 span{ display:block;margin-top:10px; width:111px; line-height:30px; font-family:"Î¢ÈíÑÅºÚ"; font-size:18px; font-weight:bold; color:#fff;}
+.wxx_2 span a{display:block;margin-top:10px; width:111px; line-height:30px; font-family:"Î¢ÈíÑÅºÚ"; font-size:18px; font-weight:bold; color:#fff;}
+.wxx_2 p{margin-top:8px; font-family:"ËÎÌå"; font-size:12px; width:111px; line-height:17px; text-align:left; color:#fff;}
+.wxx_2 a{font-size:9px; font-family:Arial; color:#fff; display:block; margin-top:10px;}
+
+
+
+.app{width:1002px; margin:0 auto; height:auto; margin-top:50px;}
+.app h2{width:620px;height: 78px;background: url("http://www.cdhuidu.com/public/2014/images/serve6.png") top left no-repeat;border-bottom: 1px solid gainsboro;padding-left: 90px;overflow: hidden;}
+.app_1{width:210px; height:100px; float:left; margin-top:40px;}
+.app_1 span{ float:left; display:block; width:70px; height:100px;}
+.app_1 span a{float:left; display:block; width:70px; height:100px; margin:auto;}
+.app_1 h5{ width:130px; height:25px; line-height:25px; font-size:18px; color:#00b8b9; font-family:"Î¢ÈíÑÅºÚ"; float:right;}
+.app_1 h5 a{width:130px; height:25px; line-height:25px; font-size:18px; color:#00b8b9; font-family:"Î¢ÈíÑÅºÚ"; float:right; margin:auto;}
+.app_1 p{width:130px; height:auto; line-height:1.4em; font-size:12px; font-family:"ËÎÌå"; color:#999a9a; float:right; margin-top:5px;}
+.app_1 a{ float:right;  font-size:10px; color:#999a9a; font-family:Arial; display:block; margin-top:5px; margin-right:85px;}
+.app_1 a:hover{ color:#00b8b9;}
+
+.app_2{width:210px; height:100px; float:left; margin-top:40px; margin-left:44px;}
+.app_2 span{ float:left; display:block; width:70px; height:100px;}
+.app_2 span a{float:left; display:block; width:70px; height:100px; margin:auto;}
+.app_2 h5{ width:130px; height:25px; line-height:25px; font-size:18px; color:#00b8b9; font-family:"Î¢ÈíÑÅºÚ"; float:right;}
+.app_2 h5 a{width:130px; height:25px; line-height:25px; font-size:18px; color:#00b8b9; font-family:"Î¢ÈíÑÅºÚ"; float:right; margin:auto;}
+.app_2 p{width:130px; height:auto; line-height:1.4em; font-size:12px; font-family:"ËÎÌå"; color:#999a9a; float:right; margin-top:5px;}
+.app_2 a{ float:right;  font-size:10px; color:#999a9a; font-family:Arial; display:block; margin-top:5px; margin-right:85px;}
+.app_2 a:hover{ color:#00b8b9;}
+
+.s_f_r{ position:absolute; right:0; top:-245px;}
+
+
+
+.a_case{width:1002px; height:auto; margin:0 auto; margin-top:20px;}
+.gb_type{width:1002px; height:auto; margin:auto;}
+.gb_type ul li{ float:left; width:62px; height:64px; margin-left:10px; background:url("http://www.cdhuidu.com/public/2014/images/pr2.png") no-repeat; text-align:center;}
+.gb_type ul li a{font-size:14px; color:#585858; text-decoration:none; font-family:"Î¢ÈíÑÅºÚ"; margin-top:10px; display:block; -webkit-text-size-adjust: none; font-weight:bold;}
+.gb_type ul li:hover{ background:url("http://www.cdhuidu.com/public/2014/images/pr1.png") no-repeat;}
+.gb_type ul li:hover a{ color:#00b8b9 !important;}
+.gb_type ul li:hover a strong{color:#00b8b9 !important;}
+
+
+
+.gb_chinnltype{width:1002px; height:auto; margin:auto; margin-top:10px;padding-left:10px;}
+.gb_chinnltype ul li{ float:left; width:auto;height:30px; margin-right:10px;}
+.gb_chinnltype ul li a{ padding:5px; color:#fff;background:url("http://www.cdhuidu.com/public/2014/images/type_bg.png") repeat-x center; display:block;height:30px; line-height:25px;text-align:center; font-family:"ËÎÌå";}
+.gb_chinnltype ul li a:hover{ background:url("http://www.cdhuidu.com/public/2014/images/type_bg_hover.png") repeat-x center; color:#00b8b9;}
+.type_gd{background:url("http://www.cdhuidu.com/public/2014/images/type_bg_hover.png") repeat-x center !important; color:#00b8b9 !important;height:30px; line-height:25px;}
+.case_body{width:1002px; min-height:500px; max-height:8000px; margin:auto; background:#009d9e; margin-top:30px; margin-bottom:40px;padding-top:20px;}
+.cs_title{width:664px; height:95px; border-bottom:1px solid #2f8c8c; margin:auto; }
+.cs_title h2{width:664px; height:30px; line-height:30px; text-align:center; font-family:"Î¢ÈíÑÅºÚ"; font-size:18px; color:#FFF;}
+.cs_title span{width:664px; height:24px; line-height:24px; display:block; text-align:center; font-size:12px; font-family:Arial; color:#fff;}
+.cs_title span a{color:#fff}
+.cs_title span a:hover{text-decoration:underline}
+.cs_title p{width:664px; height:auto; line-height:1.8em; font-family:"ËÎÌå"; color:#2cc3c4; font-size:12px; margin-top:15px;}
+.cs_by{width:664px; height:auto; display:block; overflow:hidden; margin:auto; margin-top:40px; padding-bottom:40px;}
+.cs_fot{width:1002px; height:95px; margin:60px auto;}
+
+.ls_case{width:1024px; margin:auto;}
+.ls_case ul li{ float:left; margin-left:10px; margin-right:10px; width:236px; height:223px; background:#009d9e; text-align:center; margin-top:19px;}
+.ls_case ul li h3{width:222px; height:auto; margin:auto; text-indent:6px;text-align:left; color:#fff; font-family:"ËÎÌå"; font-size:12px; font-weight:bold; line-height:30px; overflow:hidden; margin:0px; padding:0px;}
+.ls_case ul li span{width:222px; display:block; height:18px; line-height:18px; text-align:left; margin:auto; font-size:12px; font-family:Arial; color:#2cc3c4;}
+.ls_case ul li:hover{ background:#FFF;cursor:pointer;transition: background 0.3s;-moz-transition: background 0.3s;-webkit-transition: background 0.3s;-o-transition: background 0.3s;}
+.ls_case ul li:hover h3{ color:#00b8b9;}
+.ls_case ul li:hover span{ color:#999;}
+
+.ls_c_img{ display:block; width:224px; height:137px; overflow:hidden; margin-top:6px; margin-left:6px;}
+.ls_c_img img{width:224px; height:136px;}
+
+.n_hd_case{width: 100%;height: 70px;margin: auto;background: url("http://www.cdhuidu.com/public/2014/images/sub02_02.png"); border-bottom:1px solid #008f90;}
+
+#qqkf img{filter:alpha(opacity=100);-moz-opacity:1;-khtml-opacity: 1;   opacity: 1;}
+#qqkf{width:110px;height:575px;position:absolute;}
+#qqkf .box{background:url("http://www.cdhuidu.com/public/qqkf/qqkf_bg.png") repeat-y}
+#qqkf .qqlist{padding:10px 0px;}
+#qqkf .qqlist a{font-szie:12px;background:url("http://www.cdhuidu.com/public/qqkf/qqkf_btn_gray.png");width:63px;height:26px;display:block;margin:5px auto;text-decoration:none;line-height:25px;padding-left:22px;color:#585858}
+#qqkf .qqlist a:hover{background:url("http://www.cdhuidu.com/public/qqkf/qqkf_btn_blue.png");color:#fff;}
+#qqkf .gotop{background:url("http://www.cdhuidu.com/public/qqkf/qqkf_gotop.png");height:81px;width:110px;display:block; }
+
+.wap_case{margin-top:30px}
+.wap_case .case_list{height:454px;overflow:hidden}
+.wap_case li{float:left;margin:0px 13px;position:relative;cursor:pointer;}
+.wap_case li.odd{background:url("http://www.cdhuidu.com/public/2014/images/white_apple.png") no-repeat ;width:219px;height:454px}
+.wap_case li.even{background:url("http://www.cdhuidu.com/public/2014/images/black_apple.png") no-repeat ;width:219px;height:454px}
+.wap_case li .ls_c_img{display:block;width:187px;height:267px;margin:84px 0 0 17px;}
+.wap_case li .ls_c_img img{width:187px;height:267px}
+.wap_case li .showbox{position:absolute;top:0px;width:100%;text-align:center;color:#fff;font-size:12px;line-height:22px;margin-top:84px;margin-left:17px;padding-top:45px;width:187px;height:222px;filter:alpha(opacity=0);-moz-opacity:0; opacity:0;background:#18BDBE;}
+.wap_case li .showbox h3{font-weight:bold;font-size:12px;margin-top:10px}
+.wap_case li .showbox img{width:130px;height:130px;}
+
+.wap_case .case_page{text-align:center;clear:both;margin:30px 0px}
+.wap_case .case_page a.current{background:url("http://www.cdhuidu.com/public/2014/images/current_arrow_1.png");width:14px;height:14px}
+.wap_case .case_page a{background:url("http://www.cdhuidu.com/public/2014/images/arrow_1.png");width:14px;height:14px;display:inline-block;cursor:pointer;margin:0px 5px}

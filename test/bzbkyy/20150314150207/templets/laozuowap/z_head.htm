@@ -1,0 +1,31 @@
+ <a name="top"></a>
+<div class="head_2"><a href="{dede:global.cfg_basehost/}/"><img src="{dede:global.cfg_templets_skin/}/images/logo_1.jpg"></a></div>
+<div class="menu_1">
+<ul>
+<li style="width:80px;"><a href="{dede:global.cfg_basehost/}/">网站首页</a></li>
+<li><a href="{dede:global.cfg_basehost/}/jianjie/">医院简介</a></li>
+<li><a href="{dede:global.cfg_basehost/}/zhuanjia/">权威专家</a></li>
+<li><a href="{dede:global.cfg_basehost/}/dizhi">医院地址</a></li>
+<li style="width:80px;"><a href="{dede:global.cfg_basehost/}/anli/">康复病例</a></li>
+<li><a href="{dede:global.cfg_basehost/}/liaofa/">权威疗法</a></li>
+<li><a href="{dede:global.cfg_basehost/}/zixun/" target="_blank">在线咨询</a></li>
+<li><a href="{dede:global.cfg_basehost/}/zixun/" target="_blank">预约挂号</a></li>
+</ul>
+</div>
+<div class="zixizx_1"><img src="{dede:global.cfg_templets_skin/}/images/zxzx_0001.jpg" border="0" usemap="#Map001">
+<map name="Map001" id="Map001"><area shape="rect" coords="25,27,137,66" href="{dede:global.cfg_basehost/}/zixun/" target="_blank"><area shape="rect" coords="137,25,293,64" href="tel:1234567890"></map></div>
+
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/images/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	var kj = $(".zixizx_1");
+	var kjtop = kj.offset().top;
+	$(window).scroll(function(){
+		if ($(window).scrollTop() >= kjtop){
+		kj.css({"position":"fixed","top":"0"});}
+		else{
+		kj.css({"position":"relative","top":"0"});
+		}
+	});
+});
+</script>

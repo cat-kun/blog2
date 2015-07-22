@@ -1,0 +1,2 @@
+<p class="p10"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+                    <p class="p11">[field:infos/]...<a href="[field:arcurl/]" target="_blank"><span style="color:#FF0000; font-weight:bold"> [详情]</span></a></p>

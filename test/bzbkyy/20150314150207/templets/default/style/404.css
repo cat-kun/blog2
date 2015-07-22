@@ -1,0 +1,71 @@
+html, body { margin: 0; padding: 0; }
+.mod_lost_child p, .mod_lost_child_little p { margin: 0; padding: 0; }
+.mod_lost_child, .mod_lost_child_little { color: #000000; font: 14px/1.33 'Hiragino Sans GB', 'Microsoft Yahei'; margin: 50px auto; width: 720px; text-align: left; }
+.lost_child_box { margin-bottom: 10px; color: #000; border: 1px solid #9EAA99; border-radius: 3px; box-shadow: 0 0 4px rgba(0,0,0,.25); }
+.mod_lost_child .hd { position: relative; border-radius: 3px 3px 0 0; padding-left: 280px; height: 98px; background: #F9F9F9; border-bottom: 1px solid #D9D9D9; }
+.mod_lost_child .hd p { color: #545454; font-size: 18px; font-weight: bold; }
+.mod_lost_child .hd p span { display: block; }
+.mod_lost_child .hd .wrong { position: absolute; top: 22px; left: 300px; font-size: 48px; color: #333333; _font-size: 52px; }
+.mod_lost_child .hd .other_info { position: absolute; top: 30px; left: 435px; width: 250px; line-height: 1.33; }
+.mod_lost_child .bd { padding: 12px 30px 18px; background: #F9F9F9; }
+.mod_lost_child .child_info { position: relative; *zoom:1;}
+.mod_lost_child .child_info .child_pic { padding: 8px; border-radius: 5px; position: absolute; top: -84px; left: 0; background: url(img/bg.png) no-repeat; }
+.mod_lost_child .child_info .child_pic a { display: block; width: 220px; height: 330px; overflow: hidden; text-align: center; border-radius: 3px; }
+.mod_lost_child .child_info .child_pic img { vertical-align: top; border: 0 none; border-radius: 5px; }
+.mod_lost_child .child_info .info_person { padding: 5px 0 5px 270px; min-height: 240px; _height: 240px; }
+.mod_lost_child .child_info .info_person p { font-weight: bold; line-height: 30px; }
+.mod_lost_child .child_info .info_person span, .mod_lost_child .info_details p span { color: #545454; font-weight: normal; }
+.mod_lost_child .info_details { padding: 15px; background: #F2F2F2; border-radius: 5px; box-shadow: inset 0 0 5px rgba(0,0,0,.15); }
+.mod_lost_child .info_details p { line-height: 2; }
+/*mod_lost_child_all ft*/
+.mod_lost_child .ft, .mod_lost_child_little .ft { border-top: 1px solid #D9D9D9; *zoom:1;
+background-image: url(img/ft_bg.png); background-repeat: repeat-x; height: 70px; border-radius: 0 0 3px 3px; }
+.mod_lost_child .ft:after, .mod_lost_child_little .ft:after, .info:after { clear: both; height: 0; display: block; content: ""; }
+.mod_lost_child .ft p, .mod_lost_child_little .ft p { margin: 0; text-align: right; }
+.mod_lost_child .ft .support_company, .mod_lost_child_little .ft .support_company { margin-left: 10px; float: left; border-right: 1px solid #E5E5E5; }
+.mod_lost_child .ft .support_company a, .mod_lost_child_little .ft .support_company a { margin: 10px 20px 0px 10px; display: inline-block; width: 50px; height: 50px; line-height: 150px; overflow: hidden; background: url(img/tc_gy.png) no-repeat; }
+.mod_lost_child .ft .baby_back, .mod_lost_child_little .ft .baby_back { float: left; }
+.mod_lost_child .ft .baby_back a, .mod_lost_child_little .ft .baby_back a { margin: 10px 20px 10px; display: inline-block; width: 107px; height: 49px; line-height: 150px; overflow: hidden; background: url(img/baby_back.png) no-repeat }
+.mod_lost_child .ft .side_infos, .mod_lost_child_little .ft .side_infos { padding: 25px 30px 0; }
+.mod_lost_child .ft .side_infos a, .mod_lost_child_little .ft .side_infos a { color: #545454; text-decoration: none; font-weight: bold; }
+.mod_lost_child .ft .side_infos .symbol, .mod_lost_child_little .ft .side_infos .symbol { border-right: 1px solid #999999; display: inline-block; height: 16px; margin: 0 10px; vertical-align: -3px; *vertical-align:middle;}
+.mod_lost_child a.back_home, .mod_lost_child_little a.back_home { background-image: url(img/back_home.png); background-repeat: no-repeat; background-position: 0 center; padding-left: 22px; }
+/*mod_lost_child_little*/
+.mod_lost_child_little .wrong, .mod_lost_child_little .name, .mod_lost_child_little .sex, .mod_lost_child_little .birthday, .mod_lost_child_little .losttime { display: none; }
+.lost_child_little_box { border: 1px solid #9EAA99; border-radius: 3px; box-shadow: 0 0 4px rgba(0, 0, 0, 0.25); }
+.mod_lost_child_little .hd { padding-left: 140px; height: 28px; }
+.mod_lost_child_little .bd { zoom: 1 }
+.mod_lost_child_little .child_info { position: relative; }
+.mod_lost_child_little .child_info .child_pic { position: absolute; top: -30px; left: 10px; }
+.mod_lost_child_little .child_pic img { border: 0 none; border-radius: 3px; }
+.mod_lost_child_little .child_pic a { border-radius: 3px; display: block; overflow: hidden; text-align: center; width: 120px; height: 198px; }
+.mod_lost_child_little .lost_child_box p.other_info { line-height: 1.33; color: #545454; font-size: 18px; font-weight: bold; margin: 10px 0 15px; }
+.mod_lost_child_little .child_info .info_person { padding: 5px 10px 11px 140px; height: 90px; _height: 90px; overflow: hidden; }
+.mod_lost_child_little .child_info p { font-weight: bold; line-height: 30px; }
+.mod_lost_child_little .child_info p span { color: #545454; font-weight: normal; }
+.mod_lost_child_little .ft .support_company { margin-left: 140px; }
+/*info*/
+.info { color: #666; }
+.info p { overflow: hidden; zoom: 1; margin-bottom: 10px; }
+.info p span a { color: #0898dd; text-decoration: none; }
+.info p span a:hover { color: #16a5ff; }
+.info p span.info_come { float: right; }
+.info p span.address { float: left; }
+.user_share .share_txt { float: left; }
+.user_share .sprite { display: block; float: left; height: 18px; margin: 1px 5px 0 0; overflow: hidden; text-indent: -999em; width: 18px; }
+.user_share a.icon_qz, .share_links a.icon_qz { background-image: url("img/core_toolbar.png?max_age=19830211&d=20121226163106"); background-position: -239px 0; }
+.user_share a.icon_qt, .share_links a.icon_qt { background-image: url("img/core_toolbar.png?max_age=19830211&d=20121226163106"); background-position: -239px -19px; }
+.user_share a.icon_qq, .share_links a.icon_qq { background-image: url("img/core_toolbar.png?max_age=19830211&d=20121226163106"); background-position: -277px -19px; }
+.user_share a.icon_xl, .share_links a.icon_xl { background-image: url("img/core_toolbar.png?max_age=19830211&d=20121226163106"); background-position: -258px 0; }
+.user_share a.icon_kx, .share_links a.icon_kx { background-image: url("img/core_toolbar.png?max_age=19830211&d=20121226163106"); background-position: -258px -19px; }
+.user_share a.icon_rr, .share_links a.icon_rr { background-image: url("img/core_toolbar.png?max_age=19830211&d=20121226163106"); background-position: -277px 0; }
+/*  |xGv00|38d49c4ab5a25a7cabbe781e2d9aa6b2 */
+.gy{
+	margin-top: 10px;
+	display: block;
+	height: 470px;
+	width: 655px;
+	margin-left: auto;
+margin-right: auto;
+
+}

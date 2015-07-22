@@ -1,0 +1,900 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/index.css" type="text/css" rel="stylesheet">
+<link href="{dede:global.cfg_templets_skin/}/style/head_foot.css" rel="stylesheet" type="text/css">
+<script src="{dede:global.cfg_templets_skin/}/js/index.js" type="text/javascript"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/tab1.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jsLibrary.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/tab2.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/Tabs.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/js.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.jslides.js"></script>
+<link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/slide.css">
+<script src="{dede:global.cfg_templets_skin/}/js/jquery.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/slider.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/common.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+
+{dede:include filename="head.htm"/}
+
+<div id="content">
+  <div class="cnt0">
+    <div class="cnt01"></div>
+    <div class="cnt1">
+      <div class="cnt1_left"> <span>巴州博康医院</span><br>
+	  
+        <div class="c1_01"><img src="{dede:global.cfg_templets_skin/}/images/c1_01.jpg"></div>
+		
+        <p>巴州博康医院一直秉承“诚信立院，科技兴院，患者至上，服务领先”的办院理念，始终坚持“以患者需求为导向，以医疗改革为契机，以科学管理为根本，以科研技术...<a href="/a/yiyuanfengcai/2012/0915/1235.html">[详情]</a></p>
+		
+      </div>
+    <div id="news_pic">
+    	<div id="screen" class="wrap clear">
+  			<div class="bd">
+  				{dede:arclist typeid='46' row='5' orderby='pubdate' imgwidth='378' imgheight='232' }
+				<div class="mt"><a href="[field:arcurl/]">[field:image/]</a></div>
+				{/dede:arclist}					
+	 </div>
+  <div class="hd">
+    <ul>
+	{dede:arclist typeid='46' row='5' orderby='pubdate' imgwidth='69' imgheight='45' }
+      <li><a href="[field:arcurl/]" onfocus="this.blur()"> [field:image/]<span class="bg"></span> <span class="mask"></span></a></li>
+	 {/dede:arclist}
+    </ul>
+  </div>
+</div>
+<script>anisee.init.screens()</script>
+
+      </div>
+	  
+	   <div class="c2">
+        <div class="news">
+          <div class="newstitle">
+            <h2 id="new01" class="" onmouseover="set(&#39;new0&#39;,1,2)">
+			<a title="医院动态" href="{dede:global.cfg_basehost/}/hxdt" rel="nofollow">医院动态</a>
+			</h2>
+            <h2 id="new02" onmouseover="set(&#39;new0&#39;,2,2)" class="hover">
+			<a title="媒体报道" href="{dede:global.cfg_basehost/}/mtbd">媒体报道</a>
+			</h2>
+          </div>
+          <div id="connew01" class="newscont" style="display: none;">
+		  {dede:arclist flag='c' typeid='47' row='1' orderby='pubdate'  infolen='120'}
+		   <h3>
+		  <a href="[field:arcurl/]" target="_blank">[field:title/]</a>
+		  </h3>
+		  
+            <p>[field:infos/]……
+			<a href="[field:arcurl/]" target="_blank">[详情]</a>
+			</p>
+			{/dede:arclist}
+
+            <ul>
+			{dede:arclist typeid='47' row='5' orderby='pubdate'}
+			<li>
+			<span class="riqi"> [field:pubdate function=MyDate('y-m-d',@me)/] </span>
+			<span class="left">
+			<a href="[field:arcurl/]" target="_blank">[field:title/]</a>
+			</span>
+			</li>
+			{/dede:arclist}
+            </ul>
+          </div>
+          <div style="display: block;" id="connew02" class="newscont">
+		  {dede:arclist flag='c' typeid='5' row='1' orderby='pubdate'  infolen='120'}
+		  <h3>
+		  <a href="[field:arcurl/]" target="_blank">[field:title/]</a>
+		  </h3>
+          <p>[field:infos/]……
+		  <a href="[field:arcurl/]" target="_blank">[详情]</a>
+		  </p>
+			{/dede:arclist}
+            <ul>
+			{dede:arclist typeid='5' row='5' orderby='pubdate'}
+			<li>
+			<span class="riqi"> [field:pubdate function=MyDate('y-m-d',@me)/] </span>
+			<span class="left"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></span></li>
+			{/dede:arclist}
+            </ul>
+          </div>
+        </div>
+</div>
+	  
+   </div>
+    <div class="cnt01"></div>
+    <div class="cnt01"></div>
+	<!--专家开始-->
+	<!--专家结束-->
+	<!--权威技术开始-->
+    <div class="cnt01"></div>
+    <div class="cnt4">
+      <div class="cnt4_01"><a href="{dede:global.cfg_basehost/}/qwjs/"><img src="{dede:global.cfg_templets_skin/}/images/cnt4_01.jpg"></a></div>
+      <div class="surg_war">
+        <div class="surg">
+          <ul class="surg_left">
+            <li><a href="{dede:global.cfg_basehost/}/qwjs/42.html" id="surg1" onmouseover="setTab(&#39;surg&#39;,1,6)" class="hover">
+              </a>
+              <h2>珍爱超导可视无痛人流</h2>
+              <br>
+              <span>帮助万千女性轻松解决意外怀孕</span></li>
+            <li><a href="{dede:global.cfg_basehost/}/qwjs/43.html" id="surg2" onmouseover="setTab(&#39;surg&#39;,2,6)">
+              </a>
+              <h2>无痛包皮切割吻合美容术</h2>
+              <br>
+              <span>精准 安全 快捷 美观去包皮</span></li>
+            <li><a href="{dede:global.cfg_basehost/}/qwjs/44.html" id="surg3" onmouseover="setTab(&#39;surg&#39;,3,6)">
+              </a>
+              <h2>海扶超声波宫颈修复</h2>
+              <br>
+              <span>高效 安全 只除糜烂 不伤宫颈</span></li>
+          </ul>
+          <div class="surg_nr" id="con_surg_1">
+            <p class="sirg_dot_01">【简介】珍爱超导可视无痛人流，突破传统，是目前终止妊娠手术的一项先进技术。具有快捷、安全、流血少、恢复快以及尽早发现、尽早终止妊娠等优点，30秒内进入睡眠状态，仅需3分钟即可用微管快速吸出孕囊.....</p>
+            <div class="cnt4_02">
+              <p> <span>◆时间特短：</span>仅需3分钟<br>
+                <span>◆先进麻醉：</span>全部麻醉(最新麻醉方式)<br>
+                <span>◆安全性高：</span>整个过程安全、可视<br>
+                <span>◆无副作用：</span>无任何不适、无药物遗留副作用<br>
+                <span>◆手术费用：</span>经济实惠<br>
+                <span>◆无并发症：</span>无并发症，不影响生育 </p>
+            </div>
+          </div>
+          <div class="surg_nr" id="con_surg_2" style="display:none;">
+            <p class="sirg_dot_01">【简介】博康医院引进最新无痛包皮切割吻合美容术，从概念和观念上均打破传统单一疗法，利用微创速愈原理，不仅一次性无痛微创切除包茎包皮，不伤及性感传导神经;改善局部组织供氧，促进血液循环，提高性能力，.....</p>
+            <div class="cnt4_03">
+              <p> <span>◆手术精准：</span>术前精确衡量，一次性治疗<br>
+				  <span>◆无痛微创：</span>微创手术不伤及性感传导神经<br>
+				  <span>◆时间超短：</span>只需要15分钟即可完成全程手术<br>
+				  <span>◆美观平滑：</span>平滑美观，有效抑制感染<br>
+				  <span>◆无并发症：</span>无并发症，不影响生育 </p>
+            </div>
+		   </div>
+          <div class="surg_nr" id="con_surg_3" style="display:none;">
+            <p class="sirg_dot_01">【简介】海扶超声波宫颈修复术利用超声波优良的穿透性，通过体内照射，直接把能量聚焦在病变组织上，根据需要选择性地照射病灶组织令其坏死后经机体生理性吸收，从而达到治疗目的。.....</p>
+            <div class="cnt4_04">
+              <p> <span>◆完美效果：</span>术后6至8周恢复光滑如初<br>
+                <span>◆治疗全面：</span>全面清除病灶，告别久治不愈<br>
+                <span>◆完全无痛：</span>出血少，感染少，并发症少，无痛<br>
+                <span>◆高效精准：</span>手术精细，不伤组织<br>
+				<span>◆轻松快捷：</span>无需住院，过程轻松快捷<br>
+            </p></div>
+          </div>
+          <div class="surg_nr" id="con_surg_4" style="display:none;">
+            <p class="sirg_dot_01">【简介】巴州博康医院率先开展的“三镜联合微创保胆取石术”是欧美治疗胆系结石的"金标准"，该技术利用WOLF硬镜、纤维胆道镜、腹腔镜三镜联合应用，在患者腹壁建立微通道，在直视下清除结石.....</p>
+            <div class="cnt4_05">
+              <p>    <span>◆成功率高：</span>“三镜联合”提供的清晰视野，技术更成熟，保单率更高<br>
+					 <span>◆并发症少：</span>先进设备与技术，降低胆囊内结石残留，减少并发症<br>
+					 <span>◆无痛安全：</span>手术过程全程无痛,安全可靠<br>
+					 <span>◆恢复很快：</span>用微创技术进行手术,术后3-4天即可出院</p>
+            </div>
+          </div>
+          <div class="surg_nr" id="con_surg_5" style="display:none;">
+            <p class="sirg_dot_01">【简介】　巴州博康医院全面开展“三镜一丝”助孕技术，治疗不孕不育效果显着，该技术在电视监视和输卵管镜的直视下无创介入，清晰直观地发现导致不孕不育的病因，同时将检查与治疗融为一体.....</p>
+            <div class="cnt4_06">
+              <p>    <span>◆精确率高：</span>直接疏通输卵管堵塞，不损伤人体<br>
+					 <span>◆可视操作：</span>立体可视化操作环境，安全系数高<br>
+					 <span>◆微创无痛：</span>不开刀、无痛苦、治疗时间短<br>
+					 <span>◆安全高效：</span>检查、疏通、治疗同步完成</p>
+            </div>
+          </div>
+          <div class="surg_nr" id="con_surg_6" style="display:none;">
+            <p class="sirg_dot_01">【简介】 智源肽前列腺治疗系统是采用美国生物电场核心技术，其最大的不同点在于利用不衰减的智能聚焦电流场这一先进技术，用低温、高能、高度聚焦电场能补充人体细胞电特性，使其恢复活性.....</p>
+            <div class="cnt4_07">
+              <p>    <span>◆实时控温：</span>实时测量前列腺治疗区域内部实际温度<br>
+					 <span>◆治疗精确：</span>直捣病灶，精准治疗<br>
+					 <span>◆提高修复力：</span>缓解阵痛，提高修复力<br>
+					 <span>◆范围广泛：</span>设计研发三种安全有效的治疗方式<br>
+			</p>
+            </div>
+          </div>
+          <ul class="surg_right">
+            <li><a href="{dede:global.cfg_basehost/}/qwjs/45.html" id="surg4" onmouseover="setTab(&#39;surg&#39;,4,6)">
+              </a>
+              <h2>三镜联合保胆微创取石术</h2>
+              <span>结石去无踪 微创更轻松</span></li>
+            <li><a href="{dede:global.cfg_basehost/}/qwjs/49.html" id="surg5" onmouseover="setTab(&#39;surg&#39;,5,6)">
+              </a>
+              <h2>三镜一丝联合助孕术</h2>
+              <br>
+              <span>快速 安全 微创 不孕患者的福音</span></li>
+            <li><a href="{dede:global.cfg_basehost/}/qwjs/50.html" id="surg6" onmouseover="setTab(&#39;surg&#39;,6,6)">
+              </a>
+              <h2>智源肽前列腺治疗系统</h2>
+              <br>
+              <span>精准定位 直捣病灶 快速杀菌</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	<!--权威技术结束-->
+    <div class="cnt01"></div>
+	<!--精品诊疗科室开始-->
+    <div class="cnt5">
+      <div class="cnt5_01"><img src="{dede:global.cfg_templets_skin/}/images/cnt5_01.jpg"></div>
+      <div class="con3">
+        <div class="xiaole">
+          <div class="bdr">
+            <div class="body">
+              <div class="bigType fl"> 
+				  <a href="/plus/list.php?tid=100" id="db1" class="c">计划生育</a> 
+				  <a href="/plus/list.php?tid=21" id="db2" class="undefined">妇科疾病</a> 
+				  <a href="/plus/list.php?tid=101" id="db3" class="undefined">男科疾病</a> 
+				  <a href="/plus/list.php?tid=102" id="db4" class="undefined">不孕不育</a> 
+				  <a href="/plus/list.php?tid=118" id="db5" class="undefined">生殖整形</a> 
+				  <a href="/plus/list.php?tid=123" target="_blank" class="undefined" id="db6">综合科室</a></div>
+              <!--计划生育-->
+              <div id="dbc1">
+                <div class="fkks_2"> <img src="{dede:global.cfg_templets_skin/}/images/hh.jpg"> </div>
+                <div class="bCon fl">
+                  <dl class="head">
+                    <dd id="db1s1" class="c">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=32">无痛人流</a>
+                      <div class="r"></div>
+                    </dd>
+                    <dd id="db1s2" class="undefined">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=106">早孕</a>
+                      <div class="r"></div>
+                    </dd>
+                    <dd id="db1s3" class="undefined">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=105">人工流产</a>
+                      <div class="r"></div>
+                    </dd>
+                    <dd id="db1s4" class="undefined">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=107">先兆流产</a>
+                      <div class="r"></div>
+                    </dd>
+                  </dl>
+                  <div id="db1sc1">
+                    <!--无痛人流-->
+					{dede:arclist flag='c' typeid='32' row='1' orderby='pubdate'  infolen='120'}
+					<h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+					{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='32' row='10' orderby='pubdate' titlelen='120' }
+					  	<dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+					  {/dede:arclist}
+                      </dl>
+                    </div>
+                  </div>
+				  
+				  
+                  <div id="db1sc2">
+                    <!--早孕-->
+					{dede:arclist flag='c' typeid='106' row='1' orderby='pubdate'  infolen='120'}
+					<h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+					{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='106' row='10' orderby='pubdate' titlelen='120' }
+					    <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+					  {/dede:arclist}
+                      </dl>
+                    </div>
+                  </div>
+                  <div id="db1sc3">
+                   <!--人工流产-->
+				   {dede:arclist flag='c' typeid='105' row='1' orderby='pubdate'  infolen='120'}
+				   <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+					{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='105' row='10' orderby='pubdate' titlelen='120' }
+					  <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+					  {/dede:arclist}
+                      </dl>
+                    </div>
+                  </div>
+                  <div id="db1sc4">
+                    <!--药流-->
+					{dede:arclist flag='c' typeid='107' row='1' orderby='pubdate'  infolen='120'}
+					<h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+					{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='107' row='10' orderby='pubdate' titlelen='120' }
+					  <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+					  {/dede:arclist}
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="fkks_4">
+                  <div class="fkan">案例展示</div>
+                  <div class="fka2"> <img src="{dede:global.cfg_templets_skin/}/images/gg.jpg" />
+				  {dede:arclist flag='h' typeid='10' row='1' orderby='pubdate'  infolen='140'}
+                    <p class="p10"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+                    <p class="p11">[field:infos/]...<a href="[field:arcurl/]" target="_blank"><span style="color:#FF0000; font-weight:bold"> [详情]</span></a></p>
+ 					{/dede:arclist}
+                  </div>
+                </div>
+              </div>
+              <!--妇科炎症-->
+              <div id="dbc2">
+                <div class="fkks_2"> <img src="{dede:global.cfg_templets_skin/}/images/rl02.jpg"> </div>
+                <div class="bCon fl">
+                  <dl class="head">
+                    <dd id="db2s1">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=113" target="_blank">阴道炎</a>
+                      <div class="r"></div>
+                    </dd>
+                    <dd id="db2s2">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=34" target="_blank">宫颈疾病</a>
+                      <div class="r"></div>
+                    </dd>
+                    <dd id="db2s3">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=38" target="_blank">月经不调</a>
+                      <div class="r"></div>
+                    </dd>
+                    <dd id="db2s4">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=33" target="_blank">子宫肌瘤</a>
+                      <div class="r"></div>
+                    </dd>
+                  </dl>
+                  <div id="db2sc1">
+                    <!--阴道炎-->
+					{dede:arclist flag='c' typeid='113' row='1' orderby='pubdate'  infolen='120'}
+                    <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+					{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='113' row='10' orderby='pubdate' titlelen='40' }
+					  <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+					  {/dede:arclist}
+                      </dl>
+                    </div>
+                  </div>
+                  <div id="db2sc2">
+                    <!--宫颈疾病-->
+					{dede:arclist flag='c' typeid='34' row='1' orderby='pubdate'  infolen='120'}
+                   <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+					{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='34' row='10' orderby='pubdate' titlelen='40' }
+					  <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+					  {/dede:arclist}
+                      </dl>
+                    </div>
+                  </div>
+                  <div id="db2sc3">
+                    <!--月经不调-->
+					{dede:arclist flag='c' typeid='38' row='1' orderby='pubdate'  infolen='120'}
+                   <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+					{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='38' row='10' orderby='pubdate' titlelen='40' }
+					  <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+					  {/dede:arclist}
+                      </dl>
+                    </div>
+                  </div>
+                  <div id="db2sc4">
+                    <!--子宫肌瘤-->
+					{dede:arclist flag='c' typeid='33' row='1' orderby='pubdate'  infolen='120'}
+                    <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+					{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='33' row='10' orderby='pubdate' titlelen='40' }
+					  <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+					  {/dede:arclist}
+
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="fkks_4">
+                  <div class="fkan">案例展示</div>
+                  <div class="fka2"> <img src="{dede:global.cfg_templets_skin/}/images/rl03.jpg" />
+				  {dede:arclist flag='h' typeid='8' row='1' orderby='pubdate'  infolen='120'}
+                    <p class="p10"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+                    <p class="p11">[field:infos/]…<a href="[field:arcurl/]"><span style="color:#FF0000; font-weight:bold"> [详情]</span></a></p>
+				  {/dede:arclist}
+                  </div>
+                </div>
+              </div>
+              <!--男科疾病-->
+              <div id="dbc3">
+                <div class="fkks_2"> <img src="{dede:global.cfg_templets_skin/}/images/m18.jpg"> </div>
+                <div class="bCon fl">
+                  <dl class="head">
+                    <dd id="db4s1">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=114" target="_blank">包皮包茎</a>
+                      <div class="r"></div>
+                    </dd>
+                    <dd id="db4s2">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=115" target="_blank">性功能障碍</a>
+                      <div class="r"></div>
+                    </dd>
+                    <dd id="db4s3">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=125" target="_blank">阳痿早泄</a>
+                      <div class="r"></div>
+                    </dd>
+                    <dd id="db4s4">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=117" target="_blank">前列腺疾病</a>
+                      <div class="r"></div>
+                    </dd>
+                  </dl>
+                  <div id="db4sc1">
+                    <!--包皮包茎-->
+					{dede:arclist flag='c' typeid='114' row='1' orderby='pubdate'  infolen='120'}
+                    <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+					{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='114' row='10' orderby='pubdate' titlelen='40' }
+					  <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+					  {/dede:arclist}
+                      </dl>
+                    </div>
+                  </div>
+                  <div id="db4sc2">
+                    <!--不射精-->
+					{dede:arclist flag='c' typeid='115' row='1' orderby='pubdate'  infolen='120'}
+                    <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+					{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+					
+                      <dl>
+					  {dede:arclist typeid='115' row='10' orderby='pubdate' titlelen='40' }
+					    <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+					  {/dede:arclist}
+                      </dl>
+                    </div>
+                  </div>
+                  <div id="db4sc3">
+                    <!--早泄阳痿-->
+					{dede:arclist flag='c' typeid=125' row='1' orderby='pubdate'  infolen='120'}
+                    <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+					{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='125' row='10' orderby='pubdate' titlelen='40' }
+					    <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+					  {/dede:arclist}
+                      </dl>
+                    </div>
+                  </div>
+                  <div id="db4sc4">
+                    <!--前列腺疾病-->
+					{dede:arclist flag='c' typeid='117' row='1' orderby='pubdate'  infolen='120'}
+                    <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+					{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='117' row='10' orderby='pubdate' titlelen='40' }
+					    <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+					  {/dede:arclist}
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="fkks_4">
+                  <div class="fkan">案例展示</div>
+                  <div class="fka2"> <img src="{dede:global.cfg_templets_skin/}/images/m21.jpg" />
+				  {dede:arclist flag='h' typeid='9' row='1' orderby='pubdate'  infolen='120'}
+                    <p class="p10"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+                    <p class="p11">[field:infos/]...<a href="[field:arcurl/]" target="_blank"><span style="color:#FF0000; font-weight:bold"> [详情]</span></a></p>
+ 					{/dede:arclist}
+                  </div>
+                </div>
+              </div>
+              <!--不孕不育-->
+              <div id="dbc4">
+                <div class="fkks_2"> <img src="{dede:global.cfg_templets_skin/}/images/ww02.jpg"> </div>
+                <div class="bCon fl">
+                  <dl class="head">
+                    <dd id="db3s1">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=109" target="_blank">男性不育</a>
+                      <div class="r"></div>
+                    </dd>
+                    <dd id="db3s2">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=108" target="_blank">女性不孕</a>
+                      <div class="r"></div>
+                    </dd>
+                    <dd id="db3s3">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=110" target="_blank">优生优育</a>
+                      <div class="r"></div>
+                    </dd>
+                    <dd id="db3s4">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=111" target="_blank">孕育常识</a>
+                      <div class="r"></div>
+                    </dd>
+                  </dl>
+                  <div id="db3sc1">
+                    <!--男性不育-->
+					{dede:arclist flag='c' typeid='109' row='1' orderby='pubdate'  infolen='120'}
+                    <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+					{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='109' row='10' orderby='pubdate' titlelen='40' }
+					    <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+{/dede:arclist}
+                      </dl>
+                    </div>
+                  </div>
+                  <div id="db3sc2">
+                    <!--女性不孕-->
+					{dede:arclist flag='c' typeid='108' row='1' orderby='pubdate'  infolen='120'}
+                    <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='108' row='10' orderby='pubdate' titlelen='40' }
+					    <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+{/dede:arclist}
+                      </dl>
+                    </div>
+                  </div>
+                  <div id="db3sc3">
+                    <!--优生优育-->
+					{dede:arclist flag='c' typeid='110' row='1' orderby='pubdate'  infolen='120'}
+                    <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='110' row='10' orderby='pubdate' titlelen='40' }
+					    <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+{/dede:arclist}
+                      </dl>
+                    </div>
+                  </div>
+                  <div id="db3sc4">
+                    <!--孕育常识-->
+					{dede:arclist flag='c' typeid='111' row='1' orderby='pubdate'  infolen='120'}
+                    <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='111' row='10' orderby='pubdate' titlelen='40' }
+					    <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+					{/dede:arclist}
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="fkks_4">
+                  <div class="fkan">案例展示</div>
+                  <div class="fka2"> <img src="{dede:global.cfg_templets_skin/}/images/ww01.jpg" />
+				  {dede:arclist flag='h' typeid='11' row='1' orderby='pubdate'  infolen='120'}
+                    <p class="p10"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+                    <p class="p11">[field:infos/]…<a href="[field:arcurl/]"><span style="color:#FF0000; font-weight:bold"> [详情]</span></a></p>
+                  {/dede:arclist}
+				  </div>
+                </div>
+              </div>
+              <!--私密整形-->
+              <div id="dbc5">
+                <div class="fkks_2"> <img src="{dede:global.cfg_templets_skin/}/images/rr02.jpg"> </div>
+                <div class="bCon fl">
+                  <dl class="head">
+                    <dd id="db5s1">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=119" target="_blank">处女膜修复</a>
+                      <div class="r"></div>
+                    </dd>
+                    <dd id="db5s2">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=120" target="_blank">阴道紧缩</a>
+                      <div class="r"></div>
+                    </dd>
+                    <dd id="db5s3">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=121" target="_blank">阴唇整形</a>
+                      <div class="r"></div>
+                    </dd>
+                    <dd id="db5s4">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=122" target="_blank">妇科整形</a>
+                      <div class="r"></div>
+                    </dd>
+                  </dl>
+                  <div id="db5sc1">
+                    <!--处女膜修复-->
+					{dede:arclist flag='c' typeid='119' row='1' orderby='pubdate'  infolen='120'}
+                    <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='119' row='10' orderby='pubdate' titlelen='40' }
+					    <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+{/dede:arclist}
+                      </dl>
+                    </div>
+                  </div>
+                  <div id="db5sc2">
+                    <!--阴道紧缩-->
+					{dede:arclist flag='c' typeid='120' row='1' orderby='pubdate'  infolen='120'}
+                    <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='120' row='10' orderby='pubdate' titlelen='40' }
+					    <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+{/dede:arclist}
+                      </dl>
+                    </div>
+                  </div>
+                  <div id="db5sc3">
+                    <!--阴唇整形-->
+					{dede:arclist flag='c' typeid='121' row='1' orderby='pubdate'  infolen='120'}
+                    <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='121' row='10' orderby='pubdate' titlelen='40' }
+					    <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+{/dede:arclist}
+                      </dl>
+                    </div>
+                  </div>
+                  <div id="db5sc4">
+                    <!--妇科整形-->
+					{dede:arclist flag='c' typeid='122' row='1' orderby='pubdate'  infolen='120'}
+                    <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='122' row='10' orderby='pubdate' titlelen='40' }
+					    <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+{/dede:arclist}
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="fkks_4">
+                  <div class="fkan">案例展示</div>
+                  <div class="fka2"> <img src="{dede:global.cfg_templets_skin/}/images/rr01.jpg" />
+				  {dede:arclist flag='h' typeid='102' row='1' orderby='pubdate'  infolen='120'}
+                    <p class="p10"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+                    <p class="p11">[field:infos/]…<a href="[field:arcurl/]"><span style="color:#FF0000; font-weight:bold"> [详情]</span></a></p>
+					{/dede:arclist}
+                  </div>
+                </div>
+              </div>
+              <!--生殖感染-->
+              <div id="dbc6">
+                <div class="fkks_2"> <img src="{dede:global.cfg_templets_skin/}/images/yy.jpg"> </div>
+                <div class="bCon fl">
+                  <dl class="head">
+                    <dd id="db6s1">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=19" target="_blank">内科</a>
+                      <div class="r"></div>
+                    </dd>
+                    <dd id="db6s2">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=18" target="_blank">外科</a>
+                      <div class="r"></div>
+                    </dd>
+                    <dd id="db6s3">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=24" target="_blank">肛肠科</a>
+                      <div class="r"></div>
+                    </dd>
+                    <dd id="db6s4">
+                      <div class="l"></div>
+                      <a href="/plus/list.php?tid=23" target="_blank">中医科</a>
+                      <div class="r"></div>
+                    </dd>
+                  </dl>
+                  <div id="db6sc1">
+                    <!--内科-->
+					{dede:arclist flag='c' typeid='19' row='1' orderby='pubdate'  infolen='120'}
+                    <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='19' row='10' orderby='pubdate' titlelen='40' }
+					    <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+					  {/dede:arclist}
+
+                      </dl>
+                    </div>
+                  </div>
+                  <div id="db6sc2">
+                    <!--外科-->
+					{dede:arclist flag='c' typeid='18' row='1' orderby='pubdate'  infolen='120'}
+                   <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='18' row='10' orderby='pubdate' titlelen='40' }
+					  <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+					  {/dede:arclist}
+
+                      </dl>
+                    </div>
+                  </div>
+                  <div id="db6sc3">
+                    <!--肛肠科-->
+					{dede:arclist flag='c' typeid='24' row='1' orderby='pubdate'  infolen='120'}
+                    <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='24' row='10' orderby='pubdate' titlelen='40' }
+					    <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></dd>
+					  {/dede:arclist}
+
+                      </dl>
+                    </div>
+                  </div>
+                  <div id="db6sc4">
+                    <!--中医科-->
+					{dede:arclist flag='c' typeid='23' row='1' orderby='pubdate'  infolen='120'}
+                    <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <div class="description">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a></div>
+{/dede:arclist}
+                    <div class="clr"></div>
+                    <div class="arc">
+                      <dl>
+					  {dede:arclist typeid='23' row='10' orderby='pubdate' titlelen='40' }
+					    <dd> <span>■</span><a href="[field:arcurl/]" target="_blank">“[field:title/]</a></dd>
+					  {/dede:arclist}
+
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="fkks_4">
+                  <div class="fkan">案例展示</div>
+                  <div class="fka2"> <img src="{dede:global.cfg_templets_skin/}/images/tt.jpg" />
+				  {dede:arclist flag='h' typeid='123' row='1' orderby='pubdate'  infolen='120'}
+                    <p class="p10"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+                    <p class="p11">[field:infos/]…<a href="[field:arcurl/]"><span style="color:#FF0000; font-weight:bold"> [详情]</span></a></p>
+					{/dede:arclist}
+                  </div>
+                </div>
+              </div>
+              <script type="text/javascript">
+                    	new swaper(["db1","db2","db3","db4","db5","db6"],["dbc1","dbc2","dbc3","dbc4","dbc5","dbc6"],"c");
+						new swaper(["db1s1","db1s2","db1s3","db1s4"],["db1sc1","db1sc2","db1sc3","db1sc4"],"c");
+						new swaper(["db2s1","db2s2","db2s3","db2s4"],["db2sc1","db2sc2","db2sc3","db2sc4"],"c");
+						new swaper(["db3s1","db3s2","db3s3","db3s4"],["db3sc1","db3sc2","db3sc3","db3sc4"],"c");
+						new swaper(["db4s1","db4s2","db4s3","db4s4"],["db4sc1","db4sc2","db4sc3","db4sc4"],"c");
+						new swaper(["db5s1","db5s2","db5s3","db5s4"],["db5sc1","db5sc2","db5sc3","db5sc4"],"c");
+						new swaper(["db6s1","db6s2","db6s3","db6s4"],["db6sc1","db6sc2","db6sc3","db6sc4"],"c");
+                    </script>
+            </div>
+          </DIV>
+        </div>
+      </div>
+    </div>
+	<!--权威诊疗技术结束-->
+    <div class="cnt01"></div>
+<div id="Tail">
+  <div class="cv"><img src="{dede:global.cfg_templets_skin/}/images/envir01.jpg"></div>
+  <div class="yyqy">
+    <h3 id="Tail2">  
+		<a onmousemove="nTabs2(this,0);" href="javascript:void(0);" class="a_hover_0"></a>
+		<a onmousemove="nTabs2(this,1);" href="javascript:void(0);"></a> 
+		<a onmousemove="nTabs2(this,2);" href="javascript:void(0);"></a> 
+	</h3>
+    <div class="yykd">
+		<div id="Tail2_0"><a href="javascript:void(0);"><img src="{dede:global.cfg_templets_skin/}/images/lc1.jpg" alt="巴州博康医院就医流程"></a></div>
+		<div id="Tail2_1" style="display:none"><a href="javascript:void(0);"></a></div>
+       <!-- <div id="Tail2_2" style="display:none">
+			<div class="ucent"> <img alt="" src="/images/honor01.jpg"> </div>
+	        <script type="text/javascript">marqueeStart(3, "left");</script>
+      </div>-->
+      <div id="Tail2_2" style="display:none">
+        <div class="ucent"> 
+		  <strong>先进设备精确诊疗：</strong>医院配置精良的医疗设备，分型诊断，能对各种疾病治疗进行深入的分析和研究，融医疗、预防、保健于一体，为巴中百姓提供健康保障。 <br>
+          <strong>轻松温馨 就医环境:</strong> 宽敞明亮的大厅，男女患者各有一处温馨的诊区，干净的墙壁、整洁的设施，集现代化、人性化、家庭化为一体的就医环境，让每个患者都有宾至如归的感觉。 <br>
+          <strong>导医全程陪护:</strong> 患者从走进医院就有导诊护士全程免费引导陪护，消除患者就诊时的陌生感，让患者享受到快捷舒适的就医过程。"全程陪护"让患者入院后省去不必要的劳顿，安心享受贵宾级礼遇。 </div>
+        <div class="ucup" id="marquee4">
+            <ul id="marquee4_1">
+               <li><a><img width="96" height="92" src="{dede:global.cfg_templets_skin/}/images/yi01.jpg"></a></li>
+				<li><a><img width="96" height="92" src="{dede:global.cfg_templets_skin/}/images/yi02.jpg"></a></li>
+				<li><a><img width="96" height="92" src="{dede:global.cfg_templets_skin/}/images/yi03.jpg"></a></li>
+				<li><a><img width="96" height="92" src="{dede:global.cfg_templets_skin/}/images/yi04.jpg"></a></li>
+				<li><a><img width="96" height="92" src="{dede:global.cfg_templets_skin/}/images/yi05.jpg"></a></li>
+				<li><a><img width="96" height="92" src="{dede:global.cfg_templets_skin/}/images/yi06.jpg"></a></li>
+				<li><a><img width="96" height="92" src="{dede:global.cfg_templets_skin/}/images/yi07.jpg"></a></li>
+            </ul>
+        </div>
+        <script type="text/javascript">marqueeStart(3, "left");</script>
+      </div>
+    </div>
+  </div>
+  <div class="hzhb">
+    <h3 id="hzlink"> <a onmousemove="nTabs(this,0);" href="javascript:void(0);" class="a_hover">权威机构</a>
+	<a onmousemove="nTabs(this,1);" href="javascript:void(0);">友情连接</a></h3>
+    <div class="wid_hdlink">
+      <div id="hzlink_0">
+        <ul>
+			<li><img src="{dede:global.cfg_templets_skin/}/images/hz.jpg"></li>
+        </ul>
+      </div>
+      <div id="hzlink_1" style="display:none">
+	  <div id="hzlink_0">
+        <ul>
+		{dede:flinktype row='40'}
+			{dede:flink/}
+		{/dede:flinktype}
+        </ul>
+		
+      </div>
+	  </div>
+    </div>
+  </div>   
+ </div>
+ <div class="cnt01"></div>
+  </div>
+</div>
+   {dede:include filename="footer.htm"/}
+
+
+</body></html>

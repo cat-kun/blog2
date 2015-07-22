@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/xjsb.css" type="text/css" rel="stylesheet">
+<link href="{dede:global.cfg_templets_skin/}/style/head_foot.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="x1">
+	<div class="x2 left">
+		<div class="x21">
+			<p>首页导航</p>
+			<ul>
+				<li><a href="{dede:global.cfg_basehost/}/hxdt" target="_blank">华西动态</a></li>
+				<li><a href="{dede:global.cfg_basehost/}/jpks" target="_blank">精品科室</a></li>
+				<li><a href="{dede:global.cfg_basehost/}/tszl" target="_blank">特色诊疗</a></li>
+				<li style="background:url({dede:global.cfg_templets_skin/}/images/tszl/x3.jpg) no-repeat;"><a style="color:#ffffff;" href="{dede:global.cfg_basehost/}/gxsb" target="_blank">高新设备</a></li>
+				<li><a href="javascript:void(0)" onclick="openZoosUrl();">联系我们</a></li>
+			</ul>
+		</div>
+		{dede:include filename="list_right.htm"/}
+	</div>
+
+	<div class="x3 right">
+		<div class="x31"><p><span>当前位置:</span>&nbsp;{dede:field name='position' runphp='yes'}@me=substr(@me,0,-2);{/dede:field} </p></div>
+		<div class="x32">
+			<ul>
+			{dede:arclist typeid='6' row='10' orderby='pubdate'  infolen='280' imgwidth='146' imgheight='150'}
+				<li style="line-height:24px;"><a href="[field:arcurl/]" target="_blank">[field:image/]</a>
+					<p>
+					      <span>[field:title/]</span><br>
+					      [field:infos/]
+				   </p>
+				</li>
+				{/dede:arclist}
+			</ul>
+		</div>
+	</div>
+</div>
+   {dede:include filename="footer.htm"/}
+</body></html>

@@ -1,0 +1,59 @@
+<div class="x22">
+			<div class="x20">
+				<ul>
+					<li class="x23">就医指南</li>
+					<li class="x24"><a href="{dede:global.cfg_basehost/}/lxwm" target="_blank">更多》</a></li>
+				</ul>
+			</div>
+			<div class="x25">
+				<ul>
+					<li><a href="javascript:void(0)" onclick="openZoosUrl();">网上挂号</a></li>
+					<li><a href="javascript:void(0)" onclick="openZoosUrl();">在线咨询</a></li>
+					<li><a href="{dede:global.cfg_basehost/}/lxwm" target="_blank">联系我们</a></li>
+					<li><a href="javascript:void(0)" onclick="openZoosUrl();">医保政策</a></li>
+				</ul>
+			</div>
+			<div class="x26"><a href="javascript:void(0)" onclick="openZoosUrl();"><img src="{dede:global.cfg_templets_skin/}/images/tszl/tel.jpg"></a></div>
+		</div>
+		<div class="zjjs">
+			<div class="x20">
+				<ul>
+					<li class="x23">专家介绍</li>
+					<li class="x24"><a href="{dede:global.cfg_basehost/}/myfc" target="_blank">更多》</a></li>
+				</ul>
+			</div>
+     <div style="overflow: hidden; position: relative; width: 247px; height: 135px;" id="expImg" class="zjtd1">
+            <ul style="font-size: 0px; display: inline-block; padding: 0px; margin: 0px; list-style: none outside none; width: 1976px; height: 135px;" id="exp_1">
+              {dede:arclist typeid='4' row='10' orderby='pubdate'  infolen='60' imgwidth='109' imgheight='146' addfields='zhicheng' channelid='2'}
+			  
+			  <li style="list-style: none outside none; float: left; display: inline; margin-left: 0px; margin-right: 0px; border-left-width: 0px; border-right-width: 0px;">
+			   <a href="[field:arcurl/]" target="_blank">[field:image/]</a>
+                <div class="wz1">
+                  <p class="mz"><a href="[field:arcurl/]" target="_blank">[field:title/] [field:zhicheng/]</a></p>
+                  <p class="zjwz">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[详情]</a> </p>
+                </div>
+              </li>
+			  {/dede:arclist}
+            </ul>
+          <script type="text/javascript">
+				new Marquee(
+				{
+					MSClass	  : ["expImg","exp_1"],
+					Direction : 2,
+					Step	  : 0.3,
+					Width	  : 247,
+					Height	  : 135,
+					Timer	  : 20,
+					DelayTime : 3000,
+					WaitTime  : 0,
+					ScrollStep: 247,
+					SwitchType: 0,
+					AutoStart : true
+				});
+		</script>
+                </div>
+                    <div class="zxzx">
+                        <a class="wyzx" href="javascript:void(0);" onclick="openZoosUrl();">我要咨询</a>
+                        <a class="wyyy" href="javascript:void(0);" onclick="openZoosUrl();">我要预约</a>
+                    </div>
+            </div>

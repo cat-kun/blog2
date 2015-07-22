@@ -1,0 +1,130 @@
+.top{ height:61px; background:url(../images/top_bg.gif) repeat-x; padding-left:8px;}
+
+.nav{ width:100%; background:url(../images/nav_bg.gif) repeat; margin-top:1px; text-align:center; line-height:35px; overflow:hidden;}
+
+.nav a{ float:left; width:25%; height:35px; font-size:14px;}
+
+.search{ width:100%; height:38px; background:url(../images/search_bg.gif) repeat-x; line-height:38px;overflow:hidden;}
+
+.inputbox{background:#fff; height:18px;border-radius:3px; border:none; float:left; margin-top:9px; margin-left:10px;}
+
+.sbtbtn{ width:48px;height:20px; background:#ea380f; border:none; float:left; margin:9px 6px 0; text-align:center; padding-top:3px;color:#fff; font-weight:900; font-size:12px;}
+
+.search span{ width:237px; color:#f12e02; font-size:12px; float:left;}
+
+
+
+.hot_news{ background:#f9f0ee; padding-top:10px; line-height:30px; text-align:center;}
+
+.hot_news a{ color:#b62706; font-weight:900; font-size:16px;}
+
+.news_list{ background:#f9f0ee; padding:6px 0 8px;line-height:22px; font-size:12px; overflow:hidden;}
+
+.news_list a{ width:49%; float:left; text-align:center; white-space:nowrap;}
+
+
+
+.title{ height:40px; background:url(../images/title_bg.gif) repeat-x center center; line-height:40px; font-size:16px; color:#fff; text-indent:15px;}
+
+
+
+.jbxm ul,.qwjs ul{ width:98%; margin:0 auto; padding:6px 0;}
+
+.jbxm li,.qwjs li{height:40px; background:url(../images/bg1.gif) repeat-x left bottom; line-height:40px; font-size:14px;}
+
+.jbxm span{ color:#b62706;}
+
+
+
+.qwjs li{ padding-left:5px;}
+
+
+
+.doc_list{ background:url(../images/bg2.gif) repeat;}
+
+.doc_list li{ height:107px;padding:8px 10px 8px 15px;}
+
+.doc_list li h3{ color:#ee5018;}
+
+.doc_list li p{ margin-top:3px; margin-bottom:5px; font-size:12px;line-height:18px;}
+
+.doc_list li p a{ color:#ee5018;}
+
+.doc_list li div a{ width:63px; height:20px; color:#fff; text-align:center; line-height:20px; font-size:12px;float:left;margin-right:2px;}
+.doc_btn1{background:#e7830d; }
+.doc_btn2{background:#b92801; }
+.doc_bg{ background:#feffe6;}
+
+
+
+.guahao form{ margin-top:15px; padding-bottom:15px;}
+
+.guahao form p{ width:96%; padding:10px 2%; line-height:18px; overflow:hidden;}
+
+.guahao form p span{ width:28%; float:left; text-align:right; padding-right:2%;}
+
+.guahao form p input,.guahao form p em{ font-style:normal; float:left;}
+
+.inputbox3{width:65%; height:18px; border:1px solid #dcdddd;}
+
+.guahao form p strong{ letter-spacing:5px; color:#f00;}
+
+.guahao form textarea{ width:65%; height:50px;border:1px solid #dcdddd;}
+
+.btn2{ width:83px; height:24px; margin-left:30%; border:none; background:#e8511c; color:#fff; font-size:14px; cursor:pointer;}
+
+
+
+.footer_nav{ height:35px; background:url(../images/nav_bg.gif) repeat-x; border-top:1px solid #fff; line-height:35px;}
+
+.footer_nav a{ width:25%; float:left; text-align:center; font-weight:900;}
+
+.copyright{ height:67px; background:url(../images/footer_bg.gif) repeat-x; padding:10px 0 10px 20px; color:#fff; line-height:18px; font-size:12px;}
+
+
+
+.crumb{ height:35px; background:url(../images/crumb_bg.gif) repeat-x; line-height:35px; font-size:14px; padding-left:10px;}
+
+.red{ color:#ea380f;}
+
+.arclist{ width:98%; margin:0 auto; padding-bottom:6px;}
+
+.arclist li{height:40px; background:url(../images/bg1.gif) repeat-x left bottom; line-height:40px; font-size:14px;}
+
+
+
+.pagelist{ width:100%; padding:5px 0 15px; text-align:center;}
+
+.pagelist li{ display:inline;}
+
+.pagelist li a{ display:inline-block; padding:0 3px;}
+
+
+
+.arc{ width:95%; padding:10px 0; margin:0 auto;}
+
+.arc h1{ background:url(../images/bg1.gif) repeat-x left bottom; padding:5px 0 8px; text-align:center;}
+
+.arc_tel{line-height:25px; text-align:center;margin-top:10px;margin-bottom:15px;font-size:12px;}
+
+.arc_tel .tel_input{width:120px; border:1px solid #ddd;border-radius:3px;}
+
+.arc_cont{ width:95%; background:url(../images/bg1.gif) repeat-x left bottom; padding-bottom:15px; margin:10px auto 0; line-height:22px; font-size:14px;}
+
+.arc_cont p{ margin-bottom:10px;}
+
+.arc_page{ margin-top:5px; text-align:center; font-size:14px;}
+
+.arc_page a{ display:inline-block; margin:0 5px;}
+
+
+
+.pf{ width:100%; height:38px; background:url(../images/btgh_bg.jpg) repeat-x;}
+
+.pf a{width:50%; height:32px; display:inline-block; padding-top:6px;text-align:center;}
+
+#pf{ width:100%;}
+
+.zixun{background:url(../images/pf_bg2.gif) no-repeat left center;}
+.arc_msg{ margin-top:5px; margin-bottom:5px; text-align:center; font-size:12px;}
+.span1{ display:inline-block; margin:0 5px;}

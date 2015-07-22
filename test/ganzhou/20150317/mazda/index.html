@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="gbk">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>海马-YOUNG 一起约女神</title>
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<meta name="author" content="银狐">
+<meta name="robots" content="all">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="css/lightbox.css">
+<style>
+@charset "gb2312";
+/*reset*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font:12px/1.5 'Microsoft Yahei',tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;}
+img{border:none;vertical-align: middle;}
+li{list-style:none;}
+input,select,textarea{vertical-align:middle;outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;outline:none;}
+a {blr:expression(this.onFocus=this.blur())} /* IE */
+.fl{float:left;}
+.fr{float:right;}
+
+/*clearfix*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{*zoom:1;}
+
+::-webkit-scrollbar{width:12px;height:12px}
+::-webkit-scrollbar-button:vertical{display:none}
+::-webkit-scrollbar-track:vertical{background-color:black}
+::-webkit-scrollbar-track-piece{background:#FFF}
+::-webkit-scrollbar-thumb:vertical{background-color:#8e8e8e;border-radius:5px}
+::-webkit-scrollbar-thumb:vertical:hover{background-color:#3b3b3b}
+::-webkit-scrollbar-corner:vertical{background-color:#535353}
+::-webkit-scrollbar-resizer:vertical{background-color:#ff6e00}
+
+.wrap{height: 800px;background: url(images/bg.jpg) center top no-repeat;position: relative;}
+.tip{position: absolute;bottom: 0;left: 50%;margin-left: -30px;z-index: 3;-webkit-animation: arrow 1s infinite;-moz-animation: arrow 1s infinite;-ms-animation: arrow 1s infinite;-o-animation: arrow 1s infinite;animation: arrow 1s infinite;}
+
+/*下拉箭头动画*/
+@-webkit-keyframes arrow{
+	0%{bottom: 0;}
+	50%{bottom: 30px;}
+	100%{bottom: 0;}
+}
+@-moz-keyframes arrow{
+	0%{bottom: 0;}
+	50%{bottom: 30px;}
+	100%{bottom: 0;}
+}
+@-ms-keyframes arrow{
+	0%{bottom: 0;}
+	50%{bottom: 30px;}
+	100%{bottom: 0;}
+}
+@-o-keyframes arrow{
+	0%{bottom: 0;}
+	50%{bottom: 30px;}
+	100%{bottom: 0;}
+}
+@keyframes arrow{
+	0%{bottom: 0;}
+	50%{bottom: 30px;}
+	100%{bottom: 0;}
+}
+/*car*/
+.car1{width: 404px;height: 212px;position: absolute;top: 525px;left: 500px;z-index: 2;}
+.car1 img{width: 202px;height: 106px;position: absolute;left: -200px;top: -20px;display: none;}
+.car2{width: 299px;height: 159px;position: absolute;top: 558px;left: 290px;z-index: 1;}
+.car2 img{width: 148px;height: 79px;position: absolute;top: 80px;left: 300px;display: none;}
+
+/*model*/
+.model01{width: 126px;height: 304px;position: absolute;top: 339px;left: 51px;}
+.model01 img{width: 63px;height: 152px;position: absolute;top: 139px;left: 0;}
+.model02{width: 133px;height: 376px;position: absolute;top: 292px;left: 176px;}
+.model02 img{width: 66px;height: 188px;position: absolute;top: 105px;left: 0;}
+.model03{width: 138px;height: 397px;position: absolute;top: 280px;right: 207px;}
+.model03 img{width: 69px;height: 196px;position: absolute;top: 104px;right: 0;}
+.model04{width: 144px;height: 347px;position: absolute;top: 363px;right: 86px;}
+.model04 img{width: 77px;height: 173px;position: absolute;top: 81px;right: 0;}
+
+.title-bg{width: 541px;height: 160px;position: absolute;/*top: 189px;*/top: 300px;left: 306px;background: url(images/title_bg.png) center center no-repeat;display: none;}
+.title-light{width: 528px;height: 155px;position: absolute;top: 0;left: 5px;background: url(images/title_light.png) center center no-repeat;}
+.title-text{width: 477px;height: 99px;position: absolute;top: 25px;left: 25px;background: url(images/title_text.png) center center no-repeat;-webkit-animation: text .8s .4s both;-moz-animation: text .5s .4s both;-ms-animation: text .5s .4s both;animation: text .5s .4s both;}
+.text{width: 335px;height: 92px;background: url(images/text.png) center center no-repeat;position: absolute;top: 590px;left: 430px;display: none;}
+/*头部文字动画*/
+@-webkit-keyframes text{
+	0%{opacity: 0;-webkit-transform: scale(.8);-moz-transform: scale(.8);-ms-transform: scale(.8);transform: scale(.8);}
+	30%{opacity: 1;-webkit-transform: scale(.9);-moz-transform: scale(.9);-ms-transform: scale(.9);transform: scale(.9);}
+	60%{opacity: 1;-webkit-transform: scale(1.1);-moz-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);}
+	100%{opacity: 1;-webkit-transform: scale(1);-moz-transform: scale(1);-ms-transform: scale(1);transform: scale(1);}
+}
+
+@-moz-keyframes text{
+	0%{opacity: .5;-webkit-transform: scale(.8);-moz-transform: scale(.8);-ms-transform: scale(.8);transform: scale(.8);}
+	30%{opacity: 1;-webkit-transform: scale(.9);-moz-transform: scale(.9);-ms-transform: scale(.9);transform: scale(.9);}
+	60%{opacity: 1;-webkit-transform: scale(1.1);-moz-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);}
+	100%{opacity: 1;-webkit-transform: scale(1);-moz-transform: scale(1);-ms-transform: scale(1);transform: scale(1);}
+}
+@-ms-keyframes text{
+	0%{opacity: .5;-webkit-transform: scale(.8);-moz-transform: scale(.8);-ms-transform: scale(.8);transform: scale(.8);}
+	30%{opacity: 1;-webkit-transform: scale(.9);-moz-transform: scale(.9);-ms-transform: scale(.9);transform: scale(.9);}
+	60%{opacity: 1;-webkit-transform: scale(1.1);-moz-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);}
+	100%{opacity: 1;-webkit-transform: scale(1);-moz-transform: scale(1);-ms-transform: scale(1);transform: scale(1);}
+}
+@-o-keyframes text{
+	0%{opacity: .5;-webkit-transform: scale(.8);-moz-transform: scale(.8);-ms-transform: scale(.8);transform: scale(.8);}
+	30%{opacity: 1;-webkit-transform: scale(.9);-moz-transform: scale(.9);-ms-transform: scale(.9);transform: scale(.9);}
+	60%{opacity: 1;-webkit-transform: scale(1.1);-moz-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);}
+	100%{opacity: 1;-webkit-transform: scale(1);-moz-transform: scale(1);-ms-transform: scale(1);transform: scale(1);}
+}
+@keyframes text{
+	0%{opacity: .5;-webkit-transform: scale(.8);-moz-transform: scale(.8);-ms-transform: scale(.8);transform: scale(.8);}
+	30%{opacity: 1;-webkit-transform: scale(.9);-moz-transform: scale(.9);-ms-transform: scale(.9);transform: scale(.9);}
+	60%{opacity: 1;-webkit-transform: scale(1.1);-moz-transform: scale(1.1);-ms-transform: scale(1.1);transform: scale(1.1);}
+	100%{opacity: 1;-webkit-transform: scale(1);-moz-transform: scale(1);-ms-transform: scale(1);transform: scale(1);}
+}
+
+@font-face {
+	font-family: 'arrow_down';
+    src: url('fonts/iconfont.eot'); /* IE9*/
+    src: url('fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.arrow_down{
+    font-family:"arrow_down" !important;
+    font-size:66px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    color: #a12375;
+}
+.car1 img,.car2 img,.model01 img,.model02 img,.model03 img,.model04 img,.title-bg,.text{opacity: 0;}
+
+.main{height: 1493px;background: url(images/main_bg.jpg) center top no-repeat;background-size: cover;}
+/*视频*/
+.video{width: 500px;float: left;}
+.videoCont{width: 480px;height: 360px;background-color: #fff;padding: 10px;border-radius: 10px;}
+.video-title,.survey-title{color: #fff;font-size: 26px;margin-bottom: 20px;font-style: italic;}
+/*报名*/
+.survey{width: 600px;float: left;margin-left: 100px;_display: inline;}
+.surveyCont{width: 540px;padding: 10px;background-color: #fff;border-radius: 10px;color: #000;font-size: 16px;}
+.surveyCont tr{height: 40px;}
+.submit{width: 138px;height: 34px;background: url(images/submit.png) center top no-repeat;border: none;cursor: pointer;color: #fff;font-size: 16px;-webkit-transition: all .3s;-moz-transition: all .3s;-ms-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
+.submit:hover{-webkit-transform: scale(1.1);-moz-transform: scale(1.1);-ms-transform: scale(1.1);-o-transform: scale(1.1);transform: scale(1.1);}
+/*活动说明*/
+.info{margin-top: 40px;}
+.infoCont{width: 990px;margin-left: auto;margin-right: auto;padding: 40px;background-color: #485e83;color: #fff;font-size: 14px;border-radius: 10px;}
+.info-title,.model-title{color: #fff;font-size: 26px;text-align: center;margin-bottom: 10px;}
+.infoCont p{text-indent: 2em;}
+.infoCont span{padding: 10px 0;}
+.infoCont em{color: #1aaac7;font-size: 18px;font-style: normal;font-weight: bold;}
+/*模特*/
+.modelBox{margin-top: 20px;text-align: center;}
+.modelPic{width: 1000px;margin-left: auto;margin-right: auto;}
+.modelImg{width: 150px;height: 200px;text-align: center;float: left;margin: 15px 50px;position: relative;overflow: hidden;-webkit-transition: all .5s;-moz-transition: all .5s;-ms-transition: all .5s;-o-transition: all .5s;transition: all .5s;}
+.modelImg img{border-radius: 50%;}
+.modelImg:hover{-webkit-transform: translateY(-10px);-moz-transform: translateY(-10px);-ms-transform: translateY(-10px);-o-transform: translateY(-10px);transform: translateY(-10px);}
+.modelImg a:hover .model-info{display: block;}
+.modelTxt{color: #fff;text-align: center;display: block;margin-top: 5px;font-size: 14px;-webkit-transition: .3s;-moz-transition: .3s;-ms-transition: .3s;-o-transition: .3s;-webkit-transition: .3s;}
+.modelTxt:hover{font-size: 16px;}
+.model-info{width: 100%;height: 150px;line-height: 24px;border-radius: 50%;background-color: #f60;color: #fff;text-align: center;position: absolute;top: 0;left: 0;display: none;}
+/*公用样式*/
+.comWidth{width: 1200px;margin-left: auto;margin-right: auto;}
+.red{color: #f00;}
+.inpTxt{width: 200px;height: 16px;line-height: 16px;padding: 5px 0 5px 10px;border-radius: 4px;border: 1px solid #f60;}
+.hide{display: none;}
+</style>
+</head>
+<body>
+<!-- 页头开始 -->
+<script src="http://www.pcauto.com.cn/global/zt_header/index.html"></script>
+<!-- 页头结束 -->
+<!-- 头部 -->
+<div id="wrap" class="wrap">
+	<div class="wrap comWidth">
+		<div class="car1"><img src="images/s5.png" alt=""></div>
+		<div class="car2"><img src="images/m3.png" alt=""></div>
+		<div class="model01"><img src="images/model01.png" alt=""></div>
+		<div class="model02"><img src="images/model02.png" alt=""></div>
+		<div class="model03"><img src="images/model03.png" alt=""></div>
+		<div class="model04"><img src="images/model04.png" alt=""></div>
+		<div class="title-bg">
+			<div class="title-light"></div>
+			<div class="title-text"></div>
+		</div>
+		<div class="text"></div>
+		<a href="javascript:;" class="tip arrow_down" title="往下拉 更精彩">&#xe651;</a>
+	</div>
+</div>
+<!-- 头部结束 -->
+<!-- 主内容 -->
+<div class="main">
+	<div class="comWidth">
+		<!-- 视频 报名 -->
+		<div class="clearfix">
+			<div class="video">
+				<p class="video-title">精彩视频</p>
+				<div class="videoCont">
+					<embed src="http://flv.pcvideo.com.cn/player/pcplayer_3.5.swf" flashVars="domain=pcauto&flv=http://auto.pcvideo.com.cn/pcauto/vpcauto/2015/03/16/1426483593845-vpcauto-73455-1.mp4&thumb=http://auto.pcvideo.com.cn/pcauto/vpcauto/2015/03/16/1426483593845-vpcauto-73455-1_640x360.jpg&id=44005&controlbar=always&skin=http://flv.pcvideo.com.cn/skin/pc_skin_3.5.swf&pt=1&loadswf=http://flv.pcvideo.com.cn/load/pcauto_load_3.1.swf&pointUrl=http://v.pcauto.com.cn/interface/video_point_in.jsp?vedio_id=44005" allowScriptAccess="always" allowFullScreen="true" width="480" height="360" type="application/x-shockwave-flash"></embed>
+				</div>
+			</div>
+			<div class="survey">
+				<p class="survey-title">在线报名</p>
+				<div class="surveyCont">
+					<form id="groupBuyForm" action="http://tuangou.pcauto.com.cn/action/do_groupbuy.jsp" method="post" onsubmit="return checkForm(this);">
+						<input type="hidden" name="redirect" id="redirect193" value="" /><input type="hidden" name="activityId" value="8058" /><input type="hidden" name="subStationId" value="271" /><input type="hidden" name="type" value="1" /><input type="hidden" id="referer193" name="referer" value="1" /><input type="hidden" name="refererType" value="2" /><input type="hidden" name="origin" value="1" />
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td align="right"><span class="red">*</span>&nbsp;您的姓名：</td>
+									<td align="left">
+										<input type="text" name="username" class="inpTxt"  title="请填写“真实姓名”~!.{1,20}"/>
+										<label for="male"><input id="male" type="radio" name="gender" value="男" checked="checked"/>&nbsp;先生</label>
+										&nbsp;<label for="female"><input id="female" type="radio" name="gender" value="女" />&nbsp;女士</label>
+									</td>
+								</tr>
+								<tr>
+									<td align="right"><span class="red">*</span>&nbsp;电话：</td>
+									<td align="left"><input type="text" name="phone" class="inpTxt" onblur="checkTelephone(this);"  title="请填写“联系电话”~!.{3,15}"/></td>
+								</tr>
+								<tr>
+									<td align="right">活动地点：</td>
+									<td align="left">4S店展厅</td>
+								</tr>
+								<tr>
+									<td align="right"><span class="red">*</span>&nbsp;所在城市：</td>
+									<td align="left">
+										<select name="provinceId" id="provinceId193" onchange="dogetregions('cityId193',this,'');">  <option value="">请选择省份... </option></select>
+										<select name="cityId" id="cityId193" title="请选择“城市”~!id">  <option value="">请选择城市... </option></select>
+									</td>
+								</tr>
+								<tr>
+									<td align="right"><span class="red">*</span>&nbsp;意向车型：</td>
+									<td align="left">
+										<select name="brandId" id="brandId193" onchange="dogetserialgroups('serialId193',this,'0');" style="width:120px;">  <option value="">请选择品牌... </option></select>
+										<select name="serialId" id="serialId193" onchange="dogetmodels('modelId193',this,'0');" style="width:120px;">  <option value="">请选择车系... </option></select>
+										<select name="modelId" id="modelId193" style="width:160px;" title="请选择“车型”~!id">  <option value="">请选择车型... </option></select>
+									</td>
+								</tr>
+								<tr>
+									<td align="right">期望价格：</td>
+									<td align="left"><input type="text" class="inpTxt" title="请输入正确的数字~float"/>&nbsp;万元</td>
+								</tr>
+								<tr>
+									<td align="right">购买时间：</td>
+									<td align="left">
+										<select name="buyTime" class="shortInput"><option value="0">随时准备购买</option><option value="14">一周内</option><option value="30">一个月内</option><option value="60">两个月内</option><option value="90">三个月内</option><option value="180">半年内</option></select>
+									</td>
+								</tr>
+								<tr>
+									<td align="right">&nbsp;</td>
+									<td align="left"><input type="submit" class="submit" name="submit" value="我要报名" /></td>
+								</tr>
+							</table>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- 视频 报名结束 -->
+		<!-- 活动说明 -->
+		<div class="info">
+			<p class="info-title">活动说明</p>
+			<div class="infoCont">
+				<p>
+					Bang！Bang！Bang！机会来了！海马汽车“YOUNG一起约女神”即日起至3月20日，海选招募活动进行中，赣州地区海选赛将于3月26日期间在赣州九购物商场中庭盛大举行举办，我们将评选出冠、亚、季军三名赣州女神代表参加4月举办的全国总决选，赢取万元现金大奖。
+				</p>
+				<span><em>报名时间：</em>2015年3月9日—3月20日</span><br>
+				<span><em>报名地点：</em>海马汽车赣州金海销售服务店（客家大道国际汽车城2-8号）</span><br>
+				<span><em>报名方式：</em>扫描“赣州金海郑州海马”官方微信或者搜索gzjinhaizzhm微信号参与报名或拨打电话：0797-8373222参与报名。</span><br>
+				<span><em>参赛要求：</em>1．只要是年满16周岁至28周岁的未婚女性，不限地区、民族和国籍都可以来报名；2．凡未满18岁者，须附法定监护人同意书；3．身高158公分以上（含158公分）；4．无任何犯罪记录，身体健康；</span><br>
+				<span><em>海选流程：</em>才艺+形象+气质展示</span><br>
+				<span><em>海选奖项：</em>赣州全民女神一、二、三、名，将得到专业艺术包装，并代表赣州参与4月的全国总决赛，赢取万元现金大奖；</span><br>
+				<span><em>区域奖项：</em>
+					<p>冠军：10000元现金+10000元购车基金；</p>
+					<p>亚军：8000元现金+10000元购车基金；</p>
+					<p>季军：5000元现金+10000元购车基金；</p>
+				</span>
+				<span><em>进区域赛条件：</em>各地区海选赛前3名参加女神任务，在官网点赞排名，排名前20名参加区域决赛。</span><br>
+			</div>
+		</div>
+		<!-- 活动说明结束 -->
+		<!-- 模特 -->
+		<div class="modelBox">
+			<p class="model-title">约女神</p>
+			<div class="modelPic"><div class="modelImg">
+				<a href="images/pic/01_2.jpg" data-lightbox="model01">
+					<img src="images/avatar/01.jpg" alt="">
+					<div class="model-info">
+						<p>王慧</p>
+						<p>身高：168cm</p>
+						<p>体重：55kg</p>
+						<p>三围：86/62/88</p>
+						<p>宣言：机会是留给有准备的人</p>
+					</div>
+				</a><br>
+				<a href="images/pic/01_1.jpg" data-lightbox="model01" class="hide"></a><a href="images/pic/01_3.jpg" data-lightbox="model01" class="hide"></a>
+				<a href="http://hmyoung.allyes.com/beauty/index.html" target="_blank" class="modelTxt">想约女神？<br>立即报名</a>
+			</div>
+			<div class="modelImg">
+				<a href="images/pic/02_2.jpg" data-lightbox="model02">
+					<img src="images/avatar/02.jpg" alt="">
+					<div class="model-info">
+						<p>胡璟</p>
+						<p>身高：170cm</p>
+						<p>体重：55kg</p>
+						<p>三围：86/62/88</p>
+						<p>宣言：有梦就有希望</p>
+					</div>
+				</a><br>
+				<a href="images/pic/02_3.jpg" data-lightbox="model02" class="hide"></a><a href="images/pic/02_1.jpg" data-lightbox="model02" class="hide"></a><a href="images/pic/02_4.jpg" data-lightbox="model02" class="hide"></a>
+				<a href="http://hmyoung.allyes.com/beauty/index.html" target="_blank" class="modelTxt">想约女神？<br>立即报名</a>
+			</div>
+			<div class="modelImg">
+				<a href="images/pic/03_1.jpg" data-lightbox="model03">
+					<img src="images/avatar/03.jpg" alt="">
+					<div class="model-info">
+						<p>谢薇</p>
+						<p>身高：168cm</p>
+						<p>体重：48kg</p>
+						<p>三围：85/61/86</p>
+						<p>宣言：活出精彩的自己 塑造完美女神</p>
+					</div>
+				</a><br>
+				<a href="images/pic/03_2.jpg" data-lightbox="model03" class="hide"></a><a href="images/pic/03_3.jpg" data-lightbox="model03" class="hide"></a><a href="images/pic/03_4.jpg" data-lightbox="model03" class="hide"></a>
+				<a href="http://hmyoung.allyes.com/beauty/index.html" target="_blank" class="modelTxt">想约女神？<br>立即报名</a>
+			</div>
+			<div class="modelImg">
+				<a href="images/pic/04_2.jpg" data-lightbox="model04">
+					<img src="images/avatar/04.jpg" alt="">
+					<div class="model-info">
+						<p>黄婕</p>
+						<p>身高：167cm</p>
+						<p>体重：46kg</p>
+						<p>三围：82/60/87</p>
+						<p>宣言：一百人眼中有一百种我 我只做我自己</p>
+					</div>
+				</a><br>
+				<a href="images/pic/04_1.jpg" data-lightbox="model04" class="hide"></a><a href="images/pic/04_3.jpg" data-lightbox="model04" class="hide"></a>
+				<a href="http://hmyoung.allyes.com/beauty/index.html" target="_blank" class="modelTxt">想约女神？<br>立即报名</a>
+			</div>
+			<div class="modelImg">
+				<a href="images/pic/05_2.jpg" data-lightbox="model05">
+					<img src="images/avatar/05.jpg" alt="">
+					<div class="model-info">
+						<p>王子甲</p>
+						<p>身高：170cm</p>
+						<p>体重：49kg</p>
+						<p>三围：85/62/87</p>
+						<p>宣言：秀出真我风采</p>
+					</div>
+				</a><br>
+				<a href="images/pic/05_1.jpg" data-lightbox="model05" class="hide"></a><a href="images/pic/05_3.jpg" data-lightbox="model05" class="hide"></a>
+				<a href="http://hmyoung.allyes.com/beauty/index.html" target="_blank" class="modelTxt">想约女神？<br>立即报名</a>
+			</div>
+			<div class="modelImg">
+				<a href="images/pic/06_1.jpg" data-lightbox="model06">
+					<img src="images/avatar/06.jpg" alt="">
+					<div class="model-info">
+						<p>余佳妍</p>
+						<p>身高：167cm</p>
+						<p>体重：45kg</p>
+						<p>三围：82/61/86</p>
+						<p>宣言：我就是我 是不一样的烟火</p>
+					</div>
+				</a><br>
+				<a href="images/pic/06_2.jpg" data-lightbox="model06" class="hide"></a><a href="images/pic/06_3.jpg" data-lightbox="model06" class="hide"></a><a href="images/pic/06_4.jpg" data-lightbox="model06" class="hide"></a>
+				<a href="http://hmyoung.allyes.com/beauty/index.html" target="_blank" class="modelTxt">想约女神？<br>立即报名</a>
+			</div>
+			<div class="modelImg">
+				<a href="images/pic/07_1.jpg" data-lightbox="model07">
+					<img src="images/avatar/07.jpg" alt="">
+					<div class="model-info">
+						<p>曾莉</p>
+						<p>身高：170cm</p>
+						<p>体重：47kg</p>
+						<p>三围：83/60/86</p>
+						<p>宣言：相信我选择我相信你的选择没有错</p>
+					</div>
+				</a><br>
+				<a href="images/pic/07_2.jpg" data-lightbox="model07" class="hide"></a>
+				<a href="http://hmyoung.allyes.com/beauty/index.html" target="_blank" class="modelTxt">想约女神？<br>立即报名</a>
+			</div>
+			<div class="modelImg">
+				<a href="images/pic/08_1.jpg" data-lightbox="model08">
+					<img src="images/avatar/08.jpg" alt="">
+					<div class="model-info">
+						<p>张雅栗</p>
+						<p>身高：168cm</p>
+						<p>体重：48kg</p>
+						<p>三围：84/60/87</p>
+						<p>宣言：做最美好的我最完美的女神</p>
+					</div>
+				</a><br>
+				<a href="images/pic/08_2.jpg" data-lightbox="model08" class="hide"></a>
+				<a href="http://hmyoung.allyes.com/beauty/index.html" target="_blank" class="modelTxt">想约女神？<br>立即报名</a>
+			</div></div>
+		</div>
+		<!-- 模特结束 -->
+	</div>
+</div>
+<!-- 主内容结束 -->
+<!-- 页面脚本区开始 -->
+<script src="http://www.pcauto.com.cn/global/footer/index.html" class=" defer"></script>
+<!-- 页面脚本区结束 -->
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://tuangou.pcauto.com.cn/js/checkForm.js"></script>
+<script src="js/lightbox.min.js" charset="utf-8"></script>
+<script>
+//(function (){
+	
+	$(function (){
+
+		setTimeout(header,30);
+
+		var oWrap = $('#wrap');
+		$('.tip').on('click',function (){
+			$('html,body').animate({
+				scrollTop: oWrap.height()
+			},500);
+		});
+
+		dogetmanufacturers('brandId193', '8');
+		dogetprovinces('provinceId193', '16');
+		var local = window.location.href;
+		if ($("#redirect193").val() == "") {
+			$("#redirect193").val(local)
+		}
+		$("#referer193").val(local);
+		
+	});
+
+	// 头部动画
+	function header(){
+		setTimeout(function (){
+			$('.car1 img').css('display', 'block').animate({
+				'left': 0, 'top': 0,
+				'width': '404px', 'height': '212px',
+				'opacity': 1
+			},400,'swing');
+		},0);
+
+		setTimeout(function (){
+			$('.car2 img').css('display', 'block').animate({
+				'left': 0, 'top': 0,
+				'width': '299px', 'height': '159px',
+				'opacity': 1
+			},300,'swing');
+		},400);
+
+		setTimeout(function (){
+			$('.model01 img').css('display', 'block').animate({
+				'left': 0, 'top': 0,
+				'width': '126px', 'height': '304px',
+				'opacity': 1
+			},500,'swing');
+		},800);
+
+		setTimeout(function (){
+			$('.model02 img').css('display', 'block').animate({
+				'left': 0, 'top': 0,
+				'width': '133px', 'height': '376px',
+				'opacity': 1
+			},500,'swing');
+		},1100);
+
+		setTimeout(function (){
+			$('.model03 img').css('display', 'block').animate({
+				'right': 0, 'top': 0,
+				'width': '138px', 'height': '397px',
+				'opacity': 1
+			},500,'swing');
+		},900);
+
+		setTimeout(function (){
+			$('.model04 img').css('display', 'block').animate({
+				'right': 0, 'top': 0,
+				'width': '144px', 'height': '347px',
+				'opacity': 1
+			},500,'swing');
+		},1100);
+
+		setTimeout(function (){
+			$('.title-bg').css('display', 'block').animate({
+				'top': '189px',
+				'opacity': 1
+			},500,'linear');
+		},1300);
+
+		setTimeout(function (){
+			$('.text').css('display', 'block').animate({
+				'top': '390px',
+				'opacity': 1
+			},800,'swing');
+		},1500);
+	}
+
+	// 报名
+	function dogetmanufacturers(tid, s) {
+		$.getScript("http://tuangou.pcauto.com.cn/i/_brands.jsp?keep=1&tag=" + tid + "&selected=" + s)
+	}
+	function dogetserialgroups(tid, t, s) {
+		$.getScript("http://tuangou.pcauto.com.cn/i/_serials.jsp?keep=1&tag=" + tid + "&brandId=" + $(t).val() + "&selected=" + s)
+	}
+	function dogetmodels(tid, t, s) {
+		$.getScript("http://tuangou.pcauto.com.cn/i/_models.jsp?keep=1&tag=" + tid + "&serialId=" + $(t).val() + "&selected=" + s)
+	}
+	function dogetprovinces(tid, s) {
+		$.getScript("http://tuangou.pcauto.com.cn/i/_provinces.jsp?keep=1&tag=" + tid + "&selected=" + s)
+	}
+	function dogetregions(tid, t, s) {
+		$.getScript("http://tuangou.pcauto.com.cn/i/_regions.jsp?keep=1&tag=" + tid + "&provinceId=" + $(t).val() + "&selected=" + s)
+	}
+	
+//})();
+</script>
+</body>
+</html>

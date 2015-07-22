@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}">
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}">
+<link href="{dede:global.cfg_templets_skin/}/style/qlx.css" type="text/css" rel="stylesheet">
+<link href="{dede:global.cfg_templets_skin/}/style/head_foot.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/tab.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/MSClass2.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/s_002" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/CheckInvitejs.htm" type="text/javascript"></script>
+</head>
+
+<body>
+{dede:include filename="head.htm"/}
+<div id="content">
+  <div class="con01">
+  <ul class="cnt1">
+    	<li class="left1">
+        	<p>ڵλã 
+                <span>{dede:field name='position' runphp='yes'}
+				@me=substr(@me,0,-2);{/dede:field}</span>
+            </p>
+        </li>
+        <li class="right1">
+        	<p>ߣ0827-5222120</p>
+        </li>
+  </ul>
+	<ul class="cnt2">
+    	<li class="left2">
+        	<div class="nr1">
+                <div class="left">
+                	<h3>&gt;ۺϼȵ&lt;</h3>
+                    <div class="wz1">
+					{dede:arclist flag='h' typeid='16' row='1' orderby='pubdate'  infolen='70' titlelen='35' }
+                    	<p class="bt"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+                        <p class="wznr">[field:infos/]...<a href="[field:arcurl/]" target="_blank"><span class="bo">[]</span></a></p>
+					{/dede:arclist}
+
+                    </div>
+                    <div class="wz2">
+					{dede:arclist flag='c' typeid='16' row='4' orderby='pubdate' titlelen='30' }
+					<p><span>&gt;&gt;&nbsp;</span><a href="[field:arcurl/]">[field:title/]</a></p>
+					{/dede:arclist}
+</div>
+                </div>
+                <div class="right">
+                <h3>ۺϼҼ</h3>
+                    <div class="wz1">
+                        <p class="wznr">
+ۺϼԾ弲չٴιۺϼƽҽԺرƸں͡ƵһררҶԻ߲˽ĻϽмϣʵϻ档
+<a href="{dede:global.cfg_basehost/}/jpks/"><span class="bo">顿</span></a></p>
+                    </div>
+                    <div class="wz2">
+                    	<img src="{dede:global.cfg_templets_skin/}/images/honor.jpg">
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="nr3">
+            	<div class="box1">
+                	<div class="left">
+                   		<h3>&gt;<a href="{dede:global.cfg_basehost/}/neike">ڿ</a>&lt;<span class="gd"><a href="{dede:global.cfg_basehost/}/neike">&gt;&gt;</a></span></h3>
+                        <div class="wz1">
+                        	<a href="{dede:global.cfg_basehost/}/neike"><img src="{dede:global.cfg_templets_skin/}/images/qian01.jpg"></a>
+                            <div class="wz2">
+							{dede:arclist flag='c' typeid='17' row='1' orderby='pubdate' titlelen='25' infolen='70'}
+								<p class="bt"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+								<p class="wznr">[field:infos/]...<a href="[field:arcurl/]" target="_blank"><span class="bo">[]</span></a></p>
+								{/dede:arclist}
+
+                            </div>
+                        </div>
+                        <div class="wzp">
+						{dede:arclist typeid='17' row='4' orderby='pubdate' titlelen='35'}
+							<p><span>&gt;&gt;&nbsp;</span><a href="[field:arcurl/]">[field:title/]</a></p>
+						{/dede:arclist}
+</div>
+                    </div>
+                	<div class="right">
+                   		<h3>&gt;<a href="{dede:global.cfg_basehost/}/waike/">΢</a>&lt;<span class="gd"><a href="{dede:global.cfg_basehost/}/waike">&gt;&gt;</a></span></h3>
+                        <div class="wz1">
+                        	<a href="{dede:global.cfg_basehost/}/waike/"><img src="{dede:global.cfg_templets_skin/}/images/qian02.jpg"></a>
+                            <div class="wz2">
+							{dede:arclist flag='c' typeid='18' row='1' orderby='pubdate' titlelen='25' infolen='70'}
+								<p class="bt"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+								<p class="wznr">[field:infos/]...<a href="[field:arcurl/]" target="_blank"><span class="bo">[]</span></a></p>
+								{/dede:arclist}
+
+                            </div>
+                        </div>
+                        <div class="wzp">
+						{dede:arclist typeid='18' row='4' orderby='pubdate' titlelen='35'}
+							<p><span>&gt;&gt;&nbsp;</span><a href="[field:arcurl/]">[field:title/]</a></p>
+						{/dede:arclist}
+</div>
+                    </div>
+                </div>
+                <div class="box1">
+                	<div class="left">
+                   		<h3>&gt;<a href="{dede:global.cfg_basehost/}/gck/">س</a>&lt;<span class="gd"><a href="{dede:global.cfg_basehost/}/gck">&gt;&gt;</a></span></h3>
+                        <div class="wz1">
+                        	<a href="{dede:global.cfg_basehost/}/gck/"><img src="{dede:global.cfg_templets_skin/}/images/qian03.jpg"></a>
+                            <div class="wz2">
+							{dede:arclist flag='c' typeid='19' row='1' orderby='pubdate' titlelen='25' infolen='70'}
+								<p class="bt"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+								<p class="wznr">[field:infos/]...<a href="[field:arcurl/]" target="_blank"><span class="bo">[]</span></a></p>
+								{/dede:arclist}
+
+                            </div>
+                        </div>
+                        <div class="wzp">
+						{dede:arclist typeid='19' row='4' orderby='pubdate' titlelen='35'}
+							<p><span>&gt;&gt;&nbsp;</span><a href="[field:arcurl/]">[field:title/]</a></p>
+						{/dede:arclist}
+</div>
+                    </div>
+                	<div class="right">
+                   		<h3>&gt;<a href="{dede:global.cfg_basehost/}/zyk/">ҽ</a>&lt;<span class="gd"><a href="{dede:global.cfg_basehost/}/zyk">&gt;&gt;</a></span></h3>
+                        <div class="wz1">
+                        	<a href="{dede:global.cfg_basehost/}/zyk/"><img src="{dede:global.cfg_templets_skin/}/images/qian04.jpg"></a>
+                            <div class="wz2">
+							{dede:arclist flag='c' typeid='20' row='1' orderby='pubdate' titlelen='25' infolen='70'}
+								<p class="bt"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+								<p class="wznr">[field:infos/]...<a href="[field:arcurl/]" target="_blank"><span class="bo">[]</span></a></p>
+								{/dede:arclist}
+
+                            </div>
+                        </div>
+                        <div class="wzp">
+						{dede:arclist typeid='20' row='4' orderby='pubdate' titlelen='35'}
+							<p><span>&gt;&gt;&nbsp;</span><a href="[field:arcurl/]">[field:title/]</a></p>
+						{/dede:arclist}
+</div>
+                    </div>
+                </div>
+                <div class="box1">
+                	<div class="left">
+                   		<h3>&gt;<a href="{dede:global.cfg_basehost/}/zhks/wgk">ٿ</a>&lt;<span class="gd"><a href="{dede:global.cfg_basehost/}/zhks/wgk">&gt;&gt;</a></span></h3>
+                        <div class="wz1">
+                        	<a href="{dede:global.cfg_basehost/}/zhks/wgk/"><img src="{dede:global.cfg_templets_skin/}/images/qian05.jpg"></a>
+                            <div class="wz2">
+							{dede:arclist flag='c' typeid='64' row='1' orderby='pubdate' titlelen='25' infolen='70'}
+								<p class="bt"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+								<p class="wznr">[field:infos/]...<a href="[field:arcurl/]" target="_blank"><span class="bo">[]</span></a></p>
+								{/dede:arclist}
+
+                            </div>
+                        </div>
+                        <div class="wzp">
+						{dede:arclist typeid='64' row='4' orderby='pubdate' titlelen='35'}
+							<p><span>&gt;&gt;&nbsp;</span><a href="[field:arcurl/]">[field:title/]</a></p>
+						{/dede:arclist}
+</div>
+                    </div>
+                	<div class="right">
+                   		<h3>&gt;<a href="{dede:global.cfg_basehost/}/zhks/tjzx/"></a>&lt;<span class="gd"><a href="{dede:global.cfg_basehost/}/zhks/tjzx">&gt;&gt;</a></span></h3>
+                        <div class="wz1">
+                        	<a href="{dede:global.cfg_basehost/}/zhks/tjzx/"><img src="{dede:global.cfg_templets_skin/}/images/qian06.jpg"></a>
+                            <div class="wz2">
+							{dede:arclist flag='c' typeid='65' row='1' orderby='pubdate' titlelen='25' infolen='70'}
+								<p class="bt"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+								<p class="wznr">[field:infos/]...<a href="[field:arcurl/]" target="_blank"><span class="bo">[]</span></a></p>
+								{/dede:arclist}
+
+                            </div>
+                        </div>
+                        <div class="wzp">
+						{dede:arclist typeid='65' row='4' orderby='pubdate' titlelen='35'}
+							<p><span>&gt;&gt;&nbsp;</span><a href="[field:arcurl/]">[field:title/]</a></p>
+						{/dede:arclist}
+</div>
+                    </div>
+                </div>
+            </div>
+        </li>
+          {dede:include filename="right.htm"/}
+        <div class="clear"></div>
+    </ul>
+
+</div>
+</div>
+   {dede:include filename="footer.htm"/}
+</body></html>

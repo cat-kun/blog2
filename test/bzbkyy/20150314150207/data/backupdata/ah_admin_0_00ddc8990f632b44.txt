@@ -1,0 +1,1 @@
+INSERT INTO `ah_admin` VALUES('1','10','guanli','fe48c908deb0f4c3bd36','guanli','','','','1418794786','223.240.131.82');

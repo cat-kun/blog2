@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/xjsb.css" type="text/css" rel="stylesheet">
+<link href="{dede:global.cfg_templets_skin/}/style/head_foot.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/MSClass2.js" type="text/javascript"></script>
+<!--<script src="{dede:global.cfg_templets_skin/}/js/s_002" type="text/javascript"></script><script src="{dede:global.cfg_templets_skin/}/js/CheckInvitejs.htm" type="text/javascript"></script>--></head>
+<body>
+{dede:include filename="head.htm"/}
+
+<div class="tszl">
+	<div class="x2 left">
+		<div class="x21">
+			<p>首页导航</p>
+			<ul>
+				<li><a href="{dede:global.cfg_basehost/}/hxdt" target="_blank">华西动态</a></li>
+				<li><a href="{dede:global.cfg_basehost/}/jpks" target="_blank">精品科室</a></li>
+				<li style="background:url({dede:global.cfg_templets_skin/}/images/tszl/x3.jpg) no-repeat;"><a style="color:#ffffff;" href="{dede:global.cfg_basehost/}/tszl" target="_blank">特色诊疗</a></li>
+				<li><a href="{dede:global.cfg_basehost/}/gxsb" target="_blank">高新设备</a></li>
+				<li><a href="{dede:global.cfg_basehost/}/lxwm" target="_blank">联系我们</a></li>
+			</ul>
+		</div>
+		{dede:include filename="list_right.htm"/}
+            	</div>
+
+	<div class="tszl0 right">
+		<div class="x31"><p><span>当前位置:</span>&nbsp;{dede:field name='position' runphp='yes'}@me=substr(@me,0,-2);{/dede:field}</p></div>
+		<div class="zl2"><img src="{dede:global.cfg_templets_skin/}/images/tszl/zl01.jpg">
+			<p>华西医院立足于泌尿外科医学的最前沿，聘请泌尿外科专家钟昌遗主任坐诊，把提高医疗技术和医疗
+				质量放在学科建设的第一位，加强医疗学术交流，率先开创了无痛微创新时代。</p>
+		</div>
+		<div class="zl3">
+			<ul>
+			{dede:arclist typeid='56' row='4' orderby='pubdate'  infolen='70' imgwidth='134' imgheight='134' addfields='shiyingzheng' channelid='2'}
+				<li>
+					<p class="zl31">[field:title/]</p>
+					<div class="zl32">[field:image/]
+						<div class="zl33">[field:infos/]...<a href="[field:arcurl/]" target="_blank">【详情】</a></div>					
+					</div>
+					<div class="zl34">适应症：[field:shiyingzheng/]</div>
+					
+					<div class="zl35"><img src="/templets/default/images/tszl/zl14.jpg">
+						<a href="javascript:void(0)" onclick="openZoosUrl();"><img src="/templets/default/images/tszl/zl15.jpg"></a>
+						<a href="javascript:void(0)" onclick="openZoosUrl();"><img src="/templets/default/images/tszl/zl16.jpg"></a>
+					</div>
+					
+				</li>
+				{/dede:arclist}
+				
+			</ul>
+		</div>
+		<div class="zl2"><img src="{dede:global.cfg_templets_skin/}/images/tszl/zl17.jpg">
+			<p>华西医院妇科诊疗中心大力整合江津全国资源，聘请北京协和医院孙大为教授等为技术指导进行学术交流；经过多
+				年建设，医院在意外怀孕、宫颈糜烂等妇科常见病方面优势显著，特色鲜明。</p>
+		</div>
+		<div class="zl4">
+			<ul>
+				{dede:arclist typeid='57' row='4' orderby='pubdate'  infolen='70' imgwidth='134' imgheight='134' addfields='shiyingzheng' channelid='2'}
+				<li>
+					<p class="zl41">[field:title/]</p>
+					<div class="zl32">[field:image/]
+						<div class="zl33">[field:infos/]...<a href="[field:arcurl/]" target="_blank">【详情】</a></div>					
+					</div>
+					<div class="zl34">适应症：[field:shiyingzheng/]</div>
+					<div class="zl35"><img src="/templets/default/images/tszl/zl14.jpg">
+						<a href="javascript:void(0)" onclick="openZoosUrl();"><img src="/templets/default/images/tszl/zl18.jpg"></a>
+						<a href="javascript:void(0)" onclick="openZoosUrl();"><img src="/templets/default/images/tszl/zl19.jpg"></a>
+					</div>
+				</li>
+				{/dede:arclist}
+			</ul>
+		</div>
+		<div class="zl2"><img src="{dede:global.cfg_templets_skin/}/images/tszl/zl20.jpg">
+			<p>以激光和内窥镜等微创设备代替传统器具，力求以最小的切口路径和最少的组织损伤，完成对体内病灶的诊断及
+				治疗，注重微创技术的临床开发与应用。华西医院在微创外科领域走出了一条新路子。</p>
+		</div>
+		<div class="zl4">
+			<ul>
+				{dede:arclist typeid='58' row='4' orderby='pubdate'  infolen='70' imgwidth='134' imgheight='134' addfields='shiyingzheng' channelid='2'}
+				<li>
+					<p class="zl401">[field:title/]</p>
+					<div class="zl32">[field:image/]
+						<div class="zl33">[field:infos/]...<a href="[field:arcurl/]" target="_blank">【详情】</a></div>					
+					</div>
+					<div class="zl34">适应症：[field:shiyingzheng/]</div>
+					<div class="zl35"><img src="/templets/default/images/tszl/zl14.jpg">
+						<a href="javascript:void(0)" onclick="openZoosUrl();"><img src="/templets/default/images/tszl/zl21.jpg"></a>
+						<a href="javascript:void(0)" onclick="openZoosUrl();"><img src="/templets/default/images/tszl/zl22.jpg"></a>
+					</div>
+				</li>
+				{/dede:arclist}
+			</ul>
+		</div>
+	</div>
+</div>
+   {dede:include filename="footer.htm"/}
+</body></html>

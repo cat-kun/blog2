@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{dede:field name='typename'/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/list.css" type="text/css" rel="stylesheet">
+<link href="{dede:global.cfg_templets_skin/}/style/head_foot.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery-1.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/tab.js"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/MSClass2.js" type="text/javascript"></script>
+<script src="{dede:global.cfg_templets_skin/}/js/s_002" type="text/javascript"></script><script src="{dede:global.cfg_templets_skin/}/js/JS_Float.htm" type="text/javascript"></script></head>
+
+<body>
+
+{dede:include filename="head.htm"/}
+<div id="content">
+ <div class="con01">
+   <ul class="cnt2">
+    	<li class="left2">
+        	<div class="nr1">
+            	{dede:include filename="left.htm"/}
+                <div class="nrright">
+				
+                	<div class="db1">
+					{dede:arclist row='1' flag='h'  titlelen=50 orderby=pubdate infolen='200'}
+                    <p class="bt"><a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+                    <p class="wz">[field:infos/]...<a href="[field:arcurl/]" target="_blank">[]</a>
+					</p>
+					{/dede:arclist}  
+                    </div>
+					
+		            <div class="db2">
+					{dede:list row=20 titlelen=50 orderby=pubdate}  
+						<p><span>[field:stime/]</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a> </p> 
+						[field:global name=autoindex runphp="yes"]  
+						if(@me%10==0)@me="<hr />";  
+						else @me="";  
+						[/field:global] 
+						
+						{/dede:list}  
+							
+					</div>	                    
+                    <div class="page">
+                        <ul class="pagestyle">
+{dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="20"/}
+                        </ul>
+					</div>
+                </div>
+        </div></li>
+           {dede:include filename="right.htm"/}
+        <div class="clear"></div>
+    </ul>
+</div>
+</div>
+   {dede:include filename="footer.htm"/}
+</body></html>
