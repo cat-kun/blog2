@@ -10,6 +10,7 @@
 <meta name="description" content="银狐的个人主页">
 <meta name="keywords" content="银狐，个人主页">
 <link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <style>
 @charset "UTF-8";
 /*reset*/
@@ -34,35 +35,76 @@ a {blr:expression(this.onFocus=this.blur())} /* IE */
 .iconfont{font-family:"iconfont"!important;font-size:16px;font-style:normal;-moz-osx-font-smoothing:grayscale}
 /*头部开始*/
 #header{width: 100%;height: 64px;position: fixed;top: 0;left: 0;z-index: 2;box-shadow: 0 0 5px rgba(0,0,0,.2);background-color: #fff;}
-#header .title{font: 30px/64px 'Microsoft Yahei';color: #f60;margin-left: 10px;float: left;}
+#header .title{font: 30px/64px 'Microsoft Yahei';color: #f60;margin-left: 10px;float: left;text-decoration: none;}
 .slogan{width: 80px;height: 21px;font: 14px/21px 'Microsoft Yahei';background-color: #ccc;padding: 0 5px;border-radius: 3px;color: #fff;transition: letter-spacing .3s;-webkit-transition: letter-spacing .3s;text-align: center;position: relative;display: inline-block;margin-left: 5px;vertical-align: middle;}
 .slogan:after{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: #ccc url(http://c7sky.com/wp-content/themes/minty/img/home-icon.png) no-repeat 50%;content: "";opacity: 0;transition: opacity .3s;-webkit-transition: opacity .3s;}
 .title:hover .slogan{letter-spacing: -14px;}
 .title:hover .slogan:after{opacity: 1}
 /*头部导航*/
 /*.nav{float: left;margin-left: 300px;height: 64px;}*/
-.nav{width: 300px;margin: 0 auto;}
+/* .nav{width: 300px;margin: 0 auto;}
 .nav a{font: 18px/60px 'Microsoft Yahei';color: #333;border-bottom: 4px solid transparent;padding: 0 10px;float: left;margin: 0 10px;transition: border-bottom-color .3s;text-align: center;}
 .nav .turrent{color: #333;font-weight: 700;}
 .nav .turrent,.nav a:hover{border-bottom-color: #f60;}
 .content{float: right;margin: 10px 20px 0 0;}
 .content a{color: #ccc;font-size: 26px;transition: color .3s;margin: 0 4px;}
-.content a:hover{color: #f60;}
+.content a:hover{color: #f60;} */
+@media (min-width: 768px){
+	.navbar-nav{float: right;}
+	.navbar-nav>li{height: 64px;line-height: 64px;}
+}
+.navbar-default .navbar-nav a{}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{color: #f60;background: none;font-size: 16px;}
+@media (min-width: 768px){
+	.navbar-nav>li>a{font-size: 16px;padding-top: 20px;padding-bottom: 20px;}
+	.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{color: #f60;}
+}
+.navbar-toggle{margin-top: 13px;}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{background-color: #fff;}
+.navbar-default .navbar-toggle .icon-bar{background-color: #f60;}
+.navbar-default .navbar-nav>li>a{font-size: 14px;}
 </style>
 </head>
 <body>
 <header id="header" class="clearfix">
-	<a href="http://dengxiaozhen.github.io/" class="title">小狐狸<i class="slogan">分享好东西</i></a>
+	<div class="navbar navbar-default" role="navigation">
+		<div class="navbar-header">
+			<!-- .navbar-toggle样式用于toggle收缩的内容，即nav-collapse collapse样式所在元素 -->
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+			<span class="sr-only">Toggle Navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+			<a href="http://dengxiaozhen.github.io/" class="title" class="navbar-brand">小狐狸<i class="slogan">分享好东西</i></a>
+		</div>
+		<!-- 屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+		<div class="collapse navbar-collapse navbar-responsive-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active turrent"><a href="javascript:">首页</a></li>
+				<li><a href="javascript:">文章归档</a></li>
+				<li><a href="javascript:">关于我</a></li>
+				<li><a href="http://weibo.com/206139456" class="iconfont weibo">&#xe600;&nbsp;新浪微博</a></li>
+				<li><a href="http://user.qzone.qq.com/626269256" class="iconfont qqzone">&#xe601;&nbsp;QQ空间</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- <a href="http://dengxiaozhen.github.io/" class="title">小狐狸<i class="slogan">分享好东西</i></a>
 	<div class="content">
-		<a href="http://weibo.com/206139456" class="iconfont weibo">&#xe600;</a>
-		<a href="http://user.qzone.qq.com/626269256" class="iconfont qqzone">&#xe601;</a>
-		<!-- <a href="javascript:" class="iconfont weibo">&#xe600;</a> -->
+		
+		
+		<a href="javascript:" class="iconfont weibo">&#xe600;</a>
 	</div>
 	<nav class="nav clearfix">
 		<a href="javascript:" class="turrent">首页</a>
 		<a href="javascript:">文章归档</a>
 		<a href="javascript:">关于我</a>
-	</nav>
+	</nav> -->
 </header>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
