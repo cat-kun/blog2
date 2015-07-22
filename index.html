@@ -51,15 +51,16 @@ a {blr:expression(this.onFocus=this.blur())} /* IE */
 .content a:hover{color: #f60;} */
 @media (min-width: 768px){
 	.navbar-nav{float: right;}
-	.navbar-nav>li{height: 64px;line-height: 64px;}
+	.navbar-nav>li{height: 64px;line-height: 64px;margin: 0 10px;}
+	.navbar-nav>li>a{font-size: 16px;padding-top: 20px;padding-bottom: 20px;transition: color .3s;border-bottom: 4px solid transparent;border-bottom-color .3s;}
+	.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{color: #f60;}
+	.navbar-default .navbar-nav>li.active>a{border-bottom: 4px solid #f60;}
+	.navbar-default .navbar-nav>li>a:hover{border-bottom-color: #f60;transition: border-bottom-color .3s;}
 }
 .navbar-default .navbar-nav a{}
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{color: #f60;background: none;font-size: 16px;}
-@media (min-width: 768px){
-	.navbar-nav>li>a{font-size: 16px;padding-top: 20px;padding-bottom: 20px;}
-	.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{color: #f60;}
-}
 .navbar-toggle{margin-top: 13px;}
+
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{background-color: #fff;}
 .navbar-default .navbar-toggle .icon-bar{background-color: #f60;}
 .navbar-default .navbar-nav>li>a{font-size: 14px;}
