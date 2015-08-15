@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Now</title>
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no,email=no" />
+<meta name="renderer" content="webkit">
+<meta name="author" content="银狐">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/swiper3.1.0.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<script>
+var _html,view_width;
+fontSize();
+window.onresize = fontSize;
+function fontSize(){
+	_html = document.getElementsByTagName('html')[0];
+	view_width = _html.getBoundingClientRect().width;
+	view_width>640 ? _html.style.fontSize = 640/16+'px' : _html.style.fontSize = view_width/16+'px';
+}
+// 内容自适应
+scaleW = window.innerWidth / 320;
+scaleH = window.innerHeight / 480;
+var resizes = document.querySelectorAll('.resize');
+for (var j = 0; j < resizes.length; j++) {
+	resizes[j].style.width = parseInt(resizes[j].style.width) * scaleW + 'px';
+	resizes[j].style.height = parseInt(resizes[j].style.height) * scaleH + 'px';
+	resizes[j].style.top = parseInt(resizes[j].style.top) * scaleH + 'px';
+	resizes[j].style.left = parseInt(resizes[j].style.left) * scaleW + 'px';
+}
+</script>
+</head>
+<body>
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<section class="swiper-slide swiper-slide1">
+			<img src="images/avatar.png" class="ani resize" style="width:170px;height:170px;left:50%;top:30px;z-index:3;margin-left: -85px;" swiper-animate-effect="zoomIn" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
+			<p class="avatar-text ani resize" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">山河若卿</p>
+			<img src="images/yoyo.png" class="ani resize" style="width:268px;height:100px;left:50%;top:280px;z-index:2;margin-left: -134px;" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="2s">
+			<p class="footer-text">Copyright©广州星尘信息科技有限公司 V1.0.0</p>
+		</section>
+		<section class="swiper-slide swiper-slide2">
+			<div class="topBox">
+				<div class="link">
+					<a href="###" class="xin"><i class="iconfont">&#xe600;</i>520</a>
+					<a href="###" class="xin"><i class="iconfont">&#xe601;</i>1314</a>
+				</div>
+				<div class="content clearfix">
+					<div class="img"><img src="images/avatar.png" alt=""></div>
+					<div class="contentTxt">
+						<h3 class="title">山河若卿<i class="women"></i></h3>
+						<p class="text">没有女王的命，但有一颗女王的心~</p>
+					</div>
+				</div>
+			</div>
+			<div class="imgBox">
+				<img src="images/mm01.png" class="ani resize" style="width:100%;margin-left: -50%;" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay=".5s">
+				<p class="ani resize" style="width: 100%;left: 0;text-align: right;bottom: 150px;z-index: 1;color: #fff;font-size: .75rem;height: 30px;" swiper-animate-effect="slideInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1s">每天都自拍留恋，感觉自己都美美哒~</p>
+				<p class="ani resize" style="width: 100%;left: -10px;text-align: right;bottom: 130px;z-index: 1;color: #fff;font-size: .45rem;" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">广州 / 08-01</p>
+			</div>
+			<div class="bottomBox">
+				<img src="images/xin.png" alt="" class="xin">
+			</div>
+		</section>
+		<section class="swiper-slide swiper-slide3">
+			<div class="topBox">
+				<div class="link">
+					<a href="###" class="xin"><i class="iconfont">&#xe600;</i>520</a>
+					<a href="###" class="xin"><i class="iconfont">&#xe601;</i>1314</a>
+				</div>
+				<div class="content clearfix">
+					<div class="img"><img src="images/avatar.png" alt=""></div>
+					<div class="contentTxt">
+						<h3 class="title">山河若卿<i class="women"></i></h3>
+						<p class="text">没有女王的命，但有一颗女王的心~</p>
+					</div>
+				</div>
+			</div>
+			<div class="imgBox">
+				<img src="images/mm02.jpg" class="ani resize" style="width:100%;margin-left: -50%;" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay=".5s">
+				<p class="ani resize" style="width: 100%;left: 0;text-align: right;bottom: 150px;z-index: 1;color: #fff;font-size: .75rem;height: 30px;" swiper-animate-effect="slideInRight" swiper-animate-duration="0.5s" swiper-animate-delay="1s">每天都自拍留恋，感觉自己都美美哒~</p>
+				<p class="ani resize" style="width: 100%;left: -10px;text-align: right;bottom: 130px;z-index: 1;color: #fff;font-size: .45rem;" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">广州 / 08-01</p>
+			</div>
+			<div class="bottomBox">
+				<img src="images/xin.png" alt="" class="xin">
+			</div>
+		</section>
+		<section class="swiper-slide swiper-slide4">
+			<div class="topBox">
+				<div class="link">
+					<a href="###" class="xin"><i class="iconfont">&#xe600;</i>520</a>
+					<a href="###" class="xin"><i class="iconfont">&#xe601;</i>1314</a>
+				</div>
+				<div class="content clearfix">
+					<div class="img"><img src="images/avatar.png" alt=""></div>
+					<div class="contentTxt">
+						<h3 class="title">山河若卿<i class="women"></i></h3>
+						<p class="text">没有女王的命，但有一颗女王的心~</p>
+					</div>
+				</div>
+			</div>
+			<div class="textBox ani resize" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay=".5s">
+				<p>每天都自拍留恋，感觉自己都美美哒~</p>
+				<span class="time">广州 / 08-01</span>
+			</div>
+			<div class="imgBox">
+				<img src="images/mm03.jpg" class="ani resize" style="width:100%;top: 115px;margin-left: -50%;" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
+			</div>
+			<div class="bottomBox">
+				<img src="images/xin.png" alt="" class="xin">
+			</div>
+		</section>
+		<section class="swiper-slide swiper-slide5">
+			<span class="shareTxt ani resize" swiper-animate-effect="zoomIn" swiper-animate-duration="1.5s" swiper-animate-delay="0s">分<br>享<br>达<br>人</span>
+			<img src="images/avatar.png" class="ani resize" style="width:4.5rem;height:4.5rem;left:50%;top:6.225rem;z-index:3;margin-left: -2.25rem;" swiper-animate-effect="zoomIn" swiper-animate-duration="1.5s" swiper-animate-delay=".5s">
+			<p class="avatar-text ani resize" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">山河若卿</p>
+			<p class="nowTxt ani resize" swiper-animate-effect="bounceInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1.5s">
+				我们致力把分享做到<br>极致、简单、快捷、<br>记录您每一刻的精彩瞬间<br>NOW
+			</p>
+			<a href="###" class="download ani resize" swiper-animate-effect="flipInY" swiper-animate-duration="0.5s" swiper-animate-delay="2s">点我下载Now</a>
+			<p class="footer-text">Copyright©广州星尘信息科技有限公司 V1.0.0</p>
+		</section>
+	</div>
+	<img src="images/top.png" style="height:20px; bottom: 30px; left:50%;margin-left: -10px;" id="array" class="resize">
+</div>
+<div class="landscape">
+	<div class="iphone"></div>
+	<div class="iphone_text">请将屏幕竖向浏览</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/swiper3.1.0.min.js"></script>
+<script src="js/swiper.animate.min.js"></script>
+<script src="js/main2.js"></script>
+</body>
+</html>
