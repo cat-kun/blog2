@@ -22,6 +22,12 @@ var mySwiper = new Swiper('.swiper-container', {
 		
 	},
 
+	onSlideChangeEnd: function(swiper){
+		var slide = $('.swiper-slide');
+		if(mySwiper.isEnd){
+			$('#array').hide();
+		}
+	},
 
 	watchSlidesProgress: true,
 
