@@ -15,6 +15,9 @@ html,body{width: 100%;height: 100%;}
 .swiper-wrapper{-webkit-perspective:1200px;-moz-perspective:1200px;-ms-perspective:1200px;perspective:1200px;}
 .swiper-slide{position:relative;-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;-ms-transform-style:preserve-3d;transform-style:preserve-3d;background-size:100% auto;overflow:hidden;text-align:center;}
 .swiper-container{width: 100%;height: 100%;background-color: #3f3f3f;}
+/*预加载屏幕*/
+.swiper-slide0{height: 100%;background-color: #43aac8;position: fixed;top: 0;left: 0;bottom: 0;right: 0;z-index: 9;}
+.logo{position: absolute;left: 50%;top: 50%;margin-top: -50px;margin-left: -50px;border-radius: 50%;}
 /*首屏*/
 .swiper-slide1,.swiper-slide5{background: url(../images/body_bg.jpg) no-repeat;background-size: cover;}
 .avatarBox{position: relative;}
@@ -46,21 +49,22 @@ html,body{width: 100%;height: 100%;}
 	url('//at.alicdn.com/t/font_1439604434_5363321.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 .iconfont{font-family:"iconfont"!important;font-size:16px;font-style:normal;-webkit-font-smoothing:antialiased;-webkit-text-stroke-width:0.2px;-moz-osx-font-smoothing:grayscale;}
-.topBox{height: 110px;background-color: #797979;color: #fff;overflow: hidden;position: relative;margin-bottom: 10px;}
+.topBox{height: 4rem;background-color: #797979;color: #fff;overflow: hidden;position: relative;margin-bottom: 10px;}
 .link{position: absolute;top: 0;right: 10px;}
 .topBox .xin{font-size: 16px;margin-right: 5px;}
 .topBox a{color: #fff;}
 .topBox .iconfont{height: 1ex;font-size: 20px;}
 .topBox .content{width: 100%;text-align: left;overflow: hidden;position: absolute;left: 15px;top: 50%;margin-top: -37px;/*margin-left: 15px;margin-top: 20px;*/}
 .topBox .img{width: 71px;height: 71px;/*display: inline-block;*/float: left;}
-.topBox .contentTxt{/*display: inline-block;width: 200px;*/width: 68%;float: left;margin-left: 20px;margin-top: 8px;}
-.topBox .title{font-size: 16px;font-weight: normal;line-height: 26px;}
+.topBox .contentTxt{/*display: inline-block;width: 200px;*/width: 68%;float: left;margin-left: 20px;margin-top: 14px;}
+.topBox .title{font-size: 16px;font-weight: normal;line-height: 22px;}
 .topBox .women{width: 22px;height: 17px;background: url(../images/women.png) no-repeat;background-size: cover;display: inline-block;margin-left: 10px;vertical-align: middle;}
 .topBox .text{font-size: 14px;color: #dddddd;}
-.bottomBox{width: 100%;height: 20%;background-color: rgba(255,255,255,.2);position: absolute;bottom: 10px;left: 0;}
+.bottomBox{width: 100%;height: 3.2rem;background-color: rgba(255,255,255,.2);position: absolute;bottom: 10px;left: 0;}
 .bottomBox .xin{width: 2.1rem;height: 2.1rem;position: absolute;bottom: 11px;right: 30px;}
 /*中间图片*/
 .imgBox{height: 100%;position: relative;}
+.imgBoxTxt{width: 85%;height: 2.5rem;background-color: rgba(255,255,255,.1);position: absolute;bottom: 4.55rem;margin-left: -35%;}
 .textBox{width: 14.8rem;height: 89px;background: url(../images/wzkuang1.png) no-repeat;background-size: 14.8rem 89px;color: #fff;position: relative;margin-left: -7.4rem;}
 .textBox p{font-size: .75rem;padding: 10px 0;}
 .textBox .time{position: absolute;bottom: 0;right: 30px;font-size: 14px;}

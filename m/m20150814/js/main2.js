@@ -1,9 +1,51 @@
 /**
  * 
- * @authors Your Name (you@example.org)
+ * @authors 银狐 (626269256@qq.com)
  * @date    2015-08-15 09:43:30
- * @version $Id$
+ * @version v1.0
  */
+// 预加载
+(function(a) {
+	a.Preload = {
+		loadImg: function(array_img, callback) {
+			function c() {
+				d++;
+				d >= e && setTimeout(function() {
+					callback(f);
+				}, 100)
+			}
+			var d = 0,
+				e = 0,
+				f = array_img instanceof Array ? [] : {};
+			for (var g in array_img)
+				e++,
+				f[g] = new Image,
+				f[g].onload = c,
+				f[g].onerror = c,
+				f[g].onabort = c,
+				f[g].src = array_img[g];
+		}
+	}
+}(window));
+var imgs = [
+	'../images/avatar.png',
+	'../images/body_bg.jpg',
+	'../images/land.png',
+	'../images/mm01.jpg',
+	'../images/mm02.jpg',
+	'../images/mm03.jpg',
+	'../images/page-icons-4.png',
+	'../images/top.png',
+	'../images/women.png',
+	'../images/wzkuang1.png',
+	'../images/xin.png',
+	'../images/yoyo.png'
+];
+Preload.loadImg(imgs,function (){
+	console.log('图片加载完成');
+	$('.swiper-slide0').hide();
+});
+// setTimeout(function (){$('.swiper-slide0').hide();},20000);
 var mySwiper = new Swiper('.swiper-container', {
 	direction: 'vertical',
 	//pagination: '.swiper-pagination',
@@ -26,6 +68,8 @@ var mySwiper = new Swiper('.swiper-container', {
 		var slide = $('.swiper-slide');
 		if(mySwiper.isEnd){
 			$('#array').hide();
+		}else{
+			$('#array').show();
 		}
 	},
 
