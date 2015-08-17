@@ -41,6 +41,12 @@ var imgs = [
 	'../images/xin.png',
 	'../images/yoyo.png'
 ];
+/*$.get('后台接口',function (data){
+	Preload.loadImg(data,function (){
+		console.log('图片加载完成');
+		$('.swiper-slide0').hide();
+	});
+});*/
 Preload.loadImg(imgs,function (){
 	console.log('图片加载完成');
 	$('.swiper-slide0').hide();
