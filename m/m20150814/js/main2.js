@@ -54,6 +54,7 @@ Preload.loadImg(imgs,function (){
 // setTimeout(function (){$('.swiper-slide0').hide();},20000);
 	var mySwiper = new Swiper('.swiper-container', {
 		direction: 'vertical',
+		lazyLoading : true,
 		//pagination: '.swiper-pagination',
 		//virtualTranslate : true,
 		onInit: function(swiper) {
