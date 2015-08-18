@@ -50,7 +50,7 @@ var imgs = [
 Preload.loadImg(imgs,function (){
 	console.log('图片加载完成');
 	$('.swiper-slide0').hide();
-
+	$('.swiper-slide1 .avatar').attr('swiper-animate-effect','zoomIn');
 // setTimeout(function (){$('.swiper-slide0').hide();},20000);
 	var mySwiper = new Swiper('.swiper-container', {
 		direction: 'vertical',
