@@ -22,7 +22,7 @@ html,body{width: 100%;height: 100%;}
 .swiper-slide1,.swiper-slide5{background: url(../images/body_bg.jpg) no-repeat;background-size: cover;}
 .avatarBox{position: relative;}
 /*.avatar{width: 8.5rem;height: 8.5rem;border-radius: 50%;background: url(../images/avatar.png) no-repeat;background-size: cover;position: absolute;top: 50.5px;left: 50%;margin-left: -4.25rem;}*/
-.avatar-text{color: #fff;font-size: 20px;text-align: center;line-height: 50px;letter-spacing: 4px;position: absolute;top: 200px;left: 50%;margin-left: -48px;}
+.avatar-text{color: #fff;font-size: 20px;text-align: center;line-height: 50px;letter-spacing: 4px;position: absolute;top: 200px;left: 50%;margin-left: -50%;width: 100%;text-align: center;}
 
 @-webkit-keyframes start{
 	0%,30%{opacity:0;-webkit-transform:translate(0,10px);}
