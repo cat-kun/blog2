@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*reset*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font:12px/1.5 'helvetica neue',tahoma,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;min-width: 320px;}
+img{border:none;vertical-align: middle;max-width: 100%;}
+li{list-style:none;}
+input,select,textarea{vertical-align:middle;outline:none;}
+textarea{resize:none;}
+a{text-decoration:none;outline:none;}
+a {blr:expression(this.onFocus=this.blur())} /* IE */
+.fl{float:left;}
+.fr{float:right;}
+
+/*clearfix*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{*zoom:1;}
+/*iPhone部分*/
+.xz-iphone .titleBox{background-color: #ffab00;color: #fff;padding: 0 28px;height: 60px;line-height: 60px;font-size: 0.57rem;margin-bottom: 19px;}
+.xz-iphone .phone-text{float: left;}
+.xz-iphone .click{float: right;}
+.xz-iphone .phone-icon{width: 14px;height: 16px;background: url(../images/phone_icon.png) no-repeat;display: inline-block;background-size: 14px 16px;vertical-align: middle;margin-right: 9px;}
+.xz-iphone .phoneCont{float: left;width: 50%;text-align: center;}
+.xz-iphone .phoneImg{width: 2.86rem;height: 4.42rem;}
+.xz-iphone .phoneBox{color: #040404;}
+.xz-iphone .phoneTxt{font-size: .66rem;line-height: 50px;}
+.xz-iphone .snapping{width: 5.33rem;height: 60px;background-color: #ff4400;color: #fff;font-size: 0.66rem;display: block;line-height: 60px;margin: 0 auto;border-radius: 5px;margin-bottom: 20px;}
+.xz-iphone .customer-service{width: 6.66rem;height: 70px;background-color: #2e96dd;color: #fff;font-size: 0.57rem;display: block;line-height: 70px;margin: 0 auto;border-radius: 5px;}
+.xz-iphone .qq-icon,.xz-iphone .video-icon{width: 0.42rem;height: 0.42rem;margin-right: 8px;vertical-align: middle;display: inline-block;font-size: 0;}
+.xz-iphone .qq-icon{background: url(../images/qq_icon.png) no-repeat;background-size: 0.42rem 0.42rem;}
+.xz-iphone .video-icon{width: 0.88rem;height: 0.86rem;background: url(../images/video_icon.png) no-repeat;background-size: 0.88rem 0.86rem;}
+
+
