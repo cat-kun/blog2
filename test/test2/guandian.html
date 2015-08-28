@@ -396,10 +396,12 @@ $open.on('click',function (){
 
 	$imgSrc = $(this).find('img').attr('src','img/standpoint-icon1.png');
 	if(onOff){
+		// 展开
 		$imgSrc.attr('src','img/standpoint-icon2.png');
-		$(this).prev('p').animate({height: 'auto'});
+		$(this).prev('p').animate({height: $(this)[0].scrollHeight});
 		onOff = false;
 	}else{
+		// 收缩
 		$imgSrc.attr('src','img/standpoint-icon1.png');
 		$(this).prev('p').animate({height: $minpH});
 		onOff = true;
