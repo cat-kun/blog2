@@ -1,0 +1,71 @@
+/* CSS Document
+Code highlighting produced by Actipro CodeHighlighter (freeware)http://www.CodeHighlighter.com/--> v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+	font-family: 微软雅黑;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+input,
+select,
+textarea{
+	font-family: 微软雅黑;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.focus {height:390px;overflow:hidden;position:relative;background:#ccc;}
+.focus_m ul {width:100%;height:390px;overflow:hidden;}
+.focus_m li {width:100%;height:390px;_float:left;}
+.focus_m li.li_1 {background:url(../img/1.jpg) center 0 no-repeat #288cc0;}
+.focus_m li.li_2 {background:url(../img/2.jpg) center 0 no-repeat #76b7d8;}
+.focus_m li.li_3 {background:url(../img/3.jpg) center 0 no-repeat #bb3838;}
+.focus_s {height:0;position:relative;margin:0 auto;z-index:2;width:1000px;}
+.focus_s ul {height:12px;overflow:hidden;position:absolute;left:10px;top:360px;}
+.focus_s li {float:left;cursor:pointer;height:12px;width:12px;overflow:hidden;margin-right:10px;}
+.focus_s li b {display:block;text-indent:-999em;background:url(../img/circle.png) 0 0 no-repeat;width:12px;height:32px;overflow:hidden;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src='img/circle.png');_background:none;}
+.focus_s li.active b {margin-top:-20px;}
+.focus_l,.focus_r {position:absolute;display:block;width:50px;height:75px;overflow:hidden;z-index:2;top:150px;}
+.focus_l {left:0;}
+.focus_r {right:0;}
+.focus_l b,.focus_r b {position:absolute;z-index:1;display:block;width:50px;height:75px;overflow:hidden;background:#000;opacity:0.3;filter:alpha(opacity=30);cursor:pointer;}
+.focus_l span,.focus_r span {display:block;position:relative;z-index:2;width:22px;height:33px;top:21px;cursor:pointer;}
+.focus_l span {left:12px;background:url(../img/l.png) 0 0 no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src='img/l.png');_background:none;}
+.focus_r span {left:16px;background:url(../img/r.png) 0 0 no-repeat;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src='img/r.png');_background:none;}
+.focus_l:hover,.focus_r:hover {*zoom:1;}
+.focus_l:hover b,.focus_r:hover b {opacity:0.5;filter:alpha(opacity=50);}

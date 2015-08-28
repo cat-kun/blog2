@@ -1,0 +1,501 @@
+<!doctype html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+
+		<meta charset="utf-8">
+		<title>金宝汇矿产资源经营有限公司</title>
+        
+         <link rel="stylesheet" type="text/css" href="css/reset.css">
+<script src="http://libs.useso.com/js/jquery/1.10.0/jquery.min.js"></script>
+         <link rel="stylesheet" type="text/css" href="css/pages.css">
+          <link rel="stylesheet" type="text/css" href="css/basic.css">
+          <link rel="stylesheet" type="text/css" href="css/css.css">
+          
+          
+</head>
+
+<body style="background:#f6f6f6;">
+		<!-------------------------------------- 头部开始 -------------------------------------->
+		<div class="header">
+			<div class="he_title_bg">
+				<div class="wrap">
+					<div class="he_title">
+						<div class="he_tit_l">
+							<p>
+								<span><img src="img/flag01.png"/> <a href="#" id="Beijing">北京00:00:00</a></span>
+								<span><img src="img/flag02.png"/> <a href="#" id="Sydney">悉尼00:00:00</a></span>
+								<span><img src="img/flag03.png"/> <a href="#" id="Tokyo">东京00:00:00</a></span>
+								<span><img src="img/flag04.png"/> <a href="#" id="Zurich">苏黎世00:00:00</a></span>
+								<span><img src="img/flag05.png"/> <a href="#" id="London">伦敦00:00:00</a></span>
+								<span><img src="img/flag06.png"/> <a href="#" id="NewYork">纽约00:00:00</a></span>
+								<span><img src="img/flag07.png"/> <a href="#" id="HongKongs">香港00:00:00</a></span>
+							</p>
+						</div>
+						<div class="he_tit_r">
+							<p>
+								<a href="#" onclick="AddFavorite(window.location,document.title)">收藏本站</a> | 
+								<a href="#">官方微博</a> | 
+								<a href="#">下载中心</a> | 
+								<a href="#">帮助中心</a> | 
+								<a href="#">网站地图</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--time-->
+			<script type="text/javascript">
+				$(function () {
+					var address_array = new Array("北京", "悉尼", "东京", "苏黎世", "伦敦", "纽约", "香港");
+					var offset_array = new Array(0, 2, 1, -7, -7,-13,0); //相对北京的时差
+					var address_ids = new Array("Beijing", "Sydney", "Tokyo", "Zurich", "London", "NewYork", "HongKongs");
+					for (i = 0; i < 7; i++) {
+						displayTime(address_array[i], offset_array[i], address_ids[i],address_ids);
+					}
+				})
+				/*---------------显示城市时间---------------*/
+				function displayTime(city, offset, id) {
+					var time = new Date();
+					var utc = Date.parse(time); //本地时间转化为UTC时间
+					var date = new Date(utc + (3600000 * offset))//目的地时间转化为UTC时间 
+					var hours = date.getHours();
+					if (hours < 10) {
+						hours = "0" + hours;
+					}
+					var minutes = date.getMinutes();
+					if (minutes < 10) {
+						minutes = "0" + minutes;
+					}
+					var seconds = date.getSeconds();
+					if (seconds < 10) {
+						seconds = "0" + seconds;
+					}
+					document.getElementById(id).innerHTML =  city + ":" + hours + ":" + minutes + ":" + seconds;
+					setTimeout(function () { displayTime(city, offset, id); }, 1000);
+				}
+			</script> 
+			<!--收藏-->
+			<script type="text/javascript">
+				function AddFavorite(sURL, sTitle)
+				{
+					sURL = encodeURI(sURL); 
+					try
+					{
+						window.external.addFavorite(sURL, sTitle);
+					}
+					catch (e)
+					{
+						try
+						{
+							window.sidebar.addPanel(sTitle, sURL, "");
+						}
+						catch (e)
+						{
+							alert("由于浏览器功能限制，请使用Ctrl+D进行添加");
+						}
+					}
+				}
+			</script>
+			<div class="clear"></div>
+			<div class="he_logo_bg">
+				<div class="wrap">
+					<div class="he_logo">
+						<div class="he_logo_l">
+							<img src="img/index_logo.png">
+						</div>
+						<div class="he_logo_m">
+							<span>WWW.JBH012.COM</span>
+							<p>天津市矿产资源交易所综合类12号会员单位</p>
+							<p>中金网战略合作伙伴</p>
+						</div>
+						<div class="he_logo_r">
+							<p>
+								<img src="img/he_cup.png">
+								<span><img src="img/he_phone_btn.png"><label>咨询热线</label></span>
+								<i><img src="img/he_phone_num.png"></i>
+							</p>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="he_nav_bg">
+				<div class="wrap">
+					<!--菜单-->
+					<div class="he_nav">
+						<ul>
+							<li><a class="on" href="#">首页</a></li>
+							<li><a href="#">资讯快报</a>
+								<!--二级菜单-->
+								<div class="he_nav_two">
+									<div class="nav_two_li">
+										<div class="nav_left">
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+										</div>
+										<div class="nav_left">
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+										</div>
+										<div class="up_up_img"><a href="#"><img src="img/up_up_img.png"></a></div>
+										<div class="clear"></div>
+									</div>
+									<div class="open_zh">
+										<p>
+											<a href="#">开立优惠账户</a>
+											<a href="#">开立账户</a>
+										</p>
+									</div>
+								</div>
+							</li>
+							<li><a href="#">策略大师</a>
+								<div class="he_nav_two">
+									<div class="nav_two_li">
+										<div class="nav_left">
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+										</div>
+										<div class="nav_left">
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+										</div>
+										<div class="up_up_img"><a href="#"><img src="img/up_up_img.png"></a></div>
+										<div class="clear"></div>
+									</div>
+									<div class="open_zh">
+										<p>
+											<a href="#">开立优惠账户</a>
+											<a href="#">开立账户</a>
+										</p>
+									</div>
+								</div>
+							</li>
+							<li><a href="#">投资课堂</a>
+								<div class="he_nav_two">
+									<div class="nav_two_li">
+										<div class="nav_left">
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+										</div>
+										<div class="nav_left">
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+										</div>
+										<div class="up_up_img"><a href="#"><img src="img/up_up_img.png"></a></div>
+										<div class="clear"></div>
+									</div>
+									<div class="open_zh">
+										<p>
+											<a href="#">开立优惠账户</a>
+											<a href="#">开立账户</a>
+										</p>
+									</div>
+								</div>
+							</li>
+							<li><a href="#">绝密内刊</a>
+								<div class="he_nav_two">
+									<div class="nav_two_li">
+										<div class="nav_left">
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+										</div>
+										<div class="nav_left">
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+										</div>
+										<div class="up_up_img"><a href="#"><img src="img/up_up_img.png"></a></div>
+										<div class="clear"></div>
+									</div>
+									<div class="open_zh">
+										<p>
+											<a href="#">开立优惠账户</a>
+											<a href="#">开立账户</a>
+										</p>
+									</div>
+								</div>
+							</li>
+							<li><a href="#">直播间</a>
+								<div class="he_nav_two">
+									<div class="nav_two_li">
+										<div class="nav_left">
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+										</div>
+										<div class="nav_left">
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+										</div>
+										<div class="up_up_img"><a href="#"><img src="img/up_up_img.png"></a></div>
+										<div class="clear"></div>
+									</div>
+									<div class="open_zh">
+										<p>
+											<a href="#">开立优惠账户</a>
+											<a href="#">开立账户</a>
+										</p>
+									</div>
+								</div>
+							</li>
+							<li><a href="#">软件下载</a>
+								<div class="he_nav_two">
+									<div class="nav_two_li">
+										<div class="nav_left">
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+										</div>
+										<div class="nav_left">
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+											<p><a href="#">开立优惠账户</a></p>
+										</div>
+										<div class="up_up_img"><a href="#"><img src="img/up_up_img.png"></a></div>
+										<div class="clear"></div>
+									</div>
+									<div class="open_zh">
+										<p>
+											<a href="#">开立优惠账户</a>
+											<a href="#">开立账户</a>
+										</p>
+									</div>
+								</div>
+							</li>
+							<li><a href="#">关于我们</a></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+			<div class="wrap">
+			
+			</div>
+		</div>
+		<!-------------------------------------- 头部结束 -------------------------------------->
+        <!-------------------------------------- 内容开始 -------------------------------------->
+        <div class="download_head">
+	<ul><span>策略大师</span>
+		<li>Master strategy</li>
+	</ul>
+
+</div>
+			<div class="bowen_title">
+            	
+			 	<p><a href=""><img src="img/smallhome.png"></a><a href="">首页</a><a>></a> <a href="">策略大师<a href=""><a>></a> <a href="" class="color">分析师专栏</a>
+					</p>
+				
+            </div>
+
+<div class="bowen_center">
+<div class="standpoint-banner">
+<div class="gd-top-img"><img src="img/standpoint-img-top.png" alt=""></div>
+<div class="gd_center">
+<p><img src="img/gd-img.png" alt="" class="gd-img"></p>
+<p><span>金小宝：<img src="img/gd-xingxing.png" alt=""><img src="img/gd-xingxing.png" alt=""><img src="img/gd-xingxing.png" alt=""><img src="img/gd-xingxing.png" alt=""><img src="img/gd-xingxing.png" alt="">
+</span></p>
+<p><div class="gd_div">金小宝是面向全国发展的在新经济环境下创新的一家金融投资服务提供商。公司汇聚国内外矿产资源行业精英，致力于打造中国矿产资源投资与金小宝是面向全国发展的在新经济环境下创新的一家金融投资服务提供商。公司汇聚国内外矿产资源行业精英，致力于打造中国矿产资源投资与</div></p>
+<div class="standpoint-btn">
+<p>
+        <a href="">观点：<span>37</span></a>
+        <a href="">博文：<span>45</span></a>
+        <a href="" class="exchange"><img src="img/chat_img.png" alt="">在线交流</a>
+        </p>
+        </div>
+
+
+</div>
+</div>
+
+<div class="exchange_list">
+<div class="guandian_list guandian_list3">
+<h3>2015-08-06</h3>
+<div class="list_p">
+<img src="img/gd-icon.png" alt="" class="gd_img_left">
+<p>金小宝是面向全国发展的在新经济环境下创新的一家金融投资服务提供商。公司汇聚国内外矿产资源行业精英，致力于打造产.金小宝是面向全国发展的在新经济环境下创新的一家金融投资服务提供商。公司汇聚国内外矿产资源行业精英，致力于打造产.金小宝是面向全国发展的在新经济环境下创新的一家金融投资服务提供商。公司汇聚国内外矿产资源行业精英，致力于打造产.金小宝是面向全国发展的在新经济环境下创新的一家金融投资服务提供商。公司汇聚国内外矿产资源行业精英，致力于打造产.</p>
+<b class="gd-btn"><a href="javascript:;"><img src="img/standpoint-icon1.png" alt=""></a></b>
+</div>
+</div>
+<div class="guandian_list guandian_list2">
+<h3>2015-08-06</h3>
+<div class="list_p">
+<img src="img/bo-topbg.png" alt="" class="gd_img_left">
+<p>金小宝是面向全国发展的在新经济环境下创新的一家金融投资服务提供商。公司汇聚国内外矿产资源行业精英，致力于打造产.金小宝是面向全国发展的在新经济环境下创新的一家金融投资服务提供商。公司汇聚国内外矿产资源行业精英，致力于打造产.</p>
+<b class="gd-btn"><a href="javascript:;"><img src="img/standpoint-icon1.png" alt=""></a></b>
+</div>
+</div>
+<div class="guandian_list">
+<h3>2015-08-06</h3>
+<div class="list_p">
+<img src="img/gd-icon.png" alt="" class="gd_img_left">
+<p>金小宝是面向全国发展的在新经济环境下创新的一家金融投资服务提供商。公司汇聚国内外矿产资源行业精英，致力于打造产.金小宝是面向全国发展的在新经济环境下创新的一家金融投资服务提供商。公司汇聚国内外矿产资源行业精英，致力于打造产.</p>
+<b class="gd-btn"><a href="javascript:;"><img src="img/standpoint-icon1.png" alt=""></a></b>
+</div>
+</div>
+<div class="guandian_list guandian_list4">
+<h3>2015-08-06</h3>
+<div class="list_p">
+<img src="img/bo-topbg.png" alt="" class="gd_img_left">
+<p>金小宝是面向全国发展的在新经济环境下创新的一家金融投资服务提供商。公司汇聚国内外矿产资源行业精英，致力于打造产.金小宝是面向全国发展的在新经济环境下创新的一家金融投资服务提供商。公司汇聚国内外矿产资源行业精英，致力于打造产.</p>
+<b class="gd-btn"><a href="javascript:;"><img src="img/standpoint-icon1.png" alt=""></a></b>
+</div>
+</div>
+<div class="guandian_list">
+<h3>2015-08-06</h3>
+<div class="list_p">
+<img src="img/gd-icon.png" alt="" class="gd_img_left">
+<p>金小宝是面向全国发展的在新经济环境下创新的一家金融投资服务提供商。公司汇聚国内外矿产资源行业精英，致力于打造产.金小宝是面向全国发展的在新经济环境下创新的一家金融投资服务提供商。公司汇聚国内外矿产资源行业精英，致力于打造产.</p>
+<b class="gd-btn"><a href="javascript:;"><img src="img/standpoint-icon1.png" alt=""></a></b>
+</div>
+</div>
+<div class="guandian_list guandian_list4">
+<h3>2015-08-06</h3>
+<div class="list_p">
+<img src="img/bo-topbg.png" alt="" class="gd_img_left">
+<p>金小宝是面向全国发展的在新经济环境下创新的一家金融投资服务提供商。公司汇聚国内外矿产资源行业精英，致力于打造产.金小宝是面向全国发展的在新经济环境下创新的一家金融投资服务提供商。公司汇聚国内外矿产资源行业精英，致力于打造产.</p>
+<b class="gd-btn"><a href="javascript:;"><img src="img/standpoint-icon1.png" alt=""></a></b>
+</div>
+</div>
+<div class="guandian_list">
+<h3>2015-08-06</h3>
+<div class="list_p">
+<img src="img/gd-icon.png" alt="" class="gd_img_left">
+<p>金小宝是面向全国发展的在新经，致力于打造产。公司汇聚国内外矿产资源行业精英，致力于打造产.</p>
+<b class="gd-btn"><a href="javascript:;"><img src="img/standpoint-icon1.png" alt=""></a></b>
+</div>
+</div>
+
+<div class="clear"></div> 
+
+</div>
+<script>
+var $open	= $('.gd-btn'),						// 展开 收缩按钮
+	$p 		= $open.prev('p'),					// 展开按钮的响铃p标签
+	$minpH	= 40;								// 定义p的最小高度
+
+var onOff = true;								// 设置一个开关，来判断
+
+$p.height($minpH);								// 给每一个p设置最小高度
+$open.on('click',function (){
+
+	$imgSrc = $(this).find('img').attr('src','img/standpoint-icon1.png');
+	if(onOff){
+		$imgSrc.attr('src','img/standpoint-icon2.png');
+		$(this).prev('p').animate({height: 'auto'});
+		onOff = false;
+	}else{
+		$imgSrc.attr('src','img/standpoint-icon1.png');
+		$(this).prev('p').animate({height: $minpH});
+		onOff = true;
+	}
+});
+
+/*$(function(){
+	var slideHeight = 40; // px
+	var defHeight = $('.list_p p').height();
+	$(".list_p").each(function(){
+		if(defHeight > slideHeight){
+			$('.list_p p').css('height' , slideHeight + 'px');
+			$('.gd-btn').show();
+			$(this).find('.gd-btn').click(function(){
+			var curHeight = $('.list_p p').height();
+				if(curHeight == slideHeight){
+					$('.list_p p').animate({
+					  height: defHeight
+					},500);
+					$(this).find('img').attr('src','img/standpoint-icon2.png');
+				}else{
+					$('.list_p p').animate({
+					  height: slideHeight
+					},500);
+					$(this).find('img').attr('src','img/standpoint-icon1.png');
+					//$('#read-more a').html('点击查看更多。。');
+					//$('#gradient').fadeIn();
+				}
+			return false;
+			});		
+	}
+		
+	})
+
+});*/
+</script>
+  
+    <div class="clear"></div>    
+   </div>     
+        
+        <div class="clear"></div>
+        <!-------------------------------------- 内容结束 -------------------------------------->
+               
+		<!-------------------------------------- 尾部开始 -------------------------------------->
+		<div class="footer">
+			<div class="foot_logo_bg">
+				<div class="wrap">
+					<div class="foot_logo">
+						<div class="foot_lo_l"><img src="img/foot_logo.png"></div>
+						<!--关于我们-->
+						<div class="foot_lo_r">
+							<ul>
+								<li><span><img src="img/foot_about1.png">关于我们</span>
+									<p><a href="#">公司概况</a></p>
+									<p><a href="#">组织机构</a></p>
+									<p><a href="#">发展历程</a></p>
+									<p><a href="#">企业文化</a></p>
+									<p><a href="#">战略合作</a></p>
+									<p><a href="#">人才招聘</a></p>
+									<p><a href="#">联系我们</a></p>
+								</li>
+								<li><span><img src="img/foot_about2.png">开户指南</span>
+									<p><a href="#">开户须知与流程</a></p>
+									<p><a href="#">存取指南</a></p>
+									<p><a href="#">电汇指南</a></p>
+									<p><a href="#">资金安全</a></p>
+									<p><a href="#">销户流程</a></p>
+								</li>
+								<li><span><img src="img/foot_about3.png">帮助中心</span>
+									<p><a href="#">风险披露声明</a></p>
+									<p><a href="#">免责声明</a></p>
+									<p><a href="#">隐私条款</a></p>
+									<p><a href="#">客户协议</a></p>
+									<p><a href="#">投诉流程与方式</a></p>
+								</li>
+								<li><span><img src="img/foot_about4.png">移动端</span>
+									<p><img src="img/code2_img.png"></p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="copy_right">
+						<p>Copyright © 2012-2015  天津金宝汇矿产资源经营有限公司   版权所有   All rights reserved 沪ICP备15016970号-1</p>
+						<p>贵金属交易有风险，入市需谨慎</p>
+						<div class="foot_share">
+							<a href="#"><img src="img/share1.png"></a>
+							<a href="#"><img src="img/share2.png"></a>
+							<a href="#"><img src="img/share3.png"></a>
+							<span>关注我们</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------------------------------- 尾部开始 -------------------------------------->
+
+<script type="text/javascript" src="js/video.js"></script>
+</body>
+</html>
