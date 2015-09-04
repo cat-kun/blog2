@@ -13,6 +13,7 @@ a,input,select,button,textarea{-webkit-tap-highlight-color: rgba(0,0,0,0);}
 input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance: none !important;}
 /*清浮动*/
 .clearfix:after{content:'';height:0;display:block;clear:both;}
+.wrap{min-width: 320px;}
 @media screen and (min-width: 640px){
 	.wrap{max-width: 640px;margin-left: auto;margin-right: auto;}
 }
