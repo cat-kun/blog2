@@ -1,5 +1,6 @@
 @charset "UTF-8";
-body{background: url(../images/index_bg.jpg) center top #0d0d0d no-repeat;background-size: cover;}
+html,body{height: 100%;}
+.wrap{height: 100%;background: url(../images/index_bg.jpg) center top #0d0d0d no-repeat;background-size: cover;overflow: hidden;}
 .title{text-align: center;margin-top: 29px;font-size: 1.3rem;}
 .logo{width: 5.425rem;height: 5.425rem;left: 5.3rem;top: 10.025rem;}
 .story{width: 3.1rem;height: 3.1rem;top: 4.725rem;left: 6.45rem;line-height: 3.1rem;font-size: .7rem;}
