@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*reset*/
 body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input,button{margin:0;padding:0;}
-body{font:12px/1.5 'helvetica neue',tahoma,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;}
+body{font:12px/1.5 'helvetica neue',tahoma,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;background-color: #f0f0f0;}
 img{border:none;vertical-align:middle;max-width: 100%;}
 li{list-style:none;}
 input,select,textarea,button{vertical-align:middle;outline:none;}

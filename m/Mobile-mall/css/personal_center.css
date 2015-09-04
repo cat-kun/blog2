@@ -1,0 +1,31 @@
+@charset "UTF-8";
+header{background-color: #fff;margin-bottom: 20px;}
+header .account{padding: 24px 11px 24px 9px;position: relative;overflow: hidden;}
+header .avatar{float: left;width: 2.65rem;height: 2.65rem;margin-left: 7px;margin-right: 12px;}
+header .account-text{float: left;margin-top: 4px;}
+header .name{color: #333;font-size: .75rem;font-weight: normal;line-height: 1.15rem;}
+header .name span{font-size: .55rem;margin-left: 4px;}
+header .tip{font-size: .55rem;line-height: 1rem;}
+header .arrow{color: #dfdfdf;font-style: normal;font-size: 30px;height: 46px;line-height: 46px;position: absolute;right: 0;top: 50%;margin-top: -23px;}
+header .balanceBox{border-top: 1px solid #d6d6d6;border-bottom: 1px solid #d6d6d6;padding: 18px 0;}
+header .balanceBox a{color: #ff4400;font-size: .55rem;width: 50%;float: left;text-align: center;-webkit-box-sizing: border-box;box-sizing: border-box;}
+header .balanceBox a:first-child{border-right: 1px solid #ccc;}
+header .balanceBox a span{color: #333;}
+/**/
+.orderBox{padding: 17px 22px 17px 18px;background-color: #fff;}
+.orderBox .order-title{font-size: .65rem;border-bottom: 1px solid #e5e5e5;padding-bottom: 17px;}
+.orderBox h3{float: left;}
+.orderBox .order-title a{float: right;color: #000;}
+
+
+
+
+
+
+
+
+
+
+
+
+
