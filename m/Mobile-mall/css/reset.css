@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/*reset*/
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input,button{margin:0;padding:0;}
+body{font:12px/1.5 'helvetica neue',tahoma,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;}
+img{border:none;vertical-align:middle;max-width: 100%;}
+li{list-style:none;}
+input,select,textarea,button{vertical-align:middle;outline:none;}
+textarea{resize:vertical;}
+a{text-decoration:none;outline:none;}
+a,input,select,button,textarea{-webkit-tap-highlight-color: rgba(0,0,0,0);}
+.fl{float:left;}
+.fr{float:right;}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance: none !important;}
+/*清浮动*/
+.clearfix:after{content:'';height:0;display:block;clear:both;}
+@media screen and (min-width: 640px){
+	.wrap{max-width: 640px;margin-left: auto;margin-right: auto;}
+}

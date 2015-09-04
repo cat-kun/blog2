@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<!-- 避免IE使用兼容模式 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>我的购物车</title>
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏 -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- 忽略页面中的数字识别为电话号码 -->
+<meta name="format-detection" content="telephone=no,email=no" />
+<!-- uc强制竖屏 -->
+<meta name="screen-orientation" content="portrait">
+<!-- QQ强制竖屏 -->
+<meta name="x5-orientation" content="portrait">
+<meta name="renderer" content="webkit">
+<meta name="author" content="银狐">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/shopping_car.css">
+<script src="js/fontSize.js"></script>
+</head>
+<body>
+<div class="wrap">
+	<header>
+		<span class="shopingTxt">购物车（<span id="number">3</span>）</span>
+		<div class="btnBox clearfix">
+			<a href="javascript:" class="btn">删除</a>
+			<a href="javascript:" class="btn">移至收藏夹</a>
+		</div>
+	</header>
+	<section class="productBox clearfix">
+		<div class="product clearfix">
+			<div class="radio"><input type="checkbox" class="checkbox"></div>
+			<div class="proImg"><img src="images/productImg.jpg" alt=""></div>
+			<div class="pro-text">
+				<h5 class="title">美国进口黄金玛卡胶囊 爱司盟秘鲁黑玛咖MACA 男補腎浓缩</h5>
+				<p class="content">
+					<span class="color">颜色：黑色；</span>
+					<span class="size">尺寸：一年20袋装</span>
+				</p>
+				<p class="price">
+					<strong>¥1680.03</strong>
+					<b>¥2580.00</b>
+				</p>
+				<div class="number-control clearfix">
+					<button type="button" class="decrease">-</button>
+					<input type="number" class="num" value="1" min="1" max="13583" name="quantity">
+					<button type="button" class="increase">+</button>
+				</div>
+			</div>
+		</div>
+		<div class="count">
+			<p>已选择<em>0</em>件商品</p>
+			<span>应付：<b>¥1680.03</b></span>
+		</div>
+	</section>
+	<section class="productBox clearfix">
+		<div class="product clearfix">
+			<div class="radio"><input type="checkbox" class="checkbox"></div>
+			<div class="proImg"><img src="images/productImg.jpg" alt=""></div>
+			<div class="pro-text">
+				<h5 class="title">美国进口黄金玛卡胶囊 爱司盟秘鲁黑玛咖MACA 男補腎浓缩</h5>
+				<p class="content">
+					<span class="color">颜色：黑色；</span>
+					<span class="size">尺寸：一年20袋装</span>
+				</p>
+				<p class="price">
+					<strong>¥1680.03</strong>
+					<b>¥2580.00</b>
+				</p>
+				<div class="number-control clearfix">
+					<button type="button" class="decrease">-</button>
+					<input type="number" class="num" value="1" min="1" max="13583" name="quantity">
+					<button type="button" class="increase">+</button>
+				</div>
+			</div>
+		</div>
+		<div class="count">
+			<p>已选择<em>0</em>件商品</p>
+			<span>应付：<b>¥1680.03</b></span>
+		</div>
+	</section>
+	<footer>
+		<label for="all" class="checkAll"><input id="all" type="checkbox" class="checkbox">全选</label>
+		<p>合计：<span>¥112610.00</span>不含运费</p>
+		<a href="javascript:" class="submit">结算（<em>0</em>）</a>
+	</footer>
+</div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/shopping_car.js"></script>
+</body>
+</html>
