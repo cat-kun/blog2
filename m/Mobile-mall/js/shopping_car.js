@@ -20,3 +20,26 @@ $('.decrease').on('click',function (){
 		$(this).next().val($quantity);
 	}
 });
+
+$('.del').on('click',function (){
+	var checkbox = $('.checkbox').prop('checked');
+	if(checkbox){
+		checkbox.parents('.productBox');
+	}else{
+		alert('no')
+	}
+});
+
+// 全选
+$('#all').on('click',function (){
+	if($(this).prop('checked')){
+		$('.checkbox').prop('checked',true);
+	}else{
+		$('.checkbox').prop('checked',false);
+	}
+});
+
+// 判断所有的宝贝是否被选中
+var nowCheckLen = $('.pro-check:checked').length;
+
+//if()
