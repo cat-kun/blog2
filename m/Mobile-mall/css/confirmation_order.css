@@ -1,10 +1,10 @@
 @charset "UTF-8";
 body{background-color: #f0f0f0;}
 header{background-color: #fff;margin-bottom: 20px;}
-header .infoBox{position: relative;padding: 10px 10px;border-bottom: 1px solid #d6d6d6;}
+header .infoBox,.edit-address{position: relative;padding: 10px 10px;border-bottom: 1px solid #d6d6d6;}
 header .infoBox a{width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
-header .infoBox .name{font-size: 18px;line-height: 24px;}
-header .infoBox .address{font-size: 14px;color: #666;}
+header .infoBox .name,.edit-address .name{font-size: 18px;line-height: 24px;}
+header .infoBox .address,.edit-address .address{font-size: 14px;color: #666;}
 header .infoBox .more{position: absolute;right: 10px;top: 50%;height: 30px;color: #dfdfdf;font-style: normal;font-size: 20px;margin-top: -15px;}
 header .infoBox .way{float: left;font-size: 18px;}
 header .infoBox .price{float: right;font-size: 14px;margin-right: 20px;margin-top: 4px;}
@@ -37,15 +37,18 @@ header .infoBox .price{float: right;font-size: 14px;margin-right: 20px;margin-to
 .btnBox .price{float: left;margin-left: 10px;line-height: 45px;color: #ff4401;}
 .btnBox .price em{font-style: normal;font-family: 'Arial';}
 .btnBox .btn{float: right;width: 5.1rem;height: 45px;line-height: 45px;background-color: #ff4401;color: #fff;text-align: center;}
-
-
-
-
-
-
-
-
-
+/*修改地址*/
+.edit-address,.add-address{background-color: #fff;position: relative;}
+.edit-address .check{float: left;position: absolute;top: 50%;margin-top: -9px;}
+.edit-address .checkbox{width: 18px;height: 18px;background: url(../images/icon.png) no-repeat;background-size: 150px 150px;-webkit-appearance: none;border: 0;}
+.edit-address .checkbox:checked{background-position: 0 -18px;}
+.edit-address .edit-text{float: left;margin-left: 24px;}
+.edit-address .editBtn{float: right;width: 15px;height: 17px;background: url(../images/editBtn.png) no-repeat;background-size: 15px 17px;margin-top: 14px;}
+/*新增地址*/
+.add-address{padding: 10px;height: 40px;line-height: 40px;}
+.add-address .add{width: 18px;height: 18px;border: 1px solid #52515e;color: #52515e;border-radius: 999px;text-align: center;line-height: 18px;position: absolute;top: 50%;margin-top: -7px;font-size: 14px;}
+.add-address .add-text{float: left;margin-left: 24px;font-size: 18px;margin-top: 3px;}
+.add-address .more{float: right;font-size: 18px;}
 
 
 
