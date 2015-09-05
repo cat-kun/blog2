@@ -3,29 +3,39 @@ header{background-color: #fff;margin-bottom: 20px;}
 header .account{padding: 24px 11px 24px 9px;position: relative;overflow: hidden;}
 header .avatar{float: left;width: 2.65rem;height: 2.65rem;margin-left: 7px;margin-right: 12px;}
 header .account-text{float: left;margin-top: 4px;}
-header .name{color: #333;font-size: .75rem;font-weight: normal;line-height: 1.15rem;}
-header .name span{font-size: .55rem;margin-left: 4px;}
+header .name{color: #333;font-size: .75rem;line-height: 1.15rem;}
+header .name span{font-size: .55rem;margin-left: 4px;font-weight: normal;}
 header .tip{font-size: .55rem;line-height: 1rem;}
-header .arrow{color: #dfdfdf;font-style: normal;font-size: 30px;height: 46px;line-height: 46px;position: absolute;right: 0;top: 50%;margin-top: -23px;}
+header .arrow{color: #dfdfdf;font-style: normal;font-size: 30px;height: 46px;line-height: 46px;position: absolute;right: 11px;top: 50%;margin-top: -23px;}
 header .balanceBox{border-top: 1px solid #d6d6d6;border-bottom: 1px solid #d6d6d6;padding: 18px 0;}
 header .balanceBox a{color: #ff4400;font-size: .55rem;width: 50%;float: left;text-align: center;-webkit-box-sizing: border-box;box-sizing: border-box;}
 header .balanceBox a:first-child{border-right: 1px solid #ccc;}
 header .balanceBox a span{color: #333;}
-/**/
-.orderBox{padding: 17px 22px 17px 18px;background-color: #fff;}
-.orderBox .order-title{font-size: .65rem;border-bottom: 1px solid #e5e5e5;padding-bottom: 17px;}
+/*我的订单*/
+.orderBox{padding: 17px 22px 17px 18px;background-color: #fff;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;margin-bottom: 20px;}
+.orderBox .order-title{font-size: .65rem;border-bottom: 1px solid #e5e5e5;padding-bottom: 8px;margin-bottom: 8px;}
 .orderBox h3{float: left;}
-.orderBox .order-title a{float: right;color: #000;}
-
-
-
-
-
-
-
-
-
-
-
-
-
+.orderBox .order-title a{float: right;color: #a3a3a3;}
+.orderBox .orderBtn a{color: #000;text-align: center;width: 25%;float: left;margin-top: 15px;}
+.orderBox .icon{background: url(../images/icon.png) no-repeat;background-size: 150px 150px;position: relative;}
+.orderBox .icon em{position: absolute;top: -10px;right: -10px;width: 16px;height: 16px;background-color: #ff4401;border-radius: 999px;color: #fff;text-align: center;line-height: 16px;font-style: normal;}
+.orderBox .obligation{width: 20px;height: 18px;background-position: -22px 0;display: inline-block;}
+.orderBox .shipped{width: 20px;height: 18px;background-position: -44px 0;display: inline-block;}
+.orderBox .receipt{width: 20px;height: 18px;background-position: -44px 0;display: inline-block;}
+.orderBox .refund{width: 20px;height: 18px;background-position: -22px 0;display: inline-block;}
+/*菜单*/
+.menuBox{background-color: #fff;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;padding: 0 11px;margin-bottom: 20px;}
+.menuBox .menuList{height: 26px;line-height: 44px;padding-bottom: 18px;border-bottom: 1px solid #e5e5e5;}
+.menuBox .menuList:last-of-type{border-bottom: none;}
+.menuBox .menuList .icon{background: url(../images/icon.png) no-repeat;background-size: 150px 150px;display: inline-block;margin-right: 8px;vertical-align: middle;}
+.menuBox .menuList a{width: 100%;height: 45px;display: block;color: #000;font-size: 16px;position: relative;}
+.menuBox .menuList em{font-style: normal;position: absolute;right: 11px;color: #d1d1d1;}
+.menuBox .menuList .car{width: 13px;height: 14px;background-position: 0 -40px;}
+.menuBox .menuList .collect{width: 14px;height: 13px;background-position: 0 -56px;}
+.menuBox .menuList .mark{width: 13px;height: 13px;background-position: 0 -72px;}
+.menuBox .menuList .tips{width: 13px;height: 11px;background-position: 0 -88px;}
+.menuBox .menuList .recharge{width: 13px;height: 13px;background-position: 0 -101px;}
+.menuBox .menuList .evaluate{width: 13px;height: 13px;background-position: 0 -116px;}
+.menuBox .menuList .withdraw{width: 14px;height: 14px;background-position: 0 -132px;}
+.menuBox .menuList .detail{width: 13px;height: 13px;background-position: -17px -40px;}
+.menuBox .menuList .address{width: 11px;height: 13px;background-position: -17px -56px;}
