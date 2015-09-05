@@ -1,0 +1,66 @@
+@charset "UTF-8";
+body{background-color: #f0f0f0;}
+header{background-color: #fff;margin-bottom: 20px;}
+header .infoBox{position: relative;padding: 10px 10px;border-bottom: 1px solid #d6d6d6;}
+header .infoBox a{width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
+header .infoBox .name{font-size: 18px;line-height: 24px;}
+header .infoBox .address{font-size: 14px;color: #666;}
+header .infoBox .more{position: absolute;right: 10px;top: 50%;height: 30px;color: #dfdfdf;font-style: normal;font-size: 20px;margin-top: -15px;}
+header .infoBox .way{float: left;font-size: 18px;}
+header .infoBox .price{float: right;font-size: 14px;margin-right: 20px;margin-top: 4px;}
+/*产品*/
+.proBox{padding: 14px 10px;border-top: 1px solid #d6d6d6;border-bottom: 1px solid #d6d6d6;background-color: #fff;margin-bottom: 20px;}
+.proBox .proCont{border-bottom: 1px solid #ccc;padding: 20px 0;}
+.proBox .pro-img{width: 4.25rem;height: 4.25rem;float: left;margin-right: 11px;}
+.proBox .pro-text{width: 10.2rem;float: left;font-size: .6rem;}
+.proBox .pro-text .title{line-height: 1rem;font-weight: normal;}
+.proBox .pro-text .title a{color: #000;}
+.proBox .pro-text span{line-height: 1.1rem;}
+.proBox .pro-text .price{float: left;font-family: 'Arial';color: #666;font-size: .75rem;line-height: 1.25rem;}
+.proBox .pro-text .num{float: right;font-style: normal;font-family: 'Arial';color: #666;font-size: .6rem;line-height: 1.25rem;margin-top: 4px;}
+.inputBox{width: 15rem;margin: 0 auto}
+.inputBox .inp{width: 100%;height: 40px;line-height: 20px;padding: 10px 0;/*text-indent: 12px;*/border: 1px solid #d8d8d8;background-color: #f0f0f0;margin: 15px 0;color: #000;padding-left: 12px;box-sizing: border-box;}
+.inputBox .inp::-webkit-input-placeholder{color: #b1b1b1;}
+.count{margin: 13px 0;font-size: .6rem;}
+.count span{float: right;}
+.count .num{margin-right: 10px;}
+.count em{font-style: normal;color: #ff4401;font-family: 'Arial';}
+/*金额*/
+.money{padding: 0 10px;background-color: #fff;margin-bottom: 20px;border-top: 1px solid #d5d5d5;border-bottom: 1px solid #d5d5d5;}
+.money-text{padding: 15px 0;border-bottom: 1px solid #d6d6d6;}
+.money-text .left-text{font-size: .7rem;float: left;}
+.money-text .right-text{font-size: .65rem;float: right;}
+.money-text .origin{color: #ff4401;}
+.money-text:last-of-type{border: none;}
+/*按钮*/
+.btnBox{background-color: #fff;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;font-size: .6rem;}
+.btnBox .price{float: left;margin-left: 10px;line-height: 45px;color: #ff4401;}
+.btnBox .price em{font-style: normal;font-family: 'Arial';}
+.btnBox .btn{float: right;width: 5.1rem;height: 45px;line-height: 45px;background-color: #ff4401;color: #fff;text-align: center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
