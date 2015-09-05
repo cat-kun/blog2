@@ -1,0 +1,4 @@
+@charset "UTF-8";
+body{background-color: #f0f0f0;}
+.qr_code{width: 8.85rem;height: 8.85rem;margin: 36px auto 0;display: block;}
+.qr-text{font-size: .6rem;text-align: center;line-height: 1.05rem;margin-top: 18px;}
