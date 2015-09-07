@@ -27,10 +27,15 @@
 </head>
 <body>
 <div class="wrap">
-	<header style="display: none;">
-		<div class="infoBox">
+	<header>
+		<!-- <div class="infoBox">
 			<p class="name">收件人：王亮（13682595393）</p>
 			<p class="address">北京市东城区左安门内大街16号</p>
+			<em class="more">&gt;</em>
+			<a href="javascript:"></a>
+		</div> -->
+		<div class="infoBox clearfix">
+			<span class="way">新增收货地址</span>
 			<em class="more">&gt;</em>
 			<a href="javascript:"></a>
 		</div>
@@ -41,7 +46,7 @@
 			<a href="javascript:"></a>
 		</div>
 	</header>
-	<section style="display: none;">
+	<section>
 		<!-- 产品 -->
 		<div class="proBox">
 			<div class="proCont clearfix">
@@ -93,7 +98,7 @@
 			<a href="#" class="btn">确认订单</a>
 		</div>
 	</section>
-	<div class="edit-address clearfix">
+	<div class="edit-address clearfix" style="display: none;">
 		<div class="check"><input type="checkbox" class="checkbox"></div>
 		<div class="edit-text">
 			<p class="name">收件人：王亮（13682595393）</p>
@@ -101,12 +106,13 @@
 		</div>
 		<a href="#" class="editBtn"></a>
 	</div>
-	<div class="add-address clearfix">
+	<div class="add-address clearfix" style="display: none;">
 		<div class="add">+</div>
 		<div class="add-text">
 			<p class="address">新增地址</p>
 		</div>
-		<a href="#" class="more">&gt;</a>
+		<em class="more">&gt;</em>
+		<a href="#"></a>
 	</div>
 </div>
 </body>

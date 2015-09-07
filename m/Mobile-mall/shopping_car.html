@@ -27,14 +27,14 @@
 </head>
 <body>
 <div class="wrap">
-	<header>
+	<header style="display: none;">
 		<span class="shopingTxt">购物车（<span id="number">3</span>）</span>
 		<div class="btnBox clearfix">
 			<a href="javascript:" class="btn del">删除</a>
 			<a href="javascript:" class="btn">移至收藏夹</a>
 		</div>
 	</header>
-	<section class="productBox clearfix">
+	<section class="productBox clearfix" style="display: none;">
 		<div class="product clearfix">
 			<div class="pro-content">
 				<div class="radio"><input type="checkbox" class="checkbox pro-check"></div>
@@ -62,7 +62,7 @@
 			<span>应付：<b>¥1680.03</b></span>
 		</div>
 	</section>
-	<section class="productBox clearfix">
+	<section class="productBox clearfix" style="display: none;">
 		<div class="product clearfix">
 			<div class="pro-content">
 				<div class="radio"><input type="checkbox" class="checkbox pro-check"></div>
@@ -90,11 +90,21 @@
 			<span>应付：<b>¥1680.03</b></span>
 		</div>
 	</section>
-	<footer>
+	<footer style="display: none;">
 		<label for="all" class="checkAll"><input id="all" type="checkbox" class="checkbox">全选</label>
 		<p>合计：<span>¥112610.00</span>不含运费</p>
 		<a href="javascript:" class="submit">结算（<em>0</em>）</a>
 	</footer>
+	<!-- 无商品状态 -->
+	<section>
+		<div class="shopping-icon"><img src="images/shopping_icon.png" alt=""></div>
+		<p class="text1">购物车快饿瘪了T.T</p>
+		<p class="text2">主人快给我挑点宝贝吧</p>
+		<div class="btnBox clearfix">
+			<a href="javascript:">个人中心</a>
+			<a href="javascript:">随便逛逛</a>
+		</div>
+	</section>
 </div>
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/shopping_car.js"></script>

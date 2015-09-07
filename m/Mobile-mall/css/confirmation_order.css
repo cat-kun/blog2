@@ -45,11 +45,11 @@ header .infoBox .price{float: right;font-size: 14px;margin-right: 20px;margin-to
 .edit-address .edit-text{float: left;margin-left: 24px;}
 .edit-address .editBtn{float: right;width: 15px;height: 17px;background: url(../images/editBtn.png) no-repeat;background-size: 15px 17px;margin-top: 14px;}
 /*新增地址*/
-.add-address{padding: 10px;height: 40px;line-height: 40px;}
+.add-address{padding: 10px;height: 40px;line-height: 40px;position: relative;}
 .add-address .add{width: 18px;height: 18px;border: 1px solid #52515e;color: #52515e;border-radius: 999px;text-align: center;line-height: 18px;position: absolute;top: 50%;margin-top: -7px;font-size: 14px;}
 .add-address .add-text{float: left;margin-left: 24px;font-size: 18px;margin-top: 3px;}
-.add-address .more{float: right;font-size: 18px;}
-
+.add-address .more{float: right;font-size: 18px;font-style: normal;}
+.add-address a{width: 100%;height: 100%;position: absolute;top: 0;left: 0;}
 
 
 

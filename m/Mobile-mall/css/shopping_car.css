@@ -41,3 +41,11 @@ footer .checkAll,footer p{display: inline-block;font-size: .6rem;}
 footer p span{margin-right: .35rem;color: #ff4401;}
 footer .submit{height: 100%;background-color: #696969;color: #fff;font-size: 14px;padding: 0 10px;float: right;}
 footer .submit em{font-style: normal;}
+/*无商品状态*/
+.shopping-icon{width: 4.375rem;height: 4.375rem;line-height: 4.375rem;background-color: #d8d8d8;margin: 81px auto 0;border-radius: 999px;text-align: center;}
+.shopping-icon img{width: 2.725rem;}
+.text1{height: 28px;line-height: 28px;text-align: center;font-size: .75rem;padding: 7px 0;}
+.text2{height: 22px;line-height: 22px;text-align: center;font-size: .6rem;color: #999;}
+.btnBox{width: 12rem;margin: 20px auto 40px;}
+.btnBox a{width: 5.5rem;height: 40px;line-height: 40px;text-align: center;font-size: .6rem;color: #000;border: 1px solid #a8a8a8;float: left;}
+.btnBox a:first-of-type{margin-right: .5rem;}

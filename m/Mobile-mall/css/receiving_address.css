@@ -1,0 +1,26 @@
+@charset "UTF-8";
+body{background: #fff;}
+.address-input{height: 45px;border-bottom: 1px solid #d6d6d6;line-height: 45px;padding: 0 10px;}
+.address-input .text{float: left;font-size: .6rem;width: 2.7rem;margin-right: .725rem;overflow: hidden;height: 100%;text-align: right;}
+.address-input .inp{float: left;color: #666;width: 11.575rem;}
+.address-input .input{height: 20px;line-height: 20px;padding: 10px 0;border: none;font-size: .4rem;}
+.address-input .sel{height: 34px;line-height: 34px;width: 100%;border: 1px solid #ccc;font-size: .6rem;padding-left: 11px;color: #a3a3a3;}
+.default{color: #666;font-size: .6rem;padding: 0 10px;height: 45px;line-height: 45px;position: relative;margin: 5px 0;}
+.default .checkbox{width: 18px;height: 18px;background: url(../images/icon.png) no-repeat;background-size: 150px 150px;-webkit-appearance: none;border: 0;margin-right: 7px;display: inline-block;}
+.default .checkbox:checked{background-position: 0 -18px;}
+.default span{margin-top: 4px;display: inline-block;}
+.yesBtn{padding: 0 10px;}
+.yesBtn .yes{width: 100%;height: 45px;line-height: 45px;margin: 0 auto;background-color: #ff4401;color: #fff;font-size: .75rem;display: block;text-align: center;margin-bottom: 20px;letter-spacing: 10px;font-weight: normal;}
+
+
+
+
+
+
+
+
+
+
+
+
+
