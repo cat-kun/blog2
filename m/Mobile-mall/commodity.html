@@ -101,7 +101,13 @@
 </div>
 <script src="js/jquery-1.9.1.min.js"></script>
 <script>
-$('.menu').height( $('.menuList').height() - '16' ) ;
+menuH();
+$(window).resize(function (){
+	menuH();
+});
+function menuH(){
+	$('.menu').height( $('.menuList').height() - '16' ) ;
+}
 </script>
 </body>
 </html>

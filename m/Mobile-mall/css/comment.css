@@ -1,0 +1,19 @@
+@charset "UTF-8";
+body{background-color: #fff;}
+#comment header{padding: 10px 0;border-bottom: 1px solid #c8c8c8;}
+#comment header a{width: 50%;line-height: 1rem;color: #000;font-size: .6rem;text-align: center;float: left;box-sizing: border-box;}
+#comment header a:first-of-type{border-right: 1px solid #c8c8c8;}
+#comment header .active{color: #ff4400;}
+#comment section{padding: 0 10px;}
+#comment .comment-cont{margin: 20px 0 15px 0;padding-bottom: 15px;border-bottom: 1px solid #d9d9d9;}
+#comment .title{height: 46px;line-height: 46px;}
+#comment .avatar{width: 46px;height: 46px;float: left;margin: 0 7px 0 2px;}
+#comment .name{float: left;font-size: 16px;}
+#comment .start{float: left;margin-left: 8px;}
+#comment .start-icon{background: url(../images/start_icon.png) center center no-repeat;width: 13px;height: 12px;background-size: 13px 12px;display: inline-block;}
+#comment .time{float: right;color: #333;}
+#comment .text{line-height: 24px;margin: 6px 0;}
+#comment .text strong{color: #67afe1;font-weight: normal;}
+#comment .comment-img img{float: left;margin-right: 5px;width: 63px;height: 63px;margin-bottom: 5px;}
+#comment .color{color: #adadad;font-size: 14px;margin-top: 5px;}
+#comment .copyright{text-align: center;font-size: .6rem;margin: 10px 0;}
