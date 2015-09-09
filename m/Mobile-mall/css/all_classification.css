@@ -36,3 +36,19 @@
 #classification .new{width: 11px;height: 11px;background-position: -42px -99px;}
 #classification .promotion{width: 12px;height: 12px;background-position: -42px -118px;}
 #classification .allBox .more{margin-right: 16px;}
+/*限时购页面*/
+#classification .saleCont{padding: 0 10px;}
+#classification .saleCont li{margin-top: 10px;}
+#classification .saleCont-text{padding: 0 9px;border: 1px solid #d9d9d9;border-top: none;}
+#classification .saleCont-text .title{font-size: 14px;font-weight: normal;color: #333;line-height: 35px;}
+#classification .saleCont-text .price{color: #e42121;font-size: 18px;}
+#classification .saleCont-text .price em{font-size: 12px;}
+#classification .saleCont-text .price{}
+#classification .saleCont-text .price{}
+#classification .saleCont-text .price{}
+#classification .saleCont-text .price{}
+
+
+
+
+

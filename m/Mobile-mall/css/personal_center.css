@@ -13,7 +13,7 @@ header .arrow{right: 11px;}
 header .balanceBox{border-top: 1px solid #d9d9d9;border-bottom: 1px solid #d9d9d9;padding: 18px 0;}
 header .balanceBox a{color: #ff4400;/*font-size: .55rem;*/width: 50%;float: left;text-align: center;-webkit-box-sizing: border-box;box-sizing: border-box;}
 header .balanceBox a:first-child{border-right: 1px solid #d9d9d9;}
-header .balanceBox a span{color: #333;}
+header .balanceBox a span{color: #585858;}
 /*我的订单*/
 section{margin-bottom: 100px;}
 .orderBox{padding: 17px 22px 17px 18px;background-color: #fff;border-top: 1px solid #d9d9d9;border-bottom: 1px solid #d9d9d9;margin-bottom: 10px;}
