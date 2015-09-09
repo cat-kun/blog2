@@ -1,22 +1,25 @@
 @charset "UTF-8";
-header{background-color: #fff;margin-bottom: 20px;}
+header{background-color: #fff;margin-bottom: 10px;}
 header .account{padding: 24px 11px 24px 9px;position: relative;overflow: hidden;}
 header .avatar{float: left;width: 2.65rem;height: 2.65rem;margin-left: 7px;margin-right: 12px;}
 header .account-text{float: left;margin-top: 4px;}
 header .name{color: #333;font-size: .75rem;line-height: 1.15rem;}
 header .name span{font-size: .55rem;margin-left: 4px;font-weight: normal;}
 header .tip{font-size: .55rem;line-height: 1rem;}
-header .arrow{color: #dfdfdf;font-style: normal;font-size: 30px;height: 46px;line-height: 46px;position: absolute;right: 11px;top: 50%;margin-top: -23px;}
+/*箭头*/
+.arrow{width: 16px;height: 22px;position: absolute;top: 50%;margin-top: -11px;background: url(../images/icon.png) no-repeat;background-position: -65px -43px;background-size: 150px 150px;display: inline-block;}
+header .arrow{right: 11px;}
+.orderBox .order-title .arrow{right: -11px;}
 header .balanceBox{border-top: 1px solid #d9d9d9;border-bottom: 1px solid #d9d9d9;padding: 18px 0;}
 header .balanceBox a{color: #ff4400;font-size: .55rem;width: 50%;float: left;text-align: center;-webkit-box-sizing: border-box;box-sizing: border-box;}
 header .balanceBox a:first-child{border-right: 1px solid #d9d9d9;}
 header .balanceBox a span{color: #333;}
 /*我的订单*/
 section{margin-bottom: 100px;}
-.orderBox{padding: 17px 22px 17px 18px;background-color: #fff;border-top: 1px solid #d9d9d9;border-bottom: 1px solid #d9d9d9;margin-bottom: 20px;}
+.orderBox{padding: 17px 22px 17px 18px;background-color: #fff;border-top: 1px solid #d9d9d9;border-bottom: 1px solid #d9d9d9;margin-bottom: 10px;}
 .orderBox .order-title{/*font-size: .65rem;*/font-size: 14px;border-bottom: 1px solid #e5e5e5;padding-bottom: 8px;margin-bottom: 8px;}
 .orderBox h3{float: left;font-weight: normal;color: #585858;font-size: 14px;}
-.orderBox .order-title a{float: right;color: #a3a3a3;}
+.orderBox .order-title a{float: right;color: #a3a3a3;position: relative;}
 .orderBox .orderBtn li{text-align: center;width: 2.375rem;float: left;margin-top: 15px;}
 .orderBox .orderBtn li:nth-of-type(1){margin-right: 1.7rem;}
 .orderBox .orderBtn li:nth-of-type(2){margin-right: 1.4rem;}
@@ -36,7 +39,8 @@ section{margin-bottom: 100px;}
 .menuBox .menuList:last-of-type{border-bottom: none;}
 .menuBox .menuList .icon{background: url(../images/icon.png) no-repeat;background-size: 150px 150px;display: inline-block;margin-right: 8px;vertical-align: middle;margin-top: -3px;}
 .menuBox .menuList a{width: 100%;height: 45px;display: block;color: #585858;font-size: 14px;position: relative;}
-.menuBox .menuList em{font-style: normal;position: absolute;right: 11px;color: #d1d1d1;font-size: 24px;}
+/*.menuBox .menuList em{font-style: normal;position: absolute;right: 11px;color: #d1d1d1;font-size: 24px;top: 2px;}*/
+.menuBox .menuList .arrow{right: 0;}
 .menuBox .menuList .car{width: 13px;height: 14px;background-position: 0 -40px;}
 .menuBox .menuList .collect{width: 14px;height: 13px;background-position: 0 -56px;}
 .menuBox .menuList .mark{width: 13px;height: 13px;background-position: 0 -72px;}
