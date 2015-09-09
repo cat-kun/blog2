@@ -38,15 +38,17 @@
 #classification .allBox .more{margin-right: 16px;}
 /*限时购页面*/
 #classification .saleCont{padding: 0 10px;}
-#classification .saleCont li{margin-top: 10px;}
+#classification .saleCont li{margin: 10px 0;background-color: #fff;}
 #classification .saleCont-text{padding: 0 9px;border: 1px solid #d9d9d9;border-top: none;}
 #classification .saleCont-text .title{font-size: 14px;font-weight: normal;color: #333;line-height: 35px;}
-#classification .saleCont-text .price{color: #e42121;font-size: 18px;}
+#classification .saleCont-text .price{color: #e42121;font-size: 18px;line-height: 36px;}
 #classification .saleCont-text .price em{font-size: 12px;}
-#classification .saleCont-text .price{}
-#classification .saleCont-text .price{}
-#classification .saleCont-text .price{}
-#classification .saleCont-text .price{}
+#classification .saleCont-text .time{padding-bottom: 12px;}
+#classification .saleCont-text .countDown{float: left;line-height: 22px;margin-top: 14px;}
+#classification .saleCont-text .countDown span{width: .925rem;height: .925rem;display: inline-block;line-height: .925rem;text-align: center;background-color: #333;color: #fff;margin: 0 10px;border: 1px solid #292929;font-size: .6rem;}
+#classification .saleCont-text .time a{width: 3.55rem;height: 50px;line-height: 50px;text-align: center;background-color: #fe4f01;color: #fff;float: right;}
+#classification .saleCont li:last-of-type{margin-bottom: 87px;}
+#classification .saleCont-text
 
 
 
