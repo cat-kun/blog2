@@ -42,4 +42,14 @@ $('#all').on('click',function (){
 // 判断所有的宝贝是否被选中
 var nowCheckLen = $('.pro-check:checked').length;
 
-//if()
+var onOff = true;
+$('.shopping-menu').on('click',function (){
+	if(onOff){
+		$(this).find('.shopping-menuIcon').css({'background-position': '-107px -113px'});
+		$(this).siblings('.menuList').show();
+	}else{
+		$(this).find('.shopping-menuIcon').css({'background-position': '-66px -112px'});
+		$(this).siblings('.menuList').hide();
+	}
+	onOff = !onOff;
+});

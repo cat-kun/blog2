@@ -23,7 +23,7 @@
 #classification .pirce strong{float: left;font-size: 16px;color: #e42121;}
 #classification .pirce span{float: right;text-decoration: line-through;}
 /*全部分类下拉菜单*/
-#classification .allBox{width: 7.8rem;height: 100%;background-color: rgba(0,0,0,.9);color: #fff;position: absolute;top: 0;left: 0;transform: translateX(-7.8rem);transform: translateX(0);transition: all .5s;font-size: .6rem;}
+#classification .allBox{width: 7.8rem;height: 100%;background-color: rgba(0,0,0,.9);color: #fff;position: absolute;top: 0;left: 0;transform: translateX(-7.8rem);/*transform: translateX(0);*/transition: all .5s;font-size: .6rem;}
 #classification .allBox li,#classification .allBox dl{padding: 0 10px;}
 #classification .allBox p,#classification .allBox dt{border-bottom: 1px solid #463d3d;}
 #classification .allBox p,#classification .allBox dt,#classification .allBox dd{padding: 10px 0;}
@@ -60,25 +60,3 @@
 #classification .product-list .pro-text .price{color: #e42121;font-size: 18px;position: absolute;bottom: 5px;left: 0;}
 #classification .product-list .pro-text .price em{font-size: 12px;}
 #classification .product-list .pro-text .buy-btn{width: 3.55rem;height: 1.25rem;line-height: 1.25rem;text-align: center;background-color: #fe4f01;color: #fff;position: absolute;bottom: 5px;right: 0;}
-#classification
-#classification
-#classification
-#classification
-#classification
-#classification
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

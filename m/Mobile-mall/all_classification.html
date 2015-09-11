@@ -156,5 +156,13 @@
 		<!-- 全部分类下拉菜单结束 -->
 	</section>
 </div>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+$('.active').on('click',function (){
+	console.log('1');
+	$(this).siblings('.sort').show();
+	console.log('2');
+});
+</script>
 </body>
 </html>
