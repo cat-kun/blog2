@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/*公用样式*/
+
+/*悬浮按钮*/
+.shopping-menuBox{width: 45px;height: 45px;position: fixed;bottom: 93px;right: 0;z-index: 9;}
+.shopping-menu{width: 45px;height: 45px;background: rgba(0,0,0,.8);text-align: center;display: block;border-radius: 4px;}
+.shopping-menu .shopping-menuIcon{width: 27px;height: 27px;margin-top: 9px;background: url(../images/icon.png) no-repeat;background-size: 150px 150px;background-position: -66px -112px;display: inline-block;}
+.shopping-menuBox .menuList{width: 80px;background-color: #fff;padding: 0 10px 0 15px;border: 1px solid #d9d9d9;position: absolute;right: 0;bottom: 50px;display: none;}
+.shopping-menuBox .menuList a{/*height: 44px;line-height: 44px;*/padding: .5rem 0 .6rem 0;color: #585858;display: block;border-bottom: 1px solid #d9d9d9;font-size: 14px;}
+.shopping-menuBox .menuList a:last-of-type{border-bottom: 0;}
+.shopping-menuBox .arrow-down{ position:absolute; width:12px; height:12px; bottom:-12px; right: 22%; }
+.shopping-menuBox .arrow-down *{ display:block; border-width:6px; position:absolute; border-style:solid dashed dashed dashed; font-size:0; line-height:0; }
+.shopping-menuBox .arrow-down em{border-color:#fff transparent transparent;}
+.shopping-menuBox .arrow-down span{border-color:#d9d9d9 transparent transparent;}

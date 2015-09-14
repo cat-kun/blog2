@@ -4,8 +4,9 @@ body{background-color: #f0f0f0;}
 header{height: 50px;line-height: 50px;border-bottom: 1px solid #cacaca;font-size: 14px;padding: 0 10px;background-color: #fff;top: 0;}
 header,footer{width: 100%;position: fixed;left: 0;z-index: 2;-webkit-box-sizing: border-box;box-sizing: border-box;}
 header .btnBox{float: right;margin-top: 10px;}
-header .btn{height: 28px;border: 1px solid #ccc;color: #000;padding: 0 20px;float: left;line-height: 28px;}
-header .btn:first-child{margin-right: 20px;}
+header .btn{width: 84px;height: 28px;border: 1px solid #ccc;color: #000;float: left;line-height: 28px;text-align: center;}
+header .del{width: 48px;}
+header .btn:first-child{margin-right: 10px;}
 /*产品*/
 .productBox{border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;background-color: #fff;margin-bottom: 10px;}
 .productBox:first-of-type{margin-top: 60px;}
@@ -34,12 +35,12 @@ header .btn:first-child{margin-right: 20px;}
 .productBox .count p em{font-style: normal;}
 .productBox .count span b{color: #ff4400;}
 /*底部*/
-footer{height: 50px;line-height: 50px;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;font-size: 0;overflow: hidden;bottom: 0;background-color: #fff;}
-footer .checkAll{margin-left: 10px;margin-right: 13px;}
+footer{line-height: 38px;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;font-size: 0;overflow: hidden;bottom: 0;background-color: #fff;padding: 10px;}
+footer .checkAll{margin-right: 13px;}
 footer .checkAll .checkbox{margin-right: 5px;margin-top: -2px;}
 footer .checkAll,footer p{display: inline-block;font-size: .6rem;}
 footer p span{margin-right: .35rem;color: #ff4401;}
-footer .submit{width: 77px;height: 100%;background-color: #696969;color: #fff;font-size: 14px;/*padding: 0 25px;*/float: right;margin-bottom: 10px;text-align: center;}
+footer .submit{width: 77px;height: 38px;background-color: #696969;color: #fff;font-size: 14px;/*padding: 0 25px;*/float: right;text-align: center;line-height: 38px;}
 footer .submit em{font-style: normal;}
 /*无商品状态*/
 .no-goods .shopping-icon{width: 4.375rem;height: 4.375rem;line-height: 4.375rem;background-color: #d8d8d8;margin: 81px auto 0;border-radius: 999px;text-align: center;}
@@ -49,17 +50,7 @@ footer .submit em{font-style: normal;}
 .no-goods .btnBox{width: 12rem;margin: 20px auto 40px;}
 .no-goods .btnBox a{width: 5.5rem;height: 40px;line-height: 40px;text-align: center;font-size: .6rem;color: #000;border: 1px solid #a8a8a8;float: left;}
 .no-goods .btnBox a:first-of-type{margin-right: .5rem;}
-/*悬浮状态*/
-.shopping-menuBox{width: 45px;height: 45px;position: fixed;bottom: 93px;right: 0;z-index: 9;}
-.shopping-menu{width: 45px;height: 45px;background: rgba(0,0,0,.8);text-align: center;display: block;}
-.shopping-menu .shopping-menuIcon{width: 27px;height: 27px;margin-top: 9px;background: url(../images/icon.png) no-repeat;background-size: 150px 150px;background-position: -66px -112px;display: inline-block;}
-.shopping-menuBox .menuList{width: 80px;background-color: #fff;padding: 0 10px 0 15px;border: 1px solid #d9d9d9;position: absolute;right: 0;bottom: 50px;display: none;}
-.shopping-menuBox .menuList a{/*height: 44px;line-height: 44px;*/padding: .5rem 0 .6rem 0;color: #585858;display: block;border-bottom: 1px solid #d9d9d9;font-size: 14px;}
-.shopping-menuBox .menuList a:last-of-type{border-bottom: 0;}
-.shopping-menuBox .arrow{ position:absolute; width:12px; height:12px; bottom:-12px; right: 22%; }
-.shopping-menuBox .arrow *{ display:block; border-width:6px; position:absolute; border-style:solid dashed dashed dashed; font-size:0; line-height:0; }
-.shopping-menuBox .arrow em{border-color:#fff transparent transparent;}
-.shopping-menuBox .arrow span{border-color:#d9d9d9 transparent transparent;}
+
 /*.shopping-menuBox .arrow:after,.shopping-menuBox .arrow:before{border: transparent solid;content:' ';height:0;left:100%;position:absolute;width:0;}
 .shopping-menuBox .arrow:after{border-width:9px;border-top-color:#fff;top:15px;}
 .shopping-menuBox .arrow:before{border-width:14px;border-top-color:#d9d9d9;top:10px;}*/

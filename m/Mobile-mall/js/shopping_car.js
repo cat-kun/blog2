@@ -6,18 +6,18 @@
  */
 // 增加
 $('.increase').on('click',function (){
-	var $quantity = parseInt($(this).prev().val());
+	var $quantity = parseInt($(this).next().val());
 	$quantity++;
-	$(this).prev().val($quantity);
+	$(this).next().val($quantity);
 });
 // 减少
 $('.decrease').on('click',function (){
-	var $quantity = parseInt($(this).next().val());
+	var $quantity = parseInt($(this).prev().val());
 	if($quantity == 1){
 		$quantity = 1;
 	}else{
 		$quantity--;
-		$(this).next().val($quantity);
+		$(this).prev().val($quantity);
 	}
 });
 
@@ -41,15 +41,3 @@ $('#all').on('click',function (){
 
 // 判断所有的宝贝是否被选中
 var nowCheckLen = $('.pro-check:checked').length;
-
-var onOff = true;
-$('.shopping-menu').on('click',function (){
-	if(onOff){
-		$(this).find('.shopping-menuIcon').css({'background-position': '-107px -113px'});
-		$(this).siblings('.menuList').show();
-	}else{
-		$(this).find('.shopping-menuIcon').css({'background-position': '-66px -112px'});
-		$(this).siblings('.menuList').hide();
-	}
-	onOff = !onOff;
-});
