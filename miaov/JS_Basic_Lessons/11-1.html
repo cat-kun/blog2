@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+body,div,ul,li{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;color: #000;}
+.box{width: 1000px;margin: 100px auto 0;}
+.clearfix:after{content: '';height: 0;display: block;clear: both;}
+#text{width: 600px;font-family: 'Microsoft Yahei';overflow: hidden;float: left;}
+#btn{width: 80px;float: left;margin-left: 40px;}
+#btn a{height: 30px;line-height: 30px;display: block;text-align: center;}
+#show{background-color: #ccc;display: block;}
+#btn li a:hover{background-color: #f60;color: #fff;}
+#btn ul{display: none;}
+#layer{width: 600px;height: 200px;position: fixed;top: 50%;left: 50%;margin-top: -100px;margin-left: -300px;background-color: #e7e7b5;border: 5px solid #e71063;display: none;}
+#layer .title{width: 456px;margin: 20px auto;border-bottom: 5px solid #e71063;}
+#layer .title a{float: left;width: 80px;height: 30px;line-height: 30px;text-align: center;}
+#layer .title a.active{background-color: #e73100;color: #fff;}
+#layer .content{width: 456px;margin: 0 auto;display: none;}
+span{color: red;}
+</style>
+</head>
+<body>
+<div class="box clearfix">
+	<div id="text">叙利亚难民逃离战火前往欧洲的处境，已令不少人相当心碎，但这几张丹麦的帅气男警与叙利亚难民小女孩玩耍的照片，却抚慰不少人受伤的心。
+	据美国报道，美国Reddit网站网友在上周贴出一张照片，照片里一位长相帅气的丹麦男警，正在大马路上与难民小女孩玩着躲猫猫游戏，两人都看起来相当开心。这名网友在留言中表示，这些难民只是想要过境丹麦，沿着高速公路走到瑞典，但当时丹麦政府为了限制难民人数，却将公路及铁路封锁。而在上周三照片公布那天，丹麦政府已经宣布解除了过境禁令。这几张照片贴出后，引发了网友热烈讨论，有网友表示“好吧，我不确定这家伙是谁，但我想嫁给他”。也有许多网友也要求提供真相，不停询问这名男警到底是谁。</div>
+	<div id="btn">
+		<a href="javascript:" id="show">展开</a>
+		<ul>
+			<li><a href="javascript:">查找</a></li>
+			<li><a href="javascript:">替换</a></li>
+		</ul>
+	</div>
+</div>
+<div id="layer">
+	<p class="title clearfix" id="title">
+		<a href="javascript:" class="active" id="find">查找</a>
+		<a href="javascript:" id="replace">替换</a>
+	</p>
+	<div class="content" style="display: block;">
+		<input type="text">
+		<input type="button" value="查找">
+	</div>
+	<div class="content">
+		<input type="text">
+		<input type="text">
+		<input type="button" value="替换">
+	</div>
+</div>
+<script>
+var onOff 		= true,
+	aUl 		= document.getElementsByTagName('ul'),
+	oLayer 		= getId('layer'),
+	oTitle 		= getId('title'),
+	aA 			= oTitle.getElementsByTagName('a'),
+	oDiv 		= oLayer.getElementsByTagName('div'),
+	oFind 		= getId('find'),
+	oReplace 	= getId('replace'),
+	aInput		= document.getElementsByTagName('input'),
+	oText 		= getId('text');
+
+function getId(id){
+	return document.getElementById(id);
+}
+getId('show').onclick = function (){
+	if(onOff){
+		this.innerHTML = '收缩';
+		aUl[0].style.display = 'block';
+		oLayer.style.display = 'block';
+	}else{
+		this.innerHTML = '展开';
+		aUl[0].style.display = 'none';
+		oLayer.style.display = 'none';
+	}
+	onOff = !onOff;
+};
+
+fnClick();
+function fnClick(){
+	for(var i = 0;i<aA.length;i++){
+		aA[i].index = i;
+		aA[i].onclick = function (){
+			for(var i = 0;i<aA.length;i++){
+				aA[i].className = '';
+				oDiv[i].style.display = 'none';
+			}
+			this.className = 'active';
+			oDiv[this.index].style.display = 'block';
+		}
+	}
+}
+oFind.onclick = fnClick;
+
+aInput[1].onclick = function (){
+	var str = aInput[0].value;
+	if(!str){
+		alert('搜索框不可以为空');
+	}else{
+		oText.innerHTML = oText.innerHTML.split(str).join('<span>' + str + '</span>');	
+	}
+};
+
+aInput[4].onclick = function (){
+	var str2 = aInput[2].value;
+	var str3 = aInput[3].value;
+	if(!str2 || !str3){
+		alert('输入框不可以为空');
+	}else{
+		oText.innerHTML = oText.innerHTML.split(str2).join('<span>' + str3 + '</span>');
+	}
+}
+</script>
+</body>
+</html>
