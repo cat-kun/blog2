@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<!-- 避免IE使用兼容模式 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>限时购</title>
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+<!-- 是否启动webapp功能，会删除默认的苹果工具栏和菜单栏 -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- 忽略页面中的数字识别为电话号码 -->
+<meta name="format-detection" content="telephone=no,email=no" />
+<!-- uc强制竖屏 -->
+<meta name="screen-orientation" content="portrait">
+<!-- QQ强制竖屏 -->
+<meta name="x5-orientation" content="portrait">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta name="renderer" content="webkit">
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+
+<link rel="stylesheet" href="css/global.css">
+<link rel="stylesheet" href="css/header-sort.css">
+
+<style type="text/css">
+/* @商品列表_20150914
+ -----------------------------------------------------*/
+.limit-list{padding:0 10px 100px}
+.limit-list .limit-item{background-color:#fff;margin:0 0 10px;}
+.limit-item .pro-img{text-align:center;}
+.limit-item .pro-img img{width:100%;height:100%}
+.limit-item .pro-name{height:23px;line-height:23px;overflow:hidden;color:#333;font-size:14px;border-left:1px solid #d7d7d7;border-right:1px solid #d7d7d7;padding:7px 8px 0}
+.limit-item .pro-price{border-left:1px solid #d7d7d7;border-right:1px solid #d7d7d7;font-size:12px;color:#e42121;height:23px;line-height:23px;padding:0 8px 0}
+.limit-item .pro-price strong{font-weight:normal;font-size:18px;}
+.limit-item .pro-time{border:1px solid #d7d7d7;border-top:none;}
+.pro-time .cut-time{height:20px;line-height:20px;color:#000;padding:5px 9px 13px}
+.pro-time .cut-time span{display:inline-block;height:20px;line-height:20px;text-align:center;color:#fff;background-color:#333;padding:0 3px}
+.pro-time .cut-time span.hour{margin-left:7px}
+.pro-time .btn-mod{padding:1px 9px 0 0}
+.pro-time .btn-mod .btn{height:23px;line-height:23px;width:70px;font-size:12px;padding:0;color:#fff;background-color:#fe4f01;border-color:#fe4f01}
+
+/*空数据*/
+.order-empty{position:absolute;top:50px;left:0;right:0;bottom:0;}
+</style>
+
+</head>
+<body class="homePage">
+
+<div class="header header-sort clearfix">
+    <div class="fl all-sort" id="J_all"><a href="javascript:;"></a><span class="line">|</span></div>
+    <ul class="sort-list clearfix">
+        <li class="sort-synthesize" id="J_sort">
+            <a href="javascript:;" class="title"><span>综合排序</span></a>
+            <span class="line">|</span>
+            <span class="sub-sort">
+                <a href="sort-list.html">价格从高到低</a>
+                <a href="sort-list.html">价格从低到高</a>
+            </span>
+        </li>
+        <li><a href="sort-list.html">销量优先</a><span class="line">|</span></li>
+        <li><a href="sort-list.html">评价</a></li>
+    </ul>
+</div>
+
+
+<!-- if有数据 -->
+<div class="wrapper limit-wrapper" id="J_wrapper">
+    <ul class="list limit-list clearfix">
+        <li class="limit-item" data-end="2015/9/19 21:00:00">
+            <p class="pro-img"><img src="images/limit02.jpg" /></p>
+            <p class="pro-name">黑玛卡 秘鲁浓缩型 玛咖精片</p>
+            <p class="pro-price">￥<strong>16800</strong></p>
+            <div class="pro-time clearfix">
+                <div class="fl cut-time">距离本场结束<span class="hour">--</span>：<span class="minute">--</span>：<span class="sec">--</span></div>
+                <div class="fr btn-mod"><a href="#" class="btn">立即抢购</a></div>
+        </li>
+        <li class="limit-item" data-end="2015/09/20 16:00:00">
+            <p class="pro-img"><img src="images/limit02.jpg" /></p>
+            <p class="pro-name">黑玛卡 秘鲁浓缩型 玛咖精片</p>
+            <p class="pro-price">￥<strong>16800</strong></p>
+            <div class="pro-time clearfix">
+                <div class="fl cut-time">距离本场结束<span class="hour">--</span>：<span class="minute">--</span>：<span class="sec">--</span></div>
+                <div class="fr btn-mod"><a href="#" class="btn">立即抢购</a></div>
+        </li>
+
+    </ul>
+</div>
+
+<!-- else:没有数据 -->
+<!-- <div class="order-empty" id="J_wrapper">
+    <div class="scroll">
+        <p class="p-img"><img src="images/record-empty.jpg" /></p>
+        <p class="operate-mod clearfix">
+            <span class="col-02 p-img"><a href="1.html" title="个人中心"><img src="images/record-btn-l.jpg" /></a></span>
+            <span class="col-02 p-img"><a href="2.html" title="随便逛逛"><img src="images/record-btn-r.jpg" /></a></span>
+        </p>
+    </div>
+</div> -->
+
+<div class="list-wrapper" id="J_sortList">
+    <h2 classs="clearfix"><span>选择分类</span> <a href="javascript:;" class="cancel">取消</a></h2>
+    <div class="isScroll">
+        <dl class="list-mod">
+            <dt class="list-item"><a href="sort-list.html">全部商品</a></dt>
+            <dt class="list-item"><a href="sort-list.html">限时抢购</a></dt>
+            <dt class="list-item"><a href="sort-list.html">新品推荐</a></dt>
+            <dt class="list-item"><a href="sort-list.html">上新</a></dt>
+            <dt class="list-item"><a href="sort-list.html">玛咖果片</a></dt>
+            <dt class="list-item"><a href="sort-list.html">玛咖含片</a></dt>
+            <dt class="list-item"><a href="sort-list.html">玛咖果片</a></dt>
+            <dt class="list-item"><a href="sort-list.html">玛咖果片</a></dt>
+            <dd class="sub-item"><a href="sort-list.html">玛咖果片</a></dd>
+            <dd class="sub-item"><a href="sort-list.html">玛咖果片</a></dd>
+            <dd class="sub-item"><a href="sort-list.html">玛咖果片</a></dd>
+            <dt class="list-item"><a href="sort-list.html">玛咖果片</a></dt>
+            <dt class="list-item"><a href="sort-list.html">玛咖果片</a></dt>
+            <dt class="list-item"><a href="sort-list.html">玛咖果片</a></dt>
+            <dt class="list-item"><a href="sort-list.html">玛咖果片</a></dt>
+            <dt class="list-item"><a href="sort-list.html">玛咖果片</a></dt>
+
+        </dl>
+    </div>
+
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/header-sort.js"></script>
+<script type="text/javascript">
+$(function(){
+    // 倒计时
+    $('.limit-item').each(function(i){
+        var _item = $(this),
+            endTime = _item.data('end');
+
+        var t = new Date(endTime);      //取得指定时间的总毫秒数
+
+
+        var setTime = setInterval(function(){
+            var n = new Date().getTime(),   //取得当前毫秒数
+            cutTime = t - n;                  //得到时间差
+
+            var hour = parseInt(cutTime/(1000*60*60)),      // 小时
+                minutes = parseInt((cutTime-hour*1000*3600)/(1000*60)),   // 分
+                seconds = parseInt((cutTime-hour*1000*3600-minutes*60*1000)/1000);   // 秒
+            hour = hour < 10 ? ("0" + hour) : hour;
+            minutes = minutes < 10 ? ("0" + minutes) : minutes;
+            seconds = seconds < 10 ? ("0" + seconds) : seconds;
+            if(cutTime >= 0){
+                _item.find('span.hour').html(hour);
+                _item.find('span.minute').html(minutes);
+                _item.find('span.sec').html(seconds);
+                -- cutTime;
+            }else{
+                clearInterval(setTime);
+                _item.find('span.hour').html('--');
+                _item.find('span.minute').html('--');
+                _item.find('span.sec').html('--');
+            }
+
+        },1000);
+    });
+
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/**
+ * 搜索列表
+ * @date    2015-09-17 21:47:56
+ */
+
+
+/* @search-header_20150917
+ -----------------------------------------------------*/
+
+.header-search{background-color:#fafafa;padding:6px 10px;height:46px;line-height:46px;position:relative;border-bottom:1px solid #d7d7d7}
+.header-search .search-form{background-color:#fff;border:1px solid #ccc;position:relative;padding-left:10px;margin-right:35px}
+.search-form .txt-mod{display:block;margin-right:30px;height:15px;padding:8px 0}
+.search-form .txt-mod .search-txt{display:block;color:#9a9a9a;width:100%}
+.search-form .btn-mod{display:block;width:30px;height:31px;position:absolute;top:0;right:0;}
+.search-form .btn-mod .search-btn{display:block;background:url(../images/search-btn.jpg) no-repeat center center;width:30px;height:100%;background-size:cover}
+
+
+/* @search-nav_20150917
+ -----------------------------------------------------*/
+
+.nav-wrapper{position:absolute;top:46px;left:0;width:83px;bottom:0;overflow:hidden;z-index:5;background:url(../images/list-nav-bg.png) repeat-y right 0 #fff;}
+.nav-wrapper .nav-list li a{display:block;height:45px;line-height:45px;text-indent:12px;color:#000;border-bottom:1px solid #d7d7d7;}
+.nav-wrapper .nav-list li.current a{background-color:#f0f0f0;color:#ff4401}
+
+
+/* @search-list_20150917
+ -----------------------------------------------------*/
+
+.sort-wrapper{position:absolute;right:0;left:83px;top:46px;bottom:0;overflow:hidden;z-index:2}
+.sort-wrapper .sort-list{padding:11px 6px 100px 9px}
+.sort-list .sort-item{width:50%;float:left}
+.sort-list .sort-item a{margin:0 4px 10px;display:block}
+.sort-list .sort-item a span{display:block}
+.sort-list .sort-item a .sort-name{height:27px;line-height:27px;text-align:center;font-size:12px;color:#333;background-color:#fff}
+.sort-list .top-banner{float:none;text-align:center;padding:0 4px 10px}
+.sort-list .top-banner img{width:100%;height:auto}

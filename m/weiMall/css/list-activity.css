@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/**
+ * 店铺活动
+ * @date    2015-09-19 11:20:24
+ */
+
+.activity-list{padding:10px 10px 100px}
+.activity-list .activity-item{border:1px solid #d7d7d7;padding:0 8px;background-color:#fff;margin-bottom:10px}
+.activity-item .data{height:33px;line-height:33px;color:#333;font-size:12px}
+.activity-item .banner{text-align:center;}
+.activity-item .banner img{height:auto;width:100%;}
+.activity-item .intro{line-height:21px;border-bottom:1px solid #d7d7d7;padding:4px 0 9px}
+.activity-item .link a{height:31px;line-height:31px;color:#000;background:url(../images/arrow2.png) no-repeat right center;background-size:auto 100%;display:block;}

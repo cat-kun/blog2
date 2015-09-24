@@ -1,0 +1,111 @@
+
+
+/*reset*/
+html,body,p,ul,li,a,img,input,textarea,strong,s,span,section,ol{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    font-family: '微软雅黑';
+    -webkit-text-size-adjust: none !important;
+}
+a,button,input,textarea{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+img{
+    border: none;
+    vertical-align: top;
+    background-size: 100%;
+    /*max-width: 100%;*/
+}
+input,textarea{
+    font-family: '微软雅黑';
+    background: none;
+    border: none;
+}
+
+*:focus{
+    outline: none;
+}
+
+
+/*public*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;;
+}
+.dib{
+    display: inline-block;
+}
+.db{
+    display: block;
+}
+.dn{
+    display: none;
+}
+.hz{
+    height: auto;
+    overflow: hidden;
+    zoom: 1;
+}
+.clear{
+    clear: both;
+    zoom: 1;
+}
+.clear:after{
+    content: '';
+    display: inline-block;
+    clear: both;
+}
+.por{
+    position: relative;
+}
+
+.bg{
+    background: #F0F0F0;
+}
+
+
+.ff4400{
+    color: #ff4400;
+    font-size: 1.5rem;
+    font-family: 'arial';
+}
+.col333{
+    color: #333;
+}
+.col000{
+    color: #000;
+}
+.font15{
+    font-size: 1.5rem;
+}
+
+.e42121{
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    color: #e42121;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    font-family: 'arial';
+}
+.e42121 s{
+    color: #666;
+    float: right;
+    font-size: 1.2rem;
+}

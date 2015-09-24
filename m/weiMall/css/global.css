@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/**
+ * 全局
+ * @date    2015-09-09 22:53:57
+ */
+
+ /* @公共样式_20150909
+ -----------------------------------------------------*/
+@charset "UTF-8";
+
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input,button{margin:0;padding:0;}
+body{font:12px/1.5 'helvetica neue',tahoma,'hiragino sans gb',stheiti,'wenquanyi micro hei',\5FAE\8F6F\96C5\9ED1,\5B8B\4F53,sans-serif;background-color: #f0f0f0;}
+img{border:none;vertical-align:middle;max-width: 100%;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+li{list-style:none;}
+input, button, textarea{
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  -webkit-appearance: none;
+  outline: 0;vertical-align:middle;
+}
+textarea{resize:vertical;}
+a{text-decoration:none;outline:none;color:#000}
+em{font-style: normal;}
+a,input,select,button,textarea{-webkit-tap-highlight-color: rgba(0,0,0,0);}
+.fl{float:left;}
+.fr{float:right;}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{-webkit-appearance: none !important;}
+/*清浮动*/
+.clearfix:after{content:'';height:0;display:block;clear:both;}
+.wrap{min-width: 320px;}
+@media screen and (min-width: 640px){
+	.wrap{max-width: 640px;margin-left: auto;margin-right: auto;}
+}
+
+
+
+.homePage{background-color: #f0f0f0}
+.col-02{width:50%;display:block;float:left;}
+.red{color:#fe4f01}
+
+ /** 表单_20150909
+ -----------------------------------------------------*/
+.btn{display:inline-block;height:28px;line-height:28px;padding:0 9px;border:1px solid #ccc;text-align:center;color:#000;text-decoration:none;font-size:14px}
+.check-box{width:18px;height:18px;background:url(../images/icon.png) no-repeat;background-size:150px 150px;-webkit-appearance:none;border:0}
+.check-box:checked{background-position:0 -18px}
+
+
+
+
+ /** 固定头部_20150909
+ -----------------------------------------------------*/
+.header{background-color:#fff;height:50px;border-bottom:1px solid #d9d9d9;margin-bottom:10px;font-size:14px;height:50px;line-height:50px;padding:0 10px;width:100%;position:fixed;left:0;z-index:2;-webkit-box-sizing:border-box;box-sizing:border-box;top:0}
+.header .header-title{display:inline-block}
+.header .btn-cancel{float:right;margin-top:10px}
+
+
+
+/** 商品列表_20150909
+ -----------------------------------------------------*/
+.pro-list{margin-top:60px;border-top:1px solid #d9d9d9;margin-bottom:100px}
+.pro-list .checkbox{height:18px;width:18px;position:absolute;left:10px;top:50%;margin-top:-9px}
+.pro-list .pro-img{position:absolute;height:85px;width:85px;top:14px;left:41px}
+.pro-list .pro-img img{height:85px;width:85px}
+.pro-list .pro-item{border-bottom:1px solid #d9d9d9;background-color:#fff;padding:17px 10px 15px;position:relative}
+.pro-item .pro-info{margin-left:126px}
+.pro-info .pro-name{line-height:20px;min-height:41px}
+.pro-info .pro-price{height:39px;line-height:60px}
+.pro-info .pro-price .price-now{color:#f40;font-size:15px;margin-right:23px}
+.pro-info .pro-price .price-old{color:#666;text-decoration:line-through}
+
+
+
+.p-img img{width:100%;}
+
+
+/** 表单_20150912
+ -----------------------------------------------------*/
+.form-mod .form-wrapper{background-color:#fff;border-bottom:1px solid #d7d7d7;margin-bottom:15px;padding:0 10px}
+.form-mod .form-item{border-bottom:1px solid #d7d7d7;font-size:12px}
+.form-item .form-text{display: block;margin-left: 60px;}
+.form-item .form-text .txt{display: block;width:100%;height:47px;line-height:47px;font-size:12px}
+.form-item .form-label{display:block;height:47px;width:60px;float:left;line-height:47px;}
+.form-mod .form-btn{margin:0 10px;border:1px solid #e53c00}
+.form-mod .btn{display:block;width:100%;height:47px;background-color:#ff4401;border:none;color:#fff;font:18px/47px "Microsoft YaHei";}
+
+.select-mod{position:relative;}
+.select-mod .select-result{width:100%;display: block;height:47px;line-height:47px;background:url(../images/select-arrow.jpg) no-repeat right center;background-size:auto 100%}
+.select-mod .select-list{position:absolute;top:0;left:0;right:0;bottom:0;opacity:0;width:100%;}
+
+
+/* @介绍_20150912
+ -----------------------------------------------------*/
+.intro-mod{border-top:1px solid #d7d7d7;border-bottom:1px solid #d7d7d7;margin-bottom:10px;background-color:#fff;padding:0 10px 8px}
+.intro-mod h2{height:37px;line-height:39px;color:#333;font-size:15px;border-bottom:1px solid #d9d9d9;margin-bottom:3px;}
+.intro-mod p{line-height:23px;color:#666}
+
+div.btn-mod{padding:0 10px}
+div.btn-mod p{padding:4px 0}
+div.btn-mod p .btn{display:block;height:45px;font:18px/45px "Microsoft YaHei";color:#fff;border:1px solid #aaa;}
+div.btn-mod p input.btn{width:100%}
+div.btn-mod p .btn-red{background-color:#ff4401;border-color:#f0f0f0}
+div.btn-mod p .btn-gray{background-color:#999;border-color:#a3a3a3}
+
+
+
+/* @订单列表_20150911
+ -----------------------------------------------------*/
+.order-list{padding:55px 0 100px;}
+.order-item{background-color:#fff;border-bottom:1px solid #d7d7d7;border-top:1px solid #d7d7d7;margin-bottom:9px;padding:0 10px}
+.order-item a{display:block;}
+.order-item a.order-info {height:39px;line-height:39px;border-bottom:1px solid #d7d7d7;}
+.order-item .order-info .order-number{color:#333}
+.order-item .order-info .order-status{float:right;color:#ff4401}
+/*商品列表*/
+.order-item .order-pro{position:relative;padding:10px 0 0;height:103px;border-bottom:1px solid #d7d7d7;}
+.order-item .order-pro span{display:block;}
+.order-item .order-pro .pro-img{position:absolute;height:82px;width:82px;top:15px;left:0;}
+.order-item .order-pro .pro-img img{height:82px;width:82px;}
+.order-item .order-pro .pro-name{line-height:20px;margin-left:94px;height:40px;overflow:hidden;}
+.order-item .order-pro .pro-size{height:24px;line-height:24px;margin-left:94px;}
+.order-item .order-pro .pro-price{height:26px;line-height:26px;margin-left:94px;color:#666;font-size:15px}
+.order-item .order-pro .pro-price i{font-size:12px;float:right;font-style: normal;margin:3px -3px 0 0;}
+/*订单统计*/
+.order-item .order-data{text-align:right;border-bottom:1px solid #d7d7d7;height:41px;line-height:41px}
+.order-item .order-data span{font-size:13px;color:#ff4401;margin-left:-4px}
+.order-item .order-data strong{font-size:15px;font-weight: normal;margin-left:-4px}
+/*按钮*/
+.order-item .order-operate{padding:15px 0}
+.order-operate .btn{height:29px;line-height:29px;border:1px solid #b2b2b2;width:62px;float:right;font-size:12px;margin-left:10px;padding:0 14px;width:auto;}
+.order-operate .btn-delivery{background-color:#ff4401;border-color:#ff4401;color:#fff;} /*确认收货*/
+.order-operate .btn-refund{padding:0 15px;width:auto;background-color:#ff4401;border-color:#ff4401;color:#fff}
+/*取消订单-弹出select*/
+.btn-cancel{position:relative;}
+.btn-cancel .cancel-result{position:absolute;top:0;left:0;bottom:0;right:0;opacity:0}
+
+
+/* @测试
+ -----------------------------------------------------*/
+
+
+
+/* @测试
+ -----------------------------------------------------*/
+/*.homePage{background:url(../images/1.jpg) no-repeat center -64px;background-size:100% auto;}*/
+/*.top-nav,.order-list .order-item{background-color: transparent}*/

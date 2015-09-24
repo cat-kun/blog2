@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/**
+ * 分销商 成为分销商
+ * @date    2015-09-19 17:33:16
+ */
+
+.top-banner{height:201px;text-align:center;margin-bottom:10px}
+.top-banner img{height:201px;width:100%}
+.homePage p.intro{height:21px;line-height:21px;padding:0 0 0 10px;color:#333}
+.homePage p.intro .red{color:#ff4401}
+.apply-form{padding:10px}
+.apply-form .form-item{border:1px solid #d7d7d7;padding:15px 10px;margin-bottom:9px;background-color:#fff}
+.apply-form .form-item input{display:block;width:100%}
+.form-btn{border:1px solid #e63d00;height:46px}
+.form-btn .btn{height:46px;line-height:46px;border:1px solid #ff4401;font-size:18px;background-color:#ff4401;color:#fff;text-align:center;width:100%;padding:0;font-family:'微软雅黑'}
+.privilege{padding:5px 10px 100px}
+.privilege h4{height:34px;line-height:34px;font-size:15px;color:#333}
+.privilege .privilege-list{border:1px solid #d7d7d7;padding:0 15px;background:#fff}
+.privilege-list .privilege-item{height:60px}
+.privilege-list .privilege01{background:url(../images/privilege01.jpg) no-repeat 0 center;background-size:auto 100%;padding-left:38px;border-bottom:1px solid #d7d7d7}
+.privilege-list .privilege02{background:url(../images/privilege02.jpg) no-repeat 0 center;background-size:auto 100%;padding-left:38px;border-bottom:1px solid #d7d7d7}
+.privilege-list .privilege-item h5{font-size:12px;color:#333;height:20px;line-height:20px;padding-top:12px}
+.privilege-list .privilege-item p{font-size:10px;color:#666;line-height:14px}

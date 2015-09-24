@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/**
+ * 评价订单
+ * @date    2015-09-13 17:47:41
+ */
+.homePage{padding-bottom:100px}
+
+/* @评价_20150912
+ -----------------------------------------------------*/
+.evaluate-mod{padding:12px 10px 20px;background-color:#fff;border-top:1px solid #d7d7d7;border-bottom:1px solid #d7d7d7;margin:10px 0}
+.evaluate-mod .evaluate-star{padding-bottom:15px}
+.evaluate-mod .evaluate-star span{display:block;float:left;margin-right:4px}
+.evaluate-star span.star{height:17px;width:18px;background:url(../images/evaluate-star.png) no-repeat 0 0;background-size:100% 100%}
+.evaluate-star span.red-star{background:url(../images/evaluate-starRed.png) no-repeat 0 0;background-size:100% 100%}
+.evaluate-star span.text{width:85px;line-height:20px;height:20px;background-color:#666;color:#fff;text-align:center;font-size:10px;margin-left:5px;margin-top:-1px}
+.evaluate-text{border:1px solid #ccc;height:44px;padding:5px 10px 10px}
+.evaluate-text textarea{color:#666;font-size:12px;display:block;width:100%;height:100%}
+.evaluate-img{border:1px solid #ccc;padding:7px 0;margin-top:10px;background-color:#fff}
+.evaluate-img li{display:block;float:left;height:42px;width:42px;margin-left:6px}
+.evaluate-img .add{background:url(../images/add-img.jpg) no-repeat 0 0;background-size:100% 100%}
+.evaluate-img .add .add-btn{display:block;width:100%;height:100%;opacity:0}
+.evaluate-img li.img{position:relative}
+.evaluate-img li.img .delete-img{background:url(../images/delete-img.png) no-repeat 0 0;background-size:100% 100%;width:14px;height:14px;display:block;z-index:10;position:absolute;right:-3px;top:-5px}
+.evaluate-img li.img img{width:42px;height:42px}
+
+
+/* @评价列表_20150915
+ -----------------------------------------------------*/
+.evaluate-list{border-top:1px solid #d7d7d7}
+.evaluate-list .order-item{border-top:none;margin-bottom:0}
+.order-item .order-pro .pro-name{overflow:hidden}
+.order-item .pro-evaluate{overflow:hidden}
+.order-item .order-pro{border-bottom:none;padding-top:9px;height:90px}
+.order-item .evaluate-btn{padding-bottom:13px}
+.order-item .evaluate-btn .red{text-align:right}
+.order-item .evaluate-btn .evaluate-btn{font-style:normal;margin-right:-12px}
+.order-item .evaluate-mod{border:none;padding:12px 0 0;margin-top:0;border-top:1px solid #d7d7d7}
+
+
+div.btn-mod{padding-top:20px}

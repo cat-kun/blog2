@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/**
+ * 订单
+ * @date    2015-09-11 13:22:50
+ */
+
+/* @固定头部导航_20150909
+ -----------------------------------------------------*/
+.top-nav{height:45px;line-height:45px;position:fixed;width: 100%;left:0;z-index:2;-webkit-box-sizing:border-box;box-sizing:border-box;top:0;background-color:#fff;border-bottom:1px solid #d7d7d7}
+.top-nav li{float:left;width:21%;text-align:center;position:relative;}
+.top-nav li a{display: block;height:45px;line-height:45px;}
+.top-nav li a.current{color:#ff4401}
+.top-nav li .line{position:absolute;right:0;top:0;height:45px;line-height:45px;color:#c8c8c8;font-size:15px}
+
+/* @订单列表_20150911
+ -----------------------------------------------------*/
+.order-list{padding:55px 0 100px;}
+.order-list .order-item{background-color:#fff;border-bottom:1px solid #d7d7d7;border-top:1px solid #d7d7d7;margin-bottom:9px;padding:0 10px}
+.order-item a{display:block;}
+.order-item a.order-info {height:39px;line-height:39px;border-bottom:1px solid #d7d7d7;}
+.order-item .order-info .order-number{color:#333}
+.order-item .order-info .order-status{float:right;color:#ff4401}
+/*商品列表*/
+.order-item .order-pro{position:relative;padding:10px 0 0;height:103px;border-bottom:1px solid #d7d7d7;}
+.order-item .order-pro span{display:block;}
+.order-item .order-pro .pro-img{position:absolute;height:82px;width:82px;top:15px;left:0;}
+.order-item .order-pro .pro-img img{height:82px;width:82px;}
+.order-item .order-pro .pro-name{line-height:20px;margin-left:94px;height:40px}
+.order-item .order-pro .pro-size{height:24px;line-height:24px;margin-left:94px;}
+.order-item .order-pro .pro-price{height:26px;line-height:26px;margin-left:94px;color:#666;font-size:15px}
+.order-item .order-pro .pro-price i{font-size:12px;float:right;font-style: normal;margin:3px -3px 0 0;}
+/*订单统计*/
+.order-item .order-data{text-align:right;border-bottom:1px solid #d7d7d7;height:41px;line-height:41px}
+.order-item .order-data span{font-size:13px;color:#ff4401;margin-left:-4px}
+.order-item .order-data strong{font-size:15px;font-weight: normal;margin-left:-4px}
+/*按钮*/
+.order-item .order-operate{padding:15px 0}
+.order-operate .btn{height:29px;line-height:29px;border:1px solid #b2b2b2;width:62px;float:right;font-size:12px;margin-left:10px;padding:0 14px;width:auto;}
+.order-operate .btn-delivery{background-color:#ff4401;border-color:#ff4401;color:#fff;} /*确认收货*/
+.order-operate .btn-refund{padding:0 15px;width:auto;background-color:#ff4401;border-color:#ff4401;color:#fff}
+/*取消订单-弹出select*/
+.btn-cancel{position:relative;}
+.btn-cancel .cancel-result{position:absolute;top:0;left:0;bottom:0;right:0;opacity:0}
+
+
+/* @没有订单_20150909
+ -----------------------------------------------------*/
+.order-empty{margin-top:28%}
+.order-empty .p-img img{width:100%;}
+
+
+
+
+/* @测试
+ -----------------------------------------------------*/
+/*.homePage{background:url(../images/10.jpg) no-repeat center -64px;background-size:100% auto;}
+.top-nav,.order-list .order-item{background-color: transparent}*/
+
+
+
+
+/* @余额明细-充值记录_20150912
+ -----------------------------------------------------*/
+.recharge-list{padding:55px 0 100px;}
+.recharge-list .recharge-item{border:1px solid #d7d7d7;background-color:#fff;margin-bottom:9px;padding:8px 10px}
+.recharge-item .fl p{line-height:23px;color:#333;height:23px;white-space:nowrap;}
+.recharge-item .fr{height:33px;line-height:33px;border-left:1px solid #ccc;padding-left:13px;margin-top:6px;width:36px}
+
+
+

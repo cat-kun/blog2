@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/**
+ * 订单详情
+ * @date    2015-09-20 09:17:02
+ */
+
+
+.recipients{border-bottom:1px solid #d7d7d7;border-top:1px solid #d7d7d7;padding:12px 10px 11px;background-color:#fff;}
+.recipients .recipients-name{font-size:14px;color:#000}
+.recipients .recipients-address{font-size:12px;color:#666;padding-top:3px}
+
+
+.order-list{padding:10px 0}
+.order-item{margin:0;border-top:none}
+.order-item .order-pro{border-bottom:none}
+
+.order-info{border-top:1px solid #d7d7d7;padding:0 10px;border-bottom:1px solid #d7d7d7;background-color:#fff;}
+.order-info p{height:44px;line-height:44px;border-bottom:1px solid #d7d7d7;font-size:14px;color:#000}
+.order-info p.account{border-bottom:none;}
+
+div.btn-mod{margin:10px 0 100px;border-top:1px solid #d7d7d7;border-bottom:1px solid #d7d7d7;padding:7px 10px;background-color:#fff;}
+div.btn-mod .btn{margin-right:7px}
+div.btn-mod .btn-red{margin-right:0;border-color:#ff4401;background-color:#ff4401;color:#fff}
