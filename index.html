@@ -92,6 +92,8 @@
 						
 							<li><a href="/archives">所有文章</a></li>
 				        
+							<li><a href="/categories/随笔/">随笔</a></li>
+				        
 						</ul>
 					</nav>
 					<nav class="header-nav">
@@ -110,7 +112,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
+						<a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/微信/" style="font-size: 10px;">微信</a>
 					</div>
 				</section>
 				
@@ -165,6 +167,8 @@
 				
 					<li><a href="/archives">所有文章</a></li>
 		        
+					<li><a href="/categories/随笔/">随笔</a></li>
+		        
 		        <div class="clearfix"></div>
 				</ul>
 			</nav>
@@ -183,6 +187,78 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-移动端分享到微信朋友圈" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/11/26/移动端分享到微信朋友圈/" class="article-date">
+  	<time datetime="2015-11-26T05:53:00.000Z" itemprop="datePublished">2015-11-26</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/26/移动端分享到微信朋友圈/">移动端分享到微信朋友圈</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在做移动端HTML页面的时候，有些需求是需要分享到某个社交平台，例如微信的朋友圈，新浪微博等等。那么分享到微信朋友圈该怎么做呢？<br>一般分两种情况：</p>
+<ul>
+<li><a href="#">有公众号的</a></li>
+<li><a href="#">没有公众号的</a></li>
+</ul>
+<p>这篇文章主要讲解下没有公众号的情况：</p>
+<p>分享的时候没有 jssdk，微信就抓当前页面的详细</p>
+<p>分享的三个值 标题 图片 链接，如果是 jssdk 可以直接定义这些东西。<br>如果不借助微信sdk，这个三个值分别是：</p>
+<ul>
+<li><code>标题</code> docume.title</li>
+<li><code>图片</code> body内第一张宽高大于 400x400 的图，可以隐藏。</li>
+<li><code>链接</code> 当前连接，就是 location.href</li>
+</ul>
+<p>这些东西，我们都可以间接控制的。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微信/">微信</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/移动端/">移动端</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
     <article id="post-new-post" class="article article-type-post" itemscope itemprop="blogPost">
   
