@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://yoursite.com/2015/11/28/android-weixin-bug01/index.html">
 <meta property="og:site_name" content="银狐前端之窝">
 <meta property="og:description" content="昨天在测试公司的一个项目的时候，发现在安卓微信端内嵌浏览器下，会出现这样">
-<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/101.jpg">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/5.jpg">
 <meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/QQ图片20151128144825.png">
 <meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/2.jpg">
 <meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/3.jpg">
@@ -23,7 +23,7 @@
 <meta property="og:image" content="http://stdl.qq.com/stdl/weixin/plugin/startdebug.png">
 <meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/7.png">
 <meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/640.webp">
-<meta property="og:updated_time" content="2015-11-28T07:44:47.770Z">
+<meta property="og:updated_time" content="2015-11-28T08:19:05.696Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="安卓微信下的bug">
 <meta name="twitter:description" content="昨天在测试公司的一个项目的时候，发现在安卓微信端内嵌浏览器下，会出现这样">
@@ -244,26 +244,26 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>昨天在测试公司的一个项目的时候，发现在安卓微信端内嵌浏览器下，会出现这样<br><a id="more"></a><br><img src="http://7xon9l.com1.z0.glb.clouddn.com/101.jpg" alt="截图一"><br>我擦，为毛手机号会跑到最左边去？？？！！！经过测试在iPhone5的微信端是没有问题，在部分安卓的微信浏览器下，就会出现这个问题。更诡异的是，字母或者文字都不会出现这个bug，当我改动这个手机号的时候，发觉在10位-11位会出现这个bug，其余位数是不会的，真是百撕不得骑姐啊~~ <img src="http://7xon9l.com1.z0.glb.clouddn.com/QQ图片20151128144825.png" alt=""></p>
-<p>今天来了之后，继续研究昨天的bug，由于是在微信端，一开始不知道有啥好的调试办法，所以用了绝对定位去控制那个手机号。虽然问题暂时得到解决了，但是，却想不通啊，这是为毛！！为毛！！到底为毛！！。然后在群里（<code>javascript div css前端群 198414585</code>）探讨了下，<a href="http://weibo.com/u/1699101027/" target="_blank" rel="external">@菊花</a>，<a href="http://www.52cik.com/" target="_blank" rel="external">@乱码大人</a>纷纷建言献策，<a href="http://www.52cik.com/" target="_blank" rel="external">@乱码大人</a>说可以去找下微信X5的调试，那么我就开始各种找咯。各种谷歌，百度。一开始没找到，后来改了下关键词 <code>微信调试</code> 恩，终于找到了，哝，就是这个<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/2.jpg" alt="截图2"><br>当然，有的童鞋可能是百度，出来的结果就变成这样了（什么鬼）……<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/3.jpg" alt="截图3"><br>所以，天朝哎……这里顺便安利下，我用的<code>科学上网</code>的工具：<code>ShadowSocks</code>，简称<code>SS</code>，当然，服务是收费的，<a href="http://ftq.link/?r=fox" target="_blank" rel="external">具体可以看这里</a><br>好了，打开<a href="http://blog.qqbrowser.cc/" target="_blank" rel="external">微信调试</a><br>按照上面的教程，电脑要安装QQ浏览器最新版</p>
+        <p>昨天在测试公司的一个项目的时候，发现在安卓微信端内嵌浏览器下，会出现这样<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/5.jpg" alt="截图1" title="截图1"><br><a id="more"></a><br>我擦，为毛手机号会跑到最左边去？？？！！！经过测试在iPhone5的微信端是没有问题，在部分安卓的微信浏览器下，就会出现这个问题。更诡异的是，字母或者文字都不会出现这个bug，当我改动这个手机号的时候，发觉在10位-11位会出现这个bug，其余位数是不会的，真是百撕不得骑姐啊~~ <img src="http://7xon9l.com1.z0.glb.clouddn.com/QQ图片20151128144825.png" alt="表情" title="表情"></p>
+<p>今天来了之后，继续研究昨天的bug，由于是在微信端，一开始不知道有啥好的调试办法，所以用了绝对定位去控制那个手机号。虽然问题暂时得到解决了，但是，却想不通啊，这是为毛！！为毛！！到底为毛！！。然后在群里（<code>javascript div css前端群 198414585</code>）探讨了下，<a href="http://weibo.com/u/1699101027/" target="_blank" rel="external">@菊花</a>，<a href="http://www.52cik.com/" target="_blank" rel="external">@乱码大人</a>纷纷建言献策，<a href="http://www.52cik.com/" target="_blank" rel="external">@乱码大人</a>说可以去找下微信X5的调试，那么我就开始各种找咯。各种谷歌，百度。一开始没找到，后来改了下关键词 <code>微信调试</code> 恩，终于找到了，哝，就是这个<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/2.jpg" alt="截图2" title="截图2"><br>当然，有的童鞋可能是百度，出来的结果就变成这样了（什么鬼）……<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/3.jpg" alt="截图3" title="截图3"><br>所以，天朝哎……这里顺便安利下，我用的<code>科学上网</code>的工具：<code>ShadowSocks</code>，简称<code>SS</code>，当然，服务是收费的，<a href="http://ftq.link/?r=fox" target="_blank" rel="external">具体可以看这里</a><br>好了，打开<a href="http://blog.qqbrowser.cc/" target="_blank" rel="external">微信调试</a><br>按照上面的教程，电脑要安装QQ浏览器最新版</p>
 <h2 id="如何安装？">如何安装？</h2><blockquote>
 <ol>
 <li>安装QQ浏览器。windows用户可下载<a href="http://browser.qq.com/" target="_blank" rel="external">QQ浏览器9最新版</a>，mac用户请<a href="http://browser.qq.com/mac" target="_blank" rel="external">下载并安装mac版QQ浏览器</a>，浏览器版本号不低于3.8</li>
-<li>进入应用中心，搜索并安装“微信调试工具”<br><img src="http://event.browser.qq.com/stdl/weixin/plugin/appstore2.png" alt="截图4"><br><img src="http://event.browser.qq.com/stdl/weixin/plugin/appstore.png" alt="截图5"><h2 id="这个工具能做什么？">这个工具能做什么？</h2><strong> 远程调试微信内网页
-</strong> Android手机打开DEBUG模式,并通过USB先连接电脑以后,可以在PC端远程调试微信内WEB网页，支持断点调试微信JS API。<br><img src="http://stdl.qq.com/stdl/weixin/plugin/console.png" alt="截图6"><br>使用方法参考: <a href="http://blog.qqbrowser.cc/kai-qi-wang-ye-diao-shi-jiao-cheng/" target="_blank" rel="external">如何开启微信网页远程调试</a><br>这个就是工具的介绍了。<br>接下来 开启微信网页远程调试。<br>由于公司的测试机始终登录不上微信，我就只好拿自己的红米note当做测试机了。</li>
+<li>进入应用中心，搜索并安装“微信调试工具”<br><img src="http://event.browser.qq.com/stdl/weixin/plugin/appstore2.png" alt="截图4" title="截图4"><br><img src="http://event.browser.qq.com/stdl/weixin/plugin/appstore.png" alt="截图5" title="截图5"><h2 id="这个工具能做什么？">这个工具能做什么？</h2><strong> 远程调试微信内网页
+</strong> Android手机打开DEBUG模式,并通过USB先连接电脑以后,可以在PC端远程调试微信内WEB网页，支持断点调试微信JS API。<br><img src="http://stdl.qq.com/stdl/weixin/plugin/console.png" alt="截图6" title="截图6"><br>使用方法参考: <a href="http://blog.qqbrowser.cc/kai-qi-wang-ye-diao-shi-jiao-cheng/" target="_blank" rel="external">如何开启微信网页远程调试</a><br>这个就是工具的介绍了。<br>接下来 开启微信网页远程调试。<br>由于公司的测试机始终登录不上微信，我就只好拿自己的红米note当做测试机了。</li>
 </ol>
 </blockquote>
 <h2 id="开启网页调试教程">开启网页调试教程</h2><blockquote>
 <p>开启网页调试步骤</p>
 <ol>
-<li>首先打开调试的微信网页，并且微信版本不低于6.2.4(下图以项目网页为例)<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/4.jpg" alt="截图7"></li>
-<li>插件-&gt;网页调试-&gt;”开启调试”按钮<br>确认手机通过USB数据线连接电脑,并已开启调试模式(点此查询如何开启调试模式)<br>确认手机已安装TBS环境(点击查看安装TBS环境教程)<br><img src="http://stdl.qq.com/stdl/weixin/plugin/new2.png" alt="截图8"></li>
-<li>微信上打开的网页会在按钮下方展示(以微信红包网页为例)<br><img src="http://stdl.qq.com/stdl/weixin/plugin/startdebug.png" alt="截图9"><br>点击后打开熟悉的调试界面,你们懂的<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/7.png" alt="截图10"></li>
+<li>首先打开调试的微信网页，并且微信版本不低于6.2.4(下图以项目网页为例)<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/4.jpg" alt="截图7" title="截图7"></li>
+<li>插件-&gt;网页调试-&gt;”开启调试”按钮<br>确认手机通过USB数据线连接电脑,并已开启调试模式(点此查询如何开启调试模式)<br>确认手机已安装TBS环境(点击查看安装TBS环境教程)<br><img src="http://stdl.qq.com/stdl/weixin/plugin/new2.png" alt="截图8" title="截图8"></li>
+<li>微信上打开的网页会在按钮下方展示(以微信红包网页为例)<br><img src="http://stdl.qq.com/stdl/weixin/plugin/startdebug.png" alt="截图9" title="截图9"><br>点击后打开熟悉的调试界面,你们懂的<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/7.png" alt="截图10" title="截图10"></li>
 </ol>
 </blockquote>
 <p>哝，问题看到了吧，无缘无故都出了一个<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"faketel:15875460444"</span> <span class="attribute">style</span>=<span class="value">"text-decoration: none;color: rgba(173,173,173);"</span>&gt;</span>15875460444<span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>可我的dom结构却只有这样<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"infoCont"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"fl"</span>&gt;</span>手机号<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">em</span> <span class="attribute">class</span>=<span class="value">"tel fl"</span>&gt;</span>15875460426<span class="tag">&lt;/<span class="title">em</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>也就是说，他在我的手机号上面生成了a，由于我的a写了一个绝对定位的属性，所以导致了会跑到最左边。然后把CSS改了下，bug就解决了。<code>faketel</code>这个东西我在群里和菊花探讨了下，估计是微信自动忽略页面中的数字识别为电话号码，当然这只是我的猜测。没有查到相关的资料。<br>好了，今天的分享就到这里。不足之处，欢迎指出<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/640.webp" alt="截图11"></p>
+<p>也就是说，他在我的手机号上面生成了a，由于我的a写了一个绝对定位的属性，所以导致了会跑到最左边。然后把CSS改了下，bug就解决了。<code>faketel</code>这个东西我在群里和菊花探讨了下，估计是微信自动忽略页面中的数字识别为电话号码，当然这只是我的猜测。没有查到相关的资料。<br>好了，今天的分享就到这里。不足之处，欢迎指出<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/640.webp" alt="截图11" title="截图11"></p>
 
       
     </div>
