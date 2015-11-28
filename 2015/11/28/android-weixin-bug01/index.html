@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>安卓微信下的bug | 银狐前端之窝</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="昨天在测试公司的一个项目的时候，发现在安卓微信端内嵌浏览器下，会出现这样">
+<meta property="og:type" content="article">
+<meta property="og:title" content="安卓微信下的bug">
+<meta property="og:url" content="http://yoursite.com/2015/11/28/android-weixin-bug01/index.html">
+<meta property="og:site_name" content="银狐前端之窝">
+<meta property="og:description" content="昨天在测试公司的一个项目的时候，发现在安卓微信端内嵌浏览器下，会出现这样">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/101.jpg">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/QQ图片20151128144825.png">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/2.jpg">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/3.jpg">
+<meta property="og:image" content="http://event.browser.qq.com/stdl/weixin/plugin/appstore2.png">
+<meta property="og:image" content="http://event.browser.qq.com/stdl/weixin/plugin/appstore.png">
+<meta property="og:image" content="http://stdl.qq.com/stdl/weixin/plugin/console.png">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/4.jpg">
+<meta property="og:image" content="http://stdl.qq.com/stdl/weixin/plugin/new2.png">
+<meta property="og:image" content="http://stdl.qq.com/stdl/weixin/plugin/startdebug.png">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/7.png">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/640.webp">
+<meta property="og:updated_time" content="2015-11-28T07:44:47.770Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="安卓微信下的bug">
+<meta name="twitter:description" content="昨天在测试公司的一个项目的时候，发现在安卓微信端内嵌浏览器下，会出现这样">
+  
+    <link rel="alternative" href="/atom.xml" title="银狐前端之窝" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://7xon9l.com1.z0.glb.clouddn.com/201242114143975681.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">银狐</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">web小白</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/categories/移动端/">移动端</a></li>
+				        
+							<li><a href="/categories/随笔/">随笔</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/dengxiaozhen" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/206139456" title="weibo">weibo</a>
+					        
+								<a class="mail" target="_blank" href="mailto:626269256@qq.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/CSS3/" style="font-size: 10px;">CSS3</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/微信/" style="font-size: 20px;">微信</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.52cik.com/">楼教主</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.softwhy.com/">蚂蚁部落</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://sentsin.com/">贤心</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.zhangxinxu.com/">张鑫旭博文</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">我是银狐，我是银狐，我是银狐，重要的事说三遍…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">银狐</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://7xon9l.com1.z0.glb.clouddn.com/201242114143975681.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">银狐</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">web小白</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/categories/移动端/">移动端</a></li>
+		        
+					<li><a href="/categories/随笔/">随笔</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/dengxiaozhen" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/206139456" title="weibo">weibo</a>
+			        
+						<a class="mail" target="_blank" href="mailto:626269256@qq.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-android-weixin-bug01" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/11/28/android-weixin-bug01/" class="article-date">
+  	<time datetime="2015-11-28T06:32:00.000Z" itemprop="datePublished">2015-11-28</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      安卓微信下的bug
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微信/">微信</a></li></ul>
+	</div>
+
+        
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/移动端/">移动端</a>
+	</div>
+
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>昨天在测试公司的一个项目的时候，发现在安卓微信端内嵌浏览器下，会出现这样<br><a id="more"></a><br><img src="http://7xon9l.com1.z0.glb.clouddn.com/101.jpg" alt="截图一"><br>我擦，为毛手机号会跑到最左边去？？？！！！经过测试在iPhone5的微信端是没有问题，在部分安卓的微信浏览器下，就会出现这个问题。更诡异的是，字母或者文字都不会出现这个bug，当我改动这个手机号的时候，发觉在10位-11位会出现这个bug，其余位数是不会的，真是百撕不得骑姐啊~~ <img src="http://7xon9l.com1.z0.glb.clouddn.com/QQ图片20151128144825.png" alt=""></p>
+<p>今天来了之后，继续研究昨天的bug，由于是在微信端，一开始不知道有啥好的调试办法，所以用了绝对定位去控制那个手机号。虽然问题暂时得到解决了，但是，却想不通啊，这是为毛！！为毛！！到底为毛！！。然后在群里（<code>javascript div css前端群 198414585</code>）探讨了下，<a href="http://weibo.com/u/1699101027/" target="_blank" rel="external">@菊花</a>，<a href="http://www.52cik.com/" target="_blank" rel="external">@乱码大人</a>纷纷建言献策，<a href="http://www.52cik.com/" target="_blank" rel="external">@乱码大人</a>说可以去找下微信X5的调试，那么我就开始各种找咯。各种谷歌，百度。一开始没找到，后来改了下关键词 <code>微信调试</code> 恩，终于找到了，哝，就是这个<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/2.jpg" alt="截图2"><br>当然，有的童鞋可能是百度，出来的结果就变成这样了（什么鬼）……<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/3.jpg" alt="截图3"><br>所以，天朝哎……这里顺便安利下，我用的<code>科学上网</code>的工具：<code>ShadowSocks</code>，简称<code>SS</code>，当然，服务是收费的，<a href="http://ftq.link/?r=fox" target="_blank" rel="external">具体可以看这里</a><br>好了，打开<a href="http://blog.qqbrowser.cc/" target="_blank" rel="external">微信调试</a><br>按照上面的教程，电脑要安装QQ浏览器最新版</p>
+<h2 id="如何安装？">如何安装？</h2><blockquote>
+<ol>
+<li>安装QQ浏览器。windows用户可下载<a href="http://browser.qq.com/" target="_blank" rel="external">QQ浏览器9最新版</a>，mac用户请<a href="http://browser.qq.com/mac" target="_blank" rel="external">下载并安装mac版QQ浏览器</a>，浏览器版本号不低于3.8</li>
+<li>进入应用中心，搜索并安装“微信调试工具”<br><img src="http://event.browser.qq.com/stdl/weixin/plugin/appstore2.png" alt="截图4"><br><img src="http://event.browser.qq.com/stdl/weixin/plugin/appstore.png" alt="截图5"><h2 id="这个工具能做什么？">这个工具能做什么？</h2><strong> 远程调试微信内网页
+</strong> Android手机打开DEBUG模式,并通过USB先连接电脑以后,可以在PC端远程调试微信内WEB网页，支持断点调试微信JS API。<br><img src="http://stdl.qq.com/stdl/weixin/plugin/console.png" alt="截图6"><br>使用方法参考: <a href="http://blog.qqbrowser.cc/kai-qi-wang-ye-diao-shi-jiao-cheng/" target="_blank" rel="external">如何开启微信网页远程调试</a><br>这个就是工具的介绍了。<br>接下来 开启微信网页远程调试。<br>由于公司的测试机始终登录不上微信，我就只好拿自己的红米note当做测试机了。</li>
+</ol>
+</blockquote>
+<h2 id="开启网页调试教程">开启网页调试教程</h2><blockquote>
+<p>开启网页调试步骤</p>
+<ol>
+<li>首先打开调试的微信网页，并且微信版本不低于6.2.4(下图以项目网页为例)<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/4.jpg" alt="截图7"></li>
+<li>插件-&gt;网页调试-&gt;”开启调试”按钮<br>确认手机通过USB数据线连接电脑,并已开启调试模式(点此查询如何开启调试模式)<br>确认手机已安装TBS环境(点击查看安装TBS环境教程)<br><img src="http://stdl.qq.com/stdl/weixin/plugin/new2.png" alt="截图8"></li>
+<li>微信上打开的网页会在按钮下方展示(以微信红包网页为例)<br><img src="http://stdl.qq.com/stdl/weixin/plugin/startdebug.png" alt="截图9"><br>点击后打开熟悉的调试界面,你们懂的<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/7.png" alt="截图10"></li>
+</ol>
+</blockquote>
+<p>哝，问题看到了吧，无缘无故都出了一个<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"faketel:15875460444"</span> <span class="attribute">style</span>=<span class="value">"text-decoration: none;color: rgba(173,173,173);"</span>&gt;</span>15875460444<span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>可我的dom结构却只有这样<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"infoCont"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"fl"</span>&gt;</span>手机号<span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">em</span> <span class="attribute">class</span>=<span class="value">"tel fl"</span>&gt;</span>15875460426<span class="tag">&lt;/<span class="title">em</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>也就是说，他在我的手机号上面生成了a，由于我的a写了一个绝对定位的属性，所以导致了会跑到最左边。然后把CSS改了下，bug就解决了。<code>faketel</code>这个东西我在群里和菊花探讨了下，估计是微信自动忽略页面中的数字识别为电话号码，当然这只是我的猜测。没有查到相关的资料。<br>好了，今天的分享就到这里。不足之处，欢迎指出<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/640.webp" alt="截图11"></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/11/28/IE67_img_bug/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">IE67中图片链接无效</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="android-weixin-bug01" data-title="安卓微信下的bug" data-url="http://yoursite.com/2015/11/28/android-weixin-bug01/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 银狐
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
