@@ -116,7 +116,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/CSS3/" style="font-size: 20px;">CSS3</a> <a href="/tags/JS/" style="font-size: 10px;">JS</a> <a href="/tags/Sublime-Text/" style="font-size: 10px;">Sublime Text</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/微信/" style="font-size: 20px;">微信</a>
+						<a href="/tags/CSS3/" style="font-size: 20px;">CSS3</a> <a href="/tags/JS/" style="font-size: 20px;">JS</a> <a href="/tags/Sublime-Text/" style="font-size: 10px;">Sublime Text</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/微信/" style="font-size: 20px;">微信</a>
 					</div>
 				</section>
 				
@@ -195,6 +195,77 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-DOM-02" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/12/01/DOM-02/" class="article-date">
+  	<time datetime="2015-12-01T08:08:00.000Z" itemprop="datePublished">2015-12-01</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/01/DOM-02/">子节点和兄弟节点的操作-2</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这次要讲的是子节点和兄弟节点的操作：<code>firstChild</code> <code>lastChild</code> <code>NextSiblings</code> <code>previousSiblings</code></p>
+<blockquote>
+<p>元素.firstChild: 只读属性，看名字基本就能猜个大概了 第一个子节点<br>标准浏览器下: firstChild会包含文本类型的节点<br>非标准浏览器下: 只包含元素节点</p>
+</blockquote>
+<p>然而我们不可能像childNodes去判断nodeType,而是用另一个属性: <code>firstElementChild</code></p>
+<blockquote>
+<p>firstElementChild: 只读属性,标准浏览器下获取第一个元素类型的子节点,而在非标准浏览器下是没有的</p>
+</blockquote>
+<p>还是用这个结构<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"ul1"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">li</span>&gt;</span>11111<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">li</span>&gt;</span>22222<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">li</span>&gt;</span>33333<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">li</span>&gt;</span>44444<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> oUl = <span class="built_in">document</span>.getElementById(<span class="string">'ul1'</span>);</span><br><span class="line">alert(oUl.firstChild);</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS/">JS</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/javascript/">javascript</a>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/12/01/DOM-02/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
     <article id="post-sublime-text" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -348,7 +419,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>前几天在群里看到有人发了一个<a href="http://sentsin.com/" title="面试题">链接</a>，是一份面试题，里面有一道题是这样的：<code>如何用CSS控制文本单行溢出省略？并且大致说出多行省略的思路。</code><br>单行文本溢出省略嘛，对于大家应该都是很容易的，我就不多做解释了，CSS代码如下<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">p</span>&gt;</span>阿里影业副总裁徐远翔的一番言论将其推到了风口浪尖，遭到众多编剧炮轰的原因不仅仅在于他言辞之间所透露的傲慢态度和对编剧的不尊重，更在于他所提倡的“颠覆性”编剧方式很难让人苟同。<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+        <p>前几天在群里看到有人发了一个<a href="http://sentsin.com/" title="面试题">链接</a>，是一份面试题，里面有一道题是这样的：<code>如何用CSS控制文本单行溢出省略？并且大致说出多行省略的思路。</code><br>单行文本溢出省略嘛，对于大家应该都是很容易的，我就不多做解释了，相关的代码如下<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">p</span>&gt;</span>阿里影业副总裁徐远翔的一番言论将其推到了风口浪尖，遭到众多编剧炮轰的原因不仅仅在于他言辞之间所透露的傲慢态度和对编剧的不尊重，更在于他所提倡的“颠覆性”编剧方式很难让人苟同。<span class="tag">&lt;/<span class="title">p</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">p</span><span class="rules">&#123;<span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">100px</span></span></span>;<span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">24px</span></span></span>;<span class="rule"><span class="attribute">text-overflow</span>:<span class="value"> ellipsis</span></span>;<span class="rule"><span class="attribute">white-space</span>:<span class="value"> nowrap</span></span>;<span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;&#125;</span></span><br></pre></td></tr></table></figure>
 <p>那么多行省略呢？
       
