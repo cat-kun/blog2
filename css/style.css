@@ -1075,6 +1075,7 @@ a {
   border: 1px solid #ccc;
   text-shadow: 0 1px #444;
   font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+  white-space: pre-wrap;
 }
 .article-entry pre code {
   font-size: 14px;
