@@ -3,17 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>银狐前端之窝</title>
+  <title>封装getElementsByClassName | 银狐前端之窝</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="web技术">
-<meta property="og:type" content="website">
-<meta property="og:title" content="银狐前端之窝">
-<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+  <meta name="description" content="一般情况下，我们不会设置多个id来进行获取，而是用class的形式，而JS本身并没有获取className的方法，所以我们可以自己封装一个获取className的方法。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="封装getElementsByClassName">
+<meta property="og:url" content="http://yoursite.com/2015/12/22/getElementsByClassName/index.html">
 <meta property="og:site_name" content="银狐前端之窝">
-<meta property="og:description" content="web技术">
+<meta property="og:description" content="一般情况下，我们不会设置多个id来进行获取，而是用class的形式，而JS本身并没有获取className的方法，所以我们可以自己封装一个获取className的方法。">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/20151222.png">
+<meta property="og:updated_time" content="2015-12-22T06:34:37.291Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="银狐前端之窝">
-<meta name="twitter:description" content="web技术">
+<meta name="twitter:title" content="封装getElementsByClassName">
+<meta name="twitter:description" content="一般情况下，我们不会设置多个id来进行获取，而是用class的形式，而JS本身并没有获取className的方法，所以我们可以自己封装一个获取className的方法。">
   
     <link rel="alternative" href="/atom.xml" title="银狐前端之窝" type="application/atom+xml">
   
@@ -205,13 +207,11 @@ var _hmt = _hmt || [];
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-emoji" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-getElementsByClassName" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/11/27/emoji/" class="article-date">
-  	<time datetime="2015-11-27T03:38:00.000Z" itemprop="datePublished">2015-11-27</time>
+      <a href="/2015/12/22/getElementsByClassName/" class="article-date">
+  	<time datetime="2015-12-22T03:47:00.000Z" itemprop="datePublished">2015-12-22</time>
 </a>
     </div>
   
@@ -223,250 +223,94 @@ var _hmt = _hmt || [];
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/27/emoji/">gitHub上发emoji表情</a>
+    <h1 class="article-title" itemprop="name">
+      封装getElementsByClassName
     </h1>
   
 
       </header>
       
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>今天在看<a href="https://github.com/52cik/Simple-Console/issues/1">教主大人</a>的github的时候，碰到一些不解，所以就在下方评论了，教主在回复我的时候使用了emoji表情，我一开始还以为教主是插入了图片，后来谷歌了下（没想到谷歌失败了，翻墙突然坏掉了，难道是天气太冷 ）,然后百度了下，找到了这篇<a href="http://www.cnblogs.com/Wayou/p/use_emoji_in_github.html">博客</a> 原来早在2014年的时候，就支持emoji表情了，然而我现在才知道，真是low~~<br>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/随笔/">随笔</a>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/11/27/emoji/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-switch" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/11/26/switch/" class="article-date">
-  	<time datetime="2015-11-26T14:26:00.000Z" itemprop="datePublished">2015-11-26</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+      <div class="article-info article-info-post">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/26/switch/">CSS3的开关按钮</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>这个开关按钮其实是前几天百无聊赖写的，其实就是用了CSS3的一点点属性而已，先上<code>html代码</code>：</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">input</span> <span class="attribute">type</span>=<span class="value">"checkbox"</span> <span class="attribute">name</span>=<span class="value">"sex"</span> <span class="attribute">id</span>=<span class="value">"male"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">label</span> <span class="attribute">for</span>=<span class="value">"male"</span>&gt;</span><span class="tag">&lt;/<span class="title">label</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><code>CSS代码</code>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS3/">CSS3</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOM/">DOM</a></li></ul>
 	</div>
 
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/随笔/">随笔</a>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/11/26/switch/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-wx" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/11/26/wx/" class="article-date">
-  	<time datetime="2015-11-26T05:53:00.000Z" itemprop="datePublished">2015-11-26</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/26/wx/">移动端分享到微信朋友圈</a>
-    </h1>
-  
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/javascript/">javascript</a>
+	</div>
 
-      </header>
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在做移动端HTML页面的时候，有些需求是需要分享到某个社交平台，例如微信的朋友圈，新浪微博等等。那么分享到微信朋友圈该怎么做呢？<br>一般分两种情况：</p>
-<ul>
-<li><a href="#">有公众号的</a></li>
-<li><a href="#">没有公众号的</a></li>
-</ul>
-<p>这篇文章主要讲解下没有公众号的情况：<br>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微信/">微信</a></li></ul>
-	</div>
+        <p>一般情况下，我们不会设置多个id来进行获取，而是用class的形式，而JS本身并没有获取className的方法，所以我们可以自己封装一个获取className的方法。<br><a id="more"></a><br>DOM结构如下<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"ul1"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span>11111111<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"test"</span>&gt;</span>22222222<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">li</span>&gt;</span>33333333<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"test"</span>&gt;</span>44444444<span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>如果要获取class为test的li，JS是没有提供直接的方法让我们获取的，所以我们自己需要封装一个获取className的函数。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getClass</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> aEle = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'*'</span>);</span><br><span class="line">    <span class="keyword">var</span> arr = [];</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;aEle.length;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(aEle[i] == <span class="string">'test'</span>)&#123;</span><br><span class="line">            arr.push(aEle[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> arr;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> aLi = getClass();</span><br><span class="line"><span class="built_in">console</span>.log(aLi);</span><br></pre></td></tr></table></figure></p>
+<p><img src="http://7xon9l.com1.z0.glb.clouddn.com/20151222.png" alt="打印结果" title="打印结果"><br><a href="http://sandbox.runjs.cn/show/iucjthrp" title="demo1" target="_blank" rel="external">查看demo</a></p>
 
       
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/移动端/">移动端</a>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/11/26/wx/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
     </div>
     
   </div>
   
-</article>
-
-
-
-
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-new-post" class="article article-type-post" itemscope itemprop="blogPost">
   
-    <div class="article-meta">
-      <a href="/2015/11/25/new-post/" class="article-date">
-  	<time datetime="2015-11-25T07:16:00.000Z" itemprop="datePublished">2015-11-25</time>
-</a>
-    </div>
+    <a href="/2015/12/07/offsetTop-offsetLeft/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">元素的各种位置尺寸宽高-4</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
   
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/25/new-post/">我来装逼了</a>
-    </h1>
-  
+</nav>
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="我是h2标题">我是h2标题</h2><p>文章段落。。。。。。。。。。<br>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/随笔/">随笔</a>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/11/25/new-post/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
   
 </article>
 
 
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="getElementsByClassName" data-title="封装getElementsByClassName" data-url="http://yoursite.com/2015/12/22/getElementsByClassName/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
 
 
 
-
-  
-  
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </nav>
-  
 </div>
       <footer id="footer">
   <div class="outer">
@@ -490,8 +334,8 @@ var _hmt = _hmt || [];
 		fancybox: true,
 		mathjax: true,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
