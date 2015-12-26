@@ -5,52 +5,19 @@
   
   <title>npm被墙 | 银狐前端之窝</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="有时候在安装一些npm组件的时候，会出现安装失败。大部分的原因都是以为“网络”的原因，——被墙了。所以，可以通过换淘宝的镜像再进行安装。
-
-更换镜像
-1npm set registry https://registry.npm.taobao.org/
-
-看看是否安装成功
-1npm get registry
-
-清空缓存
-1npm cache clean
-
-
-接下来就可以愉快的玩耍了！！！">
+  <meta name="description" content="有时候在安装一些npm组件的时候，会出现安装失败。大部分的原因都是以为“网络”的原因，——被墙了。所以，可以通过换淘宝的镜像再进行安装。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="npm被墙">
 <meta property="og:url" content="http://yoursite.com/2015/12/23/npm/index.html">
 <meta property="og:site_name" content="银狐前端之窝">
-<meta property="og:description" content="有时候在安装一些npm组件的时候，会出现安装失败。大部分的原因都是以为“网络”的原因，——被墙了。所以，可以通过换淘宝的镜像再进行安装。
-
-更换镜像
-1npm set registry https://registry.npm.taobao.org/
-
-看看是否安装成功
-1npm get registry
-
-清空缓存
-1npm cache clean
-
-
-接下来就可以愉快的玩耍了！！！">
-<meta property="og:updated_time" content="2015-12-23T07:27:28.821Z">
+<meta property="og:description" content="有时候在安装一些npm组件的时候，会出现安装失败。大部分的原因都是以为“网络”的原因，——被墙了。所以，可以通过换淘宝的镜像再进行安装。">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/20151226093932.png?imageView2/1/w/500">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/20151226095038.png">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/201512261034.gif">
+<meta property="og:updated_time" content="2015-12-26T02:35:41.342Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="npm被墙">
-<meta name="twitter:description" content="有时候在安装一些npm组件的时候，会出现安装失败。大部分的原因都是以为“网络”的原因，——被墙了。所以，可以通过换淘宝的镜像再进行安装。
-
-更换镜像
-1npm set registry https://registry.npm.taobao.org/
-
-看看是否安装成功
-1npm get registry
-
-清空缓存
-1npm cache clean
-
-
-接下来就可以愉快的玩耍了！！！">
+<meta name="twitter:description" content="有时候在安装一些npm组件的时候，会出现安装失败。大部分的原因都是以为“网络”的原因，——被墙了。所以，可以通过换淘宝的镜像再进行安装。">
   
     <link rel="alternative" href="/atom.xml" title="银狐前端之窝" type="application/atom+xml">
   
@@ -283,7 +250,7 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>有时候在安装一些npm组件的时候，会出现安装失败。大部分的原因都是以为“网络”的原因，——被墙了。所以，可以通过换淘宝的镜像再进行安装。</p>
+        <p>有时候在安装一些npm组件的时候，会出现安装失败。大部分的原因都是以为“网络”的原因，——被墙了。所以，可以通过换淘宝的镜像再进行安装。<br><a id="more"></a></p>
 <ol>
 <li><p>更换镜像</p>
 <figure class="highlight tcl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">set</span> <span class="keyword">registry</span> https://<span class="keyword">registry</span>.npm.taobao.org/</span><br></pre></td></tr></table></figure>
@@ -291,11 +258,17 @@ var _hmt = _hmt || [];
 <li><p>看看是否安装成功</p>
 <figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="keyword">get</span> registry</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>清空缓存</p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> cache clean</span><br></pre></td></tr></table></figure>
+</ol>
+<p>如果显示<code>https://registry.npm.taobao.org/</code>则代表更换镜像成功！</p>
+<ol>
+<li>清空缓存<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> cache clean</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>接下来就可以愉快的玩耍了！！！</p>
+<p>接下来就可以愉快的玩耍了！！！<br>最近在鼓捣点postCSS的东西，需要安装很多gulp组件，但由于npm3以前的版本 node_modules是层级嵌套关系，导致目录的路径非常的长。据说npm3以上的版本不会有这种问题。于是乎，就需要升级npm的版本了。</p>
+<h6 id="查看npm版本">查看npm版本</h6><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> -v</span><br></pre></td></tr></table></figure>
+<p>或者 使用npm version 能查看更多信息<br><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm <span class="property">version</span></span><br></pre></td></tr></table></figure></p>
+<p>查看后如果是2.x.x，那么代表就是3以前的版本了。<br>那么说下升级npm的方法：打开 <a href="https://github.com/npm/npm/releases" title="npm" target="_blank" rel="external">npm所在的github仓库</a><br>找最新发布的稳定版本<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/20151226093932.png?imageView2/1/w/500" alt="npm截图" title="截图1"><br>接着向下滚动，找到下载<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/20151226095038.png" alt="下载" title="下载"><br>下载压缩包文件，然后解压，找到<code>nodejs</code>安装目录的<code>node_modules</code>的<code>npm</code>目录，替换掉里面所有的文件。（一般默认路径为<code>C:\Program Files\nodejs\node_modules</code>）<br>替换完后，在命令行输入<br><figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">npm</span> -v</span><br></pre></td></tr></table></figure></p>
+<p>用npm version可以查看更多详细信息<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/201512261034.gif" alt="npm -v" title="npm -v"></p>
 
       
     </div>
