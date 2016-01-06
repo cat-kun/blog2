@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>IE67中图片链接无效 | 银狐前端之窝</title>
+  <title>通过UA判断是否在移动端打开 | 银狐前端之窝</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="今天在群里看到@鸦杀一个问题，IE678的部分点击失效bug 那么就是是在ie6、7，对于以下这样的结构，如果span触发了haslayout，那么图片区域将点击无效1234567&amp;lt;div class=&quot;m-demo&quot;&amp;gt;     &amp;lt;a href=&quot;#link&quot;&amp;gt;        &amp;lt;span&amp;gt;            &amp;lt;img src=&quot;http://7xon9">
+  <meta name="description" content="最近总是看到有一些人在问，怎么判断我的页面是否在移动端打开的。如果实在移动端打开，那么自动跳到另一个页面上去。例如淘宝、百度，在手机输入 http://www.baidu.com 回跳到 http://m.baidu.com， 其实这只是通过UA（userAgent）判断设备。123456var ua = window.navigator.userAgent;if(ua.match(/mobile">
 <meta property="og:type" content="article">
-<meta property="og:title" content="IE67中图片链接无效">
-<meta property="og:url" content="http://yoursite.com/2015/11/28/IE67_img_bug/index.html">
+<meta property="og:title" content="通过UA判断是否在移动端打开">
+<meta property="og:url" content="http://yoursite.com/2016/01/06/UA-mobile/index.html">
 <meta property="og:site_name" content="银狐前端之窝">
-<meta property="og:description" content="今天在群里看到@鸦杀一个问题，IE678的部分点击失效bug 那么就是是在ie6、7，对于以下这样的结构，如果span触发了haslayout，那么图片区域将点击无效1234567&amp;lt;div class=&quot;m-demo&quot;&amp;gt;     &amp;lt;a href=&quot;#link&quot;&amp;gt;        &amp;lt;span&amp;gt;            &amp;lt;img src=&quot;http://7xon9">
-<meta property="og:updated_time" content="2015-11-28T03:14:21.906Z">
+<meta property="og:description" content="最近总是看到有一些人在问，怎么判断我的页面是否在移动端打开的。如果实在移动端打开，那么自动跳到另一个页面上去。例如淘宝、百度，在手机输入 http://www.baidu.com 回跳到 http://m.baidu.com， 其实这只是通过UA（userAgent）判断设备。123456var ua = window.navigator.userAgent;if(ua.match(/mobile">
+<meta property="og:updated_time" content="2016-01-06T02:13:17.227Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IE67中图片链接无效">
-<meta name="twitter:description" content="今天在群里看到@鸦杀一个问题，IE678的部分点击失效bug 那么就是是在ie6、7，对于以下这样的结构，如果span触发了haslayout，那么图片区域将点击无效1234567&amp;lt;div class=&quot;m-demo&quot;&amp;gt;     &amp;lt;a href=&quot;#link&quot;&amp;gt;        &amp;lt;span&amp;gt;            &amp;lt;img src=&quot;http://7xon9">
+<meta name="twitter:title" content="通过UA判断是否在移动端打开">
+<meta name="twitter:description" content="最近总是看到有一些人在问，怎么判断我的页面是否在移动端打开的。如果实在移动端打开，那么自动跳到另一个页面上去。例如淘宝、百度，在手机输入 http://www.baidu.com 回跳到 http://m.baidu.com， 其实这只是通过UA（userAgent）判断设备。123456var ua = window.navigator.userAgent;if(ua.match(/mobile">
   
     <link rel="alternative" href="/atom.xml" title="银狐前端之窝" type="application/atom+xml">
   
@@ -128,7 +128,7 @@ var _hmt = _hmt || [];
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 15px;">CSS3</a> <a href="/tags/DOM/" style="font-size: 20px;">DOM</a> <a href="/tags/Sublime-Text/" style="font-size: 10px;">Sublime Text</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/webStorm/" style="font-size: 10px;">webStorm</a> <a href="/tags/微信/" style="font-size: 15px;">微信</a>
+						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 15px;">CSS3</a> <a href="/tags/DOM/" style="font-size: 20px;">DOM</a> <a href="/tags/Sublime-Text/" style="font-size: 10px;">Sublime Text</a> <a href="/tags/UA/" style="font-size: 10px;">UA</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/webStorm/" style="font-size: 10px;">webStorm</a> <a href="/tags/微信/" style="font-size: 15px;">微信</a>
 					</div>
 				</section>
 				
@@ -206,11 +206,11 @@ var _hmt = _hmt || [];
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-IE67_img_bug" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-UA-mobile" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/11/28/IE67_img_bug/" class="article-date">
-  	<time datetime="2015-11-28T03:00:00.000Z" itemprop="datePublished">2015-11-28</time>
+      <a href="/2016/01/06/UA-mobile/" class="article-date">
+  	<time datetime="2016-01-06T01:45:00.000Z" itemprop="datePublished">2016-01-06</time>
 </a>
     </div>
   
@@ -223,7 +223,7 @@ var _hmt = _hmt || [];
         
   
     <h1 class="article-title" itemprop="name">
-      IE67中图片链接无效
+      通过UA判断是否在移动端打开
     </h1>
   
 
@@ -232,12 +232,12 @@ var _hmt = _hmt || [];
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bug/">bug</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/UA/">UA</a></li></ul>
 	</div>
 
         
 	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/随笔/">随笔</a>
+	<a class="article-category-link" href="/categories/移动端/">移动端</a>
 	</div>
 
 
@@ -247,10 +247,8 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天在群里看到<a href="#">@鸦杀</a>一个问题，<code>IE678的部分点击失效bug</code> 那么就是是在ie6、7，对于以下这样的结构，如果span触发了haslayout，那么图片区域将点击无效<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"m-demo"</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#link"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">span</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://7xon9l.com1.z0.glb.clouddn.com/1.jpg"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.m-demo</span> <span class="tag">a</span>,<span class="class">.m-demo</span> <span class="tag">a</span> <span class="tag">img</span><span class="rules">&#123;<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100px</span></span></span>;<span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">60px</span></span></span>;&#125;</span></span><br><span class="line"><span class="class">.m-demo</span> <span class="tag">a</span><span class="rules">&#123;<span class="rule"><span class="attribute">display</span>:<span class="value">block</span></span>;&#125;</span></span><br><span class="line"><span class="class">.m-demo</span> <span class="tag">a</span> <span class="tag">span</span><span class="rules">&#123;<span class="rule"><span class="attribute">zoom</span>:<span class="value"><span class="number">1</span></span></span>;&#125;</span></span><br></pre></td></tr></table></figure>
-<p>解决方式是：<strong>给图片设置position:relative;z-index:-1;再给a设置cursor:pointer;</strong><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"m-demo m-demo-fix"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#link"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">span</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://img1.cache.netease.com/cnews/2009/11/9/20091109151554a1569.jpg"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.m-demo-fix</span> <span class="tag">a</span><span class="rules">&#123;<span class="rule"><span class="attribute">cursor</span>:<span class="value">pointer</span></span>;&#125;</span></span><br><span class="line"><span class="class">.m-demo-fix</span> <span class="tag">a</span> <span class="tag">img</span><span class="rules">&#123;<span class="rule"><span class="attribute">position</span>:<span class="value">relative</span></span>;<span class="rule"><span class="attribute">z-index</span>:<span class="value">-<span class="number">1</span></span></span>;&#125;</span></span><br></pre></td></tr></table></figure>
+        <p>最近总是看到有一些人在问，怎么判断我的页面是否在移动端打开的。如果实在移动端打开，那么自动跳到另一个页面上去。例如淘宝、百度，在手机输入 <a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a> 回跳到 <a href="http://m.baidu.com，" target="_blank" rel="external">http://m.baidu.com，</a> 其实这只是通过UA（userAgent）判断设备。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ua = <span class="built_in">window</span>.navigator.userAgent;</span><br><span class="line"><span class="keyword">if</span>(ua.match(<span class="regexp">/mobile/i</span>))&#123;</span><br><span class="line">    location.href = <span class="string">'http://m.baidu.com'</span>;</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    location.href = <span class="string">'http://www.baidu.com'</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
     
@@ -259,18 +257,9 @@ var _hmt = _hmt || [];
     
 <nav id="article-nav">
   
-    <a href="/2015/11/28/android-weixin-bug01/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          安卓微信下的碰到一点诡异问题
-        
-      </div>
-    </a>
   
-  
-    <a href="/2015/11/27/emoji/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">gitHub上发emoji表情</div>
+    <a href="/2015/12/31/webStorm-11-0-3/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">webStorm 11.0.3破解与汉化</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -299,7 +288,7 @@ var _hmt = _hmt || [];
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="IE67_img_bug" data-title="IE67中图片链接无效" data-url="http://yoursite.com/2015/11/28/IE67_img_bug/"></div>
+	<div class="ds-thread" data-thread-key="UA-mobile" data-title="通过UA判断是否在移动端打开" data-url="http://yoursite.com/2016/01/06/UA-mobile/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -324,7 +313,7 @@ var _hmt = _hmt || [];
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2015 银狐
+    		&copy; 2016 银狐
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
