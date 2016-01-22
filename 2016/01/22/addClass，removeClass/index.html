@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>通过UA判断是否在移动端打开 | 银狐前端之窝</title>
+  <title>封装addClass，removeClass | 银狐前端之窝</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="最近总是看到有一些人在问，怎么判断我的页面是否在移动端打开的。如果实在移动端打开，那么自动跳到另一个页面上去。例如淘宝、百度，在手机输入 http://www.baidu.com 回跳到 http://m.baidu.com， 其实这只是通过UA（userAgent）判断设备。123456var ua = window.navigator.userAgent;if(ua.match(/mobile">
+  <meta name="description" content="jq里面对元素添加class，删除class已经有了很方便的方法。但如果不想用jq呢？那么可以直接封装一个。过程就不多说了，直接上代码">
 <meta property="og:type" content="article">
-<meta property="og:title" content="通过UA判断是否在移动端打开">
-<meta property="og:url" content="http://yoursite.com/2016/01/06/UA-mobile/index.html">
+<meta property="og:title" content="封装addClass，removeClass">
+<meta property="og:url" content="http://yoursite.com/2016/01/22/addClass，removeClass/index.html">
 <meta property="og:site_name" content="银狐前端之窝">
-<meta property="og:description" content="最近总是看到有一些人在问，怎么判断我的页面是否在移动端打开的。如果实在移动端打开，那么自动跳到另一个页面上去。例如淘宝、百度，在手机输入 http://www.baidu.com 回跳到 http://m.baidu.com， 其实这只是通过UA（userAgent）判断设备。123456var ua = window.navigator.userAgent;if(ua.match(/mobile">
-<meta property="og:updated_time" content="2016-01-06T02:13:17.227Z">
+<meta property="og:description" content="jq里面对元素添加class，删除class已经有了很方便的方法。但如果不想用jq呢？那么可以直接封装一个。过程就不多说了，直接上代码">
+<meta property="og:updated_time" content="2016-01-22T03:24:37.562Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="通过UA判断是否在移动端打开">
-<meta name="twitter:description" content="最近总是看到有一些人在问，怎么判断我的页面是否在移动端打开的。如果实在移动端打开，那么自动跳到另一个页面上去。例如淘宝、百度，在手机输入 http://www.baidu.com 回跳到 http://m.baidu.com， 其实这只是通过UA（userAgent）判断设备。123456var ua = window.navigator.userAgent;if(ua.match(/mobile">
+<meta name="twitter:title" content="封装addClass，removeClass">
+<meta name="twitter:description" content="jq里面对元素添加class，删除class已经有了很方便的方法。但如果不想用jq呢？那么可以直接封装一个。过程就不多说了，直接上代码">
   
     <link rel="alternative" href="/atom.xml" title="银狐前端之窝" type="application/atom+xml">
   
@@ -206,11 +206,11 @@ var _hmt = _hmt || [];
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-UA-mobile" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-addClass，removeClass" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/01/06/UA-mobile/" class="article-date">
-  	<time datetime="2016-01-06T01:45:00.000Z" itemprop="datePublished">2016-01-06</time>
+      <a href="/2016/01/22/addClass，removeClass/" class="article-date">
+  	<time datetime="2016-01-22T03:18:00.000Z" itemprop="datePublished">2016-01-22</time>
 </a>
     </div>
   
@@ -223,7 +223,7 @@ var _hmt = _hmt || [];
         
   
     <h1 class="article-title" itemprop="name">
-      通过UA判断是否在移动端打开
+      封装addClass，removeClass
     </h1>
   
 
@@ -232,12 +232,12 @@ var _hmt = _hmt || [];
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/UA/">UA</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOM/">DOM</a></li></ul>
 	</div>
 
         
 	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/移动端/">移动端</a>
+	<a class="article-category-link" href="/categories/javascript/">javascript</a><a class="article-category-link" href="/categories/undefined/"></a>
 	</div>
 
 
@@ -247,8 +247,8 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>最近总是看到有一些人在问，怎么判断我的页面是否在移动端打开的。如果实在移动端打开，那么自动跳到另一个页面上去。例如淘宝、百度，在手机输入 <a href="http://www.baidu.com" target="_blank" rel="external">http://www.baidu.com</a> 回跳到 <a href="http://m.baidu.com，" target="_blank" rel="external">http://m.baidu.com，</a> 其实这只是通过UA（userAgent）判断设备。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ua = <span class="built_in">window</span>.navigator.userAgent;</span><br><span class="line"><span class="keyword">if</span>(ua.match(<span class="regexp">/mobile/i</span>))&#123;</span><br><span class="line">    location.href = <span class="string">'http://m.baidu.com'</span>;</span><br><span class="line">&#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    location.href = <span class="string">'http://www.baidu.com'</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-
+        <p>jq里面对元素添加class，删除class已经有了很方便的方法。但如果不想用jq呢？<br>那么可以直接封装一个。过程就不多说了，直接上代码<br><a id="more"></a><br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"div"</span> <span class="attribute">class</span>=<span class="value">"a"</span>&gt;</span>3434344444<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"div2"</span> <span class="attribute">class</span>=<span class="value">"a b"</span>&gt;</span>3434344444<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> oDiv = <span class="built_in">document</span>.getElementById(<span class="string">'div'</span>);</span><br><span class="line"><span class="keyword">var</span> oDiv2 = <span class="built_in">document</span>.getElementById(<span class="string">'div2'</span>);</span><br><span class="line"></span><br><span class="line">addClass(oDiv,<span class="string">'box'</span>);</span><br><span class="line">removeClass(oDiv2,<span class="string">'b'</span>);</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">addClass</span>(<span class="params">obj,className</span>)</span>&#123;</span><br><span class="line">    <span class="comment">// 如果原来没有class</span></span><br><span class="line">    <span class="keyword">if</span>( obj.className == <span class="string">''</span> )&#123;</span><br><span class="line">        obj.className = className;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">    <span class="comment">// 如果原来有class</span></span><br><span class="line">        <span class="keyword">var</span> arrClassName = obj.className.split(<span class="string">' '</span>);</span><br><span class="line">        <span class="keyword">var</span> _index = arrIndexOf( arrClassName,className );</span><br><span class="line">        <span class="keyword">if</span>( _index == -<span class="number">1</span> )&#123;</span><br><span class="line">            <span class="comment">// 如果要添加的class在原来的class中不存在</span></span><br><span class="line">            obj.className += <span class="string">' '</span> + className;   </span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="comment">// 如果要添加的class在原来的class中存在</span></span><br><span class="line">            <span class="comment">// 啥事不用做</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">removeClass</span>(<span class="params">obj,className</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//  如果原来有class</span></span><br><span class="line">    <span class="keyword">if</span>(obj.className != <span class="string">''</span>)&#123;</span><br><span class="line">        <span class="keyword">var</span> arrClassName = obj.className.split(<span class="string">' '</span>);</span><br><span class="line">        <span class="keyword">var</span> _index = arrIndexOf( arrClassName,className );</span><br><span class="line">        <span class="keyword">if</span>(_index != -<span class="number">1</span>)&#123;</span><br><span class="line">            arrClassName.splice(_index,<span class="number">1</span>);</span><br><span class="line">            obj.className = arrClassName.join(<span class="string">' '</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//obj.className = ''</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">arrIndexOf</span>(<span class="params">arr,v</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;arr.length;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(arr[i] == v)&#123;</span><br><span class="line">            <span class="keyword">return</span> i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -257,18 +257,9 @@ var _hmt = _hmt || [];
     
 <nav id="article-nav">
   
-    <a href="/2016/01/22/addClass，removeClass/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          封装addClass，removeClass
-        
-      </div>
-    </a>
   
-  
-    <a href="/2015/12/31/webStorm-11-0-3/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">webStorm 11.0.3破解与汉化</div>
+    <a href="/2016/01/06/UA-mobile/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">通过UA判断是否在移动端打开</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -297,7 +288,7 @@ var _hmt = _hmt || [];
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="UA-mobile" data-title="通过UA判断是否在移动端打开" data-url="http://yoursite.com/2016/01/06/UA-mobile/"></div>
+	<div class="ds-thread" data-thread-key="addClass，removeClass" data-title="封装addClass，removeClass" data-url="http://yoursite.com/2016/01/22/addClass，removeClass/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
