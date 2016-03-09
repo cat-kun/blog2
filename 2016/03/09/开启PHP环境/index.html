@@ -19,7 +19,8 @@
 <meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E5%9B%BE%E7%89%8720151126162722.png">
 <meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/php01.gif">
 <meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/php02.gif">
-<meta property="og:updated_time" content="2016-03-09T05:48:03.299Z">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160309135104.jpg">
+<meta property="og:updated_time" content="2016-03-09T05:52:13.752Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="开启PHP环境">
 <meta name="twitter:description" content="说到PHP环境，大多数人会想到wampserver诸如此类的东西.今天要说的是在无论在哪个目录下都可以开启php环境，不用放到像wampserver的www目录底下。例如：我现在有一个静态页项目，而里面需要测试接口，所以新建了个test.php之类的东西，但是如果为了测试一个接口就把整个目录迁移到www目录底下，会感觉比较麻烦，那么我们可以就在整个目录下开启php环境。具体怎么做呢？">
@@ -257,6 +258,7 @@ var _hmt = _hmt || [];
       
         <p>说到PHP环境，大多数人会想到<code>wampserver</code>诸如此类的东西.今天要说的是在无论在哪个目录下都可以开启<code>php环境</code>，不用放到像<code>wampserver</code>的www目录底下。<br>例如：我现在有一个静态页项目，而里面需要测试接口，所以新建了个test.php之类的东西，但是如果为了测试一个接口就把整个目录迁移到www目录底下，会感觉比较麻烦，那么我们可以就在整个目录下开启php环境。具体怎么做呢？<br><a id="more"></a><br>首先安装php，从<a href="http://windows.php.net/download/" title="php官网" target="_blank" rel="external">php官网下载</a>，版本大家可以选择自己喜欢的下载哈！然后就是解压到某个目录下，这个随意，只要不是C盘就行。比如我是解压到E盘的目录下<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160309112150.jpg" alt="php" title="php"><br>当然还没完，需要在系统的环境配置下路径<br>“我的电脑”-右键“属性”-“高级系统设置”<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160309111932.jpg" alt="环境" title="环境变量"><br><img src="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160309112026.jpg" alt="" title="编辑"><br>在最后一个分号后写上刚才解压后的路径，比如我的是<code>E:\Program Files\php-7.0.3\;</code><br>然后就是<code>确定</code> <code>确定</code>了。怎么看是否配置成功了呢？</p>
 <h4 id="打开命令行窗口">打开命令行窗口</h4><p>windows系统是<code>开始菜单</code> <code>运行</code> 输入 <code>cmd</code>，其他系统不造 <img src="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E5%9B%BE%E7%89%8720151201105345.png" alt="" title="破涕为笑"><br>然后在里面输入<code>php -v</code> 如果php的版本号，证明配置成功。<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160309112755.jpg" alt="" title="配置"><br>上面讲了一坨都是配置环境，具体怎么使用呢？好了，高潮来了<img src="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E5%9B%BE%E7%89%8720151126162722.png" alt="" title="微笑"><br>依然是在命令行窗口下，跳转到你项目所在的路径 <code>cd 你的目录</code>然后回车<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/php01.gif" alt="路径" title="路径跳转"><br>接下来输入<code>php -S localhost:8080</code> localhost是本机的意思 <code>8080是端口号</code>你喜欢的话 <code>8888</code>也行<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/php02.gif" alt="" title="php2"><br>看到这样的提示信息代表已经开启了php环境了，在浏览器输入<code>http://localhost:8080</code>就可以访问php页面了</p>
+<p><img src="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160309135104.jpg" alt="" title="地址"></p>
 
       
     </div>
