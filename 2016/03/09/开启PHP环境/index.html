@@ -3,18 +3,26 @@
 <head>
   <meta charset="utf-8">
   
-  <title>gitHub上发emoji表情 | 银狐前端之窝</title>
+  <title>开启PHP环境 | 银狐前端之窝</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="今天在看教主大人的github的时候，碰到一些不解，所以就在下方评论了，教主在回复我的时候使用了emoji表情，我一开始还以为教主是插入了图片，后来谷歌了下（没想到谷歌失败了，翻墙突然坏掉了，难道是天气太冷 ）,然后百度了下，找到了这篇博客 原来早在2014年的时候，就支持emoji表情了，然而我现在才知道，真是low~~">
+  <meta name="description" content="说到PHP环境，大多数人会想到wampserver诸如此类的东西.今天要说的是在无论在哪个目录下都可以开启php环境，不用放到像wampserver的www目录底下。例如：我现在有一个静态页项目，而里面需要测试接口，所以新建了个test.php之类的东西，但是如果为了测试一个接口就把整个目录迁移到www目录底下，会感觉比较麻烦，那么我们可以就在整个目录下开启php环境。具体怎么做呢？">
 <meta property="og:type" content="article">
-<meta property="og:title" content="gitHub上发emoji表情">
-<meta property="og:url" content="http://yoursite.com/2015/11/27/emoji/index.html">
+<meta property="og:title" content="开启PHP环境">
+<meta property="og:url" content="http://yoursite.com/2016/03/09/开启PHP环境/index.html">
 <meta property="og:site_name" content="银狐前端之窝">
-<meta property="og:description" content="今天在看教主大人的github的时候，碰到一些不解，所以就在下方评论了，教主在回复我的时候使用了emoji表情，我一开始还以为教主是插入了图片，后来谷歌了下（没想到谷歌失败了，翻墙突然坏掉了，难道是天气太冷 ）,然后百度了下，找到了这篇博客 原来早在2014年的时候，就支持emoji表情了，然而我现在才知道，真是low~~">
-<meta property="og:updated_time" content="2015-11-27T08:35:15.449Z">
+<meta property="og:description" content="说到PHP环境，大多数人会想到wampserver诸如此类的东西.今天要说的是在无论在哪个目录下都可以开启php环境，不用放到像wampserver的www目录底下。例如：我现在有一个静态页项目，而里面需要测试接口，所以新建了个test.php之类的东西，但是如果为了测试一个接口就把整个目录迁移到www目录底下，会感觉比较麻烦，那么我们可以就在整个目录下开启php环境。具体怎么做呢？">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160309112150.jpg">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160309111932.jpg">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160309112026.jpg">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E5%9B%BE%E7%89%8720151201105345.png">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160309112755.jpg">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E5%9B%BE%E7%89%8720151126162722.png">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/php01.gif">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/php02.gif">
+<meta property="og:updated_time" content="2016-03-09T05:48:03.299Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="gitHub上发emoji表情">
-<meta name="twitter:description" content="今天在看教主大人的github的时候，碰到一些不解，所以就在下方评论了，教主在回复我的时候使用了emoji表情，我一开始还以为教主是插入了图片，后来谷歌了下（没想到谷歌失败了，翻墙突然坏掉了，难道是天气太冷 ）,然后百度了下，找到了这篇博客 原来早在2014年的时候，就支持emoji表情了，然而我现在才知道，真是low~~">
+<meta name="twitter:title" content="开启PHP环境">
+<meta name="twitter:description" content="说到PHP环境，大多数人会想到wampserver诸如此类的东西.今天要说的是在无论在哪个目录下都可以开启php环境，不用放到像wampserver的www目录底下。例如：我现在有一个静态页项目，而里面需要测试接口，所以新建了个test.php之类的东西，但是如果为了测试一个接口就把整个目录迁移到www目录底下，会感觉比较麻烦，那么我们可以就在整个目录下开启php环境。具体怎么做呢？">
   
     <link rel="alternative" href="/atom.xml" title="银狐前端之窝" type="application/atom+xml">
   
@@ -206,11 +214,11 @@ var _hmt = _hmt || [];
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-emoji" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-开启PHP环境" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/11/27/emoji/" class="article-date">
-  	<time datetime="2015-11-27T03:38:00.000Z" itemprop="datePublished">2015-11-27</time>
+      <a href="/2016/03/09/开启PHP环境/" class="article-date">
+  	<time datetime="2016-03-09T02:01:00.000Z" itemprop="datePublished">2016-03-09</time>
 </a>
     </div>
   
@@ -223,7 +231,7 @@ var _hmt = _hmt || [];
         
   
     <h1 class="article-title" itemprop="name">
-      gitHub上发emoji表情
+      开启PHP环境
     </h1>
   
 
@@ -232,7 +240,7 @@ var _hmt = _hmt || [];
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
 	</div>
 
         
@@ -247,7 +255,8 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天在看<a href="https://github.com/52cik/Simple-Console/issues/1" target="_blank" rel="external">教主大人</a>的github的时候，碰到一些不解，所以就在下方评论了，教主在回复我的时候使用了emoji表情，我一开始还以为教主是插入了图片，后来谷歌了下（没想到谷歌失败了，翻墙突然坏掉了，难道是天气太冷 ）,然后百度了下，找到了这篇<a href="http://www.cnblogs.com/Wayou/p/use_emoji_in_github.html" target="_blank" rel="external">博客</a> 原来早在2014年的时候，就支持emoji表情了，然而我现在才知道，真是low~~<br><a id="more"></a><br>GitHub官方有个表情项目，旨在丰富文字信息。意味着你可以在提交代码的时候，在提交信息里面添加表情，同时也可以在项目的ReadMe.md文件里面使用表情。除此之外，当然还有项目在GitHub上的wiki页面，总之在GitHub的页面上，都可以使用。<br>其实使用方法很简单咯，就是前后两个阴文的冒号，中间一个emoji字符，例如 <code>:relaxed:</code>，当然根据emoji官方说法，只要是在github上都可以使用emoji表情，当然还支持其他网站<br><code>Emoji emoticons listed on this page are supported on Campfire, GitHub, Basecamp, Redbooth, Trac, Flowdock, Sprint.ly, Kandan, Textbox.io, Kippt, Redmine, JabbR, Trello, Hall, Plug.dj, Qiita, Zendesk, Ruby China, Grove, Idobata, NodeBB Forums, Slack, Streamup, OrganisedMinds, Hackpad, Cryptbin, Kato, Reportedly, Cheerful Ghost, IRCCloud, Dashcube, MyVideoGameList, Subrosa, Sococo, Quip, And Bang, Bonusly, Discourse, Ello, Twemoji Awesome, Got Chosen, Flow, ReadMe.io, esa, DBook, Groups.io, TeamworkChat, Damn Bugs, Let&#39;s Chat, Buildkite, ChatGrape, Dokuwiki, Usersnap, Discord, Status Hero, Bitbucket, and Gitter.</code><br>好了，童鞋们去愉快的玩耍吧</p>
+        <p>说到PHP环境，大多数人会想到<code>wampserver</code>诸如此类的东西.今天要说的是在无论在哪个目录下都可以开启<code>php环境</code>，不用放到像<code>wampserver</code>的www目录底下。<br>例如：我现在有一个静态页项目，而里面需要测试接口，所以新建了个test.php之类的东西，但是如果为了测试一个接口就把整个目录迁移到www目录底下，会感觉比较麻烦，那么我们可以就在整个目录下开启php环境。具体怎么做呢？<br><a id="more"></a><br>首先安装php，从<a href="http://windows.php.net/download/" title="php官网" target="_blank" rel="external">php官网下载</a>，版本大家可以选择自己喜欢的下载哈！然后就是解压到某个目录下，这个随意，只要不是C盘就行。比如我是解压到E盘的目录下<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160309112150.jpg" alt="php" title="php"><br>当然还没完，需要在系统的环境配置下路径<br>“我的电脑”-右键“属性”-“高级系统设置”<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160309111932.jpg" alt="环境" title="环境变量"><br><img src="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160309112026.jpg" alt="" title="编辑"><br>在最后一个分号后写上刚才解压后的路径，比如我的是<code>E:\Program Files\php-7.0.3\;</code><br>然后就是<code>确定</code> <code>确定</code>了。怎么看是否配置成功了呢？</p>
+<h4 id="打开命令行窗口">打开命令行窗口</h4><p>windows系统是<code>开始菜单</code> <code>运行</code> 输入 <code>cmd</code>，其他系统不造 <img src="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E5%9B%BE%E7%89%8720151201105345.png" alt="" title="破涕为笑"><br>然后在里面输入<code>php -v</code> 如果php的版本号，证明配置成功。<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E6%88%AA%E5%9B%BE20160309112755.jpg" alt="" title="配置"><br>上面讲了一坨都是配置环境，具体怎么使用呢？好了，高潮来了<img src="http://7xon9l.com1.z0.glb.clouddn.com/QQ%E5%9B%BE%E7%89%8720151126162722.png" alt="" title="微笑"><br>依然是在命令行窗口下，跳转到你项目所在的路径 <code>cd 你的目录</code>然后回车<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/php01.gif" alt="路径" title="路径跳转"><br>接下来输入<code>php -S localhost:8080</code> localhost是本机的意思 <code>8080是端口号</code>你喜欢的话 <code>8888</code>也行<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/php02.gif" alt="" title="php2"><br>看到这样的提示信息代表已经开启了php环境了，在浏览器输入<code>http://localhost:8080</code>就可以访问php页面了</p>
 
       
     </div>
@@ -257,18 +266,9 @@ var _hmt = _hmt || [];
     
 <nav id="article-nav">
   
-    <a href="/2015/11/28/IE67-img-bug/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          IE67中图片链接无效
-        
-      </div>
-    </a>
   
-  
-    <a href="/2015/11/26/switch/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">CSS3的开关按钮</div>
+    <a href="/2016/01/22/addClass，removeClass/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">封装addClass，removeClass</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -297,7 +297,7 @@ var _hmt = _hmt || [];
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="emoji" data-title="gitHub上发emoji表情" data-url="http://yoursite.com/2015/11/27/emoji/"></div>
+	<div class="ds-thread" data-thread-key="开启PHP环境" data-title="开启PHP环境" data-url="http://yoursite.com/2016/03/09/开启PHP环境/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
