@@ -3,17 +3,34 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2016/3 | 银狐前端之窝</title>
+  <title>zepto添加模块 | 银狐前端之窝</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="web技术">
-<meta property="og:type" content="website">
-<meta property="og:title" content="银狐前端之窝">
-<meta property="og:url" content="http://yoursite.com/archives/2016/03/index.html">
+  <meta name="description" content="zepto是个好东西，遵循JQ api，但比JQ小巧很多，适合移动端web开发。但他默认支持的模块只有 zepto event ajax form ie，但想touch模块，模式是不支持的，而移动端web又需要用到手势事件，所以我们可以给zepto添加我们需要的模块。
+zepto自定义模块打包的方法如下：
+
+从github下载zepto的源码，把整个压缩包放到磁盘某个目录，并且解压
+安装nodeJ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="zepto添加模块">
+<meta property="og:url" content="http://yoursite.com/2016/05/23/zepto添加模块/index.html">
 <meta property="og:site_name" content="银狐前端之窝">
-<meta property="og:description" content="web技术">
+<meta property="og:description" content="zepto是个好东西，遵循JQ api，但比JQ小巧很多，适合移动端web开发。但他默认支持的模块只有 zepto event ajax form ie，但想touch模块，模式是不支持的，而移动端web又需要用到手势事件，所以我们可以给zepto添加我们需要的模块。
+zepto自定义模块打包的方法如下：
+
+从github下载zepto的源码，把整个压缩包放到磁盘某个目录，并且解压
+安装nodeJ">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/zepto.jpg">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/mulu.jpg">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/mulu2.jpg">
+<meta property="og:image" content="http://7xon9l.com1.z0.glb.clouddn.com/mulu3.jpg">
+<meta property="og:updated_time" content="2016-05-23T05:58:51.698Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="银狐前端之窝">
-<meta name="twitter:description" content="web技术">
+<meta name="twitter:title" content="zepto添加模块">
+<meta name="twitter:description" content="zepto是个好东西，遵循JQ api，但比JQ小巧很多，适合移动端web开发。但他默认支持的模块只有 zepto event ajax form ie，但想touch模块，模式是不支持的，而移动端web又需要用到手势事件，所以我们可以给zepto添加我们需要的模块。
+zepto自定义模块打包的方法如下：
+
+从github下载zepto的源码，把整个压缩包放到磁盘某个目录，并且解压
+安装nodeJ">
   
     <link rel="alternative" href="/atom.xml" title="银狐前端之窝" type="application/atom+xml">
   
@@ -205,92 +222,117 @@ var _hmt = _hmt || [];
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-zepto添加模块" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/03/27/jianpan/" class="archive-article-date">
-  	<time datetime="2016-03-27T13:32:00.000Z" itemprop="datePublished">3月 27</time>
+    <div class="article-meta">
+      <a href="/2016/05/23/zepto添加模块/" class="article-date">
+  	<time datetime="2016-05-23T05:19:00.000Z" itemprop="datePublished">2016-05-23</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/03/27/jianpan/">移动端点击输入框被键盘遮挡的问题</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      zepto添加模块
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/键盘遮挡/">键盘遮挡</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/zepto/">zepto</a></li></ul>
 	</div>
 
-          
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/移动端/">移动端</a>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/03/09/开启PHP环境/" class="archive-article-date">
-  	<time datetime="2016-03-09T02:01:00.000Z" itemprop="datePublished">3月 9</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/03/09/开启PHP环境/">开启PHP环境</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
-	</div>
-
-          
+        
 	<div class="article-category tagcloud">
 	<a class="article-category-link" href="/categories/随笔/">随笔</a>
 	</div>
 
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+      </div>
+      
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>zepto是个好东西，遵循JQ api，但比JQ小巧很多，适合移动端web开发。<br>但他默认支持的模块只有 <code>zepto</code> <code>event</code> <code>ajax</code> <code>form</code> <code>ie</code>，但想touch模块，模式是不支持的，而移动端web又需要用到手势事件，所以我们可以给zepto添加我们需要的模块。</p>
+<p>zepto自定义模块打包的方法如下：</p>
+<ol>
+<li><a href="https://github.com/madrobby/zepto" title="zepto" target="_blank" rel="external">从github下载zepto的源码</a>，把整个压缩包放到磁盘某个目录，并且解压</li>
+<li>安装nodeJS环境以及npm包管理器</li>
+<li>编辑目录下的<code>make</code>文件，找到 <code>modules = (env[&#39;MODULES&#39;]</code>这一行，红框内就是要引入的打包的模块。以空格符隔开，在里面加入你要到的模块名，然后保存。（当然，你也可以减少你不需要的模块，核心模块zepto别删掉就行）<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/zepto.jpg" alt="添加zepto模块截图" title="添加模块"></li>
+<li>打开命令行（cmd），跳到刚才的目录<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/mulu.jpg" alt="添加zepto模块截图" title="cmd"></li>
+<li>输入 <code>npm install</code>回车，安装构建zepto.js 需要的node模块。<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/mulu2.jpg" alt="添加zepto模块截图" title="cmd2"></li>
+<li>安装好后，再输入 <code>npm run-script dist</code> 回车<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/mulu3.jpg" alt="添加zepto模块截图" title="cmd3"></li>
+<li>如果没有报错的话，就ok了。可以看到 zepto 目录下 多出一个 dist 目录，里面可以看到生成的三个文件：原始文件 zepto.js，压缩后的 zepto.min.js，gzip 后的 zepto.min.gz。</li>
+</ol>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/04/29/double-click/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">双击事件</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="zepto添加模块" data-title="zepto添加模块" data-url="http://yoursite.com/2016/05/23/zepto添加模块/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
 
 </div>
       <footer id="footer">
@@ -316,8 +358,8 @@ var _hmt = _hmt || [];
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false

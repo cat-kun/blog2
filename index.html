@@ -127,7 +127,7 @@ var _hmt = _hmt || [];
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 15px;">CSS3</a> <a href="/tags/DOM/" style="font-size: 20px;">DOM</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/Sublime-Text/" style="font-size: 10px;">Sublime Text</a> <a href="/tags/UA/" style="font-size: 10px;">UA</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/webStorm/" style="font-size: 10px;">webStorm</a> <a href="/tags/双击/" style="font-size: 10px;">双击</a> <a href="/tags/微信/" style="font-size: 15px;">微信</a> <a href="/tags/键盘遮挡/" style="font-size: 10px;">键盘遮挡</a>
+						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 15px;">CSS3</a> <a href="/tags/DOM/" style="font-size: 20px;">DOM</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/Sublime-Text/" style="font-size: 10px;">Sublime Text</a> <a href="/tags/UA/" style="font-size: 10px;">UA</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/webStorm/" style="font-size: 10px;">webStorm</a> <a href="/tags/zepto/" style="font-size: 10px;">zepto</a> <a href="/tags/双击/" style="font-size: 10px;">双击</a> <a href="/tags/微信/" style="font-size: 15px;">微信</a> <a href="/tags/键盘遮挡/" style="font-size: 10px;">键盘遮挡</a>
 					</div>
 				</section>
 				
@@ -207,6 +207,75 @@ var _hmt = _hmt || [];
 </nav>
       <div class="body-wrap">
   
+    <article id="post-zepto添加模块" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/23/zepto添加模块/" class="article-date">
+  	<time datetime="2016-05-23T05:19:00.000Z" itemprop="datePublished">2016-05-23</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/23/zepto添加模块/">zepto添加模块</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>zepto是个好东西，遵循JQ api，但比JQ小巧很多，适合移动端web开发。<br>但他默认支持的模块只有 <code>zepto</code> <code>event</code> <code>ajax</code> <code>form</code> <code>ie</code>，但想touch模块，模式是不支持的，而移动端web又需要用到手势事件，所以我们可以给zepto添加我们需要的模块。</p>
+<p>zepto自定义模块打包的方法如下：</p>
+<ol>
+<li><a href="https://github.com/madrobby/zepto" title="zepto" target="_blank" rel="external">从github下载zepto的源码</a>，把整个压缩包放到磁盘某个目录，并且解压</li>
+<li>安装nodeJS环境以及npm包管理器</li>
+<li>编辑目录下的<code>make</code>文件，找到 <code>modules = (env[&#39;MODULES&#39;]</code>这一行，红框内就是要引入的打包的模块。以空格符隔开，在里面加入你要到的模块名，然后保存。（当然，你也可以减少你不需要的模块，核心模块zepto别删掉就行）<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/zepto.jpg" alt="添加zepto模块截图" title="添加模块"></li>
+<li>打开命令行（cmd），跳到刚才的目录<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/mulu.jpg" alt="添加zepto模块截图" title="cmd"></li>
+<li>输入 <code>npm install</code>回车，安装构建zepto.js 需要的node模块。<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/mulu2.jpg" alt="添加zepto模块截图" title="cmd2"></li>
+<li>安装好后，再输入 <code>npm run-script dist</code> 回车<br><img src="http://7xon9l.com1.z0.glb.clouddn.com/mulu3.jpg" alt="添加zepto模块截图" title="cmd3"></li>
+<li>如果没有报错的话，就ok了。可以看到 zepto 目录下 多出一个 dist 目录，里面可以看到生成的三个文件：原始文件 zepto.js，压缩后的 zepto.min.js，gzip 后的 zepto.min.gz。</li>
+</ol>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/zepto/">zepto</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/随笔/">随笔</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
     <article id="post-double-click" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -247,7 +316,7 @@ var _hmt = _hmt || [];
 
       
 	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/原生/">原生</a>
+	<a class="article-category-link" href="/categories/JS/">JS</a>
 	</div>
 
 
@@ -747,69 +816,6 @@ var _hmt = _hmt || [];
       
         <p class="article-more-link">
           <a  href="/2015/12/07/offsetTop-offsetLeft/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-DOM-03" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/12/02/DOM-03/" class="article-date">
-  	<time datetime="2015-12-02T13:45:07.000Z" itemprop="datePublished">2015-12-02</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/02/DOM-03/">父节点-3</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>上次通过父节点操作子节点，通过某个节点操作兄弟节点，这次要说的是<strong>通过子节点去操作父节点</strong>，还是这个DOM结构：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">body</span> <span class="attribute">id</span>=<span class="value">"body"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"ul1"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">li</span>&gt;</span>11111 <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"javascript:"</span>&gt;</span>隐藏<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">li</span>&gt;</span>22222 <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"javascript:"</span>&gt;</span>隐藏<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">li</span>&gt;</span>33333 <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"javascript:"</span>&gt;</span>隐藏<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">li</span>&gt;</span>44444 <span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"javascript:"</span>&gt;</span>隐藏<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>咱们要这个DOM结构要干嘛呢？咱们要实现点击 <strong>a标签</strong>，也就是那个“隐藏”实现，隐藏掉点击所在的li。<br>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOM/">DOM</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/javascript/">javascript</a>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/12/02/DOM-03/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
