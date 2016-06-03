@@ -127,7 +127,7 @@ var _hmt = _hmt || [];
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 15px;">CSS3</a> <a href="/tags/DOM/" style="font-size: 20px;">DOM</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/Sublime-Text/" style="font-size: 10px;">Sublime Text</a> <a href="/tags/UA/" style="font-size: 10px;">UA</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/webStorm/" style="font-size: 10px;">webStorm</a> <a href="/tags/zepto/" style="font-size: 10px;">zepto</a> <a href="/tags/双击/" style="font-size: 10px;">双击</a> <a href="/tags/微信/" style="font-size: 15px;">微信</a> <a href="/tags/键盘遮挡/" style="font-size: 10px;">键盘遮挡</a>
+						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 15px;">CSS3</a> <a href="/tags/DOM/" style="font-size: 20px;">DOM</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/Sublime-Text/" style="font-size: 10px;">Sublime Text</a> <a href="/tags/UA/" style="font-size: 10px;">UA</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/webStorm/" style="font-size: 10px;">webStorm</a> <a href="/tags/zepto/" style="font-size: 10px;">zepto</a> <a href="/tags/双击/" style="font-size: 10px;">双击</a> <a href="/tags/微信/" style="font-size: 15px;">微信</a> <a href="/tags/键盘遮挡/" style="font-size: 10px;">键盘遮挡</a>
 					</div>
 				</section>
 				
@@ -206,6 +206,69 @@ var _hmt = _hmt || [];
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-es6" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/02/es6/" class="article-date">
+  	<time datetime="2016-06-02T03:03:00.000Z" itemprop="datePublished">2016-06-02</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/02/es6/">ECMAscript6 学习小记</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h6 id="ECMAscript6_学习小记">ECMAscript6 学习小记</h6><p>需使用严格模式，否则在chrome下会报错 <code>use strict</code></p>
+<p>let特性：<br>1、不能重复声明<br>2、没有像var的预解析过程<br>3、块级作用域</p>
+<pre><code>一对<span class="rules">{}</span>包裹的区域成为代码块，块级作用域指一个变量或者函数只在该区域才起作用
+暂存死区：从块的开始到声明的这段区域
+</code></pre><p>在定义之后值是固定不变的，即为常量<br>常量的值不能修改，但是如果 常量保存的是一个对象，那么对象的属性是可以被修改的</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="pi">"use strict"</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(a);</span><br><span class="line">    <span class="comment">// 能打印出a</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a);</span><br><span class="line"><span class="comment">//报错</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/JS/">JS</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
     <article id="post-zepto添加模块" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -743,72 +806,6 @@ var _hmt = _hmt || [];
       
         <p class="article-more-link">
           <a  href="/2015/12/22/getElementsByClassName/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-offsetTop-offsetLeft" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/12/07/offsetTop-offsetLeft/" class="article-date">
-  	<time datetime="2015-12-07T01:47:00.000Z" itemprop="datePublished">2015-12-07</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/07/offsetTop-offsetLeft/">元素的各种位置尺寸宽高-4</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>还是用之前的那个DOM结构<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"div1"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"div2"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"div3"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">body</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">div</span><span class="rules">&#123;<span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">40px</span> <span class="number">30px</span></span></span>;&#125;</span></span><br><span class="line"><span class="id">#div1</span><span class="rules">&#123;<span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#ccc</span></span></span>;&#125;</span></span><br><span class="line"><span class="id">#div2</span><span class="rules">&#123;<span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#777</span></span></span>;<span class="rule"><span class="attribute">position</span>:<span class="value"> relative</span></span>;&#125;</span></span><br><span class="line"><span class="id">#div3</span><span class="rules">&#123;<span class="rule"><span class="attribute">background</span>:<span class="value"> <span class="hexcolor">#f60</span></span></span>;&#125;</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>offsetTop、offsetLeft其实在本质上没有什么区别，只是目标点不同而已<br>offsetTop[Left]: 只读属性，当前元素到定位父级的距离（或者叫偏移值）</p>
-</blockquote>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOM/">DOM</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/javascript/">javascript</a>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/12/07/offsetTop-offsetLeft/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
