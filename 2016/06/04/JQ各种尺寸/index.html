@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: PHP | 银狐前端之窝</title>
+  <title>JQ各种尺寸笔记 | 银狐前端之窝</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="web技术">
-<meta property="og:type" content="website">
-<meta property="og:title" content="银狐前端之窝">
-<meta property="og:url" content="http://yoursite.com/tags/PHP/index.html">
+  <meta name="description" content="123456789$().width();                // width$().innerWidth();           // width+padding$().outerWidth();           // width+padding+border$().outerWidth(true);       // width+padding+border+margin$(">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JQ各种尺寸笔记">
+<meta property="og:url" content="http://yoursite.com/2016/06/04/JQ各种尺寸/index.html">
 <meta property="og:site_name" content="银狐前端之窝">
-<meta property="og:description" content="web技术">
+<meta property="og:description" content="123456789$().width();                // width$().innerWidth();           // width+padding$().outerWidth();           // width+padding+border$().outerWidth(true);       // width+padding+border+margin$(">
+<meta property="og:updated_time" content="2016-06-04T07:44:55.243Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="银狐前端之窝">
-<meta name="twitter:description" content="web技术">
+<meta name="twitter:title" content="JQ各种尺寸笔记">
+<meta name="twitter:description" content="123456789$().width();                // width$().innerWidth();           // width+padding$().outerWidth();           // width+padding+border$().outerWidth(true);       // width+padding+border+margin$(">
   
     <link rel="alternative" href="/atom.xml" title="银狐前端之窝" type="application/atom+xml">
   
@@ -205,57 +206,109 @@ var _hmt = _hmt || [];
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-JQ各种尺寸" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/03/09/开启PHP环境/" class="archive-article-date">
-  	<time datetime="2016-03-09T02:01:00.000Z" itemprop="datePublished">3月 9</time>
+    <div class="article-meta">
+      <a href="/2016/06/04/JQ各种尺寸/" class="article-date">
+  	<time datetime="2016-06-04T06:47:00.000Z" itemprop="datePublished">2016-06-04</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/03/09/开启PHP环境/">开启PHP环境</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JQ各种尺寸笔记
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PHP/">PHP</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JQ/">JQ</a></li></ul>
 	</div>
 
-          
+        
 	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/随笔/">随笔</a>
+	<a class="article-category-link" href="/categories/JS/">JS</a>
 	</div>
 
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+      </div>
+      
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$().width();                <span class="comment">// width</span></span><br><span class="line">$().innerWidth();           <span class="comment">// width+padding</span></span><br><span class="line">$().outerWidth();           <span class="comment">// width+padding+border</span></span><br><span class="line">$().outerWidth(<span class="literal">true</span>);       <span class="comment">// width+padding+border+margin</span></span><br><span class="line"></span><br><span class="line">$().width(<span class="number">200</span>);             <span class="comment">//设置宽度200</span></span><br><span class="line">$().innerWidth(<span class="number">200</span>);        <span class="comment">//设置width+padding=200</span></span><br><span class="line">$().outerWidth(<span class="number">200</span>);        <span class="comment">//设置width+padding+border=200</span></span><br><span class="line">$().innerWidth(<span class="number">200</span>, <span class="literal">true</span>);  <span class="comment">//设置width+padding+border+margin=200</span></span><br></pre></td></tr></table></figure>
+<h6 id="可视区尺寸">可视区尺寸</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">window</span>).height();          <span class="comment">//可视区的高，宽同理</span></span><br><span class="line">$(<span class="built_in">document</span>).height();        <span class="comment">//页面的高</span></span><br></pre></td></tr></table></figure>
+<h6 id="滚动距离">滚动距离</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="built_in">document</span>).scrollTop();    <span class="comment">//相等于 $(document).height() - $(window).height();</span></span><br><span class="line">$(<span class="string">'#div1'</span>).scrollTop();     <span class="comment">//某个元素的滚动距离</span></span><br></pre></td></tr></table></figure>
+<h6 id="元素距离">元素距离</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">offset() <span class="comment">//offset()下面有两个属性，top和left 不加括号，offset()的距离值，都是相对于整个页面，不是相对于可视区</span></span><br></pre></td></tr></table></figure>
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/06/02/es6/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">ECMAscript6 学习小记</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="JQ各种尺寸" data-title="JQ各种尺寸笔记" data-url="http://yoursite.com/2016/06/04/JQ各种尺寸/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
 
 </div>
       <footer id="footer">
@@ -281,9 +334,9 @@ var _hmt = _hmt || [];
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false
 	}

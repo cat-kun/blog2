@@ -5,28 +5,16 @@
   
   <title>ECMAscript6 学习小记 | 银狐前端之窝</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="ECMAscript6 学习小记需使用严格模式，否则在chrome下会报错 use strict
-let特性：1、不能重复声明2、没有像var的预解析过程3、块级作用域
-一对{}包裹的区域成为代码块，块级作用域指一个变量或者函数只在该区域才起作用
-暂存死区：从块的开始到声明的这段区域
-在定义之后值是固定不变的，即为常量常量的值不能修改，但是如果 常量保存的是一个对象，那么对象的属性是可以被修改的">
+  <meta name="description" content="ECMAscript6 学习小记需使用严格模式，否则在chrome下会报错 use strict">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ECMAscript6 学习小记">
 <meta property="og:url" content="http://yoursite.com/2016/06/02/es6/index.html">
 <meta property="og:site_name" content="银狐前端之窝">
-<meta property="og:description" content="ECMAscript6 学习小记需使用严格模式，否则在chrome下会报错 use strict
-let特性：1、不能重复声明2、没有像var的预解析过程3、块级作用域
-一对{}包裹的区域成为代码块，块级作用域指一个变量或者函数只在该区域才起作用
-暂存死区：从块的开始到声明的这段区域
-在定义之后值是固定不变的，即为常量常量的值不能修改，但是如果 常量保存的是一个对象，那么对象的属性是可以被修改的">
-<meta property="og:updated_time" content="2016-06-02T05:35:57.562Z">
+<meta property="og:description" content="ECMAscript6 学习小记需使用严格模式，否则在chrome下会报错 use strict">
+<meta property="og:updated_time" content="2016-06-04T06:46:39.321Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ECMAscript6 学习小记">
-<meta name="twitter:description" content="ECMAscript6 学习小记需使用严格模式，否则在chrome下会报错 use strict
-let特性：1、不能重复声明2、没有像var的预解析过程3、块级作用域
-一对{}包裹的区域成为代码块，块级作用域指一个变量或者函数只在该区域才起作用
-暂存死区：从块的开始到声明的这段区域
-在定义之后值是固定不变的，即为常量常量的值不能修改，但是如果 常量保存的是一个对象，那么对象的属性是可以被修改的">
+<meta name="twitter:description" content="ECMAscript6 学习小记需使用严格模式，否则在chrome下会报错 use strict">
   
     <link rel="alternative" href="/atom.xml" title="银狐前端之窝" type="application/atom+xml">
   
@@ -140,7 +128,7 @@ var _hmt = _hmt || [];
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 15px;">CSS3</a> <a href="/tags/DOM/" style="font-size: 20px;">DOM</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/Sublime-Text/" style="font-size: 10px;">Sublime Text</a> <a href="/tags/UA/" style="font-size: 10px;">UA</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/webStorm/" style="font-size: 10px;">webStorm</a> <a href="/tags/zepto/" style="font-size: 10px;">zepto</a> <a href="/tags/双击/" style="font-size: 10px;">双击</a> <a href="/tags/微信/" style="font-size: 15px;">微信</a> <a href="/tags/键盘遮挡/" style="font-size: 10px;">键盘遮挡</a>
+						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 15px;">CSS3</a> <a href="/tags/DOM/" style="font-size: 20px;">DOM</a> <a href="/tags/JQ/" style="font-size: 10px;">JQ</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/Sublime-Text/" style="font-size: 10px;">Sublime Text</a> <a href="/tags/UA/" style="font-size: 10px;">UA</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/webStorm/" style="font-size: 10px;">webStorm</a> <a href="/tags/zepto/" style="font-size: 10px;">zepto</a> <a href="/tags/双击/" style="font-size: 10px;">双击</a> <a href="/tags/微信/" style="font-size: 15px;">微信</a> <a href="/tags/键盘遮挡/" style="font-size: 10px;">键盘遮挡</a>
 					</div>
 				</section>
 				
@@ -259,11 +247,10 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h6 id="ECMAscript6_学习小记">ECMAscript6 学习小记</h6><p>需使用严格模式，否则在chrome下会报错 <code>use strict</code></p>
-<p>let特性：<br>1、不能重复声明<br>2、没有像var的预解析过程<br>3、块级作用域</p>
-<pre><code>一对<span class="rules">{}</span>包裹的区域成为代码块，块级作用域指一个变量或者函数只在该区域才起作用
-暂存死区：从块的开始到声明的这段区域
-</code></pre><p>在定义之后值是固定不变的，即为常量<br>常量的值不能修改，但是如果 常量保存的是一个对象，那么对象的属性是可以被修改的</p>
+        <h6 id="ECMAscript6_学习小记">ECMAscript6 学习小记</h6><p>需使用严格模式，否则在chrome下会报错 <code>use strict</code><br><a id="more"></a><br>let特性：<br>1、不能重复声明<br>2、没有像var的预解析过程<br>3、块级作用域</p>
+<blockquote>
+<p>一对{}包裹的区域成为代码块，块级作用域指一个变量或者函数只在该区域才起作用<br>    暂存死区：从块的开始到声明的这段区域<br>在定义之后值是固定不变的，即为常量<br>常量的值不能修改，但是如果 常量保存的是一个对象，那么对象的属性是可以被修改的</p>
+</blockquote>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="pi">"use strict"</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line">    <span class="built_in">console</span>.log(a);</span><br><span class="line">    <span class="comment">// 能打印出a</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(a);</span><br><span class="line"><span class="comment">//报错</span></span><br></pre></td></tr></table></figure>
       
     </div>
@@ -272,6 +259,15 @@ var _hmt = _hmt || [];
   
     
 <nav id="article-nav">
+  
+    <a href="/2016/06/04/JQ各种尺寸/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          JQ各种尺寸笔记
+        
+      </div>
+    </a>
   
   
     <a href="/2016/05/23/zepto添加模块/" id="article-nav-older" class="article-nav-link-wrap">
