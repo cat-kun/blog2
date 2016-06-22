@@ -15,7 +15,7 @@
 <meta property="og:description" content="移动端alert弹窗都会显示出页面的网址，很丑，以前的版本，ios和android都可以通过重写webview的alert等弹窗事件来隐藏掉弹窗的标题，但是ios7之后，api被禁用了，导致ios无法重写来实现隐藏标题，后来想过几种方案：
 
 通过js调用ios原生代码来实现，即：window.alert = function(str){window.local.href=”xx://str/”+s">
-<meta property="og:updated_time" content="2016-06-22T03:30:12.395Z">
+<meta property="og:updated_time" content="2016-06-22T03:32:22.195Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ios webview alert弹窗不显示网址解决办法">
 <meta name="twitter:description" content="移动端alert弹窗都会显示出页面的网址，很丑，以前的版本，ios和android都可以通过重写webview的alert等弹窗事件来隐藏掉弹窗的标题，但是ios7之后，api被禁用了，导致ios无法重写来实现隐藏标题，后来想过几种方案：
@@ -255,7 +255,7 @@ var _hmt = _hmt || [];
       
         <p>移动端alert弹窗都会显示出页面的网址，很丑，以前的版本，ios和android都可以通过重写webview的alert等弹窗事件来隐藏掉弹窗的标题，但是ios7之后，api被禁用了，导致ios无法重写来实现隐藏标题，后来想过几种方案：</p>
 <ol>
-<li><p>通过js调用ios原生代码来实现，即：window.alert = function(str){window.local.href=”xx://str/”+str}</p>
+<li><p>通过js调用ios原生代码来实现，即：<code>window.alert = function(str){window.local.href=”xx://str/”+str}</code></p>
 </li>
 <li><p>js+html+css 模拟，但是为了实现alert等的阻塞执行，需要把后面的代码放入回调函数中执行</p>
 </li>
