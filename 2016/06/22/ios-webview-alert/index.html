@@ -3,17 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: Sublime Text | 银狐前端之窝</title>
+  <title>ios webview alert弹窗不显示网址解决办法 | 银狐前端之窝</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="web技术">
-<meta property="og:type" content="website">
-<meta property="og:title" content="银狐前端之窝">
-<meta property="og:url" content="http://yoursite.com/tags/Sublime-Text/index.html">
+  <meta name="description" content="移动端alert弹窗都会显示出页面的网址，很丑，以前的版本，ios和android都可以通过重写webview的alert等弹窗事件来隐藏掉弹窗的标题，但是ios7之后，api被禁用了，导致ios无法重写来实现隐藏标题，后来想过几种方案：
+
+通过js调用ios原生代码来实现，即：window.alert = function(str){window.local.href=”xx://str/”+s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ios webview alert弹窗不显示网址解决办法">
+<meta property="og:url" content="http://yoursite.com/2016/06/22/ios-webview-alert/index.html">
 <meta property="og:site_name" content="银狐前端之窝">
-<meta property="og:description" content="web技术">
+<meta property="og:description" content="移动端alert弹窗都会显示出页面的网址，很丑，以前的版本，ios和android都可以通过重写webview的alert等弹窗事件来隐藏掉弹窗的标题，但是ios7之后，api被禁用了，导致ios无法重写来实现隐藏标题，后来想过几种方案：
+
+通过js调用ios原生代码来实现，即：window.alert = function(str){window.local.href=”xx://str/”+s">
+<meta property="og:updated_time" content="2016-06-22T03:30:12.395Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="银狐前端之窝">
-<meta name="twitter:description" content="web技术">
+<meta name="twitter:title" content="ios webview alert弹窗不显示网址解决办法">
+<meta name="twitter:description" content="移动端alert弹窗都会显示出页面的网址，很丑，以前的版本，ios和android都可以通过重写webview的alert等弹窗事件来隐藏掉弹窗的标题，但是ios7之后，api被禁用了，导致ios无法重写来实现隐藏标题，后来想过几种方案：
+
+通过js调用ios原生代码来实现，即：window.alert = function(str){window.local.href=”xx://str/”+s">
   
     <link rel="alternative" href="/atom.xml" title="银狐前端之窝" type="application/atom+xml">
   
@@ -205,57 +212,117 @@ var _hmt = _hmt || [];
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-ios-webview-alert" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/12/01/sublime-text/" class="archive-article-date">
-  	<time datetime="2015-12-01T05:16:00.000Z" itemprop="datePublished">12月 1</time>
+    <div class="article-meta">
+      <a href="/2016/06/22/ios-webview-alert/" class="article-date">
+  	<time datetime="2016-06-22T03:01:00.000Z" itemprop="datePublished">2016-06-22</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/12/01/sublime-text/">Sublime Text的缩进问题</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      ios webview alert弹窗不显示网址解决办法
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Sublime-Text/">Sublime Text</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webview/">webview</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/移动端/">移动端</a></li></ul>
 	</div>
 
-          
+        
 	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/随笔/">随笔</a>
+	<a class="article-category-link" href="/categories/JS/">JS</a>
 	</div>
 
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+      </div>
+      
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>移动端alert弹窗都会显示出页面的网址，很丑，以前的版本，ios和android都可以通过重写webview的alert等弹窗事件来隐藏掉弹窗的标题，但是ios7之后，api被禁用了，导致ios无法重写来实现隐藏标题，后来想过几种方案：</p>
+<ol>
+<li><p>通过js调用ios原生代码来实现，即：window.alert = function(str){window.local.href=”xx://str/”+str}</p>
+</li>
+<li><p>js+html+css 模拟，但是为了实现alert等的阻塞执行，需要把后面的代码放入回调函数中执行</p>
+</li>
+</ol>
+<p>但是还是感觉这两种方式实现不太优雅，都需要对现有代码做比较大的改动，不死心，于是继续google，终于发现个好办法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.alert = <span class="function"><span class="keyword">function</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> iframe = <span class="built_in">document</span>.createElement(<span class="string">"IFRAME"</span>);</span><br><span class="line">    iframe.style.display=<span class="string">"none"</span>;</span><br><span class="line">    iframe.setAttribute(<span class="string">"src"</span>, <span class="string">'data:text/plain,'</span>);</span><br><span class="line">    <span class="built_in">document</span>.documentElement.appendChild(iframe);</span><br><span class="line">    <span class="built_in">window</span>.frames[<span class="number">0</span>].window.alert(name);</span><br><span class="line">    iframe.parentNode.removeChild(iframe);</span><br><span class="line">&#125;</span><br><span class="line">alert(<span class="string">'xxx'</span>);</span><br></pre></td></tr></table></figure>
+<p>这个方法在于重写了alert方法（confirm方法同理），不需要改动现有代码，并且解决了弹窗标题出现网址的问题。不过需要注意的是，每次在框架中执行完一个alert/confirm后，需要将框架移除，下次再重新载入，否则在chrome中会引发跨域执行，从而被chrome拦截。</p>
+<p>原文出处：<a href="原文">http://ifindever.com/archives/260.html</a></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/06/08/jq-stop/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">jQuery stop() 一点笔记</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="ios-webview-alert" data-title="ios webview alert弹窗不显示网址解决办法" data-url="http://yoursite.com/2016/06/22/ios-webview-alert/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
 
 </div>
       <footer id="footer">
@@ -281,9 +348,9 @@ var _hmt = _hmt || [];
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false
 	}

@@ -127,7 +127,7 @@ var _hmt = _hmt || [];
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 15px;">CSS3</a> <a href="/tags/DOM/" style="font-size: 20px;">DOM</a> <a href="/tags/JQ/" style="font-size: 15px;">JQ</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/Sublime-Text/" style="font-size: 10px;">Sublime Text</a> <a href="/tags/UA/" style="font-size: 10px;">UA</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/webStorm/" style="font-size: 10px;">webStorm</a> <a href="/tags/zepto/" style="font-size: 10px;">zepto</a> <a href="/tags/双击/" style="font-size: 10px;">双击</a> <a href="/tags/微信/" style="font-size: 15px;">微信</a> <a href="/tags/键盘遮挡/" style="font-size: 10px;">键盘遮挡</a>
+						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 15px;">CSS3</a> <a href="/tags/DOM/" style="font-size: 20px;">DOM</a> <a href="/tags/JQ/" style="font-size: 15px;">JQ</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/Sublime-Text/" style="font-size: 10px;">Sublime Text</a> <a href="/tags/UA/" style="font-size: 10px;">UA</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/webStorm/" style="font-size: 10px;">webStorm</a> <a href="/tags/webview/" style="font-size: 10px;">webview</a> <a href="/tags/zepto/" style="font-size: 10px;">zepto</a> <a href="/tags/双击/" style="font-size: 10px;">双击</a> <a href="/tags/微信/" style="font-size: 15px;">微信</a> <a href="/tags/移动端/" style="font-size: 10px;">移动端</a> <a href="/tags/键盘遮挡/" style="font-size: 10px;">键盘遮挡</a>
 					</div>
 				</section>
 				
@@ -206,6 +206,75 @@ var _hmt = _hmt || [];
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-ios-webview-alert" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/22/ios-webview-alert/" class="article-date">
+  	<time datetime="2016-06-22T03:01:00.000Z" itemprop="datePublished">2016-06-22</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/22/ios-webview-alert/">ios webview alert弹窗不显示网址解决办法</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>移动端alert弹窗都会显示出页面的网址，很丑，以前的版本，ios和android都可以通过重写webview的alert等弹窗事件来隐藏掉弹窗的标题，但是ios7之后，api被禁用了，导致ios无法重写来实现隐藏标题，后来想过几种方案：</p>
+<ol>
+<li><p>通过js调用ios原生代码来实现，即：window.alert = function(str){window.local.href=”xx://str/”+str}</p>
+</li>
+<li><p>js+html+css 模拟，但是为了实现alert等的阻塞执行，需要把后面的代码放入回调函数中执行</p>
+</li>
+</ol>
+<p>但是还是感觉这两种方式实现不太优雅，都需要对现有代码做比较大的改动，不死心，于是继续google，终于发现个好办法：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.alert = <span class="function"><span class="keyword">function</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> iframe = <span class="built_in">document</span>.createElement(<span class="string">"IFRAME"</span>);</span><br><span class="line">    iframe.style.display=<span class="string">"none"</span>;</span><br><span class="line">    iframe.setAttribute(<span class="string">"src"</span>, <span class="string">'data:text/plain,'</span>);</span><br><span class="line">    <span class="built_in">document</span>.documentElement.appendChild(iframe);</span><br><span class="line">    <span class="built_in">window</span>.frames[<span class="number">0</span>].window.alert(name);</span><br><span class="line">    iframe.parentNode.removeChild(iframe);</span><br><span class="line">&#125;</span><br><span class="line">alert(<span class="string">'xxx'</span>);</span><br></pre></td></tr></table></figure>
+<p>这个方法在于重写了alert方法（confirm方法同理），不需要改动现有代码，并且解决了弹窗标题出现网址的问题。不过需要注意的是，每次在框架中执行完一个alert/confirm后，需要将框架移除，下次再重新载入，否则在chrome中会引发跨域执行，从而被chrome拦截。</p>
+<p>原文出处：<a href="原文">http://ifindever.com/archives/260.html</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webview/">webview</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/移动端/">移动端</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/JS/">JS</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
     <article id="post-jq-stop" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -744,68 +813,6 @@ var _hmt = _hmt || [];
 	</div>
 
 
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-webStorm-11-0-3" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/12/31/webStorm-11-0-3/" class="article-date">
-  	<time datetime="2015-12-31T06:27:00.000Z" itemprop="datePublished">2015-12-31</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/31/webStorm-11-0-3/">webStorm 11.0.3破解与汉化</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>前些日子就看到webStorm（以下简称ws）的升级提示了，但看到不少人说11.0.3不能用10.0.4的破解方式。于是乎，一直没有去升级，今天闲着蛋疼，就打算鼓捣鼓捣ws 11.0.3。从<a href="https://www.jetbrains.com/webstorm/" title="webstorm 11.0.3">官网下载最新版本</a><br>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webStorm/">webStorm</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/随笔/">随笔</a>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a  href="/2015/12/31/webStorm-11-0-3/#more">more >></a>
-        </p>
       
       <div class="clearfix"></div>
     </div>
