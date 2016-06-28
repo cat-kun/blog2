@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>jQuery的:gt、:lt | 银狐前端之窝</title>
+  <title>jQuery的Sizzle选择器 | 银狐前端之窝</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content=":gt、:ltjQuery有一些基本筛选的选择器，其中:gt、:lt可能用的相对比较少，知道的人可能也不多，所以做下分享。
 
 :gt()呢 就是索引大于某个值的元素。比如">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jQuery的:gt、:lt">
+<meta property="og:title" content="jQuery的Sizzle选择器">
 <meta property="og:url" content="http://yoursite.com/2016/06/27/jq-gt-lt/index.html">
 <meta property="og:site_name" content="银狐前端之窝">
 <meta property="og:description" content=":gt、:ltjQuery有一些基本筛选的选择器，其中:gt、:lt可能用的相对比较少，知道的人可能也不多，所以做下分享。
 
 :gt()呢 就是索引大于某个值的元素。比如">
-<meta property="og:updated_time" content="2016-06-27T09:28:52.832Z">
+<meta property="og:updated_time" content="2016-06-28T06:55:22.989Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jQuery的:gt、:lt">
+<meta name="twitter:title" content="jQuery的Sizzle选择器">
 <meta name="twitter:description" content=":gt、:ltjQuery有一些基本筛选的选择器，其中:gt、:lt可能用的相对比较少，知道的人可能也不多，所以做下分享。
 
 :gt()呢 就是索引大于某个值的元素。比如">
@@ -229,7 +229,7 @@ var _hmt = _hmt || [];
         
   
     <h1 class="article-title" itemprop="name">
-      jQuery的:gt、:lt
+      jQuery的Sizzle选择器
     </h1>
   
 
@@ -263,6 +263,14 @@ var _hmt = _hmt || [];
 </blockquote>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'div:lt(3)'</span>)                  <span class="comment">//选择索引大于1的div元素，那么就会选择到第一、二、三个div</span></span><br></pre></td></tr></table></figure>
+<h4 id="内容筛选">内容筛选</h4><p>1、:contains()<br>2、:empty<br>3、:parent</p>
+<p><code>:contains()</code>是筛选文本内容，</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'div:contains(span)'</span>);                 <span class="comment">//div包含span文本</span></span><br></pre></td></tr></table></figure>
+<p><code>:empty</code>空元素</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'div:empty'</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"div1"</span>&gt;</span>div1111<span class="tag">&lt;<span class="title">span</span>&gt;</span>span11<span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">div</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>                             <span class="comment">&lt;!--empty选择到的元素--&gt;</span></span><br></pre></td></tr></table></figure>
+<p><code>:parent</code>和<code>:empty</code>相反，会选择到有内容的元素</p>
+
       
     </div>
     
@@ -311,7 +319,7 @@ var _hmt = _hmt || [];
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="jq-gt-lt" data-title="jQuery的:gt、:lt" data-url="http://yoursite.com/2016/06/27/jq-gt-lt/"></div>
+	<div class="ds-thread" data-thread-key="jq-gt-lt" data-title="jQuery的Sizzle选择器" data-url="http://yoursite.com/2016/06/27/jq-gt-lt/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
