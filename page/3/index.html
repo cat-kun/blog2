@@ -127,7 +127,7 @@ var _hmt = _hmt || [];
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 15px;">CSS3</a> <a href="/tags/DOM/" style="font-size: 20px;">DOM</a> <a href="/tags/JQ/" style="font-size: 15px;">JQ</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/Sublime-Text/" style="font-size: 10px;">Sublime Text</a> <a href="/tags/UA/" style="font-size: 10px;">UA</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/webStorm/" style="font-size: 10px;">webStorm</a> <a href="/tags/webview/" style="font-size: 10px;">webview</a> <a href="/tags/zepto/" style="font-size: 10px;">zepto</a> <a href="/tags/双击/" style="font-size: 10px;">双击</a> <a href="/tags/微信/" style="font-size: 15px;">微信</a> <a href="/tags/移动端/" style="font-size: 10px;">移动端</a> <a href="/tags/键盘遮挡/" style="font-size: 10px;">键盘遮挡</a>
+						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 15px;">CSS3</a> <a href="/tags/DOM/" style="font-size: 20px;">DOM</a> <a href="/tags/JQ/" style="font-size: 15px;">JQ</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/Sublime-Text/" style="font-size: 10px;">Sublime Text</a> <a href="/tags/UA/" style="font-size: 10px;">UA</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/webStorm/" style="font-size: 10px;">webStorm</a> <a href="/tags/webview/" style="font-size: 10px;">webview</a> <a href="/tags/zepto/" style="font-size: 10px;">zepto</a> <a href="/tags/双击/" style="font-size: 10px;">双击</a> <a href="/tags/微信/" style="font-size: 15px;">微信</a> <a href="/tags/移动端/" style="font-size: 15px;">移动端</a> <a href="/tags/键盘遮挡/" style="font-size: 10px;">键盘遮挡</a>
 					</div>
 				</section>
 				
@@ -206,6 +206,70 @@ var _hmt = _hmt || [];
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-DOM-01" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/12/01/DOM-01/" class="article-date">
+  	<time datetime="2015-12-01T02:46:00.000Z" itemprop="datePublished">2015-12-01</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/01/DOM-01/">DOM的概念及子节点类型-1</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>昨天同事给了我一份JS题目练练，其实都是一些基础题，然而我都不会啊 <img src="http://7xon9l.com1.z0.glb.clouddn.com/QQ图片20151201105345.png" alt="大哭" title="大哭"><br>有一道题印象比较深刻：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">A</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">B</span>(<span class="params">a</span>) </span>&#123;    </span><br><span class="line">    <span class="keyword">this</span>.a = a;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">C</span>(<span class="params">a</span>) </span>&#123;    </span><br><span class="line">    <span class="keyword">if</span> (a) &#123;        </span><br><span class="line">        thia.a = a;    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">A.prototype.a = <span class="number">1</span>;</span><br><span class="line">B.prototype.a = <span class="number">1</span>;</span><br><span class="line">C.prototype.a = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">new</span> A());</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">new</span> B());</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">new</span> C(<span class="number">2</span>));</span><br></pre></td></tr></table></figure></p>
+<p>看到这个 <code>prototype</code> 我直接就懵逼了<br>于是，得恶补下JS基础知识了<br>这个就算是我的一个笔记吧！<strong>笔记！</strong> <strong>笔记！</strong> <strong>笔记！</strong> 看不懂的勿喷 <img src="http://7xon9l.com1.z0.glb.clouddn.com/QQ图片20151201105345.png" alt="大哭" title="大哭"><br>今天开始学习点DOM的东西，虽然之前看过，然而却不扎实，所以，你懂的</p>
+<h6 id="前面巴拉巴拉了一大堆，主题开始了！！！">前面巴拉巴拉了一大堆，主题开始了！！！</h6>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOM/">DOM</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/javascript/">javascript</a>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a  href="/2015/12/01/DOM-01/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
     <article id="post-multiple-lines-of-text" class="article article-type-post" itemscope itemprop="blogPost">
   

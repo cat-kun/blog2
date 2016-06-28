@@ -127,7 +127,7 @@ var _hmt = _hmt || [];
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 15px;">CSS3</a> <a href="/tags/DOM/" style="font-size: 20px;">DOM</a> <a href="/tags/JQ/" style="font-size: 15px;">JQ</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/Sublime-Text/" style="font-size: 10px;">Sublime Text</a> <a href="/tags/UA/" style="font-size: 10px;">UA</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/webStorm/" style="font-size: 10px;">webStorm</a> <a href="/tags/webview/" style="font-size: 10px;">webview</a> <a href="/tags/zepto/" style="font-size: 10px;">zepto</a> <a href="/tags/双击/" style="font-size: 10px;">双击</a> <a href="/tags/微信/" style="font-size: 15px;">微信</a> <a href="/tags/移动端/" style="font-size: 10px;">移动端</a> <a href="/tags/键盘遮挡/" style="font-size: 10px;">键盘遮挡</a>
+						<a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/CSS3/" style="font-size: 15px;">CSS3</a> <a href="/tags/DOM/" style="font-size: 20px;">DOM</a> <a href="/tags/JQ/" style="font-size: 15px;">JQ</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/Sublime-Text/" style="font-size: 10px;">Sublime Text</a> <a href="/tags/UA/" style="font-size: 10px;">UA</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/jQuery/" style="font-size: 10px;">jQuery</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/webStorm/" style="font-size: 10px;">webStorm</a> <a href="/tags/webview/" style="font-size: 10px;">webview</a> <a href="/tags/zepto/" style="font-size: 10px;">zepto</a> <a href="/tags/双击/" style="font-size: 10px;">双击</a> <a href="/tags/微信/" style="font-size: 15px;">微信</a> <a href="/tags/移动端/" style="font-size: 15px;">移动端</a> <a href="/tags/键盘遮挡/" style="font-size: 10px;">键盘遮挡</a>
 					</div>
 				</section>
 				
@@ -206,6 +206,66 @@ var _hmt = _hmt || [];
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-ios-picture" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/06/28/ios-picture/" class="article-date">
+  	<time datetime="2016-06-28T03:34:00.000Z" itemprop="datePublished">2016-06-28</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/28/ios-picture/">ios端的网页上传图片后图片翻转90度的问题</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>iPhone在移动端网页上传照片，可能会出现图片翻转的问题。这是因为当时拍照的时候，可能是拿反的姿势。所以，在上传之前就要做下处理。<br>这里要需要到一个东西叫<code>exif orientation</code>，取到这个信息就知道当时是怎么拍的。</p>
+<p>然后用canvas去重绘这张图，获取重绘后的新图的base64值。这才是转过的图片。<br><code>canvas drawImage方法</code>、<code>getdataUrl方法获取base64值</code>、<code>初始化一个canvas 然后用drawImage方法把图画到canvas上</code>、<code>然后用rotate方法旋转</code>、然后用<code>toDataURL</code>方法就能取得base64值了。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/移动端/">移动端</a></li></ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/javascript/">javascript</a>
+	</div>
+
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
     <article id="post-jq-gt-lt" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -755,68 +815,6 @@ var _hmt = _hmt || [];
       
         <p class="article-more-link">
           <a  href="/2016/03/09/开启PHP环境/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-  
-    <article id="post-addClass，removeClass" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/01/22/addClass，removeClass/" class="article-date">
-  	<time datetime="2016-01-22T03:18:00.000Z" itemprop="datePublished">2016-01-22</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/01/22/addClass，removeClass/">封装addClass，removeClass</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>jq里面对元素添加class，删除class已经有了很方便的方法。但如果不想用jq呢？<br>那么可以直接封装一个。过程就不多说了，直接上代码<br>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/DOM/">DOM</a></li></ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/javascript/">javascript</a>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a  href="/2016/01/22/addClass，removeClass/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
